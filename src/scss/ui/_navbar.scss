@@ -1,1 +1,28 @@
 @use "../custom" as *;
+
+section#navBar {
+  background-color: $light;
+}
+
+.header-bg {
+  width: 100%;
+  background-color: $light;
+}
+
+
+.nav-itau {
+  background-color: $light;
+}
+
+.nav-itau div ul li.nav-item .nav-link {
+  padding: 18px 50px;
+}
+
+.nav-itau li a {
+  color: $dark;
+}
+
+.nav-itau a.nav-link.active {
+  border-bottom: 4px solid $primary;
+  color: $primary;
+}
