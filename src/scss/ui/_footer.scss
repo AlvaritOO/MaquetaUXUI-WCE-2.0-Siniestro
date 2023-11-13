@@ -1,25 +1,10 @@
 @use "../custom" as *;
 
-section#footer {
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-  background-color: $primary;
-  padding: 2em;
+.example-footer {
+  padding: 2.5rem 0;
+  color: $texto-claros;
+  background-color: $verde;
 }
-
-.text-footer-1 {
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 21px;
-  color: $light;
-}
-
-.text-footer-2 {
-  font-style: normal;
-  font-weight: 300;
-  font-size: 13px;
-  line-height: 19px;
-  color: $light
+.example-footer p:last-child {
+  margin-bottom: 0;
 }

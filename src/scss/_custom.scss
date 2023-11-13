@@ -1,46 +1,30 @@
-// Reescribir colores
+// Reescribir Colores
+
+// Cardif
+$verde: #00965e;
+$neutral: #eeeeee;
+$titulo-cabecera: #231d19;
+$textos: #56504c;
+$texto-claros: #efe9e5;
+$placeholder: #89837f;
+
+
+// Itau
 $naranja: #ec7000;
 $naranja-hover: #bc5900;
 $light-01: #fee082;
 $light-02: #fef3e0;
+
+// CLA
 $azul: #003399;
 $azul-hover: #00287a;
 $light-03: #c2c9ea;
 $light-04: #e7eaf7;
-$verde: #4cac8b;
-$neutral: #faf7f5;
-$titulo-cabecera: #231d19;
-$textos: #56504c;
-$placeholder: #89837f;
-$bordes-card: #efe9e5;
-$yellow: #f5c66d;
 
-// Colores
-$primary: #ec7000;
-$secondary: #003399;
-$success: #c2c9ea;
-$info: #007ab7;
-$light: #ffffff;
-$dark: #00287a;
+// Fin Reescribir Colores
 
-//botones
-$btn-border-width: 2px;
-$btn-padding-y: 10px;
+$primary: $verde;
 
-//inputs
-$input-padding-y-lg: 11px;
-$input-font-size-lg: 1rem;
-$input-font-size: 0.9rem;
-$input-font-weight: normal;
-
-//floating inputs
-$form-floating-label-transform: translateY(-25%) scale(0.9);
-$form-floating-transition: opacity 0.1s ease-in-out, transform 0.1s ease-in-out;
-
-//form
-$form-floating-height: 3rem;
-$form-select-border-radius: 8px;
-$form-select-border-radius-lg: 8px;
 
 
 
