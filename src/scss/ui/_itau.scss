@@ -1,0 +1,104 @@
+@use "../custom" as *;
+
+//NavBar 
+
+section#navBar {
+    background-color: $light;
+}
+
+.header-bg {
+    width: 100%;
+    background-color: $light;
+}
+.log-ejecutivo {
+    border-radius: 22px;
+    border: 1px solid #EFE9E5;
+    padding: 4px;
+    color: #231D19;
+    // border-right: 100px solid #ccc;
+}
+
+.log-ejecutivo img {
+    width: 30px;
+}
+
+.nav-itau {
+    background-color: $light;
+
+}
+
+.nav-itau div ul li.nav-item .nav-link {
+    padding: 18px 50px;
+}
+
+.nav-itau li a{
+    color: $textos;
+}
+
+.nav-itau a.nav-link.active {
+    border-bottom: 4px solid $naranja;
+    color: $naranja;
+}
+
+//NavBar 
+
+//Content 
+
+section#contenedor-mayor{
+    width: auto;
+    height: auto;
+}
+
+.body-fondo{
+    padding: 24px;
+    height: auto;
+    background: $light;
+    box-shadow: 0px 1px 2px rgba(91, 81, 73, 0.2);
+    border-radius: 8px;
+}
+
+body {
+    font-family: "ItauRegular";
+    //src: url("../../src/fonts/ItauTextPro_W_Rg.woff2");
+    background-color: $neutral;
+}
+
+h1{
+    font-family: 'ItauDisplay', sans-serif; /*Specify your font name here*/
+    font-size: 28px;
+
+}
+
+h2{
+    font-size: 22px;
+    color: $textos;
+}
+
+span, p, ul, li {
+    font-family: 'ItauRegular';
+}
+
+//Footer
+
+section#footer {
+    background-color: $naranja;
+}
+
+
+.text-footer-1{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    color: #FFFFFF;
+}
+
+.text-footer-2{
+    font-style: normal;
+    font-weight: 300;
+    font-size: 13px;
+    line-height: 19px;
+    color: #FFFFFF;
+}
+
+//Footer
