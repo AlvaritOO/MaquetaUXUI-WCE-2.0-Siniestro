@@ -1,104 +1,157 @@
 @use "../custom" as *;
 
-//NavBar 
+//NavBar
 
 section#navBar {
-    background-color: $light;
+  background-color: $light;
 }
 
 .header-bg {
-    width: 100%;
-    background-color: $light;
+  width: 100%;
+  background-color: $light;
 }
 .log-ejecutivo {
-    border-radius: 22px;
-    border: 1px solid #EFE9E5;
-    padding: 4px;
-    color: #231D19;
-    // border-right: 100px solid #ccc;
+  border-radius: 22px;
+  border: 1px solid #efe9e5;
+  padding: 4px;
+  color: #231d19;
+  // border-right: 100px solid #ccc;
 }
 
 .log-ejecutivo img {
-    width: 30px;
+  width: 30px;
 }
 
 .nav-itau {
-    background-color: $light;
-
+  background-color: $light;
 }
 
 .nav-itau div ul li.nav-item .nav-link {
-    padding: 18px 50px;
+  padding: 18px 50px;
 }
 
-.nav-itau li a{
-    color: $textos;
+.nav-itau li a {
+  color: $textos;
 }
 
 .nav-itau a.nav-link.active {
-    border-bottom: 4px solid $naranja;
-    color: $naranja;
+  border-bottom: 4px solid $naranja;
+  color: $naranja;
 }
 
-//NavBar 
+//NavBar
 
-//Content 
+//Content
 
-section#contenedor-mayor{
-    width: auto;
-    height: auto;
+section#contenedor-mayor {
+  width: auto;
+  height: auto;
 }
 
-.body-fondo{
-    padding: 24px;
-    height: auto;
-    background: $light;
-    box-shadow: 0px 1px 2px rgba(91, 81, 73, 0.2);
-    border-radius: 8px;
+.body-fondo {
+  padding: 24px;
+  height: auto;
+  background: $light;
+  box-shadow: 0px 1px 2px rgba(91, 81, 73, 0.2);
+  border-radius: 8px;
 }
 
 body {
-    font-family: "ItauRegular";
-    //src: url("../../src/fonts/ItauTextPro_W_Rg.woff2");
-    background-color: $neutral;
+  font-family: "ItauRegular";
+  //src: url("../../src/fonts/ItauTextPro_W_Rg.woff2");
+  background-color: $neutral;
 }
 
-h1{
-    font-family: 'ItauDisplay', sans-serif; /*Specify your font name here*/
-    font-size: 28px;
-
+h1 {
+  font-family: "ItauDisplay", sans-serif; /*Specify your font name here*/
+  font-size: 28px;
 }
 
-h2{
-    font-size: 22px;
-    color: $textos;
+h2 {
+  font-size: 22px;
+  color: $textos;
 }
 
-span, p, ul, li {
-    font-family: 'ItauRegular';
+span,
+p,
+ul,
+li {
+  font-family: "ItauRegular";
+}
+
+//Splide
+.splide__pagination__page.is-active {
+  background: $primary !important;
+  transform: scale(1.4);
+  height: 10px;
+  width: 10px;
+  border-radius: 6px;
+  margin: 5px 8px;
+}
+
+ul.splide__pagination {
+  position: relative;
+  top: -73px;
+}
+
+.custom-card {
+  width: 327px !important;
+}
+
+.card-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 280px;
+  height: 274px;
+  padding: 0px;
+  background: $light;
+  border-radius: 8px;
+  transition: all 0.3s ease-in;
+  position: relative;
+  box-shadow: 0px 1px 2px 0px rgba(91, 81, 73, 0.20);
+  border-color: $primary;
+  margin-top: 0px;
+
+  &:hover {
+    transition: all 0.3s ease-in;
+    transform: translateY(10px) scale();
+    z-index: 99;
+    border: 2px solid $primary;
+  }
+}
+
+.card-content .card-body a {
+  padding: 0px;
+  text-decoration: none;
+}
+
+.container-btn {
+  bottom: 0;
+  position: inherit;
 }
 
 //Footer
 
 section#footer {
-    background-color: $naranja;
+  background-color: $naranja;
 }
 
-
-.text-footer-1{
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 21px;
-    color: #FFFFFF;
+.text-footer-1 {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  color: #ffffff;
 }
 
-.text-footer-2{
-    font-style: normal;
-    font-weight: 300;
-    font-size: 13px;
-    line-height: 19px;
-    color: #FFFFFF;
+.text-footer-2 {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 13px;
+  line-height: 19px;
+  color: #ffffff;
 }
 
 //Footer

@@ -11962,9 +11962,9 @@ section#navBar {
 
 .log-ejecutivo {
   border-radius: 22px;
-  border: 1px solid #EFE9E5;
+  border: 1px solid #efe9e5;
   padding: 4px;
-  color: #231D19;
+  color: #231d19;
 }
 
 .log-ejecutivo img {
@@ -12016,8 +12016,62 @@ h2 {
   color: #56504c;
 }
 
-span, p, ul, li {
+span,
+p,
+ul,
+li {
   font-family: "ItauRegular";
+}
+
+.splide__pagination__page.is-active {
+  background: #ec7000 !important;
+  transform: scale(1.4);
+  height: 10px;
+  width: 10px;
+  border-radius: 6px;
+  margin: 5px 8px;
+}
+
+ul.splide__pagination {
+  position: relative;
+  top: -73px;
+}
+
+.custom-card {
+  width: 327px !important;
+}
+
+.card-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 280px;
+  height: 274px;
+  padding: 0px;
+  background: #ffffff;
+  border-radius: 8px;
+  transition: all 0.3s ease-in;
+  position: relative;
+  box-shadow: 0px 1px 2px 0px rgba(91, 81, 73, 0.2);
+  border-color: #ec7000;
+  margin-top: 0px;
+}
+.card-content:hover {
+  transition: all 0.3s ease-in;
+  transform: translateY(10px) scale();
+  z-index: 99;
+  border: 2px solid #ec7000;
+}
+
+.card-content .card-body a {
+  padding: 0px;
+  text-decoration: none;
+}
+
+.container-btn {
+  bottom: 0;
+  position: inherit;
 }
 
 section#footer {
@@ -12029,7 +12083,7 @@ section#footer {
   font-weight: 400;
   font-size: 14px;
   line-height: 21px;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 .text-footer-2 {
@@ -12037,7 +12091,7 @@ section#footer {
   font-weight: 300;
   font-size: 13px;
   line-height: 19px;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 .bd-placeholder-img {
