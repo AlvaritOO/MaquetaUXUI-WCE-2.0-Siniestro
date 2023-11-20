@@ -58,12 +58,11 @@ section#contenedor-mayor {
 
 body {
   font-family: "ItauRegular";
-  //src: url("../../src/fonts/ItauTextPro_W_Rg.woff2");
   background-color: $neutral;
 }
 
 h1 {
-  font-family: "ItauDisplay", sans-serif; /*Specify your font name here*/
+  font-family: "ItauDisplay", sans-serif; 
   font-size: 28px;
 }
 
@@ -131,6 +130,8 @@ ul.splide__pagination {
   bottom: 0;
   position: inherit;
 }
+
+//Splide
 
 //Footer
 
