@@ -10,16 +10,28 @@ section#navBar {
   width: 100%;
   background-color: $light;
 }
+
 .log-ejecutivo {
   border-radius: 22px;
-  border: 1px solid #efe9e5;
+  border: 1px solid #EFE9E5;
   padding: 4px;
-  color: #231d19;
-  // border-right: 100px solid #ccc;
+  color: #231D19;
 }
 
 .log-ejecutivo img {
   width: 30px;
+}
+
+.dropdown-toggle::after {
+  display: none; //por defecto inline cuando se use
+  content: "";
+  width: 30px;
+  padding: 1px 7px;
+  background-position: center;
+  background-position-y: 4px;
+  border-top: 0.3em solid transparent;
+  border-right: 0.3em solid transparent;
+  background-image: url(../img/Chevron.svg);
 }
 
 .nav-itau {
@@ -37,6 +49,24 @@ section#navBar {
 .nav-itau a.nav-link.active {
   border-bottom: 4px solid $naranja;
   color: $naranja;
+}
+
+.divisor {
+  border-right: 2px solid $naranja;
+  height: 40px;
+}
+
+
+button.splide__arrow.splide__arrow--prev {
+  position: relative;
+  left: -73px;
+  top: 171px;
+}
+
+button.splide__arrow.splide__arrow--next {
+  position: relative;
+  left: 1300px;
+  top: 151px;
 }
 
 //NavBar

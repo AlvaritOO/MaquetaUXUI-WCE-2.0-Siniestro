@@ -11962,13 +11962,25 @@ section#navBar {
 
 .log-ejecutivo {
   border-radius: 22px;
-  border: 1px solid #efe9e5;
+  border: 1px solid #EFE9E5;
   padding: 4px;
-  color: #231d19;
+  color: #231D19;
 }
 
 .log-ejecutivo img {
   width: 30px;
+}
+
+.dropdown-toggle::after {
+  display: none;
+  content: "";
+  width: 30px;
+  padding: 1px 7px;
+  background-position: center;
+  background-position-y: 4px;
+  border-top: 0.3em solid transparent;
+  border-right: 0.3em solid transparent;
+  background-image: url(../img/Chevron.svg);
 }
 
 .nav-itau {
@@ -11986,6 +11998,23 @@ section#navBar {
 .nav-itau a.nav-link.active {
   border-bottom: 4px solid #ec7000;
   color: #ec7000;
+}
+
+.divisor {
+  border-right: 2px solid #ec7000;
+  height: 40px;
+}
+
+button.splide__arrow.splide__arrow--prev {
+  position: relative;
+  left: -73px;
+  top: 171px;
+}
+
+button.splide__arrow.splide__arrow--next {
+  position: relative;
+  left: 1300px;
+  top: 151px;
 }
 
 section#contenedor-mayor {
@@ -12007,7 +12036,7 @@ body {
 }
 
 h1 {
-  font-family: "ItauDisplay", sans-serif; /*Specify your font name here*/
+  font-family: "ItauDisplay", sans-serif;
   font-size: 28px;
 }
 
