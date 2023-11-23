@@ -12005,18 +12005,6 @@ section#navBar {
   height: 40px;
 }
 
-button.splide__arrow.splide__arrow--prev {
-  position: relative;
-  left: -73px;
-  top: 171px;
-}
-
-button.splide__arrow.splide__arrow--next {
-  position: relative;
-  left: 1300px;
-  top: 151px;
-}
-
 section#contenedor-mayor {
   width: auto;
   height: auto;
