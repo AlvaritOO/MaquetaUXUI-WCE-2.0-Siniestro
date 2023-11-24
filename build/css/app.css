@@ -12040,6 +12040,12 @@ li {
   font-family: "ItauRegular";
 }
 
+.splide {
+  position: relative;
+  visibility: hidden;
+  max-height: 300px;
+}
+
 .splide__pagination__page.is-active {
   background: #ec7000 !important;
   transform: scale(1.4);
@@ -12091,10 +12097,16 @@ ul.splide__pagination {
   position: inherit;
 }
 
-@media (max-width: 576px) {
+@media only screen and (max-width: 576px) {
   button.splide__pagination__page {
     position: relative;
     top: 90px;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 768px) {
+  button.splide__pagination__page {
+    position: relative;
+    top: -500px;
   }
 }
 @media (min-width: 1024px) {
