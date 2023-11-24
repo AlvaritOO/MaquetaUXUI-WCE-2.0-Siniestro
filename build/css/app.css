@@ -11962,9 +11962,9 @@ section#navBar {
 
 .log-ejecutivo {
   border-radius: 22px;
-  border: 1px solid #EFE9E5;
+  border: 1px solid #efe9e5;
   padding: 4px;
-  color: #231D19;
+  color: #231d19;
 }
 
 .log-ejecutivo img {
@@ -12091,6 +12091,24 @@ ul.splide__pagination {
   position: inherit;
 }
 
+@media (max-width: 576px) {
+  button.splide__pagination__page {
+    position: relative;
+    top: 90px;
+  }
+}
+@media (min-width: 1024px) {
+  button.splide__arrow.splide__arrow--prev {
+    position: relative;
+    left: -73px;
+    top: 171px;
+  }
+  button.splide__arrow.splide__arrow--next {
+    position: relative;
+    left: 1300px;
+    top: 151px;
+  }
+}
 section#footer {
   background-color: #ec7000;
 }
