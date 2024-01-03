@@ -351,12 +351,98 @@ Due to the split circle of progress-left and progress right, we must use the ani
 		margin-bottom: 1em;
 	}
 
+
+//Card
+
+.nombre-seguro {
+  align-self: stretch;
+  position: relative;
+}
+.encabezado {
+  align-self: stretch;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.card-de-productos {
+  cursor: pointer;
+}
+.card-de-productos {
+  flex: 1;
+  background: $light;
+  box-shadow: 0px 1px 2px rgba(91, 81, 73, 0.2);
+  border-radius: 8px;
+  border: 1px solid #D9D3CF;
+  box-sizing: border-box;
+  height: 132px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  &:hover {
+    transition: all 0.3s ease-in;
+    transform: translateY(10px) scale();
+    z-index: 99;
+    color: #ffffff;
+    background-color: $primary;
+  }
+}
+
+.cards,
+.div {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+}
+.div {
+  width: 800px;
+  flex-direction: row;
+  justify-content: center;
+}
+.cards {
+  flex-direction: column;
+  justify-content: flex-start;
+  text-align: center;
+}
+
+.content-card1 {
+  background: $light;
+  width: 1223px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  box-sizing: border-box;
+}
+//Card
+
 //Alert
 
 .alert-warning {
   border-top: 4px solid #F1AE2F;
-  background-color: #FCEBCB;
+  background-color: #F5C66D;
 }
+
+.aviso-alerta {
+  width: 32px;
+  height: 32px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.mensaje-de-informacion {
+  position: relative;
+  line-height: 21px;
+}
+.mensaje-de-informacion-2 {
+  align-self: stretch;
+  position: relative;
+  line-height: 20px;
+}
+
 
 //Footer
 
