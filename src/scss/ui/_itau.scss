@@ -357,6 +357,9 @@ Due to the split circle of progress-left and progress right, we must use the ani
 .nombre-seguro {
   align-self: stretch;
   position: relative;
+  display: inline-block;
+  height: 26px;
+  flex-shrink: 0;
 }
 .encabezado {
   align-self: stretch;
@@ -417,6 +420,101 @@ Due to the split circle of progress-left and progress right, we must use the ani
   box-sizing: border-box;
 }
 //Card
+
+.taginfo2 {
+  background-color: #EFE9E5;
+  flex-direction: row;
+  border-radius: 20px;
+  border: 1px solid #231d19;
+  justify-content: center;
+  padding: 8px;
+  text-align: right;
+}
+.nombre-seguro {
+  align-self: stretch;
+  position: relative;
+  display: inline-block;
+  height: 26px;
+  flex-shrink: 0;
+}
+.la-florida {
+  margin: 0;
+}
+.cobertura {
+  position: relative;
+  line-height: 140%;
+}
+.cobertura,
+.monto,
+.top {
+  align-self: stretch;
+}
+.top {
+  border-radius: 8px 8px 0px 0px;
+  background-color: #D9D3CF;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+  gap: 24px;
+  z-index: 0;
+}
+.monto {
+  position: relative;
+  line-height: 140%;
+}
+.content1,
+.description {
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.description {
+  padding: 24px;
+  z-index: 1;
+  text-align: left;
+  color: #231d19;
+}
+
+
+.card-seguros-asociados {
+  border-radius: 16px;
+  background-color: #ffffff;
+  border: 2px solid #D9D3CF;
+  box-sizing: border-box;
+  width: 272px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  position: relative;
+  gap: 24px;
+}
+
+.cards2,
+.content-card {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 24px;
+}
+.content-card {
+  border-radius: 16px;
+  box-shadow: 12px;
+  width: 1223px;
+  flex-direction: column;
+  justify-content: center;
+  padding: 32px;
+  box-sizing: border-box;
+  gap: 32px;
+  color: #231d19;
+}
 
 //Alert
 
