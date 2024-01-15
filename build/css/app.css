@@ -12005,6 +12005,11 @@ section#navBar {
   height: 40px;
 }
 
+.divisor-line {
+  border: 1px solid #EFE9E5;
+  width: 90%;
+}
+
 section#contenedor-mayor {
   width: auto;
   height: auto;
@@ -12135,7 +12140,7 @@ body {
   padding: 8px;
   border-bottom: 2px solid #939598;
   margin-top: 25px;
-  margin-bottom: 25px;
+  margin-bottom: 16px;
 }
 
 .title-seccion {
@@ -12552,8 +12557,8 @@ Due to the split circle of progress-left and progress right, we must use the ani
   text-align: right;
 }
 
-.nombre-seguro {
-  align-self: stretch;
+.nombre-seguro-2 {
+  align-self: center;
   position: relative;
   display: inline-block;
   height: 26px;
@@ -12576,7 +12581,6 @@ Due to the split circle of progress-left and progress right, we must use the ani
 }
 
 .top {
-  border-radius: 8px 8px 0px 0px;
   background-color: #D9D3CF;
   overflow: hidden;
   display: flex;
@@ -12610,7 +12614,8 @@ Due to the split circle of progress-left and progress right, we must use the ani
 }
 
 .card-seguros-asociados {
-  border-radius: 16px;
+  cursor: pointer;
+  border-radius: 8px;
   background-color: #ffffff;
   border: 2px solid #D9D3CF;
   box-sizing: border-box;
@@ -12628,7 +12633,7 @@ Due to the split circle of progress-left and progress right, we must use the ani
   display: flex;
   flex-direction: row;
   align-items: flex-start;
-  justify-content: flex-start;
+  justify-content: center;
   gap: 24px;
 }
 
@@ -12642,6 +12647,15 @@ Due to the split circle of progress-left and progress right, we must use the ani
   box-sizing: border-box;
   gap: 32px;
   color: #231d19;
+}
+
+.fecha-contratacion {
+  background: #EFE9E5;
+  border: 1px solid #D9D3CF;
+  border-radius: 28px;
+  padding: 4px 8px;
+  position: relative;
+  font-size: 12px;
 }
 
 .alert-warning {
