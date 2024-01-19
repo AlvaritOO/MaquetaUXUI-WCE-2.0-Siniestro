@@ -586,3 +586,112 @@ section#footer {
   flex-direction: row;
   justify-content: start;
 }
+
+.div1,
+.exito,
+.files,
+.input-download {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.exito {
+  gap: 25px;
+  cursor: pointer;
+  text-align: center;
+  color: #231d19;
+}
+.div1,
+.input-download {
+  gap: 25px;
+}
+.div1 {
+  width: 400px;
+  flex-direction: row;
+}
+.files1 {
+  text-align: left;
+  color: #939598;
+}
+.exito1,
+.files1,
+.inputs {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.exito1 {
+  gap: 25px;
+  text-align: center;
+  color: #231d19;
+}
+
+.agrega {
+  text-decoration: underline;
+}
+.o-arrastra-tus {
+  color: #939598;
+}
+.agrega-o-arrastra-container,
+.puedes-subir-hasta {
+  align-self: stretch;
+  position: relative;
+  line-height: 22px;
+  color: $azul;
+}
+.puedes-subir-hasta {
+  line-height: 19px;
+  color: #939598;
+}
+.adjuntar,
+.file-upload-modulo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.adjuntar {
+  align-self: stretch;
+  gap: 5px;
+}
+.file-upload-modulo {
+  border-radius: 8px;;
+  border: 1px dashed $azul;
+  box-sizing: border-box;
+  width: 400px;
+  padding: 25px;
+}
+.lipsumjpg,
+.mb {
+  position: relative;
+}
+.lipsumjpg {
+  align-self: stretch;
+  line-height: 22px;
+  display: flex;
+  align-items: flex-end;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  height: 22px;
+  flex-shrink: 0;
+}
+
+.rescate-icon {
+  position: relative;
+  width: 14px;
+  height: 14px;
+}
+
+.icono {
+  border-radius: 100px;
+  background-color: $azul;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 5px;
+
+}
