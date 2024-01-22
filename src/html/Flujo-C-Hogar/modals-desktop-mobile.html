@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en" class="h-100">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Itau</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,600;1,700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="../../../build/css/app.css">
+    <link rel="stylesheet" href="../../../build/css/splide.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+</head>
+
+<body class="d-flex flex-column h-100">
+    <!--NavBar-->
+    <section id="navBar">
+        <div class="container d-none d-sm-none d-md-none d-lg-block">
+            <header class="d-flex flex-wrap justify-content-end justify-content-md-between pt-3 header-bg">
+
+                <div>
+                    <a href="/" class="d-flex align-items-center col-md-3 mb-2 mb-md-0 text-w text-decoration-none">
+                        <img src="../../../build/img/logo-itau.svg" alt="Itaú" class="pe-4">
+                        <img src="../../../build/img/logo-bnp.svg" alt="BNP">
+                    </a>
+                </div>
+
+                <div class="d-flex flex-wrap justify-content-end">
+
+                    <div>
+                        <a class="nav-link dropdown-toggle log-ejecutivo" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            <img src="../../../build/img/ic_log-ejecutivo.svg">
+                            Hola, Leslie
+                            <img src="../../../build/img/Chevron.svg" alt="">
+
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+
+                    </div>
+
+                    <div class="divisor ms-3"></div>
+
+                    <div class="mt-1 ms-3">
+                        <a class="text-decoration-none text-black" href="#" role="button">
+                            <img src="../../../build/img/Icono cerrar sesión.svg" alt="">
+                            Cerrar sesión</a>
+                    </div>
+                </div>
+
+                <nav class="navbar navbar-expand-lg nav-itau pb-0 d-none d-lg-block d-sm-none">
+                    <div class="container-fluid justify-content-around">
+
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-white" href="#">Contratar Seguros</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-white" href="#">Ver Seguros Contratados</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-white" href="#">Denunciar un Siniestro</a>
+                            </li>
+
+                        </ul>
+
+                    </div>
+                </nav>
+
+
+            </header>
+
+        </div>
+        <div class="row d-lg-none d-sm-block">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+
+                <div class="container-fluid justify-content-around">
+                    <img src="../../../build/img/logo-itau.svg" alt="Itaú" class="ms-2">
+                    <img src="../../../build/img/logo-bnp.svg" alt="BNP" class="ms-0">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse ms-3" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Contratar seguros</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Ver seguros contratados</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Denunciar un siniestro</a>
+                            </li>
+                        </ul>
+
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </section>
+    <!--NavBar fin-->
+
+
+    <!--Contenido-->
+    <main id="contenedor-mayor" class="flex-shrink-0 mt-4">
+
+        <!--wizard-->
+        <section>
+            <div class="container">
+                <div class="row progreso mt-0">
+                    <div class="progress" data-percentage="100">
+                        <span class="progress-left">
+                            <span class="progress-bar"></span>
+                        </span>
+                        <span class="progress-right">
+                            <span class="progress-bar"></span>
+                        </span>
+                        <div class="progress-value">
+                            <div>5/5<br /></div>
+                        </div>
+                    </div>
+                    <p class="title-seccion">Selección de seguro</p>
+                </div>
+                <div class="eventos">
+                    <div class="ms-0">
+                        <p><span class="fecha-contratacion"><b>Evento:</b> Daños por incendio</span></p>
+                    </div>
+                    <div class="ms-1">
+                        <p><span class="fecha-contratacion"><b>Vivienda:</b> Florida - Canelo 123 10B</span></p>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+        <!--fin wizard-->
+
+        <div class="container"> <!--d-none d-sm-none d-lg-block-->
+            <div class="row">
+                <div class="col-md-12">
+                    <h1 class="mt-3">
+                        Para finalizar con el proceso
+                    </h1>
+                    <h2 class="mb-4">
+                        Confirma o actualiza a continuación tus datos de contactabilidad.
+                    </h2>
+                </div>
+                <div class="pb-3 featurette g-0 bg-white border rounded overflow-hidden flex-md-row mb-4 shadow-sm">
+                    
+                    <div class="col mt-3 mx-5">
+                        <h1>Información de contacto</h1>
+                
+                        <div class="row mt-3">
+                          <div class="form-floating mb-3 col-4">
+                            <input type="text" class="form-control" id="floatingInput" placeholder="Telefono de contacto">
+                            <label for="floatingInput">Teléfono de contacto</label>
+                          </div>
+                          <div class="form-floating mb-3 col-4">
+                            <input type="email" class="form-control" id="floatingInput" placeholder="Correo electrónico">
+                            <label for="floatingInput">Correo electrónico</label>
+                          </div>
+                          <div class="form-floating mb-3 col-4">
+                            <input type="email" class="form-control" id="floatingInput" placeholder="Confirmar correo electrónico">
+                            <label for="floatingInput">Confirmar correo electrónico</label>
+                          </div>
+                        </div>
+                
+                      </div>
+
+                      <div class="col mt-3 mx-5">
+                        <h1>Dirección de contacto</h1>
+                
+                        <div class="row">
+                        
+                          <div class="col-4 mb-4">
+                            <select class="form-select form-select-lg" aria-label=".form-select-lg example">
+                              <option selected>Región</option>
+                              <option value="1">One</option>
+                              <option value="2">Two</option>
+                              <option value="3">Three</option>
+                            </select>
+                          </div>
+                          <div class="col-4">
+                            <select class="form-select form-select-lg" aria-label=".form-select-lg example">
+                              <option selected>Comuna</option>
+                              <option value="1">One</option>
+                              <option value="2">Two</option>
+                              <option value="3">Three</option>
+                            </select>
+                          </div>
+                        </div>
+                        <div class="row">
+                          <div class="form-floating col-8 mb-3">
+                            <input type="text" class="form-control" id="floatingInput" placeholder="Dirección">
+                            <label for="floatingInput">Dirección</label>
+                          </div>
+                        </div>
+                
+                      </div>
+
+                    <p class="mt-4 mx-5">
+                        Ingresa aquí el nombre de la calle o avenida más el número de domicilio y casa o departamento.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="container"> <!--d-none d-sm-none d-lg-block-->
+            <div class="row">
+                <div class="col-md-12">
+                    <h1 class="mt-3">
+                        Datos necesarios para el pago de tu seguro
+                    </h1>
+                    <h2 class="mb-4">
+                        Selecciona la cuenta en donde se realizará el pago en caso de que el evento sea aprobado.
+                    </h2>
+                </div>
+                <div class="pb-3 featurette g-0 bg-white border rounded overflow-hidden flex-md-row mb-4 shadow-sm">
+                    
+                    <div class="mt-5 mx-5 eventos">
+                        <div class="form-check">
+                          <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2">
+                          <label class="form-check-label" for="flexRadioDefault2">
+                            Cuenta bancaria
+                          </label>
+                        </div>
+                        <div class="ms-3 form-check">
+                          <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                          <label class="form-check-label" for="flexRadioDefault1">
+                            No quiero recibir el pago por transferencia
+                          </label>
+                        </div>
+                      </div>
+                      <div class="col mt-3 mx-5">
+                
+                        <div class="row">
+                        
+                          <div class="col-4 mb-4">
+                            <select class="form-select form-select-lg" aria-label=".form-select-lg example">
+                              <option selected>Nombre del Banco</option>
+                              <option value="1">One</option>
+                              <option value="2">Two</option>
+                              <option value="3">Three</option>
+                            </select>
+                          </div>
+                          <div class="col-4">
+                            <select class="form-select form-select-lg" aria-label=".form-select-lg example">
+                              <option selected>tipo de cuenta</option>
+                              <option value="1">One</option>
+                              <option value="2">Two</option>
+                              <option value="3">Three</option>
+                            </select>
+                          </div>
+                          <div class="form-floating col-4 mb-3">
+                            <input type="text" class="form-control" id="floatingInput" placeholder="Dirección">
+                            <label for="floatingInput">Número de cuenta</label>
+                          </div>
+                        </div>
+                
+                      </div>
+
+                    <p class="col-7 mx-5">
+                        En caso de que los datos de cuenta bancaria ingresados presenten inconsistencia al momento de realizar la transferencia, se emitirá un documento que debes retirar en caja de tu sucursal con tu cedula de identidad
+                    </p>
+                </div>
+            </div>
+
+            <div class="col-md-12 form-check mb-4">
+                <input class="form-check-input" type="checkbox" name="flexRadioDefault" id="flexRadioDefault1">
+                <label class="form-check-label" for="flexRadioDefault1" data-bs-toggle="modal"
+                    data-bs-target="#exampleModal">
+                    Confirmo que el texto ingresado será usado como una declaración jurada simple.
+                </label>
+            </div>
+
+            <div class="row col-6 alert alert-warning fade show mt-2 mb-4" role="alert">
+                <div class="aviso-alerta">
+                    <div class="col"><svg width="33" height="32" viewBox="0 0 33 32" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M26.1328 19.8516C26.6641 20.7734 26.6562 21.6953 26.1094 22.6172C25.5781 23.5391 24.7812 24 23.7188 24H9.28125C8.21875 24 7.41406 23.5391 6.86719 22.6172C6.33594 21.6953 6.33594 20.7734 6.86719 19.8516L14.7891 6C15.1641 5.32812 15.7344 4.99219 16.5 4.99219C17.2656 4.99219 17.8359 5.32812 18.2109 6L26.1328 19.8516ZM16.0078 12V18H16.9922V12H16.0078ZM16.5 20.5078C16.7031 20.5078 16.875 20.4375 17.0156 20.2969C17.1719 20.1406 17.25 19.9609 17.25 19.7578C17.25 19.5391 17.1719 19.3594 17.0156 19.2188C16.875 19.0781 16.7031 19.0078 16.5 19.0078C16.2969 19.0078 16.1172 19.0781 15.9609 19.2188C15.8203 19.3594 15.75 19.5391 15.75 19.7578C15.75 19.9609 15.8203 20.1406 15.9609 20.2969C16.1172 20.4375 16.2969 20.5078 16.5 20.5078Z"
+                                fill="#56504C" />
+                        </svg>
+                    </div>
+                </div>
+                <div class="col-10 texto">
+                    <b class="mensaje-de-informacion">Recuerda:</b>
+                    <div class="mensaje-de-informacion-2">
+                        <span>Para finalizar con la solicitud es necesario aceptar la confirmación de datos de contactabilidad y reembolso.
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        
+
+        <div class="container text-end mt-4 mb-5 act-buttons">
+            <button type="button" class="btn btn-outline-secondary px-5 me-2">Volver</button>
+            <button type="button" class="btn btn-primary text-white px-5">Finalizar</button>
+        </div>
+
+        </div>
+
+    </main>
+    <!--Contenido fin-->
+
+    <!--Footer-->
+    <section id="footer" class="footer mt-auto py-3 d-none d-sm-none d-lg-block">
+        <div class="container">
+            <footer class="d-flex flex-wrap align-items-center py-4">
+                <p class="col-md-4 col-12 col-sm-2 col-lg-4 mb-0 text-muted">
+                    <a href="#"><img class="col-2 logo-footer me-4" alt="BNP Paribas Cardif"
+                            src="../../../build/img/logo_itau_footer.svg" /></a>
+                    <a href="#"><img class="col-5 logo-footer" alt="BNP Paribas Cardif"
+                            src="../../../build/img/cardif-footer.svg" /></a>
+                </p>
+                <p class="text-footer-1 col-6 justify-content-end">
+                    Infórmese sobre la garantía estatal de los depósitos en su banco o
+                    en www.cmfchile.cl <br /><span class="text-footer-2 col-8 justify-content-end">© 2022 Banco Itaú.
+                        Todos los
+                        derechos reservados. Av. Presidente
+                        Riesco 5537, Las Condes. Santiago de Chile.
+                    </span>
+                </p>
+            </footer>
+        </div>
+    </section>
+    <!--Fin Footer-->
+
+    <!--Footer Mobile-->
+    <section id="footer" class="footer mt-auto py-3 d-md-block d-lg-none">
+        <div class="container">
+            <footer class="d-flex flex-wrap align-items-center py-4">
+                <p class="col-10 mb-3 offset-2  text-muted justify-content-center">
+                    <a href="#"><img class="col-2 logo-footer me-4" alt="BNP Paribas Cardif"
+                            src="../../../build/img/logo_itau_footer.svg" /></a>
+                    <a href="#"><img class="col-5 logo-footer" alt="BNP Paribas Cardif"
+                            src="../../../build/img/cardif-footer.svg" /></a>
+                </p>
+                <p class="text-footer-1 col-12 justify-content-center">
+                    Infórmese sobre la garantía estatal de los depósitos en su banco o
+                    en www.cmfchile.cl <br />
+                <p class="text-footer-2 col-12 justify-content-center">© 2022 Banco Itaú.
+                    Todos los
+                    derechos reservados.
+                    <br>Av. Presidente
+                    Riesco 5537, Las Condes. Santiago de Chile.
+                </p>
+                </p>
+            </footer>
+        </div>
+    </section>
+    <!--Fin Footer-->
+
+    <!--Modal-->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true"
+        data-bs-backdrop="static" data-bs-keyboard="false">
+        <div class="modal-dialog">
+            <div class="modal-content">
+
+                <div class="modal-body text-center">
+                    <div class="d-flex flex-column justify-content-center row">
+                        <svg width="56" height="56" viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M28 10.2363C30.4062 10.2363 32.6758 10.7012 34.8086 11.6309C36.9414 12.5332 38.8008 13.7773 40.3867 15.3633C41.9727 16.9492 43.2168 18.8086 44.1191 20.9414C45.0488 23.0742 45.5137 25.3438 45.5137 27.75C45.5137 30.1562 45.0488 32.4258 44.1191 34.5586C43.2168 36.6914 41.9727 38.5508 40.3867 40.1367C38.8008 41.7227 36.9414 42.9668 34.8086 43.8691C32.6758 44.7988 30.4062 45.2637 28 45.2637C25.5938 45.2637 23.3242 44.7988 21.1914 43.8691C19.0586 42.9668 17.1992 41.7227 15.6133 40.1367C14.0273 38.5508 12.7832 36.6914 11.8809 34.5586C10.9512 32.4258 10.4863 30.1562 10.4863 27.75C10.4863 25.3438 10.9512 23.0742 11.8809 20.9414C12.7832 18.8086 14.0273 16.9492 15.6133 15.3633C17.1992 13.7773 19.0586 12.5332 21.1914 11.6309C23.3242 10.7012 25.5938 10.2363 28 10.2363ZM30.1328 33.6562C29.9414 33.9297 29.75 34.2031 29.5586 34.4766C29.3672 34.75 29.1484 35.0234 28.9023 35.2969C28.6836 35.543 28.4785 35.7344 28.2871 35.8711C28.0957 36.0078 27.9316 36.0762 27.7949 36.0762C27.7129 36.0762 27.6445 36.0762 27.5898 36.0762C27.5625 36.0488 27.5215 36.0215 27.4668 35.9941C27.4121 35.9668 27.3711 35.9121 27.3438 35.8301C27.3164 35.748 27.3027 35.6523 27.3027 35.543C27.3027 35.4336 27.3164 35.2695 27.3438 35.0508C27.3984 34.8047 27.4805 34.5039 27.5898 34.1484C27.6172 34.0117 27.6582 33.8203 27.7129 33.5742C27.7949 33.3008 27.877 32.9727 27.959 32.5898L30.625 23.9766L29.3125 24.2227C29.0938 24.2773 28.793 24.332 28.4102 24.3867C28.0273 24.4414 27.5762 24.4961 27.0566 24.5508C26.5098 24.6055 26.0312 24.6602 25.6211 24.7148C25.2109 24.7422 24.8555 24.7695 24.5547 24.7969V25.6172C24.9102 25.6172 25.1973 25.6445 25.416 25.6992C25.6621 25.7266 25.8398 25.7539 25.9492 25.7812C26.0859 25.8359 26.1816 25.9316 26.2363 26.0684C26.3184 26.1777 26.3594 26.3418 26.3594 26.5605C26.3594 26.5879 26.3594 26.6289 26.3594 26.6836C26.3594 26.7109 26.3457 26.7383 26.3184 26.7656C26.3184 26.8203 26.3047 26.8613 26.2773 26.8887C26.2773 26.916 26.2773 26.957 26.2773 27.0117L24.1035 33.8203C24.0488 34.0664 23.9941 34.2988 23.9395 34.5176C23.8848 34.709 23.8438 34.873 23.8164 35.0098C23.7344 35.2832 23.6797 35.5156 23.6523 35.707C23.625 35.8984 23.6113 36.0625 23.6113 36.1992C23.6113 36.5273 23.666 36.8281 23.7754 37.1016C23.8848 37.3477 24.0488 37.5664 24.2676 37.7578C24.4863 37.9219 24.7188 38.0449 24.9648 38.127C25.2383 38.209 25.5117 38.25 25.7852 38.25C26.2773 38.25 26.7422 38.1543 27.1797 37.9629C27.6445 37.7441 28.0957 37.4297 28.5332 37.0195C28.7793 36.7734 29.0938 36.4043 29.4766 35.9121C29.8594 35.4199 30.2969 34.8047 30.7891 34.0664L30.1328 33.6562ZM31.4863 19.4238C31.4863 18.8223 31.2676 18.3164 30.8301 17.9062C30.4199 17.4688 29.9141 17.25 29.3125 17.25C28.7109 17.25 28.1914 17.4688 27.7539 17.9062C27.3438 18.3164 27.1387 18.8223 27.1387 19.4238C27.1387 20.0254 27.3438 20.5449 27.7539 20.9824C28.1914 21.4199 28.7109 21.6387 29.3125 21.6387C29.9141 21.6387 30.4199 21.4199 30.8301 20.9824C31.2676 20.5449 31.4863 20.0254 31.4863 19.4238Z"
+                                fill="#007AB7" />
+                        </svg>
+                        <h1>Importante:</h1>
+                        <p class="description">Ten en cuenta que te pediremos adjuntar documentación más adelante para
+                            la evaluación del caso como los siguientes documentos y otros:</p>
+                        <ul class="ms-5 text-start">
+                            <li>Denuncia y/o constancia policial</li>
+                            <li>Copia de parte policial </li>
+                            <li>Informe/peritaje de bomberos</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="mb-4">
+                    <div class="d-flex justify-content-center gap-2">
+                        <a href=""><button type="button" class="btn btn-outline-secondary px-5"
+                                data-bs-dismiss="modal">Cancelar</button></a>
+                        <a href=""><button type="button" class="btn btn-primary text-white px-5">Continuar</button< /a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Fin Modal-->
+
+</body>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+    crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+<script src="../../js/splide.min.js"></script>
+<script src="../../js/funtion.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+
+
+</html>
