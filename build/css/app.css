@@ -12628,7 +12628,7 @@ Due to the split circle of progress-left and progress right, we must use the ani
   gap: 24px;
 }
 
-.cards2,
+.cards-seguros,
 .content-card {
   display: flex;
   flex-direction: row;
@@ -12864,6 +12864,7 @@ section#footer {
 }
 
 .ojo {
+  cursor: pointer;
   width: 24px;
   height: 24px;
   align-items: center;

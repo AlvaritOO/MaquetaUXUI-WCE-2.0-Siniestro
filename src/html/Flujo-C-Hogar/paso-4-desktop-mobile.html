@@ -172,7 +172,10 @@
                             <div class="title1">
                                 <div class="recomendado">
                                     <h5 class="fw-bold">
-                                        1. Denuncia y/o constancia policia
+                                        1. Denuncia y/o constancia policia <img src="../../../build/img/informacion.svg"
+                                            class="ms-1" alt="" type="button" data-bs-toggle="tooltip"
+                                            data-bs-placement="right"
+                                            title="Este documento se obtiene en Carabineros de Chile. Para ser presentado ante la compañía de seguros, la constancia debe contener un relato breve de los hecho, la fecha y hora en que ocurrió el accidente."></img>
                                     </h5>
                                 </div>
                             </div>
@@ -241,7 +244,10 @@
                             <div class="title1">
                                 <div class="recomendado">
                                     <h5 class="fw-bold">
-                                        2. Copia de parte policial
+                                        2. Copia de parte policial <img src="../../../build/img/informacion.svg"
+                                            class="ms-1" alt="" type="button" data-bs-toggle="tooltip"
+                                            data-bs-placement="right"
+                                            title="Este documento se obtiene en Carabineros de Chile. Debe tener una secuencia lógica y clara de lo sucedido."></img>
                                     </h5>
                                 </div>
                             </div>
@@ -428,7 +434,10 @@
                             <div class="title1">
                                 <div class="recomendado">
                                     <h5 class="fw-bold">
-                                        3. Informe/Peritaje de bomberos
+                                        3. Informe/Peritaje de bomberos <img src="../../../build/img/informacion.svg"
+                                            class="ms-1" alt="" type="button" data-bs-toggle="tooltip"
+                                            data-bs-placement="right"
+                                            title="Este documento lo entrega Bomberos de Chile. Es un investigación técnica que se efectúa cuando ocurre un incendio con el fin de averiguar sus causas, circunstancias y consecuencias de una manera objetiva."></img>
                                     </h5>
                                 </div>
                             </div>
@@ -640,6 +649,13 @@
 <script src="../../js/splide.min.js"></script>
 <script src="../../js/funtion.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+
+<script>
+    var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+    var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+        return new bootstrap.Tooltip(tooltipTriggerEl)
+    })
+</script>
 
 
 </html>
