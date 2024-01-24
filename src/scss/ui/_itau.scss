@@ -427,6 +427,17 @@ Due to the split circle of progress-left and progress right, we must use the ani
 }
 //Card
 
+.taginfo1 {
+  background-color: #BC5900;
+  flex-direction: row;
+  border-radius: 20px;
+  border: 1px solid #BC5900;
+  justify-content: center;
+  padding: 8px;
+  text-align: right;
+  color: #ffffff;
+}
+
 .taginfo2 {
   background-color: #EFE9E5;
   flex-direction: row;
@@ -435,6 +446,25 @@ Due to the split circle of progress-left and progress right, we must use the ani
   justify-content: center;
   padding: 8px;
   text-align: right;
+  color: #231D19;
+}
+
+.taginfo3 {
+  background-color: #EFE9E5;
+  flex-direction: row;
+  border-radius: 20px;
+  border: 1px solid #231d19;
+  justify-content: center;
+  padding: 8px;
+  text-align: right;
+}
+.nombre-seguro-1 {
+  align-self: center;
+  position: relative;
+  display: inline-block;
+  height: 26px;
+  flex-shrink: 0;
+  color: #fff;
 }
 .nombre-seguro-2 {
   align-self: center;
@@ -442,21 +472,61 @@ Due to the split circle of progress-left and progress right, we must use the ani
   display: inline-block;
   height: 26px;
   flex-shrink: 0;
+  color: #231D19;
 }
-.la-florida {
+.nombre-seguro-3 {
+  align-self: center;
+  position: relative;
+  display: inline-block;
+  height: 26px;
+  flex-shrink: 0;
+  color: #89837F;
+}
+.text-cards {
   margin: 0;
+  color: #89837F;
 }
 .cobertura {
+  align-self: stretch;
   position: relative;
   line-height: 140%;
 }
-.cobertura,
-.monto,
-.top {
+
+.top1 {
   align-self: stretch;
+  background-color:#D9D3CF;
+  border-top-right-radius: 8px;
+  border-top-left-radius: 8px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+  gap: 24px;
+  z-index: 0;
 }
-.top {
-  background-color: #D9D3CF;
+
+.top2 {
+  align-self: stretch;
+  background-color:#EC7000;
+  border-top-right-radius: 8px;
+  border-top-left-radius: 8px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+  gap: 24px;
+  z-index: 0;
+}
+
+.top3 {
+  align-self: stretch;
+  background-color:#F9F6F5;
+  border-top-right-radius: 8px;
+  border-top-left-radius: 8px;
   overflow: hidden;
   display: flex;
   flex-direction: column;
@@ -467,6 +537,7 @@ Due to the split circle of progress-left and progress right, we must use the ani
   z-index: 0;
 }
 .monto {
+  align-self: stretch;
   position: relative;
   line-height: 140%;
 }
@@ -519,7 +590,7 @@ Due to the split circle of progress-left and progress right, we must use the ani
   padding: 32px;
   box-sizing: border-box;
   gap: 32px;
-  color: #231d19;
+  color: $red;
 }
 
 .fecha-contratacion {
