@@ -12520,16 +12520,16 @@ Due to the split circle of progress-left and progress right, we must use the ani
   align-items: flex-start;
   gap: 12px;
   width: 800px;
-  flex-direction: row;
+  flex-wrap: wrap;
   justify-content: center;
 }
 
 .cards {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   align-items: flex-start;
   gap: 12px;
-  flex-direction: column;
-  justify-content: flex-start;
   text-align: center;
 }
 
@@ -12732,6 +12732,7 @@ Due to the split circle of progress-left and progress right, we must use the ani
 
 .cards-seguros {
   display: flex;
+  flex-wrap: wrap;
   flex-direction: row;
   align-items: flex-start;
   justify-content: center;
