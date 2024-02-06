@@ -2618,7 +2618,7 @@ textarea.form-control-lg {
 .form-floating > .form-control-plaintext ~ label,
 .form-floating > .form-select ~ label {
   color: rgba(var(--bs-body-color-rgb), 0.65);
-  transform: translateY(-60%) scale(0.9) translateX(10%);
+  transform: translateY(-25%) scale(0.9) translateX(10%);
 }
 .form-floating > .form-control:focus ~ label::after,
 .form-floating > .form-control:not(:placeholder-shown) ~ label::after,
@@ -2634,7 +2634,7 @@ textarea.form-control-lg {
 }
 .form-floating > .form-control:-webkit-autofill ~ label {
   color: rgba(var(--bs-body-color-rgb), 0.65);
-  transform: translateY(-60%) scale(0.9) translateX(10%);
+  transform: translateY(-25%) scale(0.9) translateX(10%);
 }
 .form-floating > .form-control-plaintext ~ label {
   border-width: var(--bs-border-width) 0;
@@ -12106,6 +12106,12 @@ ul.splide__pagination {
   position: inherit;
 }
 
+input[type=date]::-webkit-calendar-picker-indicator {
+  width: 25px;
+  height: 25px;
+  margin-bottom: 15px;
+}
+
 @media only screen and (max-width: 576px) {
   button.splide__pagination__page {
     position: relative;
@@ -12115,10 +12121,11 @@ ul.splide__pagination {
 @media only screen and (min-width: 768px) and (max-width: 768px) {
   button.splide__pagination__page {
     position: relative;
-    top: -500px;
+    left: 900px;
+    top: -100px;
   }
 }
-@media (min-width: 1024px) {
+@media (min-width: 768px) and (max-width: 900px) {
   button.splide__arrow.splide__arrow--prev {
     position: relative;
     left: -73px;
@@ -12126,7 +12133,7 @@ ul.splide__pagination {
   }
   button.splide__arrow.splide__arrow--next {
     position: relative;
-    left: 1300px;
+    left: 900px;
     top: 151px;
   }
 }
@@ -12812,6 +12819,7 @@ section#footer {
 
 .eventos {
   display: flex;
+  flex-wrap: wrap;
   flex-direction: row;
   justify-content: start;
 }
