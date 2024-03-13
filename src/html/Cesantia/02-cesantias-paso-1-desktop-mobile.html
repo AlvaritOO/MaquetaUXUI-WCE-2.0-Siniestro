@@ -24,8 +24,8 @@
 
                 <div>
                     <a href="/" class="d-flex align-items-center col-md-3 mb-2 mb-md-0 text-w text-decoration-none">
-                        <img src="../../../build/img/logo-itau.svg" alt="Itaú" class="pe-4">
-                        <img src="../../../build/img/logo-bnp.svg" alt="BNP">
+                        <img alt="Logo" class="image-logo pe-4">
+                        <img class="image-logo-centrado" alt="BNP">
                     </a>
                 </div>
 
@@ -34,9 +34,9 @@
                     <div>
                         <a class="nav-link dropdown-toggle log-ejecutivo" href="#" id="navbarDropdown" role="button"
                             data-bs-toggle="dropdown" aria-expanded="false">
-                            <img src="../../../build/img/ic_log-ejecutivo.svg">
+                            <img class="img_log-ejecutivo">
                             Hola, Leslie
-                            <img src="../../../build/img/Chevron.svg" alt="">
+                            <i class="bi bi-chevron-down"></i>
 
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
@@ -54,7 +54,7 @@
 
                     <div class="mt-1 ms-3">
                         <a class="text-decoration-none text-black" href="#" role="button">
-                            <img src="../../../build/img/Icono cerrar sesión.svg" alt="">
+                            <img class="img_cerrar_sesion" alt="">
                             Cerrar sesión</a>
                     </div>
                 </div>
@@ -85,36 +85,36 @@
             </header>
 
         </div>
-        <div class="row d-lg-none d-sm-block">
-            <nav class="navbar navbar-expand-lg navbar-light bg-light">
-
-                <div class="container-fluid justify-content-around">
-                    <img src="../../../build/img/logo-itau.svg" alt="Itaú" class="ms-2">
-                    <img src="../../../build/img/logo-bnp.svg" alt="BNP" class="ms-0">
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                        aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse ms-3" id="navbarSupportedContent">
-                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                            <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="#">Inicio</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Contratar seguros</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Ver seguros contratados</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Denunciar un siniestro</a>
-                            </li>
-                        </ul>
-
+        <div class="d-lg-none d-sm-block">
+            <nav class="navbar navbar-expand-lg bg-light">
+                <div class="container">
+                    <div class="navbar-brand" href="#">
+                        <a href=""><img alt="Logo" class="image-logo me-2"></a>
+                        <a href=""><img class="image-logo-centrado" alt="BNP"></a>
                     </div>
+    
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse ms-3" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Contratar seguros</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Ver seguros contratados</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Denunciar un siniestro</a>
+                        </li>
+                    </ul>
+    
                 </div>
-            </nav>
+                </div>
+              </nav>
         </div>
     </section>
     <!--NavBar fin-->
@@ -138,7 +138,7 @@
                             <div>1/5<br /></div>
                         </div>
                     </div>
-                    <p class="title-seccion">Selección de fecha y cobertura</p>
+                    <p class="title-seccion">Selección de fecha y categooría</p>
                 </div>
             </div>
         </section>
@@ -151,16 +151,17 @@
                         ¿Cuándo te pasó?
                     </h1>
                 </div>
-                <div class="pb-3 featurette g-0 bg-white border rounded overflow-hidden flex-md-row mb-4 shadow-sm">
+                <div
+                    class="mt-4 pb-3 featurette g-0 bg-white border rounded overflow-hidden flex-md-row mb-4 shadow-sm">
                     <p class="lead mx-5 mt-4">Indica la fecha en que ocurrió este evento:</p>
                     <div class="form-floating mt-3 col-sm-6 col-lg-3 mx-5 mb-4">
                         <input type="date" class="form-control" id="floatingInput">
-                        <label for="floatingInput">Fecha de inicio</label>
+                        <label for="floatingInput">Fecha</label>
                     </div>
-
+                    
                     <div class="row col-sm-10 col-lg-6 alert alert-warning fade show mt-4 mx-5 mb-4" role="alert">
                         <div class="aviso-alerta">
-                            <div class="col"><img src="../../../build/img/alerta.svg" alt="">
+                            <div class="col"><img class="img-alerta" alt="">
                             </div>
                         </div>
                         <div class="col-sm-6 col-lg-10 texto">
@@ -174,6 +175,9 @@
                     </div>
                 </div>
             </div>
+            <div class="container text-end mt-4 mb-4 act-buttons">
+                <button type="button" class="btn btn-primary text-white px-5">Finalizar</button>
+            </div>
 
             <div class="row">
                 <div class="col-sm-12 col-md-12 col-lg-12">
@@ -184,70 +188,56 @@
                 </div>
                 <div
                     class="row col-sm-12 col-md-12 col-lg-12 featurette g-0 bg-white border rounded overflow-hidden flex-md-row mb-4 shadow-sm">
-
-                    <div class="content-card1 mx-5 my-4">
-                        <div class="cards">
-                            <div class="div">
-                                <div class="card-de-productos">
-                                    <div class="encabezado">
-                                        <b class="nombre-seguro">Daños por incendio</b>
-                                    </div>
-                                </div>
-                                <div class="card-de-productos">
-                                    <div class="encabezado">
-                                        <b class="nombre-seguro">Daños por sismo</b>
-                                    </div>
-                                </div>
-                                <div class="card-de-productos">
-                                    <div class="encabezado">
-                                        <b class="nombre-seguro">Daños por rotura de matriz o cañería</b>
+                    <section class="cardProductos d-block d-lg-none">
+                        <section class="card-splide splide" aria-label="Splide Basic HTML Example">
+                            <div class="container">
+                                <div class="row justify-content-center">
+                                    <div class="splide__track">
+                                        <ul class="splide__list">
+                                            <li class="splide__slide col-lg-4 col-md-4">
+                                                <div class="cards">
+                                                    <div class="card-de-productos">
+                                                        <b class="nombre-seguro">Desempleo</b>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="splide__slide col-lg-4 col-md-4 ">
+                                                <div class="cards">
+                                                    <div class="card-de-productos">
+                                                        <b class="nombre-seguro">Incapacidad temporal</b>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                        </ul>
                                     </div>
                                 </div>
                             </div>
-                            <div class="div">
-                                <div class="card-de-productos">
-                                    <div class="encabezado">
-                                        <b class="nombre-seguro">Robo dentro de mi vivienda</b>
+                        </section>
+                    </section>
+                    <section class="cardProductos d-none d-lg-block">
+                        <div class="container">
+                            <div class="row justify-content-center">
+                                <div class="cards col-lg-4 col-md-4">
+                                    <div class="card-de-productos">
+                                        <b class="nombre-seguro">Desempleo</b>
                                     </div>
                                 </div>
-                                <div class="card-de-productos">
-                                    <div class="encabezado">
-                                        <b class="nombre-seguro">Gastos por daños a terceros</b>
-                                    </div>
-                                </div>
-                                <div class="card-de-productos">
-                                    <div class="encabezado">
-                                        <b class="nombre-seguro">Daños por otros motivos</b>
+                                <div class="cards col-lg-4 col-md-4">
+                                    <div class="card-de-productos">
+                                        <b class="nombre-seguro">Incapacidad temporal</b>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                </div>
-
-            </div>
-
-
-
-            <div class="row col-sm-12 col-md-12 col-lg-6 alert alert-warning fade show mt-4 mb-4" role="alert">
-                <div class="aviso-alerta">
-                    <div class="col"><img src="../../../build/img/alerta.svg" alt="">
-                    </div>
-                </div>
-                <div class="col-sm-6 col-md-11 col-lg-11 texto">
-                    <b class="mensaje-de-informacion">Recuerda:</b>
-                    <div class="mensaje-de-informacion-2">
-                        <span>Para avanzar con la solicitud es necesario aceptar el envío de información sobre el
-                            siniestro a tu correo electrónico registrado.
-                        </span>
-                    </div>
+                    </section>
                 </div>
             </div>
         </div>
 
         <div class="container text-end mt-4 mb-5 act-buttons">
-            <button type="button" class="btn btn-outline-secondary px-5 me-2">Volver</button>
-            <button type="button" class="btn btn-primary text-white px-5">Continuar</button>
+            <button type="button" class="btn btn-outline-secondary px-5">Volver</button>
+            <button data-bs-toggle="modal" data-bs-target="#exampleModal1" type="button"
+                class="btn btn-primary text-white px-5">Continuar</button>
         </div>
 
         </div>
@@ -256,28 +246,55 @@
     <!--Contenido fin-->
 
     <!--Footer-->
-    <section id="footer" class="footer mt-auto py-3">
+    <section id="footer" class="footer mt-auto">
         <div class="container">
-            <footer class="d-flex flex-wrap align-items-center py-4">
-                <p class="img-footer col-lg-4 col-10 offset-lg-0 offset-2 col-lg-4 text-muted">
-                    <a href="#"><img class="col-2 logo-footer me-4" alt="BNP Paribas Cardif"
-                            src="../../../build/img/logo_itau_footer.svg" /></a>
-                    <a href="#"><img class="col-5 logo-footer" alt="BNP Paribas Cardif"
-                            src="../../../build/img/cardif-footer.svg" /></a>
-                </p>
-                <div class="text-footer-1 col-lg-6 col-12 justify-content-end">
-                    <p>
-                        Infórmese sobre la garantía estatal de los depósitos en su banco o en www.cmfchile.cl
+            <footer class="d-flex flex-wrap align-items-center py-3">
+                <div class="img-footer col-lg-3 col-12 offset-lg-0 text-muted">
+                    <a href="#"><img class="col-lg-2 logo-footer offset-md-3 offset-lg-2 me-3 offset-2" alt="BNP Paribas Cardif"
+                        src="../../../build/img/logo_itau_footer.svg"  /></a>
+                    <a href="#"><img class="col-lg-6 col-5 col-md-4  logo-footer" alt="BNP Paribas Cardif"
+                        src="../../../build/img/cardif-footer.svg" /></a>
+                    </div>
+                <div class="text-footer-1 col-lg-9 col-12 justify-content-end text-sm-center text-center text-lg-start mt-4 mt-lg-0">
+                    <p class="mb-0">Infórmese sobre la garantía estatal de los depósitos en su banco o en www.cmfchile.cl</p>
+                    <p>© 2022 Banco Itaú. Todos los derechos reservados. Av. Presidente Riesco 5537, Las Condes. Santiago de Chile.
                     </p>
-                    <span class="text-footer-2 col-8 justify-content-end">© 2022 Banco Itaú.
-                        Todos los derechos reservados. Av. Presidente Riesco 5537, Las Condes. Santiago de Chile.
-                    </span>
                 </div>
             </footer>
         </div>
     </section>
     <!--Fin Footer-->
 
+    <!--Modal 1-->
+    <div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true"
+        data-bs-backdrop="static" data-bs-keyboard="false">
+        <div class="modal-dialog">
+            <div class="modal-content">
+
+                <div class="modal-body text-center">
+                    <div class="d-flex flex-column justify-content-center row">
+                        <div class="col">
+                            <img class="img-informacion-modal" alt="" style="width: 50px;">
+                        </div>
+                        <h1>Importante:</h1>
+                        <p class="description">Ten en cuenta que te pediremos adjuntar documentación más adelante para
+                            la evaluación del caso como los siguientes documentos y otros:</p>
+                        <ul class="ms-5 text-start">
+                            <li class="fw-bolder">Finiquito de trabajo ante notario</li>
+                            <li class="fw-bolder">Certificado de cotizaciones</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <section class="container text-center act-buttons">
+                        <button type="button" data-bs-dismiss="modal" class="btn btn-outline-secondary px-5">Cancelar</button>
+                        <button type="button" class="btn btn-primary text-white px-5">Continuar</button>
+                    </section>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Fin Modal-->
 
 </body>
 

@@ -24,8 +24,8 @@
 
         <div>
           <a href="/" class="d-flex align-items-center col-md-3 mb-2 mb-md-0 text-w text-decoration-none">
-            <img src="../../../build/img/logo-itau.svg" alt="Itaú" class="pe-4">
-            <img src="../../../build/img/logo-bnp.svg" alt="BNP">
+            <img alt="Logo" class="image-logo pe-4">
+            <img class="image-logo-centrado" alt="BNP">
           </a>
         </div>
 
@@ -34,9 +34,9 @@
           <div>
             <a class="nav-link dropdown-toggle log-ejecutivo" href="#" id="navbarDropdown" role="button"
               data-bs-toggle="dropdown" aria-expanded="false">
-              <img src="../../../build/img/ic_log-ejecutivo.svg">
+              <img class="img_log-ejecutivo">
               Hola, Leslie
-              <img src="../../../build/img/Chevron.svg" alt="">
+              <i class="bi bi-chevron-down"></i>
 
             </a>
             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
@@ -54,7 +54,7 @@
 
           <div class="mt-1 ms-3">
             <a class="text-decoration-none text-black" href="#" role="button">
-              <img src="../../../build/img/Icono cerrar sesión.svg" alt="">
+              <img class="img_cerrar_sesion" alt="">
               Cerrar sesión</a>
           </div>
         </div>
@@ -83,12 +83,14 @@
       </header>
 
     </div>
-    <div class="row d-lg-none d-sm-block">
-      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="d-lg-none d-sm-block">
+      <nav class="navbar navbar-expand-lg bg-light">
+        <div class="container">
+          <div class="navbar-brand" href="#">
+            <a href=""><img alt="Logo" class="image-logo me-2"></a>
+            <a href=""><img class="image-logo-centrado" alt="BNP"></a>
+          </div>
 
-        <div class="container-fluid justify-content-around">
-          <img src="../../../build/img/logo-itau.svg" alt="Itaú" class="ms-2">
-          <img src="../../../build/img/logo-bnp.svg" alt="BNP" class="ms-0">
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
             data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
             aria-label="Toggle navigation">
@@ -100,13 +102,13 @@
                 <a class="nav-link active" aria-current="page" href="#">Inicio</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link text-white" href="#">Contratar seguros</a>
+                <a class="nav-link" href="#">Contratar seguros</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link text-white" href="#">Ver seguros contratados</a>
+                <a class="nav-link" href="#">Ver seguros contratados</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link text-white" href="#">Denunciar un siniestro</a>
+                <a class="nav-link" href="#">Denunciar un siniestro</a>
               </li>
             </ul>
 
@@ -121,9 +123,9 @@
   <main id="contenedor-mayor" class="flex-shrink-0 mt-4 col-sm-8 col-md-12 col-lg-12">
 
     <div class="container">
-      <div class="featurette g-0 bg-white border rounded overflow-hidden flex-md-row mb-4 shadow-sm">
-        <div class="text-center my-5 p-5">
-          <img src="../../../build/img/confirmación naranja.svg" alt="" class="my-4">
+      <div class="featurette itau border overflow-hidden shadow-sm">
+        <div class="text-center">
+          <img class="img-confirmacion-naranja" alt="" class="my-4">
           <h2 class="text-center mb-20">Declaración ingresada exitosamente</h2>
           <p>En unos minutos recibirás un email de confirmación con el(los) números(s) de siniestro(s) </br>
             asignados(s) a tu declaración. Dentro de los próximos 10 días corridos recibirás el resultado de la </br>
@@ -144,22 +146,21 @@
   <!--Contenido fin-->
 
   <!--Footer-->
-  <section id="footer" class="footer mt-auto py-3">
+  <section id="footer" class="footer mt-auto">
     <div class="container">
-      <footer class="d-flex flex-wrap align-items-center py-4">
-        <p class="img-footer col-lg-4 col-10 offset-lg-0 offset-2 col-lg-4 text-muted">
-          <a href="#"><img class="col-2 logo-footer me-4" alt="BNP Paribas Cardif"
+      <footer class="d-flex flex-wrap align-items-center py-3">
+        <div class="img-footer col-lg-3 col-12 offset-lg-0 text-muted">
+          <a href="#"><img class="col-lg-2 logo-footer offset-md-3 offset-lg-2 me-3 offset-2" alt="BNP Paribas Cardif"
               src="../../../build/img/logo_itau_footer.svg" /></a>
-          <a href="#"><img class="col-5 logo-footer" alt="BNP Paribas Cardif"
+          <a href="#"><img class="col-lg-6 col-5 col-md-4  logo-footer" alt="BNP Paribas Cardif"
               src="../../../build/img/cardif-footer.svg" /></a>
-        </p>
-        <div class="text-footer-1 col-lg-6 col-12 justify-content-end">
-          <p>
-            Infórmese sobre la garantía estatal de los depósitos en su banco o en www.cmfchile.cl
+        </div>
+        <div
+          class="text-footer-1 col-lg-9 col-12 justify-content-end text-sm-center text-center text-lg-start mt-4 mt-lg-0">
+          <p class="mb-0">Infórmese sobre la garantía estatal de los depósitos en su banco o en www.cmfchile.cl</p>
+          <p>© 2022 Banco Itaú. Todos los derechos reservados. Av. Presidente Riesco 5537, Las Condes. Santiago de
+            Chile.
           </p>
-          <span class="text-footer-2 col-8 justify-content-end">© 2022 Banco Itaú.
-            Todos los derechos reservados. Av. Presidente Riesco 5537, Las Condes. Santiago de Chile.
-          </span>
         </div>
       </footer>
     </div>

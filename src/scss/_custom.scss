@@ -15,6 +15,7 @@ $light-01: #fee082;
 $light-02: #fef3e0;
 $azul: #003399;
 $azul-hover: #00287a;
+$azul-light: #b5c1f5;
 $light-03: #c2c9ea;
 $light-04: #e7eaf7;
 $verde: #4cac8b;
@@ -22,8 +23,32 @@ $neutral: #faf7f5;
 $titulo-cabecera: #231d19;
 $textos: #56504c;
 $placeholder: #89837f;
+$gray: #939598;
+$gray-2: #F9F6F5;
 $bordes-card: #efe9e5;
 $yellow: #f5c66d;
+$light-05: #fee0b2;
+$alert-warning:#F1AE2F;
+$alert-error: #B71C1C;
+$alert-ligth: #F6E1E1;
+$box: rgba(91, 81, 73, 0.2);
+$ligth-06:#CCCCCC;
+$ligth-07:#F3F0EF;
+$emitido: #008859;
+
+// Fonts
+@font-face {
+  font-family: "ItauRegular";
+  src: url("../../src/fonts/Itau/ItauTextPro_W_Rg.woff2");
+}
+
+@font-face {
+  font-family: "ItauDisplay";
+  src: url("../../src/fonts/Itau/ItauDisplayPro_W_Bd.woff2");
+}
+
+//Fin Itau
+
 
 // CLA
 $azul: #003399;
@@ -31,30 +56,75 @@ $azul-hover: #00287a;
 $light-03: #c2c9ea;
 $light-04: #e7eaf7;
 
+
+//FORUM
+$blue-dark:#00194C;
+$blue-medium:#2B3F79;
+$blue-light:#5B69A8;
+$main-dark:#006CAC;
+$main-medium:#009ADE;
+$main-light:#61CCFF;
+$mint-dark:#00AB82;
+$mint-medium:#00DEB2;
+$mint-light:#65FFE4;
+$orange-dark:#A40000;
+$orange-medium:#DE4300;
+$orange-light:#FF7637;
+$neutral-dark:#333333;
+$neutral-medium:#999999;
+$neutral-light:#CCCCCC;
+$neutral-light2:#F1F1F1;
+$white:#FFFFFF;
+
+$warning:#FFD600;
+$warning-hover:#FFFF8D;
+$danger:#BA000D;
+$danger-hover:#F44336;
+$success:#005F00;
+$success-hover:#67BF45;
+
+@font-face {
+  font-family: "ForumBold";
+  src: url("../../src/fonts/Forum/Comfortaa-Bold.ttf");
+}
+
+@font-face {
+  font-family: "ForumLight";
+  src: url("../../src/fonts/Forum/Comfortaa-Light.ttf");
+}
+
+@font-face {
+  font-family: "ForumMedium";
+  src: url("../../src/fonts/Forum/Comfortaa-Medium.ttf");
+}
+
+@font-face {
+  font-family: "ForumSemibold";
+  src: url("../../src/fonts/Forum/Comfortaa-SemiBold.ttf");
+}
+
+@font-face {
+  font-family: "ForumRegular";
+  src: url("../../src/fonts/Forum/Comfortaa-Regular.ttf");
+}
+//fin forum;
+
 // Fin Reescribir Colores
 
 // Colores
 $primary: $naranja;
-$secondary: #003399;
+$secondary: $azul;
 $success: $light-03;
 $info: #007ab7;
 $light: #ffffff;
 $dark: $azul-hover;
+$warning: #ec7000; //luis
+$error: #ff0000; //luis
+$gray-light: #D9D3CF; //luis
 
 //botones
 $btn-border-width: 2px;
 $btn-padding-y: 10px;
-
-//boton disabled
-.btn:disabled,
-.btn.disabled,
-fieldset:disabled .btn {
-  color: #56504c !important;
-  pointer-events: none;
-  background-color: #d9d3cf !important;
-  border-color: #d9d3cf !important;
-  opacity: var(--bs-btn-disabled-opacity);
-}
 
 //inputs
 $input-padding-y-lg: 11px;
@@ -63,7 +133,7 @@ $input-font-size: 0.9rem;
 $input-font-weight: normal;
 
 //floating inputs
-$form-floating-label-transform: translateY(-25%) scale(0.9) translateX(10%);
+//$form-floating-label-transform: translateY(-25%) scale(0.9) translateX(10%);
 $form-floating-transition: opacity 0.1s ease-in-out, transform 0.1s ease-in-out;
 
 //form
@@ -72,26 +142,13 @@ $form-select-border-radius: 8px;
 $form-select-border-radius-lg: 8px;
 
 //acordeon
-$accordion-border-color: $bordes-card;
 $accordion-border-radius: 8px;
 $accordion-inner-border-radius: 8px;
-$accordion-icon-color: $naranja;
-$accordion-button-icon: url(../img/ic_flecha.svg);
-
-//Tooltips
-$tooltip-bg: #000000;
+//$accordion-button-icon: url(../img/ic_flecha.svg);
 
 //modal
-$modal-content-color: $textos;
 $modal-content-border-radius: 12px;
 $modal-inner-padding: 32px;
-
-//tipografias
-$headings-font-family: "ItauDisplay";
-$headings-color: $titulo-cabecera;
-
-$itautextpro: "itauRegular";
-$itaudisplay: "ItauDisplay";
 
 //alertas
 $alert-border-radius: 8px;
@@ -108,33 +165,176 @@ $position-values: (
   100: 100%,
 );
 
+
+.form-floating>label {
+  padding: 0.75rem !important;
+}
+
+
+.row.block2 {
+  height: 60px;
+}
+
+.row.block4 {
+  height: 40px;
+}
+
 //Border
 $toast-border-radius: 8px;
 $border-radius: 8px;
 
-//Year active naranja
-.datepicker table tr td span.active,
-.datepicker table tr td span.active:hover,
-.datepicker table tr td span.active.disabled,
-.datepicker table tr td span.active.disabled:hover {
-  background-image: -webkit-linear-gradient(top, #ec7000, #ec7000) !important;
+//acordeones en tablas luis
+.table-sin-bordes {
+  border-style: hidden;
 }
 
-body {
-  font-family: "ItauRegular", sans-serif; /*Specify your font name here*/
-  -ms-text-size-adjust: 100%;
-  -webkit-text-size-adjust: 100%;
-}
-// Fonts
-@font-face {
-  font-family: "ItauRegular";
-  src: url("../../src/fonts/ItauTextPro_W_Rg.woff2");
+//custom chip luis
+span.custom-chip {
+  border-width: 1px;
+  border-style: solid;
+  border-radius: 16px;
+  padding: 4px 8px;
+  //  border-color: blue;
 }
 
-@font-face {
-  font-family: "ItauDisplay";
-  src: url("../../src/fonts/ItauDisplayPro_W_Bd.woff2");
+tbody.table-sin-bordes.tabla-socio tr td a {
+  cursor: pointer;
 }
+
+//fin custom chip luis
+
+.box-coberturas-row-top.last {
+  border-radius: 0px 11px 0px 0px;
+}
+
+h3.titulo-archivo-adjunto::before {
+  counter-increment: section;
+  content: " " counter(section) ". ";
+}
+
+h5.titulo-archivo-adjunto::before {
+  counter-increment: section;
+  content: " " counter(section) ". ";
+}
+
+.top3.tablaSiniestro {
+  gap: 0px
+}
+
+.card-body-table .monto {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  padding-bottom: 0.5rem;
+  padding-top: 0.5rem;
+}
+
+.monto {
+  align-self: stretch;
+  position: relative;
+  line-height: 140%;
+}
+
+//fin cindy
+
+.detalle-siniestro-top table tbody {
+  height: 114px;
+}
+
+//Splide
+
+ul.splide__list {
+  backface-visibility: hidden;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  padding: 0 !important;
+  margin: 0px 0px 70px 0px !important;
+}
+
+.splide__pagination li {
+  margin: 7px !important;
+}
+
+
+.splide__pagination {
+  bottom: 0.5em;
+  left: 0;
+  padding: 0 1em;
+  position: absolute;
+  right: 0;
+  z-index: 1;
+  //top: 320px;
+}
+
+.splide__track.splide__track--draggable {
+  padding-left: 1% !important;
+}
+
+.splide__arrow--prev {
+  left: -2em !important;
+}
+
+.splide__arrow--next {
+  right: -2em !important;
+}
+
 
 // Importar Bootstrap
 @import "../../node_modules/bootstrap/scss/bootstrap.scss";
+
+//tablas responsivas Luis
+@include media-breakpoint-down(sm) {
+
+  table.tabla-custom {
+    width: 100%;
+  }
+
+  .tabla-socio tr,
+  .tabla-socio thead {
+    height: auto;
+    vertical-align: middle;
+  }
+
+  table.tabla-custom td[data-titulo] {
+    display: flex;
+  }
+
+  table.tabla-custom td[data-titulo]::before {
+    content: attr(data-titulo);
+    width: 150px;
+    font-weight: bold;
+    margin-right: 10px;
+  }
+
+  table.tabla-custom thead {
+    display: none;
+  }
+
+  .act-buttons {
+    display: flex;
+    flex-flow: column-reverse;
+
+    button {
+      margin-top: 10px;
+    }
+  }
+}
+
+@include media-breakpoint-up(md) {
+
+  #splidesiniestro ul.splide__pagination {
+    position: relative;
+    top: 10px;
+  }
+
+  .act-buttons>button {
+    margin-right: 0.5rem
+  }
+}
+
+
+@include media-breakpoint-up(lg) {
+  .act-buttons>button {
+    margin-right: 0.5rem
+  }
+}

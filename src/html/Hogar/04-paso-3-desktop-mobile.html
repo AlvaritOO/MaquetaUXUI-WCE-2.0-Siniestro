@@ -24,8 +24,8 @@
 
                 <div>
                     <a href="/" class="d-flex align-items-center col-md-3 mb-2 mb-md-0 text-w text-decoration-none">
-                        <img src="../../../build/img/logo-itau.svg" alt="Itaú" class="pe-4">
-                        <img src="../../../build/img/logo-bnp.svg" alt="BNP">
+                        <img alt="Logo" class="image-logo pe-4">
+                        <img class="image-logo-centrado" alt="BNP">
                     </a>
                 </div>
 
@@ -34,9 +34,9 @@
                     <div>
                         <a class="nav-link dropdown-toggle log-ejecutivo" href="#" id="navbarDropdown" role="button"
                             data-bs-toggle="dropdown" aria-expanded="false">
-                            <img src="../../../build/img/ic_log-ejecutivo.svg">
+                            <img class="img_log-ejecutivo">
                             Hola, Leslie
-                            <img src="../../../build/img/Chevron.svg" alt="">
+                            <i class="bi bi-chevron-down"></i>
 
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
@@ -54,7 +54,7 @@
 
                     <div class="mt-1 ms-3">
                         <a class="text-decoration-none text-black" href="#" role="button">
-                            <img src="../../../build/img/Icono cerrar sesión.svg" alt="">
+                            <img class="img_cerrar_sesion" alt="">
                             Cerrar sesión</a>
                     </div>
                 </div>
@@ -85,36 +85,36 @@
             </header>
 
         </div>
-        <div class="row d-lg-none d-sm-block">
-            <nav class="navbar navbar-expand-lg navbar-light bg-light">
-
-                <div class="container-fluid justify-content-around">
-                    <img src="../../../build/img/logo-itau.svg" alt="Itaú" class="ms-2">
-                    <img src="../../../build/img/logo-bnp.svg" alt="BNP" class="ms-0">
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                        aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse ms-3" id="navbarSupportedContent">
-                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                            <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="#">Inicio</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Contratar seguros</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Ver seguros contratados</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Denunciar un siniestro</a>
-                            </li>
-                        </ul>
-
+        <div class="d-lg-none d-sm-block">
+            <nav class="navbar navbar-expand-lg bg-light">
+                <div class="container">
+                    <div class="navbar-brand" href="#">
+                        <a href=""><img alt="Logo" class="image-logo me-2"></a>
+                        <a href=""><img class="image-logo-centrado" alt="BNP"></a>
                     </div>
+    
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse ms-3" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Contratar seguros</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Ver seguros contratados</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Denunciar un siniestro</a>
+                        </li>
+                    </ul>
+    
                 </div>
-            </nav>
+                </div>
+              </nav>
         </div>
     </section>
     <!--NavBar fin-->
@@ -164,12 +164,12 @@
                     </h2>
                 </div>
                 <div
-                    class="pb-3 col-sm-12 col-md-12 col-lg-12 featurette g-0 bg-white border rounded overflow-hidden flex-md-row mb-4 shadow-sm">
-                    <p class="mt-4 mx-5">
+                    class="col-sm-12 col-md-12 col-lg-12 featurette itau border shadow-sm">
+                    <p class="">
                         Identifica el evento por el que fuiste sentenciado:
                     </p>
 
-                    <div class="col-lg-4 mx-5">
+                    <div class="col-lg-6">
                         <select class="form-select form-select-lg" aria-label=".form-select-lg example">
                             <option selected>Evento</option>
                             <option value="1">Muerte de terceras personas</option>
@@ -179,35 +179,29 @@
                         </select>
                     </div>
 
-                    <p class="mt-4 mx-5 my-2">
-                        Describe la situación ocurrida:
-                    </p>
-                    <div class="col-sm-12 col-md-12 col-lg-4 mx-5 mb-4">
-                        <div class="form-floating col-sm-12 col-md-12 col-lg-12">
-                            <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2"
-                                style="height: 100px; width: 440px;"></textarea>
-                            <label for="floatingTextarea2">Mensaje</label>
-                        </div>
-                    </div>
+                    <div class="mb-3 col-lg-6 mt-4">
+                        <label for="exampleFormControlTextarea1" class="form-label">Describe la situación ocurrida:</label>
+                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Relata por escrito con el mayor detalle posible lo que te ocurrió el día del siniestro*"></textarea>
+                      </div>
 
-                    <div class="col-sm-12 col-md-12 col-lg-6 mx-5">
+                    <div class="col-sm-12 col-md-12 col-lg-6">
                         <p class="text-danger fw-bold">Debes describir lo que te ocurrió con el mayor detalle posible.
                         </p>
                     </div>
 
-                    <div class="col-sm-10 col-md-10 col-lg-12 form-check mx-5 mb-4">
+                    <div class="col-sm-10 col-md-10 col-lg-12 form-check mb-4">
                         <input class="form-check-input" type="checkbox" name="flexRadioDefault" id="flexRadioDefault1">
                         <label class="form-check-label" for="flexRadioDefault1">
                             Confirmo que el texto ingresado será usado como una declaración jurada simple.
                         </label>
                     </div>
 
-                    <div class="row col-sm-10 col-md-6 col-lg-6 alert alert-warning fade show mt-2 mx-5 mb-4"
+                    <div class="row col-sm-12 col-md-12 col-lg-6 alert alert-warning fade show mt-2 mb-4"
                         role="alert">
                         <div class="aviso-alerta">
                             <div class="col">
                                 <div class="col">
-                                    <img src="../../../build/img/alerta.svg">
+                                    <img class="img-alerta">
                                 </div>
                             </div>
                         </div>
@@ -228,7 +222,7 @@
         </div>
 
         <div class="container text-end mt-4 mb-5 act-buttons">
-            <button type="button" class="btn btn-outline-secondary px-5 me-2">Volver</button>
+            <button type="button" class="btn btn-outline-secondary px-5">Volver</button>
             <button type="button" class="btn btn-primary text-white px-5">Continuar</button>
         </div>
 
@@ -238,22 +232,19 @@
     <!--Contenido fin-->
 
     <!--Footer-->
-    <section id="footer" class="footer mt-auto py-3">
+    <section id="footer" class="footer mt-auto">
         <div class="container">
-            <footer class="d-flex flex-wrap align-items-center py-4">
-                <p class="img-footer col-lg-4 col-10 offset-lg-0 offset-2 col-lg-4 text-muted">
-                    <a href="#"><img class="col-2 logo-footer me-4" alt="BNP Paribas Cardif"
-                            src="../../../build/img/logo_itau_footer.svg" /></a>
-                    <a href="#"><img class="col-5 logo-footer" alt="BNP Paribas Cardif"
-                            src="../../../build/img/cardif-footer.svg" /></a>
-                </p>
-                <div class="text-footer-1 col-lg-6 col-12 justify-content-end">
-                    <p>
-                        Infórmese sobre la garantía estatal de los depósitos en su banco o en www.cmfchile.cl
+            <footer class="d-flex flex-wrap align-items-center py-3">
+                <div class="img-footer col-lg-3 col-12 offset-lg-0 text-muted">
+                    <a href="#"><img class="col-lg-2 logo-footer offset-md-3 offset-lg-2 me-3 offset-2" alt="BNP Paribas Cardif"
+                        src="../../../build/img/logo_itau_footer.svg"  /></a>
+                    <a href="#"><img class="col-lg-6 col-5 col-md-4  logo-footer" alt="BNP Paribas Cardif"
+                        src="../../../build/img/cardif-footer.svg" /></a>
+                    </div>
+                <div class="text-footer-1 col-lg-9 col-12 justify-content-end text-sm-center text-center text-lg-start mt-4 mt-lg-0">
+                    <p class="mb-0">Infórmese sobre la garantía estatal de los depósitos en su banco o en www.cmfchile.cl</p>
+                    <p>© 2022 Banco Itaú. Todos los derechos reservados. Av. Presidente Riesco 5537, Las Condes. Santiago de Chile.
                     </p>
-                    <span class="text-footer-2 col-8 justify-content-end">© 2022 Banco Itaú.
-                        Todos los derechos reservados. Av. Presidente Riesco 5537, Las Condes. Santiago de Chile.
-                    </span>
                 </div>
             </footer>
         </div>

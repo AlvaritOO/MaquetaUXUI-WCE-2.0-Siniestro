@@ -24,8 +24,8 @@
 
                 <div>
                     <a href="/" class="d-flex align-items-center col-md-3 mb-2 mb-md-0 text-w text-decoration-none">
-                        <img src="../../../build/img/logo-itau.svg" alt="Itaú" class="pe-4">
-                        <img src="../../../build/img/logo-bnp.svg" alt="BNP">
+                        <img alt="Logo" class="image-logo pe-4">
+                        <img class="image-logo-centrado" alt="BNP">
                     </a>
                 </div>
 
@@ -34,9 +34,9 @@
                     <div>
                         <a class="nav-link dropdown-toggle log-ejecutivo" href="#" id="navbarDropdown" role="button"
                             data-bs-toggle="dropdown" aria-expanded="false">
-                            <img src="../../../build/img/ic_log-ejecutivo.svg">
+                            <img class="img_log-ejecutivo">
                             Hola, Leslie
-                            <img src="../../../build/img/Chevron.svg" alt="">
+                            <i class="bi bi-chevron-down"></i>
 
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
@@ -54,7 +54,7 @@
 
                     <div class="mt-1 ms-3">
                         <a class="text-decoration-none text-black" href="#" role="button">
-                            <img src="../../../build/img/Icono cerrar sesión.svg" alt="">
+                            <img class="img_cerrar_sesion" alt="">
                             Cerrar sesión</a>
                     </div>
                 </div>
@@ -85,36 +85,36 @@
             </header>
 
         </div>
-        <div class="row d-lg-none d-sm-block">
-            <nav class="navbar navbar-expand-lg navbar-light bg-light">
-
-                <div class="container-fluid justify-content-around">
-                    <img src="../../../build/img/logo-itau.svg" alt="Itaú" class="ms-2">
-                    <img src="../../../build/img/logo-bnp.svg" alt="BNP" class="ms-0">
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                        aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse ms-3" id="navbarSupportedContent">
-                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                            <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="#">Inicio</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Contratar seguros</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Ver seguros contratados</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Denunciar un siniestro</a>
-                            </li>
-                        </ul>
-
+        <div class="d-lg-none d-sm-block">
+            <nav class="navbar navbar-expand-lg bg-light">
+                <div class="container">
+                    <div class="navbar-brand" href="#">
+                        <a href=""><img alt="Logo" class="image-logo me-2"></a>
+                        <a href=""><img class="image-logo-centrado" alt="BNP"></a>
                     </div>
+    
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse ms-3" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Contratar seguros</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Ver seguros contratados</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Denunciar un siniestro</a>
+                        </li>
+                    </ul>
+    
                 </div>
-            </nav>
+                </div>
+              </nav>
         </div>
     </section>
     <!--NavBar fin-->
@@ -157,84 +157,28 @@
                         Seguros disponibles para declarar
                     </h1>
                 </div>
-                <div class="pb-3 featurette g-0 bg-white border rounded overflow-hidden flex-md-row shadow-sm">
+                <div class="featurette itau border overflow-hidden flex-md-row shadow-sm">
 
-                    <div class="col-lg-3 mx-5 my-4">
+                    <div class="col-lg-3">
                         <select class="form-select form-select-lg" aria-label=".form-select-lg example">
                             <option selected>Filtrar por</option>
-                            <option value="1">Vigentes</option>
-                            <option value="2">No vigentes</option>
-                            <option value="3">Declaración ingresada</option>
-                            <option value="4">Todas</option>
+                            <option value="1">Todas</option>
+                            <option value="2">Vigentes</option>
+                            <option value="3">No vigentes</option>
+                            <option value="4">Declaración ingresada</option>
                         </select>
                     </div>
-
-                    <section class="splide px-5" aria-label="Splide Basic HTML Example">
+                    
+                    <section class="card-splide splide mt-4" aria-label="Splide Basic HTML Example">
                         <div class="splide__track">
                             <ul class="splide__list" style="height: 660px;">
                                 <li class="splide__slide custom-card">
-                                    <div class="card-seguros-asociados-2" style="height: auto;">
+                                    <div class="card-seguros-asociados-2 active ">
                                         <div class="top2">
-                                            <div class="taginfo2">
+                                            <div class="taginfo1">
                                                 <div class="recomendado">Vigente</div>
                                             </div>
-                                            <h1 class="nombre-seguro-2">Seguro Hogar 1</h1>
-                                            <div class="cobertura">
-                                                <p class="text-cards-1 text-center">La Florida</p>
-                                                <p class="text-cards-1 text-center">
-                                                    <b>Canelo 123 10B</b>
-                                                </p>
-                                            </div>
-                                        </div>
-                                        <div class="description">
-                                            <div class="content1">
-                                                <div class="monto">
-                                                    <p class="text-cards-1">
-                                                        <b>Póliza:</b>
-                                                    </p>
-                                                    <p class="text-cards-1">123456</p>
-                                                </div>
-                                                <div class="monto">
-                                                    <p class="text-cards-1">
-                                                        <b>N° Seguro:</b>
-                                                    </p>
-                                                    <p class="text-cards-1">0001</p>
-                                                </div>
-                                                <div class="monto">
-                                                    <p class="text-cards-1">
-                                                        <b>Fecha de inicio de vigencia:</b>
-                                                    </p>
-                                                    <p class="text-cards-1">16/09/2023</p>
-                                                </div>
-                                                <div class="monto">
-                                                    <p class="text-cards-1">
-                                                        <b>Fecha de termino de vigencia:</b>
-                                                    </p>
-                                                    <p class="text-cards-1">16/10/2023</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="divisor-line"></div>
-                                        <div class="bottom">
-                                            <div class="monto mb-5">Seguro disponible para evaluar</div>
-                                        </div>
-
-                                    </div>
-                                </li>
-
-                                <li class="splide__slide custom-card">
-                                    <div class="card-seguros-asociados-2 ">
-                                        <div class="top2">
-                                            <div class="taginfo2">
-                                                <div class="recomendado">Vigente</div>
-                                            </div>
-                                            <h1 class="nombre-seguro-2">Seguro Hogar 2</h1>
-                                            <div class="cobertura">
-                                                <p class="text-cards-1 text-center">Las Condes</p>
-                                                <p class="text-cards-1 text-center">
-                                                    <b>Colón 987 5F</b>
-                                                </p>
-                                            </div>
+                                            <h1 class="nombre-seguro-2">Seguro cesantia 2</h1>
                                         </div>
                                         <div class="description">
                                             <div class="content1">
@@ -266,7 +210,51 @@
                                         </div>
                                         <div class="divisor-line"></div>
                                         <div class="bottom">
-                                            <div class="monto mb-5">Seguro disponible para evaluar</div>
+                                            <div class="monto mb-5 footer-monto-1">Seguro disponible para evaluar</div>
+                                        </div>
+
+                                    </div>
+                                </li>
+
+                                <li class="splide__slide custom-card">
+                                    <div class="card-seguros-asociados-2 active ">
+                                        <div class="top2">
+                                            <div class="taginfo1">
+                                                <div class="recomendado">Vigente</div>
+                                            </div>
+                                            <h1 class="nombre-seguro-2">Seguro cesantia 2</h1>
+                                        </div>
+                                        <div class="description">
+                                            <div class="content1">
+                                                <div class="monto">
+                                                    <p class="text-cards-1">
+                                                        <b>Póliza:</b>
+                                                    </p>
+                                                    <p class="text-cards-1">123456</p>
+                                                </div>
+                                                <div class="monto">
+                                                    <p class="text-cards-1">
+                                                        <b>N° Seguro:</b>
+                                                    </p>
+                                                    <p class="text-cards-1">0002</p>
+                                                </div>
+                                                <div class="monto">
+                                                    <p class="text-cards-1">
+                                                        <b>Fecha de inicio de vigencia:</b>
+                                                    </p>
+                                                    <p class="text-cards-1">16/09/2023</p>
+                                                </div>
+                                                <div class="monto">
+                                                    <p class="text-cards-1">
+                                                        <b>Fecha de termino de vigencia:</b>
+                                                    </p>
+                                                    <p class="text-cards-1">16/10/2023</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="divisor-line"></div>
+                                        <div class="bottom">
+                                            <div class="monto mb-5 footer-monto-1">Seguro disponible para evaluar</div>
                                         </div>
 
                                     </div>
@@ -274,17 +262,11 @@
 
                                 <li class="splide__slide custom-card">
                                     <div class="card-seguros-asociados-2">
-                                        <div class="top2">
-                                            <div class="taginfo2">
-                                                <div class="recomendado">Vigente</div>
+                                        <div class="top3">
+                                            <div class="taginfo3">
+                                                <div class="recomendado">No Vigente</div>
                                             </div>
-                                            <h1 class="nombre-seguro-2">Seguro Hogar 3</h1>
-                                            <div class="cobertura">
-                                                <p class="text-cards-1 text-center">Independencia</p>
-                                                <p class="text-cards-1 text-center">
-                                                    <b>Av. Providencia 2A</b>
-                                                </p>
-                                            </div>
+                                            <h1 class="nombre-seguro-2">Seguro cesantia 3</h1>
                                         </div>
                                         <div class="description">
                                             <div class="content1">
@@ -316,7 +298,7 @@
                                         </div>
                                         <div class="divisor-line"></div>
                                         <div class="bottom">
-                                            <div class="monto mb-5">Seguro disponible para evaluar</div>
+                                            <div class="monto mb-5 footer-monto-2">El seguro no se encuentra vigente a la fecha de ocurrencia</div>
                                         </div>
                                     </div>
                                 </li>
@@ -324,15 +306,9 @@
                                     <div class="card-seguros-asociados-2">
                                         <div class="top2">
                                             <div class="taginfo2">
-                                                <div class="recomendado">Vigente</div>
+                                                <div class="recomendado">Declaración ingresada</div>
                                             </div>
-                                            <h1 class="nombre-seguro-2">Seguro Hogar 4</h1>
-                                            <div class="cobertura">
-                                                <p class="text-cards-1 text-center">Independencia</p>
-                                                <p class="text-cards-1 text-center">
-                                                    <b>Holanda 91 6C</b>
-                                                </p>
-                                            </div>
+                                            <h1 class="nombre-seguro-2">Seguro cesantia 4</h1>
                                         </div>
                                         <div class="description">
                                             <div class="content1">
@@ -364,34 +340,13 @@
                                         </div>
                                         <div class="divisor-line"></div>
                                         <div class="bottom">
-                                            <div class="monto mb-5">Seguro disponible para evaluar</div>
+                                            <div class="monto mb-5 footer-monto-2">Ya existe una declaración ingresada con el número de siniestro XXXXX</div>
                                         </div>
                                     </div>
                                 </li>
                             </ul>
                         </div>
                     </section>
-
-
-
-                </div>
-
-                <div class="row col-sm-6 col-lg-6 alert alert-warning fade show mt-4 mx-1 mb-4" role="alert">
-                    <div class="aviso-alerta">
-                        <div class="col">
-                            <div class="col">
-                                <img src="../../../build/img/alerta.svg">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-10 texto">
-                        <b class="mensaje-de-informacion">Recuerda:</b>
-                        <div class="mensaje-de-informacion-2">
-                            <span>Para continuar con la solicitud es necesario que selecciones el seguro que deseas
-                                declarar.
-                            </span>
-                        </div>
-                    </div>
                 </div>
             </div>
 
@@ -400,7 +355,7 @@
 
         <!--Buttons-->
         <section class="container text-end mt-4 mb-5 act-buttons">
-            <button type="button" class="btn btn-outline-secondary px-5 me-2">Volver</button>
+            <button type="button" class="btn btn-outline-secondary px-5">Volver</button>
             <button type="button" class="btn btn-primary text-white px-5">Continuar</button>
         </section>
         <!--Fin Buttons-->
@@ -409,45 +364,19 @@
     <!--Contenido fin-->
 
     <!--Footer-->
-    <section id="footer" class="footer mt-auto py-3 d-none d-sm-none d-lg-block">
+    <section id="footer" class="footer mt-auto">
         <div class="container">
-            <footer class="d-flex flex-wrap align-items-center py-4">
-                <p class="col-md-4 col-12 col-sm-2 col-lg-4 mb-0 text-muted">
-                    <a href="#"><img class="col-2 logo-footer me-4" alt="BNP Paribas Cardif"
-                            src="../../../build/img/logo_itau_footer.svg" /></a>
-                    <a href="#"><img class="col-5 logo-footer" alt="BNP Paribas Cardif"
-                            src="../../../build/img/cardif-footer.svg" /></a>
-                </p>
-                <p class="text-footer-1 col-6 justify-content-end">
-                    Infórmese sobre la garantía estatal de los depósitos en su banco o
-                    en www.cmfchile.cl <br /><span class="text-footer-2 col-8 justify-content-end">© 2022 Banco Itaú.
-                        Todos los
-                        derechos reservados. Av. Presidente
-                        Riesco 5537, Las Condes. Santiago de Chile.
-                    </span>
-                </p>
-            </footer>
-        </div>
-    </section>
-    <!--Fin Footer-->
-
-    <!--Footer-->
-    <section id="footer" class="footer mt-auto py-3">
-        <div class="container">
-            <footer class="d-flex flex-wrap align-items-center py-4">
-                <p class="img-footer col-lg-4 col-10 offset-lg-0 offset-2 col-lg-4 text-muted">
-                    <a href="#"><img class="col-2 logo-footer me-4" alt="BNP Paribas Cardif"
-                            src="../../../build/img/logo_itau_footer.svg" /></a>
-                    <a href="#"><img class="col-5 logo-footer" alt="BNP Paribas Cardif"
-                            src="../../../build/img/cardif-footer.svg" /></a>
-                </p>
-                <div class="text-footer-1 col-lg-6 col-12 justify-content-end">
-                    <p>
-                        Infórmese sobre la garantía estatal de los depósitos en su banco o en www.cmfchile.cl
+            <footer class="d-flex flex-wrap align-items-center py-3">
+                <div class="img-footer col-lg-3 col-12 offset-lg-0 text-muted">
+                    <a href="#"><img class="col-lg-2 logo-footer offset-md-3 offset-lg-2 me-3 offset-2" alt="BNP Paribas Cardif"
+                        src="../../../build/img/logo_itau_footer.svg"  /></a>
+                    <a href="#"><img class="col-lg-6 col-5 col-md-4  logo-footer" alt="BNP Paribas Cardif"
+                        src="../../../build/img/cardif-footer.svg" /></a>
+                    </div>
+                <div class="text-footer-1 col-lg-9 col-12 justify-content-end text-sm-center text-center text-lg-start mt-4 mt-lg-0">
+                    <p class="mb-0">Infórmese sobre la garantía estatal de los depósitos en su banco o en www.cmfchile.cl</p>
+                    <p>© 2022 Banco Itaú. Todos los derechos reservados. Av. Presidente Riesco 5537, Las Condes. Santiago de Chile.
                     </p>
-                    <span class="text-footer-2 col-8 justify-content-end">© 2022 Banco Itaú.
-                        Todos los derechos reservados. Av. Presidente Riesco 5537, Las Condes. Santiago de Chile.
-                    </span>
                 </div>
             </footer>
         </div>
