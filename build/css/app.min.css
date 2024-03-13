@@ -1,13 +1,33 @@
 @charset "UTF-8";
-
 @font-face {
   font-family: "ItauRegular";
-  src: url("../../src/fonts/ItauTextPro_W_Rg.woff2");
+  src: url("../../src/fonts/Itau/ItauTextPro_W_Rg.woff2");
 }
 @font-face {
   font-family: "ItauDisplay";
-  src: url("../../src/fonts/ItauDisplayPro_W_Bd.woff2");
+  src: url("../../src/fonts/Itau/ItauDisplayPro_W_Bd.woff2");
 }
+@font-face {
+  font-family: "ForumBold";
+  src: url("../../src/fonts/Forum/Comfortaa-Bold.ttf");
+}
+@font-face {
+  font-family: "ForumLight";
+  src: url("../../src/fonts/Forum/Comfortaa-Light.ttf");
+}
+@font-face {
+  font-family: "ForumMedium";
+  src: url("../../src/fonts/Forum/Comfortaa-Medium.ttf");
+}
+@font-face {
+  font-family: "ForumSemibold";
+  src: url("../../src/fonts/Forum/Comfortaa-SemiBold.ttf");
+}
+@font-face {
+  font-family: "ForumRegular";
+  src: url("../../src/fonts/Forum/Comfortaa-Regular.ttf");
+}
+
 /*!
  * Bootstrap  v5.3.2 (https://getbootstrap.com/)
  * Copyright 2011-2023 The Bootstrap Authors
@@ -25,7 +45,7 @@
   --bs-teal: #20c997;
   --bs-cyan: #0dcaf0;
   --bs-black: #000;
-  --bs-white: #fff;
+  --bs-white: #FFFFFF;
   --bs-gray: #6c757d;
   --bs-gray-dark: #343a40;
   --bs-gray-100: #f8f9fa;
@@ -41,40 +61,40 @@
   --bs-secondary: #003399;
   --bs-success: #c2c9ea;
   --bs-info: #007ab7;
-  --bs-warning: #f5c66d;
-  --bs-danger: #dc3545;
+  --bs-warning: #ec7000;
+  --bs-danger: #BA000D;
   --bs-light: #ffffff;
   --bs-dark: #00287a;
   --bs-primary-rgb: 236, 112, 0;
   --bs-secondary-rgb: 0, 51, 153;
   --bs-success-rgb: 194, 201, 234;
   --bs-info-rgb: 0, 122, 183;
-  --bs-warning-rgb: 245, 198, 109;
-  --bs-danger-rgb: 220, 53, 69;
+  --bs-warning-rgb: 236, 112, 0;
+  --bs-danger-rgb: 186, 0, 13;
   --bs-light-rgb: 255, 255, 255;
   --bs-dark-rgb: 0, 40, 122;
   --bs-primary-text-emphasis: #5e2d00;
   --bs-secondary-text-emphasis: #00143d;
   --bs-success-text-emphasis: #4e505e;
   --bs-info-text-emphasis: #003149;
-  --bs-warning-text-emphasis: #624f2c;
-  --bs-danger-text-emphasis: #58151c;
+  --bs-warning-text-emphasis: #5e2d00;
+  --bs-danger-text-emphasis: #4a0005;
   --bs-light-text-emphasis: #495057;
   --bs-dark-text-emphasis: #495057;
   --bs-primary-bg-subtle: #fbe2cc;
   --bs-secondary-bg-subtle: #ccd6eb;
   --bs-success-bg-subtle: #f3f4fb;
   --bs-info-bg-subtle: #cce4f1;
-  --bs-warning-bg-subtle: #fdf4e2;
-  --bs-danger-bg-subtle: #f8d7da;
+  --bs-warning-bg-subtle: #fbe2cc;
+  --bs-danger-bg-subtle: #f1cccf;
   --bs-light-bg-subtle: #fcfcfd;
   --bs-dark-bg-subtle: #ced4da;
   --bs-primary-border-subtle: #f7c699;
   --bs-secondary-border-subtle: #99add6;
   --bs-success-border-subtle: #e7e9f7;
   --bs-info-border-subtle: #99cae2;
-  --bs-warning-border-subtle: #fbe8c5;
-  --bs-danger-border-subtle: #f1aeb5;
+  --bs-warning-border-subtle: #f7c699;
+  --bs-danger-border-subtle: #e3999e;
   --bs-light-border-subtle: #e9ecef;
   --bs-dark-border-subtle: #adb5bd;
   --bs-white-rgb: 255, 255, 255;
@@ -88,7 +108,7 @@
   --bs-body-line-height: 1.5;
   --bs-body-color: #212529;
   --bs-body-color-rgb: 33, 37, 41;
-  --bs-body-bg: #fff;
+  --bs-body-bg: #FFFFFF;
   --bs-body-bg-rgb: 255, 255, 255;
   --bs-emphasis-color: #000;
   --bs-emphasis-color-rgb: 0, 0, 0;
@@ -100,7 +120,7 @@
   --bs-tertiary-color-rgb: 33, 37, 41;
   --bs-tertiary-bg: #f8f9fa;
   --bs-tertiary-bg-rgb: 248, 249, 250;
-  --bs-heading-color: #231d19;
+  --bs-heading-color: inherit;
   --bs-link-color: #ec7000;
   --bs-link-color-rgb: 236, 112, 0;
   --bs-link-decoration: underline;
@@ -129,8 +149,8 @@
   --bs-focus-ring-color: rgba(236, 112, 0, 0.25);
   --bs-form-valid-color: #c2c9ea;
   --bs-form-valid-border-color: #c2c9ea;
-  --bs-form-invalid-color: #dc3545;
-  --bs-form-invalid-border-color: #dc3545;
+  --bs-form-invalid-color: #BA000D;
+  --bs-form-invalid-border-color: #BA000D;
 }
 
 *,
@@ -255,6 +275,107 @@
 /* rtl:begin:remove */
 
 /* rtl:end:remove */
+
+@keyframes loading-1 {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(18);
+    transform: rotate(18deg);
+  }
+}
+@keyframes loading-2 {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(36);
+    transform: rotate(36deg);
+  }
+}
+@keyframes loading-3 {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(54);
+    transform: rotate(54deg);
+  }
+}
+@keyframes loading-4 {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(72);
+    transform: rotate(72deg);
+  }
+}
+@keyframes loading-5 {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(90);
+    transform: rotate(90deg);
+  }
+}
+@keyframes loading-6 {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(108);
+    transform: rotate(108deg);
+  }
+}
+@keyframes loading-7 {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(126);
+    transform: rotate(126deg);
+  }
+}
+@keyframes loading-8 {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(144);
+    transform: rotate(144deg);
+  }
+}
+@keyframes loading-9 {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(162);
+    transform: rotate(162deg);
+  }
+}
+@keyframes loading-10 {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(180);
+    transform: rotate(180deg);
+  }
+}
 /*Navbar*/
 
 /*Footer*/
