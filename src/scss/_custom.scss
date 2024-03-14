@@ -120,7 +120,7 @@ $light: #ffffff;
 $dark: $azul-hover;
 $warning: #ec7000; //luis
 $error: #ff0000; //luis
-$gray-light: #D9D3CF; //luis
+$gray-light: #F3F0EF; //luis
 
 //botones
 $btn-border-width: 2px;
@@ -144,6 +144,8 @@ $form-select-border-radius-lg: 8px;
 //acordeon
 $accordion-border-radius: 8px;
 $accordion-inner-border-radius: 8px;
+$accordion-button-active-bg:  $gray-light;
+$accordion-button-active-color: $titulo-cabecera;
 //$accordion-button-icon: url(../img/ic_flecha.svg);
 
 //modal
