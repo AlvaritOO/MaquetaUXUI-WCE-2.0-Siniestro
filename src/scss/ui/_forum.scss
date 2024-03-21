@@ -1,7 +1,133 @@
 @use "../custom" as *;
 
+//imagenes
+.image-logo {
+  content: url(../img/forum/logo-forum.svg);
+}
+
+.image-logo-centrado {
+  content: url(../img/logo-bnp.svg);
+}
+
+.img_log-ejecutivo {
+  content: url(../img/forum/person-fill.svg);
+}
+
+.img_cerrar_sesion {
+  content: url(../img/forum/Icono_cerrar_sesion.svg);
+}
+
+.img-cesantia {
+  content: url(../img/forum/Ilustration-seguro.svg);
+}
+
+.img-proteccion {
+  content: url(../img/forum/Ilustration-seguro2.svg);
+}
+
+.img-home {
+  content: url(../img/forum/Ilustration-seguro3.svg);
+}
+
+.img-otras-coverturas {
+  content: url(../img/forum/Ilustration-seguro4.svg);
+}
+
+.img-documento {
+  content: url(../img/forum/file-earmark-text.svg);
+}
+
+.img-consorcio {
+  content: url(../img/forum/coin.svg);
+}
+
+.img-preguntas {
+  content: url(../img/forum/question-circle.svg);
+}
+
+.img-informacion {
+  content: url(../img/forum/informacion.svg);
+}
+
+.img-informacion:hover {
+  content: url(../img/forum/info-circle-fill.svg);
+}
+
+.img-aviso-alerta {
+  content: url(../img/forum/exclamation-circle.svg);
+}
+
+.img-confirmacion-naranja {
+  content: url(../img/forum/confirmacion-naranja.svg);
+}
+
+.img-informacion-modal {
+  content: url(../img/forum/info-circle.svg);
+}
+
+.img-logo-footer {
+  content: url(../img/forum/logo-forum.svg);
+  width: 100px;
+  height: auto;
+}
+
+.img-cardif-footer {
+  content: url(../img/cardif-footer.svg);
+}
+
+.img-ojo {
+  content: url(../img/forum/eye.svg);
+}
+
+.img-eliminar-carga {
+  content: url(../img/forum/trash.svg);
+}
+
+// Colores
+$primary: $main-medium;
+$secondary: $azul;
+$info: #007ab7;
+$light: #ffffff;
+$dark: $azul-hover;
+$error: #ff0000; //luis
+$gray-light: #D9D3CF; //luis
+
 //Tooltips
-$tooltip-bg: #000000;
+$tooltip-bg: $main-light;
+$tooltip-color: $neutral-dark;
+
+// Importar Bootstrap
+@import "../../node_modules/bootstrap/scss/bootstrap.scss";
+
+.text-black {
+  --bs-black-rgb: $neutral-dark;
+}
+
+.btn.btn-primary:hover {
+  background-color: $blue-light;
+  border-color: $blue-light;
+}
+
+.btn.btn-primary:active {
+  background-color: $blue-medium;
+  border-color: $blue-medium;
+}
+
+.btn.btn-outline-secondary {
+  color: $neutral-dark;
+  border-color: $main-medium;
+}
+
+.btn.btn-outline-secondary:hover {
+  background-color: inherit;
+  border-color: $blue-light;
+}
+
+.btn.btn-outline-secondary:active {
+  color: $neutral-dark;
+  background-color: inherit;
+  border-color: $blue-medium;
+}
 
 //NavBar
 
@@ -23,8 +149,9 @@ $navbar-light-active-color: $naranja;
 .featurette.itau {
   --bs-bg-opacity: 1;
   background-color: $light;
-  border-radius: 8px;
+  border-radius: 4px;
   padding: 3rem;
+  border-left: 10px solid $main-medium;
 }
 
 section#navBar {
@@ -37,18 +164,18 @@ section#navBar {
 }
 
 .log-ejecutivo {
-  border-radius: 22px;
-  border: 1px solid $bordes-card;
-  padding: 4px;
-  color: $titulo-cabecera;
+  border-radius: 4px;
+  border: 1px solid $neutral-light;
+  padding: 8px 16px;
+  color: $neutral-dark;
 }
 
 .log-ejecutivo img {
-  width: 30px;
+  width: 16px;
 }
 
 .dropdown-toggle::after {
-  display: none; //por defecto inline cuando se use
+  display: none;
   content: "";
   width: 30px;
   padding: 1px 7px;
@@ -56,7 +183,7 @@ section#navBar {
   background-position-y: 4px;
   border-top: 0.3em solid transparent;
   border-right: 0.3em solid transparent;
-  background-image: url(../img/Chevron.svg);
+  background-image: url(../img/forum/Chevron.svg);
 }
 
 .nav-itau {
@@ -72,12 +199,17 @@ section#navBar {
 }
 
 .nav-itau a.nav-link.active {
-  border-bottom: 4px solid $naranja;
-  color: $naranja;
+  border-bottom: 4px solid $main-medium;
+  color: $main-medium;
+}
+
+.nav-itau a.nav-link {
+  text-transform: uppercase;
+  font-family: "ForumBold";
 }
 
 .divisor {
-  border-right: 2px solid $naranja;
+  border-right: 2px solid $main-medium;
   height: 40px;
 }
 
@@ -86,8 +218,11 @@ section#navBar {
   width: 90%;
 }
 
-//NavBar
+li.nav-item {
+  text-align: center;
+}
 
+//NavBar
 //Content
 
 section#contenedor-mayor {
@@ -96,8 +231,9 @@ section#contenedor-mayor {
 }
 
 body {
-  font-family: "ItauRegular", sans-serif;
-  /*Specify your font name here*/
+  --bs-border-radius: 4px;
+  --bs-body-color: $neutral-dark;
+  font-family: "ForumMedium", sans-serif;
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
   counter-reset: section;
@@ -113,38 +249,52 @@ body {
 }
 
 h1 {
-  font-family: "ItauDisplay", sans-serif;
+  font-family: "ForumBold", sans-serif;
   font-size: 28px;
 }
 
 h2 {
-  font-size: 22px;
-  color: $textos;
+  font-size: 24px;
+  color: $neutral-dark !important;
+}
+
+.card-content * {
+  font-family: "ForumMedium";
+
+  h4 {
+    font-size: 18px;
+  }
+
+  span {
+    font-size: 14px;
+  }
+}
+
+.btn {
+  --bs-border-radius: 4px;
 }
 
 span,
 p,
 ul,
 li {
-  font-family: "ItauRegular";
+  font-family: "ForumRegular";
 }
 
 .img-doc {
   float: left;
 }
 
-//tabla detalle siniestro Luis
-
 .header-detalle {
   padding: 12px;
-  background-color: $light-05;
+  background-color: $main-medium20;
+  border: 1px solid $main-medium;
 
   tr,
   th {
-    background-color: $light-05;
+    background-color: $main-medium20;
   }
 }
-
 
 .tabla-socio {
   //height: 56px;
@@ -155,43 +305,43 @@ li {
     //  height: 56px;
     vertical-align: middle;
   }
-
 }
-
 
 .itau {
   background-color: $yellow;
 
   tr,
   th {
-    background-color: $ligth-06;
+    background-color: $neutral-light2;
   }
 }
 
-//fin tabla detalle siniestro Luis
+.accordion-button {
+  border: 1px solid $main-medium;
+}
 
 //boton disabled
 .btn:disabled,
 .btn.disabled,
 fieldset:disabled .btn {
-  color: $textos !important;
+  color: $neutral-light2 !important;
   pointer-events: none;
-  background-color: $gray-light !important;
-  border-color: $gray-light !important;
+  background-color: $neutral-medium !important;
+  border-color: $neutral-medium !important;
   opacity: var(--bs-btn-disabled-opacity);
 }
 
-
 .button-search {
-  color: $azul;
-  border-color: $light-04;
-  background-color: $light-04;
+  color: $neutral-light2;
+  border-color: $orange-medium;
+  background-color: $orange-medium;
   border-radius: 8px;
   max-height: 50px;
 
   &:hover {
-    background-color: $azul-light;
-    border-color: $azul-light;
+    color: $neutral-light2;
+    background-color: $orange-light;
+    border-color: $orange-light;
   }
 }
 
@@ -232,6 +382,12 @@ fieldset:disabled .btn {
 .container-btn {
   bottom: 0;
   position: inherit;
+  width: 100%;
+
+  .btn {
+    width: 100%;
+  }
+
 }
 
 input[type="date"]::-webkit-calendar-picker-indicator {
@@ -240,7 +396,6 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   margin-bottom: 15px;
 }
 
-//Year active naranja
 .datepicker table tr td span.active,
 .datepicker table tr td span.active:hover,
 .datepicker table tr td span.active.disabled,
@@ -249,19 +404,19 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 }
 
 .backg-revision-siniestros-home {
-  background-image: url(../img/Imagen-home.png);
+  background-image: url(../img/forum/imagen_home.png);
   background-position: center;
   background-size: cover;
   height: auto;
-  border-radius: 0px 8px 8px 0px;
+  border-radius: 4px;
 }
 
 .card-seguros-asociados-2.active {
-  border: 2px solid $naranja;
+  border: 2px solid $main-medium;
 }
 
 .card-seguros-asociados-2.active .top2 {
-  background-color: $naranja;
+  background-color: $main-medium;
   color: $light;
 
   h1,
@@ -270,8 +425,28 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   }
 }
 
-.card-seguros-asociados-2.active .top2 {
-  background-color: $naranja;
+.card-seguros-asociados-2.no-vigente {
+  border: 2px solid $neutral-light;
+
+  .text-cards-1 {
+    color: $neutral-light;
+  }
+
+  .footer-monto-2 {
+    color: $neutral-light;
+  }
+}
+
+.card-seguros-asociados-2.declaracion-ingresada {
+  border: 2px solid $neutral-medium;
+
+  .text-cards-1 {
+    color: $neutral-medium;
+  }
+
+  .footer-monto-2 {
+    color: $neutral-medium;
+  }
 }
 
 .taginfo2 {
@@ -285,38 +460,56 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 }
 
 .card-seguros-asociados-2.active .top2 .taginfo2 {
-  background-color: $naranja-hover;
+  background-color: $white;
   flex-direction: row;
   border-radius: 20px;
   justify-content: center;
   padding: 7px 13px;
   text-align: right;
-  color: $light;
+  color: $neutral-dark;
+}
+
+.card-seguros-asociados-2.active .top2 h1 {
+  font-family: "ForumRegular";
+}
+
+.card-seguros-asociados-2 .top2 {
+
+  .nombre-seguro-2,
+  .cobertura .text-cards-1 {
+    color: $white;
+  }
 }
 
 .accordion-button.socio {
   border-radius: 0px !important;
 
   .no-info {
-    color: $gray-light;
+    color: $neutral-light;
   }
 
   &a {
-    color: $gray-light;
+    color: $neutral-light;
   }
 }
 
 .accordion-button.socio.no-info {
-  color: $gray-light;
+  color: $neutral-light;
+  border: 1px solid $neutral-light;
 }
 
 .accordion-button.collapsed.socio.no-info div a {
-  color: $gray-light;
+  color: $neutral-light;
 }
 
 .socio.no-info div span.custom-chip {
-  border-color: $gray-light !important;
-  color: $gray-light !important;
+  border-color: $neutral-medium !important;
+  color: $neutral-medium !important;
+  background-color: $neutral-light2;
+}
+
+.socio.no-info div span.custom-chip::after {
+  content: url(../img/forum/x-circle-fill-disabled.svg);
 }
 
 //WIZARD
@@ -325,12 +518,9 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 $borderWidth: 3px;
 $animationTime: 1.5s;
 $border-color-default: $gray-light;
-$border-color-fill: $naranja;
+$border-color-fill: $main-medium;
 $size: 40px;
-
-//Create how many steps
-$howManySteps: 20; //this needs to be even. 
-//for fun try using 20 and changine in the HTML the data-percentage to 15 or 85
+$howManySteps: 20;
 
 body {
   background-color: $neutral;
@@ -350,7 +540,6 @@ body {
   font-size: 16px;
   font-weight: bolder;
 }
-
 
 .progress {
   width: $size;
@@ -399,13 +588,10 @@ body {
   .progress-left .progress-bar {
     left: 100%;
     border-top-right-radius: calc($size / 2);
-    ;
     border-bottom-right-radius: calc($size / 2);
-    ;
     border-left: 0;
     -webkit-transform-origin: center left;
     transform-origin: center left;
-    //animation: loading-2 1.5s linear forwards 1.8s;
   }
 
   .progress-right {
@@ -414,13 +600,10 @@ body {
     .progress-bar {
       left: -100%;
       border-top-left-radius: calc($size / 2);
-      ;
       border-bottom-left-radius: calc($size / 2);
-      ;
       border-right: 0;
       -webkit-transform-origin: center right;
       transform-origin: center right;
-      //animation: loading-1 1.8s linear forwards;
     }
   }
 
@@ -433,7 +616,7 @@ body {
     align-items: center;
     justify-content: center;
     height: 80%;
-    color: $naranja;
+    color: $main-medium;
     //font-family: $work-sans;
     font-weight: 300;
 
@@ -449,15 +632,11 @@ body {
   }
 }
 
-/* This for loop creates the 	necessary css animation names 
-Due to the split circle of progress-left and progress right, we must use the animations on each side. 
-*/
 @for $i from 1 through $howManySteps {
   $stepName: (
-    $i*calc(100 / $howManySteps)
+    $i * calc(100 / $howManySteps)
   );
 
-//animation only the left side if below 50%
 @if $i <=calc($howManySteps / 2) {
   .progress[data-percentage="#{$stepName}"] {
     .progress-right .progress-bar {
@@ -470,7 +649,6 @@ Due to the split circle of progress-left and progress right, we must use the ani
   }
 }
 
-//animation only the right side if above 50%
 @if $i >calc($howManySteps / 2) {
   .progress[data-percentage="#{$stepName}"] {
     .progress-right .progress-bar {
@@ -478,9 +656,13 @@ Due to the split circle of progress-left and progress right, we must use the ani
     }
 
     .progress-left .progress-bar {
-      animation: loading-#{$i - calc($howManySteps / 2)} $animationTime linear forwards $animationTime;
+      animation: loading-#{$i -
+ calc($howManySteps / 2)
     }
+
+    $animationTime linear forwards $animationTime;
   }
+}
 }
 }
 
@@ -488,7 +670,7 @@ Due to the split circle of progress-left and progress right, we must use the ani
 @for $i from 1 through calc($howManySteps / 2) {
   $degrees: calc(180 / ($howManySteps / 2));
   $degrees: (
-    $degrees*$i
+    $degrees * $i
   );
 
 @keyframes loading-#{$i} {
@@ -509,7 +691,6 @@ Due to the split circle of progress-left and progress right, we must use the ani
   margin-bottom: 1em;
 }
 
-
 //Card
 
 .nombre-seguro {
@@ -526,7 +707,7 @@ Due to the split circle of progress-left and progress right, we must use the ani
   background: $light;
   box-shadow: 0px 1px 2px $box;
   border-radius: 8px;
-  border: 1px solid $gray-light;
+  border: 1px solid $main-medium;
   box-sizing: border-box;
   height: 132px;
   display: flex;
@@ -607,9 +788,9 @@ Due to the split circle of progress-left and progress right, we must use the ani
   cursor: pointer;
   border-radius: 8px;
   background-color: $light;
-  border: 2px solid $gray-light;
+  border: 2px solid $main-light;
   box-sizing: border-box;
-  width: 272px;
+  width: 290px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -633,16 +814,15 @@ Due to the split circle of progress-left and progress right, we must use the ani
   gap: 24px;
 }
 
-
 .taginfo1 {
-  background-color: $naranja-hover;
+  background-color: $white;
   flex-direction: row;
   border-radius: 20px;
-  border: 1px solid $naranja-hover;
+  border: 1px solid $neutral-medium;
   justify-content: center;
   padding: 8px;
   text-align: right;
-  color: $light;
+  color: $neutral-dark;
 }
 
 .taginfo2 {
@@ -665,7 +845,6 @@ Due to the split circle of progress-left and progress right, we must use the ani
   text-align: right;
 }
 
-
 .top1 {
   align-self: stretch;
   background-color: $naranja;
@@ -683,7 +862,7 @@ Due to the split circle of progress-left and progress right, we must use the ani
 
 .top2 {
   align-self: stretch;
-  background-color: $gray-light;
+  background-color: $main-light;
   border-top-right-radius: 3px;
   border-top-left-radius: 3px;
   overflow: hidden;
@@ -698,7 +877,7 @@ Due to the split circle of progress-left and progress right, we must use the ani
 
 .top3 {
   align-self: stretch;
-  background-color: $gray-2;
+  background-color: $neutral-light;
   border-top-right-radius: 3px;
   border-top-left-radius: 3px;
   overflow: hidden;
@@ -711,6 +890,20 @@ Due to the split circle of progress-left and progress right, we must use the ani
   z-index: 0;
 }
 
+.top4 {
+  align-self: stretch;
+  background-color: $neutral-medium;
+  border-top-right-radius: 3px;
+  border-top-left-radius: 3px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+  gap: 24px;
+  z-index: 0;
+}
 
 .nombre-seguro-1 {
   align-self: center;
@@ -725,9 +918,10 @@ Due to the split circle of progress-left and progress right, we must use the ani
   align-self: center;
   position: relative;
   display: inline-block;
-  height: 26px;
+  height: 45px;
   flex-shrink: 0;
-  color: $titulo-cabecera;
+  color: $light;
+  font-size: 24px;
 }
 
 .nombre-seguro-3 {
@@ -739,7 +933,6 @@ Due to the split circle of progress-left and progress right, we must use the ani
   color: $placeholder;
 }
 
-
 .text-cards-1 {
   margin: 0;
   color: $textos;
@@ -749,7 +942,6 @@ Due to the split circle of progress-left and progress right, we must use the ani
   margin: 0;
   color: $placeholder;
 }
-
 
 .cobertura {
   align-self: stretch;
@@ -778,7 +970,6 @@ Due to the split circle of progress-left and progress right, we must use the ani
   text-align: left;
   color: $titulo-cabecera;
 }
-
 
 .cards-seguros {
   display: flex;
@@ -817,15 +1008,45 @@ Due to the split circle of progress-left and progress right, we must use the ani
 
 //Alert
 
-.alert-warning {
-  border-top: 4px solid $alert-warning;
-  background-color: $yellow;
+.alert {
+  border-radius: 4px;
+  color: $neutral-dark;
 }
 
+.alert-informative {
+  border: 1px solid $main-dark;
+  background-color: $main-medium10;
+
+  .img-alerta {
+    content: url(../img/forum/info-circle.svg);
+  }
+}
+
+.alert-success {
+  border: 1px solid $success;
+  background-color: $success-hover10;
+
+  .img-alerta {
+    content: url(../img/forum/check-circle.svg);
+  }
+}
+
+.alert-warning {
+  border: 1px solid $warning;
+  background-color: $warning-hover10;
+
+  .img-alerta {
+    content: url(../img/forum/exclamation-circle.svg);
+  }
+}
 
 .alert-danger {
-  border-top: 4px solid $alert-error;
-  background-color: $alert-ligth;
+  border: 1px solid $danger;
+  background-color: $danger-hover10;
+
+  .img-alerta {
+    content: url(../img/forum/x-circle.svg);
+  }
 }
 
 .aviso-alerta {
@@ -848,11 +1069,10 @@ Due to the split circle of progress-left and progress right, we must use the ani
   line-height: 20px;
 }
 
-
 //Footer
 
 section#footer {
-  background-color: $naranja;
+  background-color: $blue-dark;
 }
 
 .text-footer-1 {
@@ -932,7 +1152,7 @@ section#footer {
 }
 
 .o-arrastra-tus {
-  color: $gray;
+  color: $neutral-dark;
 }
 
 .agrega-o-arrastra-container,
@@ -940,12 +1160,13 @@ section#footer {
   align-self: stretch;
   position: relative;
   line-height: 22px;
-  color: $azul;
+  color: $main-medium;
 }
 
 .puedes-subir-hasta {
   line-height: 19px;
-  color: $gray;
+  font-size: 12px;
+  color: $neutral-medium;
 }
 
 .adjuntar,
@@ -963,8 +1184,7 @@ section#footer {
 
 .file-upload-modulo {
   border-radius: 8px;
-  ;
-  border: 1px dashed $azul;
+  border: 1px dashed $blue-medium;
   box-sizing: border-box;
   //width: 400px; //luis
   padding: 25px;
@@ -988,25 +1208,27 @@ section#footer {
 }
 
 .rescate-icon {
+  content: url(../img/forum/upload.svg);
   position: relative;
-  width: 14px;
-  height: 14px;
+  width: 16px;
+  height: 16px;
 }
 
 .icono {
   border-radius: 100px;
-  background-color: $azul;
+  background-color: $main-light15;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  padding: 5px;
+  padding: 8px;
 }
 
 .confirmacin-icon {
   position: relative;
   width: 10px;
   height: 10px;
+  content: url(../img/forum/check-circle-fill.svg);
 }
 
 .peso-icono {
@@ -1081,18 +1303,22 @@ section#footer {
 }
 
 .archivos {
-  max-width: 437px;
+  max-width: 391px;
   padding-left: 0px;
   padding-right: 0px;
   margin: 0px;
 
   .text-start:not(.color-error) {
-    color: $textos;
+    color: $neutral-dark;
   }
 
   .peso-icono {
-    color: $textos;
+    color: $success;
   }
+}
+
+.peso-icono {
+  color: $success;
 }
 
 //tipografias
@@ -1103,7 +1329,7 @@ $headings-color: $titulo-cabecera;
 $modal-content-color: $textos;
 
 .modal-header>.modal-title {
-  color: $naranja;
+  color: $main-medium;
 }
 
 .accordion {
@@ -1113,31 +1339,27 @@ $modal-content-color: $textos;
 //acordeon
 $accordion-border-color: $bordes-card;
 $accordion-icon-color: $naranja;
-//$accordion-button-icon: url(../img/ic_flecha.svg);
 
 .act-buttons>button {
   font-weight: 700 !important;
 }
 
-
 .row.container-cobertura {
-  border: 1px solid $ligth-06;
+  border: 1px solid $neutral-light;
   border-radius: 12px;
 
   &:hover {
-    border: 1px solid $naranja;
+    border: 1px solid $main-medium;
   }
-
 }
 
 .box-cobertura {
-  background-color: $gray-light;
+  background-color: $neutral-light;
   border-radius: 12px 0px 0px 12px;
 }
 
-
 .row.box-coberturas-row-top {
-  background-color: $ligth-07;
+  background-color: $neutral-light2;
   min-height: 56px;
   height: auto;
   padding: 17px 13px;
@@ -1153,7 +1375,6 @@ $accordion-icon-color: $naranja;
   background-color: $error;
   border: 1px solid $error;
 }
-
 
 .box-coberturas-row-down {
   background-color: $light;
@@ -1173,20 +1394,22 @@ $accordion-icon-color: $naranja;
   height: 87px;
 }
 
-//Cindy
+.table> :not(caption)>*>* {
+  color: $neutral-dark;
+}
 
 .tabla_detalle .table_column {
-  background-color: $naranja;
-  color: $light;
+  background-color: $main-medium;
+  color: $neutral-dark;
   text-align: center;
 
   h2 {
-    color: $light;
+    color: $neutral-dark;
   }
 }
 
 .tabla_detalle {
-  border: 2px solid $naranja;
+  border: 2px solid $main-medium;
   border-radius: 16px;
 }
 
@@ -1195,11 +1418,12 @@ $accordion-icon-color: $naranja;
 }
 
 .tabla_detalle table th {
-  background-color: $light-05;
+  background-color: $main-medium20;
+  border-bottom: 1px solid $main-medium;
 }
 
 .tabla_detalle table td {
-  background-color: $light-05;
+  background-color: $main-light10;
 }
 
 .table.cons-estado th {
@@ -1209,7 +1433,7 @@ $accordion-icon-color: $naranja;
 
 .top3-custom {
   align-self: stretch;
-  background-color: $naranja;
+  background-color: $main-medium;
   border-top-right-radius: 3px;
   border-top-left-radius: 3px;
   overflow: hidden;
@@ -1226,7 +1450,7 @@ $accordion-icon-color: $naranja;
 }
 
 .top3.tabla_detalle.status {
-  background-color: $naranja;
+  background-color: $main-medium;
 }
 
 .top3-custom.tabla_detalle.status * {
@@ -1249,11 +1473,10 @@ $accordion-icon-color: $naranja;
   h6 {
     color: $light;
   }
-
 }
 
 .fila-cuotas-mobile {
-  background-color: $light-05;
+  background-color: $main-medium20;
 }
 
 .card-body-table .monto:nth-of-type(even) {
@@ -1267,25 +1490,72 @@ $accordion-icon-color: $naranja;
   display: inline-block;
   height: 16px !important;
   margin: 3px;
-  opacity: .7;
+  opacity: 0.7;
   padding: 0;
   position: relative;
-  transition: transform .2s linear;
+  transition: transform 0.2s linear;
   width: 16px !important;
 }
 
 .splide__pagination__page.is-active {
-  background: $naranja !important;
+  background: $main-medium !important;
   transform: scale(1.4);
   z-index: 1;
   width: 31px !important;
   border-radius: 37px;
 }
 
+.form-floating>label {
+  font-size: 0.9rem;
+}
+
+.modal img {
+  width: 24px;
+}
+
+.emitido {
+  border-color: $success-hover;
+  color: $success !important;
+  background-color: $success-hover8;
+}
+
+span.emitido::after {
+  margin-left: 4px;
+  content: url(../img/forum/check-circle-fill.svg);
+}
+
+.pendiente {
+  border-color: $warning;
+  color: $warning-dark;
+  background-color: $warning-hover15;
+}
+
+span.pendiente::after {
+  margin-left: 4px;
+  content: url(../img/forum/x-circle-fill.svg);
+}
+
+.rechazado {
+  border-color: $danger-hover;
+  color: $danger !important;
+  background-color: $danger-hover10;
+}
+
+span.rechazado::after {
+  margin-left: 4px;
+  content: url(../img/forum/x-circle-fill-error.svg);
+}
+
+.page-item .form-control:disabled {
+  background-color: $main-light;
+}
+
+.page-link i {
+  color: $main-medium;
+}
 
 //tablas responsivas Luis
 @include media-breakpoint-down(sm) {
-
   table.tabla-custom tr {
     display: flex;
     flex-direction: column;
@@ -1295,52 +1565,89 @@ $accordion-icon-color: $naranja;
   }
 
   .tabla_detalle {
-    border: 2px solid $naranja;
+    border: 2px solid $main-medium;
     border-radius: 6px 6px 0px 0px;
+  }
+
+  .featurette.itau {
+    --bs-bg-opacity: 1;
+    background-color: rgb(255, 255, 255);
+    border-radius: 8px;
+    padding: 1rem;
+  }
+
+  table.tabla-custom {
+    width: 100%;
+  }
+
+  .tabla-socio tr,
+  .tabla-socio thead {
+    height: auto;
+    vertical-align: middle;
+  }
+
+  table.tabla-custom td[data-titulo] {
+    display: flex;
+  }
+
+  table.tabla-custom td[data-titulo]::before {
+    content: attr(data-titulo);
+    width: 150px;
+    font-weight: bold;
+    margin-right: 10px;
+  }
+
+  table.tabla-custom thead {
+    display: none;
+  }
+
+  .act-buttons {
+    display: flex;
+    flex-flow: column-reverse;
+
+    button {
+      margin-top: 10px;
+    }
   }
 }
 
 @include media-breakpoint-down(md) {
-
   .box-cobertura {
     background-color: $gray-light;
     border-radius: 12px 12px 0px 0px;
   }
-
 }
 
-@include media-breakpoint-up(lg) {
+@include media-breakpoint-up(md) {
 
+  #splidesiniestro ul.splide__pagination {
+    position: relative;
+    top: 10px;
+  }
+
+  .act-buttons>button {
+    margin-right: 0.5rem
+  }
+}
+
+
+@include media-breakpoint-up(lg) {
   .row.box-coberturas-row-top {
     background-color: $ligth-07;
     height: 56px;
     padding: 4px 13px;
     font-weight: bolder;
   }
+
+  .act-buttons>button {
+    margin-right: 0.5rem
+  }
 }
 
 @include media-breakpoint-up(xl) {
-
   .row.box-coberturas-row-top {
     background-color: $ligth-07;
     height: auto;
     font-weight: bolder;
   }
-
-}
-
-.emitido {
-  border-color: $emitido;
-  color: $emitido !important;
-}
-
-.pendiente {
-  border-color: $warning;
-  color: $warning;
-
-}
-
-.rechazado {
-  border-color: $error;
-  color: $error !important;
 }

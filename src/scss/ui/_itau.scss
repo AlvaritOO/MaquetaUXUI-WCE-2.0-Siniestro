@@ -2,7 +2,7 @@
 
 //imagenes
 .image-logo {
-  content: url(../img/logo-itau.svg);
+  content: url(../img/itau/logo-itau.svg);
 }
 
 .image-logo-centrado {
@@ -10,64 +10,95 @@
 }
 
 .image-logo-centrado {
-  content: url(../img/logo-bnp.svg);
+  content: url(../img/itau/logo-bnp.svg);
 }
 
 .img_log-ejecutivo {
-  content: url(../img/ic_log-ejecutivo.svg);
+  content: url(../img/itau/ic_log-ejecutivo.svg);
 }
 
 .img_cerrar_sesion {
-  content: url(../img/Icono_cerrar_sesion.svg);
+  content: url(../img/itau/Icono_cerrar_sesion.svg);
 }
 
 .img-cesantia {
-  content: url(../img/cesantia.svg);
+  content: url(../img/itau/cesantia.svg);
 }
 
 .img-proteccion {
-  content: url(../img/proteccion.svg);
+  content: url(../img/itau/proteccion.svg);
 }
 
 .img-home {
-  content: url(../img/home.svg);
+  content: url(../img/itau/home.svg);
 }
 
 .img-otras-coverturas {
-  content: url(../img/otras-coverturas.svg);
+  content: url(../img/itau/otras-coverturas.svg);
 }
 
 .img-documento {
-  content: url(../img/documento.svg);
+  content: url(../img/itau/documento.svg);
 }
 
 .img-consorcio {
-  content: url(../img/consorcio.svg);
+  content: url(../img/itau/consorcio.svg);
 }
 
 .img-preguntas {
-  content: url(../img/preguntas.svg);
+  content: url(../img/itau/preguntas.svg);
 }
 
 .img-alerta {
-  content: url(../img/alerta.svg);
+  content: url(../img/itau/alerta.svg);
 }
 
 .img-informacion {
-  content: url(../img/informacion.svg);
+  content: url(../img/itau/informacion.svg);
 }
 
 .img-aviso-alerta {
-  content: url(../img/aviso-alerta.svg);
+  content: url(../img/itau/aviso-alerta.svg);
 }
 
 .img-confirmacion-naranja {
-  content: url(../img/confirmacion-naranja.svg);
+  content: url(../img/itau/confirmacion-naranja.svg);
 }
 
 .img-informacion-modal {
-  content: url(../img/informacion-modal.svg);
+  content: url(../img/itau/informacion-modal.svg);
 }
+
+.img-logo-footer{
+  content: url(../img/itau/logo_itau_footer.svg);
+}
+
+.img-cardif-footer{
+  content: url(../img/itau/cardif-footer.svg);
+}
+
+.img-ojo {
+  content: url(../img/itau/ojo.svg);
+}
+
+.img-eliminar-carga {
+  content: url(../img/itau/_eliminar_cargaDeDocumentos.svg);
+}
+
+// Colores
+$primary: $naranja;
+$secondary: $azul;
+$success: $light-03;
+$info: #007ab7;
+$light: #ffffff;
+$dark: $azul-hover;
+$warning: #ec7000; //luis
+$error: #ff0000; //luis
+$gray-light: #D9D3CF; //luis
+
+// Importar Bootstrap
+@import "../../node_modules/bootstrap/scss/bootstrap.scss";
+
 //NavBar
 
 //Nav
@@ -121,7 +152,7 @@ section#navBar {
   background-position-y: 4px;
   border-top: 0.3em solid transparent;
   border-right: 0.3em solid transparent;
-  background-image: url(../img/Chevron.svg);
+  background-image: url(../img/itau/Chevron.svg);
 }
 
 .nav-itau {
@@ -304,7 +335,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 }
 
 .backg-revision-siniestros-home {
-  background-image: url(../img/Imagen-home.png);
+  background-image: url(../img/itau/Imagen-home.png);
   background-position: center;
   background-size: cover;
   height: auto;
@@ -1022,6 +1053,7 @@ section#footer {
 }
 
 .rescate-icon {
+  content: url(../img/itau/rescate.svg);
   position: relative;
   width: 14px;
   height: 14px;
@@ -1041,6 +1073,7 @@ section#footer {
   position: relative;
   width: 10px;
   height: 10px;
+  content: url(../img/itau/confirmacion.svg);
 }
 
 .peso-icono {
@@ -1147,7 +1180,6 @@ $modal-content-color: $textos;
 //acordeon
 $accordion-border-color: $bordes-card;
 $accordion-icon-color: $naranja;
-//$accordion-button-icon: url(../img/ic_flecha.svg);
 
 .act-buttons > button {
   font-weight: 700 !important;
@@ -1309,6 +1341,26 @@ $accordion-icon-color: $naranja;
   border-radius: 37px;
 }
 
+.emitido {
+  border-color: $emitido;
+  color: $emitido !important;
+}
+
+.pendiente {
+  border-color: $warning;
+  color: $warning;
+}
+
+.rechazado {
+  border-color: $error;
+  color: $error !important;
+}
+
+.modal img {
+  width: 24px;
+}
+
+//tablas responsivas Luis
 @include media-breakpoint-down(sm) {
   table.tabla-custom tr {
     display: flex;
@@ -1329,6 +1381,40 @@ $accordion-icon-color: $naranja;
     border-radius: 8px;
     padding: 1rem;
   }
+
+  table.tabla-custom {
+    width: 100%;
+  }
+
+  .tabla-socio tr,
+  .tabla-socio thead {
+    height: auto;
+    vertical-align: middle;
+  }
+
+  table.tabla-custom td[data-titulo] {
+    display: flex;
+  }
+
+  table.tabla-custom td[data-titulo]::before {
+    content: attr(data-titulo);
+    width: 150px;
+    font-weight: bold;
+    margin-right: 10px;
+  }
+
+  table.tabla-custom thead {
+    display: none;
+  }
+
+  .act-buttons {
+    display: flex;
+    flex-flow: column-reverse;
+
+    button {
+      margin-top: 10px;
+    }
+  }
 }
 
 @include media-breakpoint-down(md) {
@@ -1338,12 +1424,29 @@ $accordion-icon-color: $naranja;
   }
 }
 
+@include media-breakpoint-up(md) {
+
+  #splidesiniestro ul.splide__pagination {
+    position: relative;
+    top: 10px;
+  }
+
+  .act-buttons>button {
+    margin-right: 0.5rem
+  }
+}
+
+
 @include media-breakpoint-up(lg) {
   .row.box-coberturas-row-top {
     background-color: $ligth-07;
     height: 56px;
     padding: 4px 13px;
     font-weight: bolder;
+  }
+
+  .act-buttons>button {
+    margin-right: 0.5rem
   }
 }
 
@@ -1353,19 +1456,4 @@ $accordion-icon-color: $naranja;
     height: auto;
     font-weight: bolder;
   }
-}
-
-.emitido {
-  border-color: $emitido;
-  color: $emitido !important;
-}
-
-.pendiente {
-  border-color: $warning;
-  color: $warning;
-}
-
-.rechazado {
-  border-color: $error;
-  color: $error !important;
 }

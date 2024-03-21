@@ -63,7 +63,11 @@ $blue-medium:#2B3F79;
 $blue-light:#5B69A8;
 $main-dark:#006CAC;
 $main-medium:#009ADE;
+$main-medium10:#009ADE1A;
+$main-medium20: #009ADE33;
 $main-light:#61CCFF;
+$main-light10: #61CCFF1A;
+$main-light15: #61CCFF26;
 $mint-dark:#00AB82;
 $mint-medium:#00DEB2;
 $mint-light:#65FFE4;
@@ -76,12 +80,18 @@ $neutral-light:#CCCCCC;
 $neutral-light2:#F1F1F1;
 $white:#FFFFFF;
 
+$warning-dark: #D8B500;
 $warning:#FFD600;
 $warning-hover:#FFFF8D;
+$warning-hover10: #FFFF8D1A;
+$warning-hover15: #ffd60026;
 $danger:#BA000D;
 $danger-hover:#F44336;
+$danger-hover10:#F443361A;
 $success:#005F00;
 $success-hover:#67BF45;
+$success-hover8:#67bf4514;
+$success-hover10:#67BF451A;
 
 @font-face {
   font-family: "ForumBold";
@@ -114,13 +124,11 @@ $success-hover:#67BF45;
 // Colores
 $primary: $naranja;
 $secondary: $azul;
-$success: $light-03;
 $info: #007ab7;
 $light: #ffffff;
 $dark: $azul-hover;
-$warning: #ec7000; //luis
 $error: #ff0000; //luis
-$gray-light: #F3F0EF; //luis
+$gray-light: #D9D3CF; //luis
 
 //botones
 $btn-border-width: 2px;
@@ -144,8 +152,6 @@ $form-select-border-radius-lg: 8px;
 //acordeon
 $accordion-border-radius: 8px;
 $accordion-inner-border-radius: 8px;
-$accordion-button-active-bg:  $gray-light;
-$accordion-button-active-color: $titulo-cabecera;
 //$accordion-button-icon: url(../img/ic_flecha.svg);
 
 //modal
@@ -278,65 +284,4 @@ ul.splide__list {
 
 .splide__arrow--next {
   right: -2em !important;
-}
-
-
-// Importar Bootstrap
-@import "../../node_modules/bootstrap/scss/bootstrap.scss";
-
-//tablas responsivas Luis
-@include media-breakpoint-down(sm) {
-
-  table.tabla-custom {
-    width: 100%;
-  }
-
-  .tabla-socio tr,
-  .tabla-socio thead {
-    height: auto;
-    vertical-align: middle;
-  }
-
-  table.tabla-custom td[data-titulo] {
-    display: flex;
-  }
-
-  table.tabla-custom td[data-titulo]::before {
-    content: attr(data-titulo);
-    width: 150px;
-    font-weight: bold;
-    margin-right: 10px;
-  }
-
-  table.tabla-custom thead {
-    display: none;
-  }
-
-  .act-buttons {
-    display: flex;
-    flex-flow: column-reverse;
-
-    button {
-      margin-top: 10px;
-    }
-  }
-}
-
-@include media-breakpoint-up(md) {
-
-  #splidesiniestro ul.splide__pagination {
-    position: relative;
-    top: 10px;
-  }
-
-  .act-buttons>button {
-    margin-right: 0.5rem
-  }
-}
-
-
-@include media-breakpoint-up(lg) {
-  .act-buttons>button {
-    margin-right: 0.5rem
-  }
 }
