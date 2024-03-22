@@ -1380,7 +1380,8 @@ $accordion-icon-color: $naranja;
   background-color: $light;
   min-height: 56px;
   height: auto;
-  padding: 17px 13px;
+  padding: 17px 5px;
+  border-radius: 12px;
 
   span {
     position: relative;

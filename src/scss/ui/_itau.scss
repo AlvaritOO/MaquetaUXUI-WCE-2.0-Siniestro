@@ -74,7 +74,7 @@
 }
 
 .img-cardif-footer{
-  content: url(../img/itau/cardif-footer.svg);
+  content: url(../img/cardif-footer.svg);
 }
 
 .img-ojo {
@@ -355,6 +355,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     color: $light;
   }
 }
+
 
 .card-seguros-asociados-2.active .top2 {
   background-color: $naranja;
@@ -771,6 +772,21 @@ body {
 .top3 {
   align-self: stretch;
   background-color: $gray-2;
+  border-top-right-radius: 3px;
+  border-top-left-radius: 3px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+  gap: 24px;
+  z-index: 0;
+}
+
+.top4 {
+  align-self: stretch;
+  background-color:$gray-2;
   border-top-right-radius: 3px;
   border-top-left-radius: 3px;
   overflow: hidden;
@@ -1221,7 +1237,8 @@ $accordion-icon-color: $naranja;
   background-color: $light;
   min-height: 56px;
   height: auto;
-  padding: 17px 13px;
+  padding: 17px 5px;
+  border-radius: 12px;
 
   span {
     position: relative;
