@@ -12348,6 +12348,23 @@ input[type=date]::-webkit-calendar-picker-indicator {
   margin-bottom: 15px;
 }
 
+input[type=search]::-webkit-calendar-picker-indicator {
+  width: 25px;
+  height: 50px;
+  margin-bottom: 15px;
+}
+
+.label-icono::before {
+  content: ""; /* Asegura que no aparezca contenido predeterminado */
+  display: inline-block; /* Permite posicionamiento junto al texto */
+  width: 16px; /* Ajusta el ancho según sea necesario */
+  height: 16px; /* Ajusta la altura según sea necesario */
+  margin-right: 5px; /* Ajusta el espacio entre el icono y el texto */
+  background-image: url("../../img/itau/ic_log-ejecutivo.svg"); /* Reemplaza con la URL de tu imagen */
+  background-repeat: no-repeat; /* Evita que la imagen se repita en mosaico */
+  background-position: center; /* Alinea el icono dentro de su espacio */
+}
+
 .datepicker table tr td span.active,
 .datepicker table tr td span.active:hover,
 .datepicker table tr td span.active.disabled,
