@@ -53,7 +53,7 @@
                     <div class="divisor ms-3"></div>
 
                     <div class="mt-1 ms-3">
-                        <a class="text-decoration-none text-black" href="#" role="button">
+                        <a class="text-decoration-none text-black" href="#" role="button" data-bs-toggle="modal" data-bs-target="#exampleModal1">
                             <img class="img_cerrar_sesion" alt="">
                             Cerrar sesión</a>
                     </div>
@@ -125,7 +125,7 @@
     <main id="contenedor-mayor" class="flex-shrink-0 mt-4">
 
         <!--trabajando con:-->
-        <div class="user-working col-lg-4 col-md-7 col-sm-7 justify-content-end">
+        <div class="user-working col-lg-3 col-md-7 col-sm-7 justify-content-end">
             <div class="alert alert-info alert-dismissible fade show" role="alert">
                 <img src="../../../build/img/informacion-modal.svg" alt="">
                 <b class="p-0">Estás consultando por:</b><br>
@@ -145,7 +145,7 @@
 
                 <div class="pb-5 featurette g-0 bg-white border rounded overflow-hidden flex-md-row shadow-sm">
 
-                    <p class="lead ms-4 mt-4">Para continuar, ingresa el RUT del cliente con el que vas a gestionar</p>
+                    <p class="lead mx-3 ms-4 mt-4">Para continuar, ingresa el RUT del cliente con el que vas a gestionar</p>
 
                     <div class="row mx-3">
 
@@ -210,6 +210,34 @@
         </div>
     </section>
     <!--Fin Footer-->
+
+    <!--Modal 1-->
+    <div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true"
+        data-bs-backdrop="static" data-bs-keyboard="false">
+        <div class="modal-dialog">
+            <div class="modal-content">
+
+                <div class="modal-body text-center">
+                    <div class="d-flex flex-column justify-content-center row">
+                        <div class="col">
+                            <img class="img-aviso-alerta" alt="" style="width: 60px;">
+                        </div>
+
+                        <h1>Estas seguro que deseas cerrar tu sesión</h1>
+
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <section class="container text-center act-buttons">
+                        <button type="button" data-bs-dismiss="modal"
+                            class="btn btn-outline-secondary px-5">No</button>
+                        <button type="button" class="btn btn-primary text-white px-5">Sí</button>
+                    </section>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Fin Modal-->
 
     <!--Modal 2-->
     <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true"
