@@ -70,11 +70,11 @@
   content: url(../img/itau/informacion-modal.svg);
 }
 
-.img-logo-footer{
+.img-logo-footer {
   content: url(../img/itau/logo_itau_footer.svg);
 }
 
-.img-cardif-footer{
+.img-cardif-footer {
   content: url(../img/cardif-footer.svg);
 }
 
@@ -95,7 +95,7 @@ $light: #ffffff;
 $dark: $azul-hover;
 $warning: #ec7000; //luis
 $error: #ff0000; //luis
-$gray-light: #D9D3CF; //luis
+$gray-light: #d9d3cf; //luis
 
 // Importar Bootstrap
 @import "../../node_modules/bootstrap/scss/bootstrap.scss";
@@ -322,10 +322,24 @@ fieldset:disabled .btn {
   position: inherit;
 }
 
-input[type="date"]::-webkit-calendar-picker-indicator {
-  width: 25px;
-  height: 25px;
-  margin-bottom: 15px;
+input[type="date"] {
+  position: relative;
+
+  &::-webkit-calendar-picker-indicator {
+    display: none;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    width: 25px;
+    height: 25px;
+    background-image: url("../img/itau/date.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
 }
 
 input[type="search"]::-webkit-calendar-picker-indicator {
@@ -373,7 +387,6 @@ input[type="search"]::-webkit-calendar-picker-indicator {
     color: $light;
   }
 }
-
 
 .card-seguros-asociados-2.active .top2 {
   background-color: $naranja;
@@ -804,7 +817,7 @@ body {
 
 .top4 {
   align-self: stretch;
-  background-color:$gray-2;
+  background-color: $gray-2;
   border-top-right-radius: 3px;
   border-top-left-radius: 3px;
   overflow: hidden;
@@ -929,12 +942,10 @@ body {
   background-color: $alert-ligth;
 }
 
-
 .alert-info {
-  border-left: 6px solid #007AB7;
-  background-color: #DEEEF6;
+  border-left: 6px solid #007ab7;
+  background-color: #deeef6;
 }
-
 
 .aviso-alerta {
   width: 32px;
@@ -1467,17 +1478,15 @@ $accordion-icon-color: $naranja;
 }
 
 @include media-breakpoint-up(md) {
-
   #splidesiniestro ul.splide__pagination {
     position: relative;
     top: 10px;
   }
 
-  .act-buttons>button {
-    margin-right: 0.5rem
+  .act-buttons > button {
+    margin-right: 0.5rem;
   }
 }
-
 
 @include media-breakpoint-up(lg) {
   .row.box-coberturas-row-top {
@@ -1487,8 +1496,8 @@ $accordion-icon-color: $naranja;
     font-weight: bolder;
   }
 
-  .act-buttons>button {
-    margin-right: 0.5rem
+  .act-buttons > button {
+    margin-right: 0.5rem;
   }
 }
 
