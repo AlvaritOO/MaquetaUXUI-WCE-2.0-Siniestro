@@ -168,6 +168,10 @@ ul.splide__list {
   content: url(../img/itau/otras-coverturas.svg);
 }
 
+.img-seguro-catastrofico {
+  content: url(../img/itau/seguro-catastrofico.svg);
+}
+
 .img-documento {
   content: url(../img/itau/documento.svg);
 }
