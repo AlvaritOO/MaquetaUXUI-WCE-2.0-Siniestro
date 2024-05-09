@@ -362,6 +362,10 @@ fieldset:disabled .btn {
   }
 }
 
+.height-section-card{
+  height: 500px;
+}
+
 .card-content .card-body a {
   padding: 0px;
   text-decoration: none;
@@ -485,6 +489,7 @@ input[type="search"]::-webkit-calendar-picker-indicator {
   background-color: $naranja;
   color: $light;
 
+
   h1,
   p {
     color: $light;
@@ -494,6 +499,7 @@ input[type="search"]::-webkit-calendar-picker-indicator {
 
 .card-seguros-asociados-2.active .top2 {
   background-color: $naranja;
+  
 }
 
 .taginfo2 {
@@ -514,6 +520,7 @@ input[type="search"]::-webkit-calendar-picker-indicator {
   padding: 7px 13px;
   text-align: right;
   color: $light;
+
 }
 
 .accordion-button.socio {
@@ -825,7 +832,9 @@ body {
   align-items: center;
   justify-content: flex-start;
   position: relative;
-  gap: 24px;
+  padding-right: 0px !important;
+  padding-left: 0px !important;
+  
 }
 
 .card-seguros-asociados-3 {
@@ -842,6 +851,7 @@ body {
   position: relative;
   gap: 24px;
 }
+
 
 .taginfo1 {
   background-color: $naranja-hover;
@@ -874,6 +884,17 @@ body {
   text-align: right;
 }
 
+.taginfo4 {
+  background-color: $light;
+  flex-direction: row;
+  border-radius: 20px;
+  border: 1px solid $gray-light;
+  justify-content: center;
+  padding: 8px;
+  text-align: right;
+  color: $textos;
+}
+
 .top1 {
   align-self: stretch;
   background-color: $naranja;
@@ -899,9 +920,10 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 24px;
+  padding: 24px 24px 80px 24px;
   gap: 24px;
   z-index: 0;
+  width: 100%;
 }
 
 .top3 {
@@ -914,14 +936,15 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 24px;
+  padding: 24px 24px 80px 24px;
+  
   gap: 24px;
   z-index: 0;
 }
 
 .top4 {
   align-self: stretch;
-  background-color:$gray-2;
+  background-color: $gray-light;
   border-top-right-radius: 3px;
   border-top-left-radius: 3px;
   overflow: hidden;
@@ -929,7 +952,7 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 24px;
+  padding: 24px 24px 80px 24px;
   gap: 24px;
   z-index: 0;
 }
@@ -950,6 +973,8 @@ body {
   height: 26px;
   flex-shrink: 0;
   color: $titulo-cabecera;
+  font-size: 22px;
+  text-align: center;
 }
 
 .nombre-seguro-3 {
@@ -961,6 +986,17 @@ body {
   color: $placeholder;
 }
 
+.nombre-seguro-4 {
+  align-self: center;
+  position: relative;
+  display: inline-block;
+  height: 26px;
+  flex-shrink: 0;
+  color: $titulo-card-light;
+  font-size: 22px;
+  text-align: center;
+}
+
 .text-cards-1 {
   margin: 0;
   color: $textos;
@@ -970,6 +1006,7 @@ body {
   margin: 0;
   color: $placeholder;
 }
+
 
 .cobertura {
   align-self: stretch;
@@ -1299,7 +1336,7 @@ section#footer {
 }
 
 .footer-monto-1 {
-  padding: 0 13px;
+  padding: 20px 5px 0 5px;
   text-align: center;
   color: $titulo-cabecera;
 }

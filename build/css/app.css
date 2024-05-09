@@ -12379,6 +12379,10 @@ fieldset:disabled .btn {
   border: 2px solid #ec7000;
 }
 
+.height-section-card {
+  height: 500px;
+}
+
 .card-content .card-body a {
   padding: 0px;
   text-decoration: none;
@@ -12996,7 +13000,8 @@ body {
   align-items: center;
   justify-content: flex-start;
   position: relative;
-  gap: 24px;
+  padding-right: 0px !important;
+  padding-left: 0px !important;
 }
 
 .card-seguros-asociados-3 {
@@ -13045,6 +13050,17 @@ body {
   text-align: right;
 }
 
+.taginfo4 {
+  background-color: #ffffff;
+  flex-direction: row;
+  border-radius: 20px;
+  border: 1px solid #D9D3CF;
+  justify-content: center;
+  padding: 8px;
+  text-align: right;
+  color: #56504c;
+}
+
 .top1 {
   align-self: stretch;
   background-color: #ec7000;
@@ -13070,9 +13086,10 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 24px;
+  padding: 24px 24px 80px 24px;
   gap: 24px;
   z-index: 0;
+  width: 100%;
 }
 
 .top3 {
@@ -13085,14 +13102,14 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 24px;
+  padding: 24px 24px 80px 24px;
   gap: 24px;
   z-index: 0;
 }
 
 .top4 {
   align-self: stretch;
-  background-color: #F9F6F5;
+  background-color: #D9D3CF;
   border-top-right-radius: 3px;
   border-top-left-radius: 3px;
   overflow: hidden;
@@ -13100,7 +13117,7 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 24px;
+  padding: 24px 24px 80px 24px;
   gap: 24px;
   z-index: 0;
 }
@@ -13121,6 +13138,8 @@ body {
   height: 26px;
   flex-shrink: 0;
   color: #231d19;
+  font-size: 22px;
+  text-align: center;
 }
 
 .nombre-seguro-3 {
@@ -13130,6 +13149,17 @@ body {
   height: 26px;
   flex-shrink: 0;
   color: #89837f;
+}
+
+.nombre-seguro-4 {
+  align-self: center;
+  position: relative;
+  display: inline-block;
+  height: 26px;
+  flex-shrink: 0;
+  color: #404040;
+  font-size: 22px;
+  text-align: center;
 }
 
 .text-cards-1 {
@@ -13461,7 +13491,7 @@ section#footer {
 }
 
 .footer-monto-1 {
-  padding: 0 13px;
+  padding: 20px 5px 0 5px;
   text-align: center;
   color: #231d19;
 }
