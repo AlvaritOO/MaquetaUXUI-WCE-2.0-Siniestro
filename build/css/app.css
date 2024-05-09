@@ -12438,6 +12438,41 @@ input[type=search]::-webkit-calendar-picker-indicator {
   padding-bottom: 0.625rem;
 }
 
+.select-name {
+  width: 280px !important;
+  height: 40px !important;
+  padding: 10px !important;
+  margin-top: 1rem;
+  background-color: #fff;
+  font-size: 14px;
+  text-align: left;
+}
+
+.nombre-size {
+  font-size: 14px !important;
+  padding-left: 6px;
+}
+
+.check-name {
+  width: 280px !important;
+  padding: 0px 10px !important;
+  margin-top: 1rem;
+  background-color: #fff;
+}
+
+.nombre-padding {
+  padding-right: 20px !important;
+}
+
+.dropdown-item-checkbox:checked {
+  background-color: #ec7000;
+  border-color: #ec7000;
+}
+
+.padding-select {
+  padding: 0px 0px 20px 0px !important;
+}
+
 .form-floating > label {
   position: absolute;
   top: 9px;
@@ -12481,7 +12516,7 @@ input[type=search]::-webkit-calendar-picker-indicator {
 }
 
 .texto-pequeño {
-  font-size: 15px;
+  font-size: 14px;
 }
 
 .datepicker table tr td span.active,
@@ -13348,13 +13383,15 @@ section#footer {
   color: #231d19;
 }
 
-.agrega {
+.agrega-color {
   text-decoration: underline;
   cursor: pointer;
+  color: #007ab7;
+  font-weight: bold;
 }
 
 .o-arrastra-tus {
-  color: #939598;
+  color: #56504c;
 }
 
 .agrega-o-arrastra-container,
@@ -13367,7 +13404,7 @@ section#footer {
 
 .puedes-subir-hasta {
   line-height: 19px;
-  color: #939598;
+  color: #56504c;
 }
 
 .adjuntar,
