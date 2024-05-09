@@ -188,6 +188,10 @@ ul.splide__list {
   content: url(../img/itau/alerta.svg);
 }
 
+.img-info-blanco {
+  content: url(../img/itau/info-blanco.svg);
+}
+
 .img-informacion {
   content: url(../img/itau/informacion.svg);
 }
@@ -13119,6 +13123,11 @@ body {
 .alert-info {
   border-left: 6px solid #007ab7;
   background-color: #deeef6;
+}
+
+.alert-info2 {
+  border-top: 4px solid #007ab7;
+  background-color: #4ca2cd;
 }
 
 .aviso-alerta {
