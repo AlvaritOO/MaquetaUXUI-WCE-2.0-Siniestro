@@ -184,6 +184,10 @@ ul.splide__list {
   content: url(../img/itau/alerta.svg);
 }
 
+.img-info-blanco {
+  content: url(../img/itau/info-blanco.svg);
+}
+
 .img-informacion {
   content: url(../img/itau/informacion.svg);
 }
@@ -12246,6 +12250,11 @@ h2, .h2 {
   color: #56504c;
 }
 
+.titulo-secundario {
+  font-size: 18px !important;
+  color: #56504c;
+}
+
 span,
 p,
 ul,
@@ -12292,6 +12301,10 @@ fieldset:disabled .btn {
   opacity: var(--bs-btn-disabled-opacity);
 }
 
+.btn-100 {
+  width: 100%;
+}
+
 .button-search {
   color: #003399;
   border-color: #e7eaf7;
@@ -12304,8 +12317,42 @@ fieldset:disabled .btn {
   border-color: #b5c1f5;
 }
 
+.btn-disabled {
+  background-color: #D9D3CF;
+  color: #56504C;
+}
+
+.espacio-inferior {
+  margin-bottom: 80px;
+}
+
 .custom-card {
   width: 327px !important;
+}
+
+.divoculto {
+  display: none;
+}
+
+.dropdown-item-checkbox:checked {
+  background-color: #ec7000;
+  border-color: #ec7000;
+}
+
+.form-label-nombres {
+  position: absolute;
+  top: 5px;
+  left: 14px;
+  height: 10px;
+  opacity: 1;
+  transform: translateY(-90%) scale(0.9);
+  font-weight: bolder;
+  padding: 10px 10px;
+  display: flex;
+  align-items: center;
+  width: max-content;
+  background-color: #fff;
+  color: #56504c !important;
 }
 
 .card-content {
@@ -12363,6 +12410,74 @@ input[type=search]::-webkit-calendar-picker-indicator {
   background-image: url("../../img/itau/ic_log-ejecutivo.svg"); /* Reemplaza con la URL de tu imagen */
   background-repeat: no-repeat; /* Evita que la imagen se repita en mosaico */
   background-position: center; /* Alinea el icono dentro de su espacio */
+}
+
+.form-floating > label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 0.6rem 1.75rem !important;
+  overflow: hidden;
+  text-align: start;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  pointer-events: none;
+  border: 1px solid transparent;
+  transform-origin: 0 0;
+  transition: opacity 0.1s ease-in-out, transform 0.1s ease-in-out;
+}
+
+.form-floating > .form-select {
+  padding-top: 0.625rem;
+  padding-bottom: 0.625rem;
+}
+
+.form-floating > label {
+  position: absolute;
+  top: 9px;
+  left: 10px;
+  width: auto;
+  height: 24px;
+  padding: 0rem 0.75rem !important;
+  overflow: hidden;
+  text-align: start;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  pointer-events: none;
+  border: 1px solid transparent;
+  transform-origin: 0 0;
+  transition: opacity 0.1s ease-in-out, transform 0.1s ease-in-out;
+  background-color: #fff;
+  color: #56504c;
+}
+
+.form-floating > .form-control:focus ~ label,
+.form-floating > .form-control:not(:placeholder-shown) ~ label,
+.form-floating > .form-control-plaintext ~ label,
+.form-floating > .form-select ~ label {
+  opacity: 1;
+  transform: translateY(-90%) scale(0.9);
+  font-weight: bolder;
+  color: #56504c;
+}
+
+.form-floating > .form-control:focus,
+.form-floating > .form-control:not(:placeholder-shown),
+.form-floating > .form-control-plaintext:focus,
+.form-floating > .form-control-plaintext:not(:placeholder-shown) {
+  padding-top: 1rem;
+  padding-bottom: 0.625rem;
+}
+
+.form-floating > .form-control,
+.form-floating > .form-control-plaintext {
+  padding: 1rem 1.3rem;
+}
+
+.texto-pequeño {
+  font-size: 15px;
 }
 
 .datepicker table tr td span.active,
@@ -13103,6 +13218,11 @@ body {
 .alert-info {
   border-left: 6px solid #007AB7;
   background-color: #DEEEF6;
+}
+
+.alert-info2 {
+  border-top: 4px solid #007ab7;
+  background-color: #4CA2CD;
 }
 
 .aviso-alerta {
