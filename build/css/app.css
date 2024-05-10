@@ -132,6 +132,10 @@ ul.splide__list {
   z-index: 3;
 }
 
+.divoculto {
+  display: none;
+}
+
 .image-logo {
   content: url(../img/itau/logo-itau.svg);
 }
@@ -12255,6 +12259,12 @@ h2, .h2 {
   color: #56504c;
 }
 
+.titulo-exito {
+  font-size: 20px !important;
+  color: #231d19;
+  font-weight: bold;
+}
+
 span,
 p,
 ul,
@@ -12331,6 +12341,10 @@ fieldset:disabled .btn {
 }
 
 .divoculto {
+  display: none;
+}
+
+.divoculto2 {
   display: none;
 }
 
@@ -12439,13 +12453,14 @@ input[type=search]::-webkit-calendar-picker-indicator {
 }
 
 .select-name {
-  width: 280px !important;
-  height: 40px !important;
-  padding: 10px !important;
+  width: 345px !important;
+  height: 50px !important;
+  padding: 10px 15px 15px 15px !important;
   margin-top: 1rem;
   background-color: #fff;
-  font-size: 14px;
+  font-size: 16px;
   text-align: left;
+  align-items: center;
 }
 
 .nombre-size {
@@ -13813,5 +13828,20 @@ section#footer {
     background-color: #F3F0EF;
     height: auto;
     font-weight: bolder;
+  }
+}
+@media (max-width: 575.98px) {
+  .cards-mobile {
+    display: flex;
+    flex-direction: column;
+    justify-content: center !important;
+    align-items: center;
+  }
+  .padding-mobile-card {
+    margin: 10px 10px 20px 10px !important;
+    padding: 0 !important;
+  }
+  .justify-card-mobile {
+    justify-content: left !important;
   }
 }

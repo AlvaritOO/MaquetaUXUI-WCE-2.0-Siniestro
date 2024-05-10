@@ -230,6 +230,12 @@ h2 {
   color: $textos;
 }
 
+.titulo-exito{
+  font-size: 20px !important;
+  color: $titulo-cabecera;
+  font-weight: bold;
+}
+
 span,
 p,
 ul,
@@ -313,6 +319,11 @@ fieldset:disabled .btn {
 .divoculto{
   display: none;
 }
+
+.divoculto2{
+  display: none;
+}
+
 
 .dropdown-item-checkbox:checked {
   background-color: #ec7000;
@@ -422,13 +433,14 @@ input[type="search"]::-webkit-calendar-picker-indicator {
 }
 
 .select-name{
-  width: 280px !important;
-  height: 40px !important;
-  padding: 10px !important;
+  width: 345px !important;
+  height: 50px !important;
+  padding: 10px 15px 15px 15px !important;
   margin-top: 1rem;
   background-color: #fff;
-  font-size: 14px;
+  font-size: 16px;
   text-align: left;
+  align-items: center;
 }
 
 .nombre-size{
@@ -1152,6 +1164,7 @@ body {
   line-height: 20px;
 }
 
+
 //Footer
 
 section#footer {
@@ -1600,6 +1613,7 @@ $accordion-icon-color: $naranja;
   width: 24px;
 }
 
+
 //tablas responsivas Luis
 @include media-breakpoint-down(sm) {
   table.tabla-custom tr {
@@ -1697,3 +1711,20 @@ $accordion-icon-color: $naranja;
     font-weight: bolder;
   }
 }
+
+@include media-breakpoint-down(sm) { 
+  .cards-mobile{
+   display: flex;
+   flex-direction: column;
+   justify-content: center !important;
+   align-items: center;
+  }
+  .padding-mobile-card{
+    margin: 10px 10px 20px 10px !important;
+    padding: 0 !important;
+  }
+
+  .justify-card-mobile{
+    justify-content: left !important;
+  }
+ }
