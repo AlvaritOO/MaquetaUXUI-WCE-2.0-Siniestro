@@ -198,10 +198,10 @@
                             <section id="archivos_cargados" class="container row archivos">
                                 <div class="container col-lg-12">
                                     <div class="row">
-                                        <div class="col-9 txt-file-attach text-start">
+                                        <div class="col-9 txt-file-attach text-start ps-0">
                                             <span>lipsum.jpg</span>
                                         </div>
-                                        <div class="col-3 file-attach-options d-flex justify-content-end">
+                                        <div class="col-3 file-attach-options d-flex justify-content-start">
                                             <a href=""><img class="float-start" src="../../../build/img/ojo.svg"
                                                     data-bs-toggle="tooltip" data-bs-placement="top"
                                                     title="Ver adjunto"></a>
@@ -211,7 +211,7 @@
                                                     data-bs-toggle="tooltip" data-bs-placement="top"
                                                     title="Eliminar"></a>
                                         </div>
-                                        <div class="peso-icono">
+                                        <div class="peso-icono  ps-0">
                                             <div class="mb small me-2">5MB</div>
                                             <img class="confirmacin-icon" src="../../../build/img/confirmacin.svg">
                                         </div>
@@ -248,7 +248,7 @@
                             <section id="archivos_cargados" class="container row archivos">
                                 <div class="container col-lg-6 col-md-6">
                                     <div class="row">
-                                        <div class="col-9 txt-file-attach text-start">
+                                        <div class="col-6 txt-file-attach text-start ps-0">
                                             <span>lipsum.jpg</span>
                                         </div>
                                         <div class="col-3 file-attach-options d-flex justify-content-end">
@@ -261,7 +261,7 @@
                                                     data-bs-toggle="tooltip" data-bs-placement="top"
                                                     title="Eliminar"></a>
                                         </div>
-                                        <div class="peso-icono">
+                                        <div class="peso-icono  ps-0">
                                             <div class="mb small me-2">5MB</div>
                                             <img class="confirmacin-icon" src="../../../build/img/confirmacin.svg">
                                         </div>
@@ -270,10 +270,10 @@
 
                                 <div class="container col-lg-6 col-md-6">
                                     <div class="row">
-                                        <div class="col-9 txt-file-attach text-start">
+                                        <div class="col-6 txt-file-attach text-start ps-0">
                                             <span>lipsum.jpg</span>
                                         </div>
-                                        <div class="col-3 file-attach-options d-flex justify-content-end">
+                                        <div class="col-2 file-attach-options d-flex justify-content-start">
                                             <a href=""><img class="float-start" src="../../../build/img/ojo.svg"
                                                     data-bs-toggle="tooltip" data-bs-placement="top"
                                                     title="Ver adjunto"></a>
@@ -283,7 +283,7 @@
                                                     data-bs-toggle="tooltip" data-bs-placement="top"
                                                     title="Eliminar"></a>
                                         </div>
-                                        <div class="peso-icono">
+                                        <div class="peso-icono ps-0">
                                             <div class="mb small me-2">5MB</div>
                                             <img class="confirmacin-icon" src="../../../build/img/confirmacin.svg">
                                         </div>
@@ -292,7 +292,7 @@
 
                                 <div class="container col-lg-6 col-md-6">
                                     <div class="row">
-                                        <div class="col-9 txt-file-attach text-start">
+                                        <div class="col-6 txt-file-attach text-start ps-0">
                                             <span>lipsum.jpg</span>
                                         </div>
                                         <div class="col-3 file-attach-options d-flex justify-content-end">
@@ -305,7 +305,7 @@
                                                     data-bs-toggle="tooltip" data-bs-placement="top"
                                                     title="Eliminar"></a>
                                         </div>
-                                        <div class="peso-icono">
+                                        <div class="peso-icono ps-0">
                                             <div class="mb small me-2">5MB</div>
                                             <img class="confirmacin-icon" src="../../../build/img/confirmacin.svg">
                                         </div>
@@ -314,23 +314,19 @@
 
                                 <div class="container col-lg-6 col-md-6">
                                     <div class="row">
-                                        <div class="col-9 txt-file-attach text-start color-error">
-                                            <span>lipsum.jpg</span>
+                                        <div class="col-6 txt-file-attach text-start color-error ps-0">
+                                            <span><i class="bi bi-exclamation-triangle-fill color-error"></i>lipsum.jpg</span>
                                         </div>
-                                        <div class="col-3 file-attach-options d-flex justify-content-end">
-                                            <a href=""><img class="float-start" src="../../../build/img/ojo.svg"
+                                        <div class="col-4 file-attach-options d-flex justify-content-end">
+                                            <a href=""><img class="float-start" src="../../../build/img/cerrar.svg"
                                                     data-bs-toggle="tooltip" data-bs-placement="top"
                                                     title="Ver adjunto"></a>
-                                            <a href="" data-bs-toggle="modal" data-bs-target="#staticBackdrop"><img
-                                                    class="float-start"
-                                                    src="../../../build/img/_eliminar_cargaDeDocumentos.svg"
-                                                    data-bs-toggle="tooltip" data-bs-placement="top"
-                                                    title="Eliminar"></a>
                                         </div>
 
-                                        <div class="peso-icono">
+                                        <div class="peso-icono ps-0">
+                                            
                                             <div class="mb small me-2 color-error">El archivo excede los  8 MB</div>
-                                            <i class="bi bi-exclamation-triangle-fill color-error"></i>
+                                            
                                         </div>
                                     </div>
                                 </div>
@@ -392,14 +388,12 @@
                             en estado pendiente hasta que los envíes, a través de la sección 
                             “Revisa tus gestiones pendientes”.</p>
 
+                        <section class="container act-buttons">
+                            <button type="button" data-bs-dismiss="modal"
+                                class="btn btn-outline-secondary px-5">Cancelar</button>
+                            <button type="button" class="btn btn-primary text-white px-5">Continuar</button>
+                        </section>
                     </div>
-                </div>
-                <div class="modal-footer">
-                    <section class="container text-center act-buttons">
-                        <button type="button" data-bs-dismiss="modal"
-                            class="btn btn-outline-secondary px-5">Cancelar</button>
-                        <button type="button" class="btn btn-primary text-white px-5">Continuar</button>
-                    </section>
                 </div>
             </div>
         </div>
@@ -409,21 +403,27 @@
     <!-- Modal Confirmacion-->
     <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
         aria-labelledby="staticBackdropLabel" aria-hidden="true">
-        <div class="modal-dialog">
+        <div class="modal-dialog modal-lg">
             <div class="modal-content">
-                <div class="modal-header">
-                    <h1 class="modal-title" id="staticBackdropLabel">¿Desea eliminar el archivo?</h1>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+
+                <div class="modal-body text-start pb-0">
+                <div class="d-flex justify-content-between">
+                    <h2 class="text-primary title mt-0 fw-bold">¿Desea eliminar el archivo?</h2>
+
+                    <a type="button" class="btn-close-orange my-auto mt-0" data-bs-dismiss="modal" aria-label="Close">
+                    <img src="../../../build/img/itau/cerrar-primary.svg" alt="">
+                    </a>
                 </div>
-                <div class="modal-body py-2">
-                    Haga clic en confirmar para continuar.
+                <div class="divisor-line w-100"></div>
+                <div class="d-flex flex-column justify-content-start row">
+                    <p class="my-4">Haga clic en confirmar para continuar.</p>
                 </div>
-                <div class="modal-footer">
-                    <section class="container text-center act-buttons">
-                        <a type="button" data-bs-dismiss="modal"
-                            class="agrega-color px-5">Cancelar</a>
-                        <button type="button" class="btn btn-primary text-white px-5">Confirmar</button>
-                    </section>
+                </div>
+                <div class="modal-footer bg-modal-neutral border-0 py-2">
+                <div class="d-flex justify-content-end gap-4">
+                    <a type="button" class="text-info p-2 fw-bold" data-bs-dismiss="modal">Cancelar</a>
+                    <a href=""><button type="button" class="btn btn-primary px-4 text-white">Confimar</button></a>
+                </div>
                 </div>
             </div>
         </div>

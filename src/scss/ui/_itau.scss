@@ -289,6 +289,10 @@ fieldset:disabled .btn {
   opacity: var(--bs-btn-disabled-opacity);
 }
 
+.btn-primary {
+  border: 2px solid $naranja-hover;
+}
+
 .btn-100 {
   width: 100%;
 }
@@ -1430,6 +1434,10 @@ $modal-content-color: $textos;
 
 .modal-header > .modal-title {
   color: $naranja;
+}
+
+.bg-modal-neutral {
+  background-color: $neutral;
 }
 
 .accordion {

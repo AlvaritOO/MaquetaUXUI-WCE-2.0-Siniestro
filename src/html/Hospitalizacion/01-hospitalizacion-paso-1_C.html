@@ -1,224 +1,261 @@
 <!DOCTYPE html>
 <html lang="en" class="h-100">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Itau</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-        href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,600;1,700&display=swap"
-        rel="stylesheet">
-    <link rel="stylesheet" href="../../../build/css/app.css">
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,600;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../../../build/css/app.css" />
     <link rel="stylesheet" href="../../../build/css/splide.min.css" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
-</head>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css"
+    />
+  </head>
 
-<body class="d-flex flex-column h-100">
+  <body class="d-flex flex-column h-100">
     <!--NavBar-->
     <section id="navBar">
-        <div class="container d-none d-sm-none d-md-none d-lg-block">
-            <header class="d-flex flex-wrap justify-content-end justify-content-md-between pt-3 header-bg">
+      <div class="container d-none d-sm-none d-md-none d-lg-block">
+        <header
+          class="d-flex flex-wrap justify-content-end justify-content-md-between pt-3 header-bg"
+        >
+          <div>
+            <a
+              href="/"
+              class="d-flex align-items-center col-md-3 mb-2 mb-md-0 text-w text-decoration-none"
+            >
+              <img alt="Logo" class="image-logo pe-4" />
+              <img class="image-logo-centrado" alt="BNP" />
+            </a>
+          </div>
 
-                <div>
-                    <a href="/" class="d-flex align-items-center col-md-3 mb-2 mb-md-0 text-w text-decoration-none">
-                        <img alt="Logo" class="image-logo pe-4">
-                        <img class="image-logo-centrado" alt="BNP">
-                    </a>
-                </div>
+          <div class="d-flex flex-wrap justify-content-end">
+            <div>
+              <a
+                class="nav-link dropdown-toggle log-ejecutivo"
+                href="#"
+                id="navbarDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                <img class="img_log-ejecutivo" />
+                Hola, Leslie
+                <i class="bi bi-chevron-down"></i>
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li>
+                  <hr class="dropdown-divider" />
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                </li>
+              </ul>
+            </div>
 
-                <div class="d-flex flex-wrap justify-content-end">
+            <div class="divisor ms-3"></div>
 
-                    <div>
-                        <a class="nav-link dropdown-toggle log-ejecutivo" href="#" id="navbarDropdown" role="button"
-                            data-bs-toggle="dropdown" aria-expanded="false">
-                            <img class="img_log-ejecutivo">
-                            Hola, Leslie
-                            <i class="bi bi-chevron-down"></i>
+            <div class="mt-1 ms-3">
+              <a class="text-decoration-none text-black" href="#" role="button">
+                <img class="img_cerrar_sesion" alt="" />
+                Cerrar sesión</a
+              >
+            </div>
+          </div>
 
-                        </a>
-                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <li><a class="dropdown-item" href="#">Action</a></li>
-                            <li><a class="dropdown-item" href="#">Another action</a></li>
-                            <li>
-                                <hr class="dropdown-divider">
-                            </li>
-                            <li><a class="dropdown-item" href="#">Something else here</a></li>
-                        </ul>
+          <nav
+            class="navbar navbar-expand-lg nav-itau pb-0 d-none d-lg-block d-sm-none"
+          >
+            <div class="container-fluid justify-content-around">
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#"
+                    >Inicio</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-white" href="#">Contratar Seguros</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-white" href="#"
+                    >Ver Seguros Contratados</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-white" href="#"
+                    >Denunciar un Siniestro</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </nav>
+        </header>
+      </div>
+      <div class="d-lg-none d-sm-block">
+        <nav class="navbar navbar-expand-lg bg-light">
+          <div class="container">
+            <div class="navbar-brand" href="#">
+              <a href=""><img alt="Logo" class="image-logo me-2" /></a>
+              <a href=""><img class="image-logo-centrado" alt="BNP" /></a>
+            </div>
 
-                    </div>
-
-                    <div class="divisor ms-3"></div>
-
-                    <div class="mt-1 ms-3">
-                        <a class="text-decoration-none text-black" href="#" role="button">
-                            <img class="img_cerrar_sesion" alt="">
-                            Cerrar sesión</a>
-                    </div>
-                </div>
-
-                <nav class="navbar navbar-expand-lg nav-itau pb-0 d-none d-lg-block d-sm-none">
-                    <div class="container-fluid justify-content-around">
-
-                        <ul class="navbar-nav">
-                            <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="#">Inicio</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link text-white" href="#">Contratar Seguros</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link text-white" href="#">Ver Seguros Contratados</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link text-white" href="#">Denunciar un Siniestro</a>
-                            </li>
-
-                        </ul>
-
-                    </div>
-                </nav>
-
-
-            </header>
-
-        </div>
-        <div class="d-lg-none d-sm-block">
-            <nav class="navbar navbar-expand-lg bg-light">
-                <div class="container">
-                    <div class="navbar-brand" href="#">
-                        <a href=""><img alt="Logo" class="image-logo me-2"></a>
-                        <a href=""><img class="image-logo-centrado" alt="BNP"></a>
-                    </div>
-
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                        aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse ms-3" id="navbarSupportedContent">
-                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                            <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="#">Inicio</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Contratar seguros</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Ver seguros contratados</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Denunciar un siniestro</a>
-                            </li>
-                        </ul>
-
-                    </div>
-                </div>
-            </nav>
-        </div>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div
+              class="collapse navbar-collapse ms-3"
+              id="navbarSupportedContent"
+            >
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#"
+                    >Inicio</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Contratar seguros</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Ver seguros contratados</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Denunciar un siniestro</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </div>
     </section>
     <!--NavBar fin-->
 
-
     <!--Contenido-->
     <main id="contenedor-mayor" class="flex-shrink-0 mt-4">
-
-        <!--wizard-->
-        <section>
-            <div class="container">
-                <div class="row progreso mt-0">
-                    <div class="progress" data-percentage="25">
-                        <span class="progress-left">
-                            <span class="progress-bar"></span>
-                        </span>
-                        <span class="progress-right">
-                            <span class="progress-bar"></span>
-                        </span>
-                        <div class="progress-value">
-                            <div>1/5<br /></div>
-                        </div>
-                    </div>
-                    <p class="title-seccion">Selección de fecha y características del evento</p>
-                </div>
-            </div>
-        </section>
-        <!--fin wizard-->
-
+      <!--wizard-->
+      <section>
         <div class="container">
-            <div class="row">
-                <div>
-                    <h1 class="mt-3">
-                        Indícanos cuando inicistaste tu atención medica
-                    </h1>
-                    <p class="col-sm-6 col-lg-6 titulo-secundario">
-                        Para atención hospitalaria debes indicarnos la fecha de ingreso, si es ambulatoria debes indicarnos la fecha de atención.
-                    </p>
-                </div>
-                <div
-                    class="mt-4 pb-3 featurette g-0 bg-white border rounded overflow-hidden flex-md-row mb-4 shadow-sm">
-                    
-
-                    <div class="row col-sm-10 col-lg-6 alert alert-warning fade show mt-4 mx-5 mb-4" role="alert">
-                        <div class="aviso-alerta">
-                            <div class="col"><img class="img-alerta" alt="">
-                            </div>
-                        </div>
-                        <div class="col-sm-6 col-lg-10 texto">
-                            <b class="mensaje-de-informacion">Actualmente no hay siniestros declarados</b>
-                            <div class="mensaje-de-informacion-2">
-                                <span>¡Podemos ayudarte! Habla con un asesor llamando al 
-                                </span>
-                                <b>800 362 100</b>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+          <div class="row progreso mt-0">
+            <div class="progress" data-percentage="25">
+              <span class="progress-left">
+                <span class="progress-bar"></span>
+              </span>
+              <span class="progress-right">
+                <span class="progress-bar"></span>
+              </span>
+              <div class="progress-value">
+                <div>1/5<br /></div>
+              </div>
             </div>
-            <div class="container text-end mt-8 mb-4 act-buttons pb-2">
-                <button type="button" class="btn btn-outline-secondary px-5">Volver</button>
-            </div>
-            
+            <p class="title-seccion">Fecha y características del evento</p>
+          </div>
         </div>
+      </section>
+      <!--fin wizard-->
 
-
+      <div class="container">
+        <div class="row">
+          <div>
+            <h1 class="mt-3">
+              Indícanos cuando inicistaste tu atención medica
+            </h1>
+            <p class="col-sm-6 col-lg-6 titulo-secundario">
+              Para atención hospitalaria debes indicarnos la fecha de ingreso,
+              si es ambulatoria debes indicarnos la fecha de atención.
+            </p>
+          </div>
+          <div
+            class="mt-4 featurette g-0 bg-white border rounded overflow-hidden flex-md-row mb-4 shadow-sm"
+          >
+            <div
+              class="row col-sm-10 col-lg-6 alert alert-warning fade show mt-4 mx-5 mb-4"
+              role="alert"
+            >
+              <div class="aviso-alerta">
+                <div class="col"><img class="img-alerta" alt="" /></div>
+              </div>
+              <div class="col-sm-6 col-lg-10 texto">
+                <b class="mensaje-de-informacion"
+                  >Actualmente no hay siniestros declarados</b
+                >
+                <div class="mensaje-de-informacion-2">
+                  <span
+                    >¡Podemos ayudarte! Habla con un asesor llamando al
+                  </span>
+                  <b>800 362 100</b>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="container text-end mt-8 mb-4 act-buttons pb-2">
+          <button type="button" class="btn btn-outline-secondary px-5">
+            Volver
+          </button>
+        </div>
+      </div>
     </main>
     <!--Contenido fin-->
 
     <!--Footer-->
     <section id="footer" class="footer mt-auto">
-        <div class="container">
-            <footer class="d-flex flex-wrap align-items-center py-3">
-                <div class="img-footer col-lg-3 col-12 offset-lg-0 text-muted">
-                    <a href="#"><img class="img-logo-footer logo-footer offset-md-3 offset-lg-2 me-3 offset-2" /></a>
-                    <a href="#"><img class="col-lg-5 col-5 col-md-4 img-cardif-footer logo-footer" /></a>
-                </div>
-                <div
-                    class="text-footer-1 col-lg-9 col-12 justify-content-end text-sm-center text-center text-lg-start mt-4 mt-lg-0">
-                    <p class="mb-0 mt-3">Infórmese sobre la garantía estatal de los depósitos en su banco o en
-                        www.cmfchile.cl</p>
-                    <p>© 2022 Banco Itaú. Todos los derechos reservados. Av. Presidente Riesco 5537, Las Condes.
-                        Santiago de Chile.
-                    </p>
-                </div>
-            </footer>
-        </div>
+      <div class="container">
+        <footer class="d-flex flex-wrap align-items-center py-3">
+          <div class="img-footer col-lg-3 col-12 offset-lg-0 text-muted">
+            <a href="#"
+              ><img
+                class="img-logo-footer logo-footer offset-md-3 offset-lg-2 me-3 offset-2"
+            /></a>
+            <a href="#"
+              ><img
+                class="col-lg-5 col-5 col-md-4 img-cardif-footer logo-footer"
+            /></a>
+          </div>
+          <div
+            class="text-footer-1 col-lg-9 col-12 justify-content-end text-sm-center text-center text-lg-start mt-4 mt-lg-0"
+          >
+            <p class="mb-0 mt-3">
+              Infórmese sobre la garantía estatal de los depósitos en su banco o
+              en www.cmfchile.cl
+            </p>
+            <p>
+              © 2022 Banco Itaú. Todos los derechos reservados. Av. Presidente
+              Riesco 5537, Las Condes. Santiago de Chile.
+            </p>
+          </div>
+        </footer>
+      </div>
     </section>
     <!--Fin Footer-->
+  </body>
 
-    
-
-</body>
-
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
-    crossorigin="anonymous"></script>
-<script src="https://code.jquery.com/jquery-3.6.0.min.js"
-    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-<script src="../../js/splide.min.js"></script>
-<script src="../../js/funtion.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
-
-
+    crossorigin="anonymous"
+  ></script>
+  <script
+    src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+    crossorigin="anonymous"
+  ></script>
+  <script src="../../js/splide.min.js"></script>
+  <script src="../../js/funtion.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
 </html>

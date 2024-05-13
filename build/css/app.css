@@ -12315,6 +12315,10 @@ fieldset:disabled .btn {
   opacity: var(--bs-btn-disabled-opacity);
 }
 
+.btn-primary {
+  border: 2px solid #bc5900;
+}
+
 .btn-100 {
   width: 100%;
 }
@@ -12332,8 +12336,8 @@ fieldset:disabled .btn {
 }
 
 .btn-disabled {
-  background-color: #D9D3CF;
-  color: #56504C;
+  background-color: #d9d3cf;
+  color: #56504c;
 }
 
 .espacio-inferior {
@@ -13120,7 +13124,7 @@ body {
   background-color: #ffffff;
   flex-direction: row;
   border-radius: 20px;
-  border: 1px solid #D9D3CF;
+  border: 1px solid #d9d3cf;
   justify-content: center;
   padding: 8px;
   text-align: right;
@@ -13175,7 +13179,7 @@ body {
 
 .top4 {
   align-self: stretch;
-  background-color: #D9D3CF;
+  background-color: #d9d3cf;
   border-top-right-radius: 3px;
   border-top-left-radius: 3px;
   overflow: hidden;
@@ -13323,7 +13327,7 @@ body {
 
 .alert-info2 {
   border-top: 4px solid #007ab7;
-  background-color: #4CA2CD;
+  background-color: #4ca2cd;
 }
 
 .aviso-alerta {
@@ -13590,6 +13594,10 @@ section#footer {
 
 .modal-header > .modal-title {
   color: #ec7000;
+}
+
+.bg-modal-neutral {
+  background-color: #faf7f5;
 }
 
 .accordion {
