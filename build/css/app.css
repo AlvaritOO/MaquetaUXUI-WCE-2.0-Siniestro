@@ -176,6 +176,10 @@ ul.splide__list {
   content: url(../img/itau/seguro-catastrofico.svg);
 }
 
+.img-seguro-hospitalizacion {
+  content: url(../img/itau/hospitalizacion.svg);
+}
+
 .img-documento {
   content: url(../img/itau/documento.svg);
 }
