@@ -94,6 +94,9 @@
   content: url(../img/itau/_eliminar_cargaDeDocumentos.svg);
 }
 
+.img-enfermedades-graves {
+  content: url(../img/itau/enfermedades-graves.svg);
+}
 // Colores
 $primary: $naranja;
 $secondary: $azul;
@@ -377,6 +380,24 @@ fieldset:disabled .btn {
   }
 }
 
+.color-texto-card{
+  color: $textos;
+}
+
+.font-size-card{
+  font-size: 20px;
+  line-height: 25.74px;
+}
+
+.card-seguros-declarar{
+  max-width: 13rem;
+
+}
+
+.card-body2{
+  height: 132px;
+}
+
 .height-section-card {
   height: 500px;
 }
@@ -483,7 +504,7 @@ input[type="search"]::-webkit-calendar-picker-indicator {
 }
 
 .padding-select {
-  padding: 0px 0px 200px 0px !important;
+  padding: 0px 0px 30px 0px !important;
 }
 
 .form-floating > label {
