@@ -33,6 +33,10 @@
   content: url(../img/forum/Ilustration-seguro4.svg);
 }
 
+.img-seguro-catastrofico {
+  content: url(../img/forum/Ilustration-seguro5.svg);
+}
+
 .img-documento {
   content: url(../img/forum/file-earmark-text.svg);
 }
@@ -93,7 +97,7 @@ $info: #007ab7;
 $light: #ffffff;
 $dark: $azul-hover;
 $error: #ff0000; //luis
-$gray-light: #D9D3CF; //luis
+$gray-light: #d9d3cf; //luis
 
 //Tooltips
 $tooltip-bg: $main-light;
@@ -390,7 +394,6 @@ fieldset:disabled .btn {
   .btn {
     width: 100%;
   }
-
 }
 
 input[type="date"]::-webkit-calendar-picker-indicator {
@@ -477,7 +480,6 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 }
 
 .card-seguros-asociados-2 .top2 {
-
   .nombre-seguro-2,
   .cobertura .text-cards-1 {
     color: $white;
@@ -564,7 +566,7 @@ body {
     left: 0;
   }
 
-  >span {
+  > span {
     width: 50%;
     height: 100%;
     overflow: hidden;
@@ -636,57 +638,57 @@ body {
 }
 
 @for $i from 1 through $howManySteps {
-  $stepName: (
-    $i * calc(100 / $howManySteps)
-  );
+  $stepName: ($i * calc(100 / $howManySteps));
 
-@if $i <=calc($howManySteps / 2) {
-  .progress[data-percentage="#{$stepName}"] {
-    .progress-right .progress-bar {
-      animation: loading-#{$i} $animationTime linear forwards;
-    }
+  @if $i <=calc($howManySteps / 2) {
+    .progress[data-percentage="#{$stepName}"] {
+      .progress-right .progress-bar {
+        animation: loading-#{$i} $animationTime linear forwards;
+      }
 
-    .progress-left .progress-bar {
-      animation: 0;
+      .progress-left .progress-bar {
+        animation: 0;
+      }
     }
   }
-}
 
-@if $i >calc($howManySteps / 2) {
-  .progress[data-percentage="#{$stepName}"] {
-    .progress-right .progress-bar {
-      animation: loading-#{calc($howManySteps / 2)} $animationTime linear forwards; //set the animation to longest animation
+  @if $i >calc($howManySteps / 2) {
+    .progress[data-percentage="#{$stepName}"] {
+      .progress-right .progress-bar {
+        animation: loading-#{calc($howManySteps / 2)}
+          $animationTime
+          linear
+          forwards; //set the animation to longest animation
+      }
+
+      .progress-left .progress-bar {
+        animation: loading-#{$i -
+          calc($howManySteps / 2)}
+          $animationTime
+          linear
+          forwards
+          $animationTime;
+      }
     }
-
-    .progress-left .progress-bar {
-      animation: loading-#{$i -
- calc($howManySteps / 2)
-    }
-
-    $animationTime linear forwards $animationTime;
   }
-}
-}
 }
 
 //animation
 @for $i from 1 through calc($howManySteps / 2) {
   $degrees: calc(180 / ($howManySteps / 2));
-  $degrees: (
-    $degrees * $i
-  );
+  $degrees: ($degrees * $i);
 
-@keyframes loading-#{$i} {
-  0% {
-    -webkit-transform: rotate(0deg);
-    transform: rotate(0deg);
-  }
+  @keyframes loading-#{$i} {
+    0% {
+      -webkit-transform: rotate(0deg);
+      transform: rotate(0deg);
+    }
 
-  100% {
-    -webkit-transform: rotate($degrees);
-    transform: rotate(#{$degrees}deg);
+    100% {
+      -webkit-transform: rotate($degrees);
+      transform: rotate(#{$degrees}deg);
+    }
   }
-}
 }
 
 //additional styling
@@ -1331,7 +1333,7 @@ $headings-color: $titulo-cabecera;
 //modal
 $modal-content-color: $textos;
 
-.modal-header>.modal-title {
+.modal-header > .modal-title {
   color: $main-medium;
 }
 
@@ -1343,7 +1345,7 @@ $modal-content-color: $textos;
 $accordion-border-color: $bordes-card;
 $accordion-icon-color: $naranja;
 
-.act-buttons>button {
+.act-buttons > button {
   font-weight: 700 !important;
 }
 
@@ -1398,7 +1400,7 @@ $accordion-icon-color: $naranja;
   height: 87px;
 }
 
-.table> :not(caption)>*>* {
+.table > :not(caption) > * > * {
   color: $neutral-dark;
 }
 
@@ -1509,7 +1511,7 @@ $accordion-icon-color: $naranja;
   border-radius: 37px;
 }
 
-.form-floating>label {
+.form-floating > label {
   font-size: 0.9rem;
 }
 
@@ -1623,17 +1625,15 @@ span.rechazado::after {
 }
 
 @include media-breakpoint-up(md) {
-
   #splidesiniestro ul.splide__pagination {
     position: relative;
     top: 10px;
   }
 
-  .act-buttons>button {
-    margin-right: 0.5rem
+  .act-buttons > button {
+    margin-right: 0.5rem;
   }
 }
-
 
 @include media-breakpoint-up(lg) {
   .row.box-coberturas-row-top {
@@ -1643,8 +1643,8 @@ span.rechazado::after {
     font-weight: bolder;
   }
 
-  .act-buttons>button {
-    margin-right: 0.5rem
+  .act-buttons > button {
+    margin-right: 0.5rem;
   }
 }
 

@@ -37,6 +37,10 @@
   content: url(../img/itau/otras-coverturas.svg);
 }
 
+.img-seguro-catastrofico {
+  content: url(../img/itau/seguro-catastrofico.svg);
+}
+
 .img-documento {
   content: url(../img/itau/documento.svg);
 }
@@ -74,11 +78,11 @@
   content: url(../img/itau/informacion-modal.svg);
 }
 
-.img-logo-footer{
+.img-logo-footer {
   content: url(../img/itau/logo_itau_footer.svg);
 }
 
-.img-cardif-footer{
+.img-cardif-footer {
   content: url(../img/cardif-footer.svg);
 }
 
@@ -99,7 +103,7 @@ $light: #ffffff;
 $dark: $azul-hover;
 $warning: #ec7000; //luis
 $error: #ff0000; //luis
-$gray-light: #D9D3CF; //luis
+$gray-light: #d9d3cf; //luis
 
 // Importar Bootstrap
 @import "../../node_modules/bootstrap/scss/bootstrap.scss";
@@ -222,15 +226,14 @@ h1 {
 h2 {
   font-size: 22px;
   color: $textos;
-  
 }
 
-.titulo-secundario{
+.titulo-secundario {
   font-size: 18px !important;
   color: $textos;
 }
 
-.titulo-exito{
+.titulo-exito {
   font-size: 20px !important;
   color: $titulo-cabecera;
   font-weight: bold;
@@ -286,7 +289,7 @@ fieldset:disabled .btn {
   opacity: var(--bs-btn-disabled-opacity);
 }
 
-.btn-100{
+.btn-100 {
   width: 100%;
 }
 
@@ -303,12 +306,12 @@ fieldset:disabled .btn {
   }
 }
 
-.btn-disabled{
-  background-color: #D9D3CF;
-  color: #56504C;
+.btn-disabled {
+  background-color: #d9d3cf;
+  color: #56504c;
 }
 
-.espacio-inferior{
+.espacio-inferior {
   margin-bottom: 80px;
 }
 
@@ -316,14 +319,13 @@ fieldset:disabled .btn {
   width: 327px !important;
 }
 
-.divoculto{
+.divoculto {
   display: none;
 }
 
-.divoculto2{
+.divoculto2 {
   display: none;
 }
-
 
 .dropdown-item-checkbox:checked {
   background-color: #ec7000;
@@ -331,7 +333,7 @@ fieldset:disabled .btn {
 }
 
 .form-label-nombres {
-  position:absolute;
+  position: absolute;
   top: 5px;
   left: 14px;
   height: 10px;
@@ -341,12 +343,10 @@ fieldset:disabled .btn {
   padding: 10px 10px;
   display: flex;
   align-items: center;
-  width:max-content;
+  width: max-content;
   background-color: #fff;
   color: $textos !important;
 }
-
-
 
 .card-content {
   display: flex;
@@ -373,7 +373,7 @@ fieldset:disabled .btn {
   }
 }
 
-.height-section-card{
+.height-section-card {
   height: 500px;
 }
 
@@ -387,10 +387,24 @@ fieldset:disabled .btn {
   position: inherit;
 }
 
-input[type="date"]::-webkit-calendar-picker-indicator {
-  width: 25px;
-  height: 25px;
-  margin-bottom: 15px;
+input[type="date"] {
+  position: relative;
+
+  &::-webkit-calendar-picker-indicator {
+    display: none;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    width: 25px;
+    height: 25px;
+    background-image: url("../img/itau/date.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
 }
 
 input[type="search"]::-webkit-calendar-picker-indicator {
@@ -432,7 +446,7 @@ input[type="search"]::-webkit-calendar-picker-indicator {
   padding-bottom: 0.625rem;
 }
 
-.select-name{
+.select-name {
   width: 33% !important;
   height: 50px !important;
   padding: 10px 15px 15px 15px !important;
@@ -443,19 +457,19 @@ input[type="search"]::-webkit-calendar-picker-indicator {
   align-items: center;
 }
 
-.nombre-size{
+.nombre-size {
   font-size: 14px !important;
   padding-left: 6px;
 }
 
-.check-name{
+.check-name {
   width: 280px !important;
   padding: 0px 10px !important;
   margin-top: 1rem;
   background-color: #fff;
 }
 
-.nombre-padding{
+.nombre-padding {
   padding-right: 20px !important;
 }
 
@@ -464,8 +478,7 @@ input[type="search"]::-webkit-calendar-picker-indicator {
   border-color: #ec7000;
 }
 
-
-.padding-select{
+.padding-select {
   padding: 0px 0px 200px 0px !important;
 }
 
@@ -510,7 +523,7 @@ input[type="search"]::-webkit-calendar-picker-indicator {
   padding: 1rem 1.3rem;
 }
 
-.texto-pequeño{
+.texto-pequeño {
   font-size: 14px;
 }
 
@@ -537,17 +550,14 @@ input[type="search"]::-webkit-calendar-picker-indicator {
   background-color: $naranja;
   color: $light;
 
-
   h1,
   p {
     color: $light;
   }
 }
 
-
 .card-seguros-asociados-2.active .top2 {
   background-color: $naranja;
-  
 }
 
 .taginfo2 {
@@ -568,7 +578,6 @@ input[type="search"]::-webkit-calendar-picker-indicator {
   padding: 7px 13px;
   text-align: right;
   color: $light;
-
 }
 
 .accordion-button.socio {
@@ -882,7 +891,6 @@ body {
   position: relative;
   padding-right: 0px !important;
   padding-left: 0px !important;
-  
 }
 
 .card-seguros-asociados-3 {
@@ -899,7 +907,6 @@ body {
   position: relative;
   gap: 24px;
 }
-
 
 .taginfo1 {
   background-color: $naranja-hover;
@@ -985,7 +992,7 @@ body {
   align-items: center;
   justify-content: center;
   padding: 24px 24px 80px 24px;
-  
+
   gap: 24px;
   z-index: 0;
 }
@@ -1054,7 +1061,6 @@ body {
   margin: 0;
   color: $placeholder;
 }
-
 
 .cobertura {
   align-self: stretch;
@@ -1131,18 +1137,20 @@ body {
   background-color: $alert-ligth;
 }
 
-
 .alert-info {
-  border-left: 6px solid #007AB7;
-  background-color: #DEEEF6;
-
+  border-left: 6px solid #007ab7;
+  background-color: #deeef6;
 }
 
 .alert-info2 {
   border-top: 4px solid $info;
-  background-color: #4CA2CD;
+  background-color: #4ca2cd;
 }
 
+.alert-info2 {
+  border-top: 4px solid $info;
+  background-color: #4ca2cd;
+}
 
 .aviso-alerta {
   width: 32px;
@@ -1163,7 +1171,6 @@ body {
   position: relative;
   line-height: 20px;
 }
-
 
 //Footer
 
@@ -1613,7 +1620,6 @@ $accordion-icon-color: $naranja;
   width: 24px;
 }
 
-
 //tablas responsivas Luis
 @include media-breakpoint-down(sm) {
   table.tabla-custom tr {
@@ -1679,17 +1685,15 @@ $accordion-icon-color: $naranja;
 }
 
 @include media-breakpoint-up(md) {
-
   #splidesiniestro ul.splide__pagination {
     position: relative;
     top: 10px;
   }
 
-  .act-buttons>button {
-    margin-right: 0.5rem
+  .act-buttons > button {
+    margin-right: 0.5rem;
   }
 }
-
 
 @include media-breakpoint-up(lg) {
   .row.box-coberturas-row-top {
@@ -1699,8 +1703,8 @@ $accordion-icon-color: $naranja;
     font-weight: bolder;
   }
 
-  .act-buttons>button {
-    margin-right: 0.5rem
+  .act-buttons > button {
+    margin-right: 0.5rem;
   }
 }
 
@@ -1712,19 +1716,19 @@ $accordion-icon-color: $naranja;
   }
 }
 
-@include media-breakpoint-down(sm) { 
-  .cards-mobile{
-   display: flex;
-   flex-direction: column;
-   justify-content: center !important;
-   align-items: center;
+@include media-breakpoint-down(sm) {
+  .cards-mobile {
+    display: flex;
+    flex-direction: column;
+    justify-content: center !important;
+    align-items: center;
   }
-  .padding-mobile-card{
+  .padding-mobile-card {
     margin: 10px 10px 20px 10px !important;
     padding: 0 !important;
   }
 
-  .justify-card-mobile{
+  .justify-card-mobile {
     justify-content: left !important;
   }
- }
+}
