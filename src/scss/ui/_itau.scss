@@ -53,6 +53,10 @@
   content: url(../img/itau/alerta.svg);
 }
 
+.img-info-blanco {
+  content: url(../img/itau/info-blanco.svg);
+}
+
 .img-informacion {
   content: url(../img/itau/informacion.svg);
 }
@@ -218,6 +222,18 @@ h1 {
 h2 {
   font-size: 22px;
   color: $textos;
+  
+}
+
+.titulo-secundario{
+  font-size: 18px !important;
+  color: $textos;
+}
+
+.titulo-exito{
+  font-size: 20px !important;
+  color: $titulo-cabecera;
+  font-weight: bold;
 }
 
 span,
@@ -270,6 +286,10 @@ fieldset:disabled .btn {
   opacity: var(--bs-btn-disabled-opacity);
 }
 
+.btn-100{
+  width: 100%;
+}
+
 .button-search {
   color: $azul;
   border-color: $light-04;
@@ -283,9 +303,50 @@ fieldset:disabled .btn {
   }
 }
 
+.btn-disabled{
+  background-color: #D9D3CF;
+  color: #56504C;
+}
+
+.espacio-inferior{
+  margin-bottom: 80px;
+}
+
 .custom-card {
   width: 327px !important;
 }
+
+.divoculto{
+  display: none;
+}
+
+.divoculto2{
+  display: none;
+}
+
+
+.dropdown-item-checkbox:checked {
+  background-color: #ec7000;
+  border-color: #ec7000;
+}
+
+.form-label-nombres {
+  position:absolute;
+  top: 5px;
+  left: 14px;
+  height: 10px;
+  opacity: 1;
+  transform: translateY(-90%) scale(0.9);
+  font-weight: bolder;
+  padding: 10px 10px;
+  display: flex;
+  align-items: center;
+  width:max-content;
+  background-color: #fff;
+  color: $textos !important;
+}
+
+
 
 .card-content {
   display: flex;
@@ -310,6 +371,10 @@ fieldset:disabled .btn {
     z-index: 99;
     border: 2px solid $primary;
   }
+}
+
+.height-section-card{
+  height: 500px;
 }
 
 .card-content .card-body a {
@@ -345,6 +410,110 @@ input[type="search"]::-webkit-calendar-picker-indicator {
   background-position: center; /* Alinea el icono dentro de su espacio */
 }
 
+.form-floating > label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 0.6rem 1.75rem !important;
+  overflow: hidden;
+  text-align: start;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  pointer-events: none;
+  border: 1px solid transparent;
+  transform-origin: 0 0;
+  transition: opacity 0.1s ease-in-out, transform 0.1s ease-in-out;
+}
+
+.form-floating > .form-select {
+  padding-top: 0.625rem;
+  padding-bottom: 0.625rem;
+}
+
+.select-name{
+  width: 33% !important;
+  height: 50px !important;
+  padding: 10px 15px 15px 15px !important;
+  margin-top: 1rem;
+  background-color: #fff;
+  font-size: 16px;
+  text-align: left;
+  align-items: center;
+}
+
+.nombre-size{
+  font-size: 14px !important;
+  padding-left: 6px;
+}
+
+.check-name{
+  width: 280px !important;
+  padding: 0px 10px !important;
+  margin-top: 1rem;
+  background-color: #fff;
+}
+
+.nombre-padding{
+  padding-right: 20px !important;
+}
+
+.dropdown-item-checkbox:checked {
+  background-color: #ec7000;
+  border-color: #ec7000;
+}
+
+
+.padding-select{
+  padding: 0px 0px 200px 0px !important;
+}
+
+.form-floating > label {
+  position: absolute;
+  top: 9px;
+  left: 10px;
+  width: auto;
+  height: 24px;
+  padding: 0rem 0.75rem !important;
+  overflow: hidden;
+  text-align: start;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  pointer-events: none;
+  border: 1px solid transparent;
+  transform-origin: 0 0;
+  transition: opacity 0.1s ease-in-out, transform 0.1s ease-in-out;
+  background-color: #fff;
+  color: $textos;
+}
+
+.form-floating > .form-control:focus ~ label,
+.form-floating > .form-control:not(:placeholder-shown) ~ label,
+.form-floating > .form-control-plaintext ~ label,
+.form-floating > .form-select ~ label {
+  opacity: 1;
+  transform: translateY(-90%) scale(0.9);
+  font-weight: bolder;
+  color: $textos;
+}
+
+.form-floating > .form-control:focus,
+.form-floating > .form-control:not(:placeholder-shown),
+.form-floating > .form-control-plaintext:focus,
+.form-floating > .form-control-plaintext:not(:placeholder-shown) {
+  padding-top: 1rem;
+  padding-bottom: 0.625rem;
+}
+.form-floating > .form-control,
+.form-floating > .form-control-plaintext {
+  padding: 1rem 1.3rem;
+}
+
+.texto-pequeño{
+  font-size: 14px;
+}
+
 .datepicker table tr td span.active,
 .datepicker table tr td span.active:hover,
 .datepicker table tr td span.active.disabled,
@@ -368,6 +537,7 @@ input[type="search"]::-webkit-calendar-picker-indicator {
   background-color: $naranja;
   color: $light;
 
+
   h1,
   p {
     color: $light;
@@ -377,6 +547,7 @@ input[type="search"]::-webkit-calendar-picker-indicator {
 
 .card-seguros-asociados-2.active .top2 {
   background-color: $naranja;
+  
 }
 
 .taginfo2 {
@@ -397,6 +568,7 @@ input[type="search"]::-webkit-calendar-picker-indicator {
   padding: 7px 13px;
   text-align: right;
   color: $light;
+
 }
 
 .accordion-button.socio {
@@ -708,7 +880,9 @@ body {
   align-items: center;
   justify-content: flex-start;
   position: relative;
-  gap: 24px;
+  padding-right: 0px !important;
+  padding-left: 0px !important;
+  
 }
 
 .card-seguros-asociados-3 {
@@ -725,6 +899,7 @@ body {
   position: relative;
   gap: 24px;
 }
+
 
 .taginfo1 {
   background-color: $naranja-hover;
@@ -757,6 +932,17 @@ body {
   text-align: right;
 }
 
+.taginfo4 {
+  background-color: $light;
+  flex-direction: row;
+  border-radius: 20px;
+  border: 1px solid $gray-light;
+  justify-content: center;
+  padding: 8px;
+  text-align: right;
+  color: $textos;
+}
+
 .top1 {
   align-self: stretch;
   background-color: $naranja;
@@ -782,9 +968,10 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 24px;
+  padding: 24px 24px 80px 24px;
   gap: 24px;
   z-index: 0;
+  width: 100%;
 }
 
 .top3 {
@@ -797,14 +984,15 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 24px;
+  padding: 24px 24px 80px 24px;
+  
   gap: 24px;
   z-index: 0;
 }
 
 .top4 {
   align-self: stretch;
-  background-color:$gray-2;
+  background-color: $gray-light;
   border-top-right-radius: 3px;
   border-top-left-radius: 3px;
   overflow: hidden;
@@ -812,7 +1000,7 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 24px;
+  padding: 24px 24px 80px 24px;
   gap: 24px;
   z-index: 0;
 }
@@ -833,6 +1021,8 @@ body {
   height: 26px;
   flex-shrink: 0;
   color: $titulo-cabecera;
+  font-size: 22px;
+  text-align: center;
 }
 
 .nombre-seguro-3 {
@@ -844,6 +1034,17 @@ body {
   color: $placeholder;
 }
 
+.nombre-seguro-4 {
+  align-self: center;
+  position: relative;
+  display: inline-block;
+  height: 26px;
+  flex-shrink: 0;
+  color: $titulo-card-light;
+  font-size: 22px;
+  text-align: center;
+}
+
 .text-cards-1 {
   margin: 0;
   color: $textos;
@@ -853,6 +1054,7 @@ body {
   margin: 0;
   color: $placeholder;
 }
+
 
 .cobertura {
   align-self: stretch;
@@ -933,6 +1135,12 @@ body {
 .alert-info {
   border-left: 6px solid #007AB7;
   background-color: #DEEEF6;
+
+}
+
+.alert-info2 {
+  border-top: 4px solid $info;
+  background-color: #4CA2CD;
 }
 
 
@@ -955,6 +1163,7 @@ body {
   position: relative;
   line-height: 20px;
 }
+
 
 //Footer
 
@@ -1033,13 +1242,15 @@ section#footer {
   color: $titulo-cabecera;
 }
 
-.agrega {
+.agrega-color {
   text-decoration: underline;
   cursor: pointer;
+  color: $info;
+  font-weight: bold;
 }
 
 .o-arrastra-tus {
-  color: $gray;
+  color: $textos;
 }
 
 .agrega-o-arrastra-container,
@@ -1052,7 +1263,7 @@ section#footer {
 
 .puedes-subir-hasta {
   line-height: 19px;
-  color: $gray;
+  color: $textos;
 }
 
 .adjuntar,
@@ -1177,7 +1388,7 @@ section#footer {
 }
 
 .footer-monto-1 {
-  padding: 0 13px;
+  padding: 20px 5px 0 5px;
   text-align: center;
   color: $titulo-cabecera;
 }
@@ -1402,6 +1613,7 @@ $accordion-icon-color: $naranja;
   width: 24px;
 }
 
+
 //tablas responsivas Luis
 @include media-breakpoint-down(sm) {
   table.tabla-custom tr {
@@ -1499,3 +1711,20 @@ $accordion-icon-color: $naranja;
     font-weight: bolder;
   }
 }
+
+@include media-breakpoint-down(sm) { 
+  .cards-mobile{
+   display: flex;
+   flex-direction: column;
+   justify-content: center !important;
+   align-items: center;
+  }
+  .padding-mobile-card{
+    margin: 10px 10px 20px 10px !important;
+    padding: 0 !important;
+  }
+
+  .justify-card-mobile{
+    justify-content: left !important;
+  }
+ }
