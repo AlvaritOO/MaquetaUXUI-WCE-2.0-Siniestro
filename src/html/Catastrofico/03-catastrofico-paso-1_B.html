@@ -150,7 +150,7 @@
             <div class="row">
                 <div>
                     <h1 class="mt-3">
-                        Indícanos cuando inicistaste tu atención medica
+                        Indícanos cuando iniciaste tu atención medica
                     </h1>
                     <p class="col-sm-6 col-lg-6 titulo-secundario">
                         Para atención hospitalaria debes indicarnos la fecha de ingreso, si es ambulatoria debes indicarnos la fecha de atención.
@@ -174,19 +174,38 @@
                     <h1 class="mt-3">
                         ¿A quien le ocurrió el evento?
                     </h1>
+                
                 </div>
                 <div
                     class="mt-4 featurette g-0 bg-white border rounded overflow-hidden flex-md-row mb-4 shadow-sm">
                     <div class="form-check form-check-inline p-4 ms-5">
-                        <input class="form-check-input clicksi" type="radio" name="inlineRadioOptions" id="inlineRadio1"
+                        <input class="form-check-input clickno" type="radio" name="inlineRadioOptions" id="inlineRadio1"
                           value="option1">
                         <label class="form-check-label" for="inlineRadio1">Asegurado titular</label>
                       </div>
                       <div class="form-check form-check-inline p-4 ms-5">
-                        <input class="form-check-input clickno" type="radio" name="inlineRadioOptions" id="inlineRadio2"
+                        <input class="form-check-input clicksi" type="radio" name="inlineRadioOptions" id="inlineRadio2"
                           value="option2">
                         <label class="form-check-label" for="inlineRadio2">Asegurado adicional</label>
                       </div>
+
+                      <div class="divoculto" id="divoculto">
+                        <div class=" form-floating mt-3 col-sm-6 col-lg-4 mx-5 mb-2">
+                            <select class="form-select form-select-lg" aria-label=".form-select-lg example">
+                                <option selected>Selecciona</option>
+                                <option value="1">Juan Pablo Torres Miranda </option>
+                                <option value="2">Martín Torres Miranda </option>
+                                <option value="3">María Torres Miranda</option>
+                              </select>
+                              <label for="floatingInput">Seleccione el asegurado que deseas declarar</label>
+                        </div>
+                        <div>
+                            <p class="pb-3 px-5 texto-pequeño">
+                                *Solo puedes declarar a un asegurado adicional a la vez. 
+                            </p>
+                          </div>
+                      </div>
+                      
 
                 </div>
             </div>
@@ -195,7 +214,7 @@
         <div class="container text-end mt-4 mb-5 act-buttons">
             <button type="button" class="btn btn-outline-secondary px-5">Volver</button>
             <button data-bs-toggle="modal" data-bs-target="#exampleModal1" type="button"
-                class="btn btn-primary px-5" disabled>Continuar</button>
+                class="btn btn-primary text-white px-5">Continuar</button>
         </div>
 
         </div>
@@ -224,7 +243,34 @@
     </section>
     <!--Fin Footer-->
 
-    
+    <!--Modal 1-->
+    <div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true"
+        data-bs-backdrop="static" data-bs-keyboard="false">
+        <div class="modal-dialog">
+            <div class="modal-content">
+
+                <div class="modal-body text-center">
+                    <div class="d-flex flex-column justify-content-center row">
+                        <div class="col">
+                            <img class="img-informacion-modal" alt="" style="width: 50px;">
+                        </div>
+                        <h1>Importante:</h1>
+                        <p class="description text-center">Ten en cuenta que te pediremos adjuntar documentación más adelante para
+                            la evaluación del caso como los siguientes documentos y otros:</p>
+                        <ul class="ms-5 text-start">
+                            <li class="fw-bolder">Resumen clínico (Epicrisis)
+                                </li>
+                            <li class="fw-bolder">Detalle de la cuenta</li>
+                        </ul>
+                    </div>
+                    <section class="container text-center act-buttons">
+                        <button type="button" class="btn btn-primary text-white btn-100" data-bs-dismiss="modal">Entiendo</button>
+                    </section>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Fin Modal-->
 
 </body>
 
@@ -236,6 +282,53 @@
 <script src="../../js/splide.min.js"></script>
 <script src="../../js/funtion.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+
+<script>
+const clickSi = document.querySelector('.clicksi');
+  const clickNo = document.querySelector('.clickno');
+  const divOculto = document.getElementById('divoculto');
+
+  const clickSi2 = document.querySelector('.clicksi2');
+  const clickNo2 = document.querySelector('.clickno2');
+  const divOculto2 = document.getElementById('divoculto2');
+
+clickSi.addEventListener('change', function () {
+    if (this.checked) {
+      divOculto.style.display = 'block';
+    }
+  });
+
+  clickNo.addEventListener('change', function () {
+    if (this.checked) {
+      divOculto.style.display = 'none';
+    }
+  });
+
+</script>
+
+<script>
+
+
+    document.querySelectorAll('.radio-si').forEach(function (radio) {
+      radio.addEventListener('change', function () {
+        var campoAsegurados = this.closest('tr').querySelector('.campo-asegurados');
+        if (this.checked) {
+          campoAsegurados.style.display = 'block';
+        }
+      });
+    });
+  
+    document.querySelectorAll('.radio-no').forEach(function (radio) {
+      radio.addEventListener('change', function () {
+        var campoAsegurados = this.closest('tr').querySelector('.campo-asegurados');
+        if (this.checked) {
+          campoAsegurados.style.display = 'none';
+        }
+      });
+    });
+  
+  
+  </script>
 
 
 </html>

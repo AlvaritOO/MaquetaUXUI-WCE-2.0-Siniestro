@@ -176,6 +176,14 @@ ul.splide__list {
   content: url(../img/itau/seguro-catastrofico.svg);
 }
 
+.img-seguro-hospitalizacion {
+  content: url(../img/itau/hospitalizacion.svg);
+}
+
+.img-seguro-enfermedades-graves {
+  content: url(../img/itau/enfermedadesgraves.svg);
+}
+
 .img-documento {
   content: url(../img/itau/documento.svg);
 }
@@ -12368,7 +12376,7 @@ fieldset:disabled .btn {
 .form-label-nombres {
   position: absolute;
   top: 5px;
-  left: 14px;
+  left: 5px;
   height: 10px;
   opacity: 1;
   transform: translateY(-90%) scale(0.9);
@@ -12446,9 +12454,9 @@ input[type=date]::before {
   content: "";
   position: absolute;
   right: 10px;
-  top: 10px;
-  width: 25px;
-  height: 25px;
+  top: 0px;
+  width: 45px;
+  height: 45px;
   background-image: url("../img/itau/date.svg");
   background-repeat: no-repeat;
   background-size: contain;
@@ -12510,7 +12518,6 @@ input[type=search]::-webkit-calendar-picker-indicator {
 }
 
 .check-name {
-  width: 280px !important;
   padding: 0px 10px !important;
   margin-top: 1rem;
   background-color: #fff;
@@ -12518,11 +12525,6 @@ input[type=search]::-webkit-calendar-picker-indicator {
 
 .nombre-padding {
   padding-right: 20px !important;
-}
-
-.dropdown-item-checkbox:checked {
-  background-color: #ec7000;
-  border-color: #ec7000;
 }
 
 .padding-select {
@@ -13894,4 +13896,7 @@ section#footer {
   .justify-card-mobile {
     justify-content: left !important;
   }
+}
+.padding-form {
+  padding-bottom: 200px !important;
 }
