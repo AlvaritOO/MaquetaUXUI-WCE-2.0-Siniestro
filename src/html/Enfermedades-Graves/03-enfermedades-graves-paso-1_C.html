@@ -129,7 +129,7 @@
         <section>
             <div class="container">
                 <div class="row progreso mt-0">
-                    <div class="progress" data-percentage="65">
+                    <div class="progress" data-percentage="25">
                         <span class="progress-left">
                             <span class="progress-bar"></span>
                         </span>
@@ -137,94 +137,142 @@
                             <span class="progress-bar"></span>
                         </span>
                         <div class="progress-value">
-                            <div>3/5<br /></div>
+                            <div>1/5<br /></div>
                         </div>
                     </div>
-                    <p class="title-seccion">Detalles de la declaración</p>
-                </div>
-                <div class="eventos">
-                    <div class="ms-0">
-                        <p><span class="fecha-contratacion"><b>Evento:</b> Daños por incendio</span></p>
-                    </div>
-                    <div class="ms-1">
-                        <p><span class="fecha-contratacion"><b>Vivienda:</b> Florida - Canelo 123 10B</span></p>
-                    </div>
+                    <p class="title-seccion">Fecha y características del evento</p>
                 </div>
             </div>
-
         </section>
         <!--fin wizard-->
 
         <div class="container">
             <div class="row">
-                <div class="col-sm-12 col-md-12 col-lg-12">
+                <div>
                     <h1 class="mt-3">
-                        Completa el formulario de declaración de tu siniestro
+                        Indícanos cuándo ocurrió este evento
                     </h1>
-                    <h2 class="mb-4">
-                        No borrar lorem ipsum
-                    </h2>
+                    <p class="col-sm-6 col-lg-6 titulo-secundario">
+                        Para atención hospitalaria, debes indicarnos la fecha de ingreso; 
+si es ambulatoria, debes indicarnos la fecha de atención.
+                    </p>
                 </div>
                 <div
-                    class="col-sm-12 col-md-12 col-lg-12 featurette itau border overflow-hidden flex-md-row mb-5 mb-5 shadow-sm">
-                    <h2 class="">
-                        Seleccione la fecha en la que fuiste dado de alta
-                    </h2>
-
-                    <div class="form-floating col-lg-4 mt-3">
+                    class="mt-4 pb-3 featurette g-0 bg-white border rounded overflow-hidden flex-md-row mb-4 shadow-sm">
+                    <p class="lead mx-5 mt-4 pb-3">Selecciona la fecha</p>
+                    <div class="form-floating mt-3 col-sm-6 col-lg-3 mx-5 mb-4">
                         <input type="date" class="form-control" id="floatingInput">
                         <label for="floatingInput">Fecha</label>
                     </div>
 
-                    <h2 class="mt-4">
-                        Seleccione el motivo de la hospitalización
-                    </h2>
+                </div>
+            </div>
+        </div>
 
-                    <div class="col-lg-4 form-floating mt-3">
-                        <select class="form-select form-select-lg" aria-label=".form-select-lg example">
-                            <option selected>Selecciona</option>
-                            <option value="1">Accidente</option>
-                            <option value="2">Enfermedad</option>
-                            
-                        </select>
-                        <label for="floatingInput">Motivo</label>
-                    </div>
+        <div class="container">
+            <div class="row">
+                <div>
+                    <h1 class="mt-3 pb-4">
+                        Quiero declarar el seguro de:
+                    </h1>
+                
+                </div>
 
-                    <div>
-                        <h2 class="mt-4 pb-3">
-                            Selecciona el tipo de prestación(es)* que recibiste. <br>
-                            <span class="texto-pequeño">*Puedes seleccionar una o más opciones.</span> 
-                        </h2>
-    
+                <section
+              class="card-splide splide pt-4"
+              aria-label="Splide Basic HTML Example"
+            >
+              <div class="splide__track">
+                <ul
+                  class="splide__list"
+                >
+                  <li class="splide__slide mx-3 card-seguros-declarar">
+                    <div class="card text-white bg-primary">
                         
-                    </div>
-
-                    <div class="form-floating mb-3">
-                              
-                        <div class="dropdown">
-                          <label class="form-label-nombres">Tipo de prestación</label>
-                          <button class="dropdown-toggle form-select select-name" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
-                            Selecciona
-                          </button>
+                        <div class="card-body2 d-flex align-items-center">
                           
-                          <ul class="dropdown-menu padding-select" aria-labelledby="dropdownMenuButton">
-                            <li class="check-name"><input type="checkbox" id="opcion1" class="dropdown-item-checkbox form-check-input d-inline"><label class="nombre-size" for="opcion1">Día cama</label></li>
-                            <li class="check-name"><input type="checkbox" id="opcion2" class="dropdown-item-checkbox form-check-input d-inline"><label class="nombre-size" for="opcion2">Día cama unidad de tratamientos <br> intensivos (UTI)</label></li>
-                            <li class="check-name"><input type="checkbox" id="opcion3" class="dropdown-item-checkbox form-check-input d-inline"><label class="nombre-size" for="opcion3">Día cama unidad de cuidados <br>
-                                intensivos (UTI)</label></li>
-                            
-                          </ul>
-                          
+                          <p class="card-text text-white font-size-card py-4 text-center px-2">Reembolso Gastos Médicos</p>
                         </div>
-
                       </div>
+                  </li>
+
+                  <li class="splide__slide card-seguros-declarar mx-3">
+                    <div class="card text-dark bg-light">
+                        
+                        <div class="card-body2 d-flex align-items-center">
+                          
+                          <p class="card-text font-size-card py-4 text-center color-texto-card px-2">Hospitalización por Accidente</p>
+                        </div>
+                      </div>
+                  </li>
+                  <li class="splide__slide card-seguros-declarar mx-3">
+                    <div class="card text-dark bg-light">
+                        
+                        <div class="card-body2 d-flex align-items-center">
+                          
+                          <p class="card-text font-size-card py-4 text-center color-texto-card px-2">Enfermedades 
+                            Graves</p>
+                        </div>
+                      </div>
+                  </li>
+
+                  <li class="splide__slide card-seguros-declarar mx-3">
+                    <div class="card text-dark bg-light">
+                        
+                        <div class="card-body2 d-flex align-items-center justify-content-center">
+                          
+                          <p class="card-text font-size-card py-4 color-texto-card px-2">Desempleo</p>
+                        </div>
+                      </div>
+                  </li>
+                  <li class="splide__slide card-seguros-declarar mx-3">
+                    <div class="card text-dark bg-light">
+                        
+                        <div class="card-body2 d-flex align-items-center">
+                          
+                          <p class="card-text font-size-card py-4 text-center color-texto-card px-2">Incapacidad temporal</p>
+                        </div>
+                      </div>
+                  </li>
+                </ul>
+              </div>
+            </section>
+
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                <div>
+                    <h1 class="mt-3">
+                        ¿A quien le ocurrió el evento?
+                    </h1>
+                    
+                </div>
+                <div
+                    class="mt-4 featurette g-0 bg-white border rounded overflow-hidden flex-md-row mb-4 shadow-sm">
+                    <div class="form-check form-check-inline p-4 ms-5">
+                        <input class="form-check-input clickno" type="radio" name="inlineRadioOptions" id="inlineRadio1"
+                          value="option1">
+                        <label class="form-check-label" for="inlineRadio1">Asegurado titular</label>
+                      </div>
+                      <div class="form-check form-check-inline p-4 ms-5">
+                        <input class="form-check-input clicksi" type="radio" name="inlineRadioOptions" id="inlineRadio2"
+                          value="option2">
+                        <label class="form-check-label" for="inlineRadio2">Asegurado adicional</label>
+                      </div>
+
+                      
+                      
+
                 </div>
             </div>
         </div>
 
         <div class="container text-end mt-4 mb-5 act-buttons">
             <button type="button" class="btn btn-outline-secondary px-5">Volver</button>
-            <button type="button" class="btn btn-primary text-white px-5">Continuar</button>
+            <button data-bs-toggle="modal" data-bs-target="#exampleModal1" type="button"
+                class="btn btn-primary text-white px-5">Continuar</button>
         </div>
 
         </div>
@@ -253,6 +301,33 @@
     </section>
     <!--Fin Footer-->
 
+    <!--Modal 1-->
+    <div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true"
+        data-bs-backdrop="static" data-bs-keyboard="false">
+        <div class="modal-dialog">
+            <div class="modal-content">
+
+                <div class="modal-body text-center">
+                    <div class="d-flex flex-column justify-content-center row">
+                        <div class="col">
+                            <img class="img-informacion-modal" alt="" style="width: 50px;">
+                        </div>
+                        <h1>Importante:</h1>
+                        <p class="description text-center">Más adelante te solicitaremos los siguientes documentos para evaluar este caso:</p>
+                        <ul class="ms-5 text-start">
+                            <li class="fw-bolder">Informe médico con diagnóstico
+                                </li>
+                            <li class="fw-bolder">Resumen clínico (Epicrisis)</li>
+                        </ul>
+                    </div>
+                    <section class="container text-center act-buttons">
+                        <button type="button" class="btn btn-primary text-white btn-100" data-bs-dismiss="modal">Entendido</button>
+                    </section>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Fin Modal-->
 
 </body>
 
@@ -264,6 +339,53 @@
 <script src="../../js/splide.min.js"></script>
 <script src="../../js/funtion.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+
+<script>
+const clickSi = document.querySelector('.clicksi');
+  const clickNo = document.querySelector('.clickno');
+  const divOculto = document.getElementById('divoculto');
+
+  const clickSi2 = document.querySelector('.clicksi2');
+  const clickNo2 = document.querySelector('.clickno2');
+  const divOculto2 = document.getElementById('divoculto2');
+
+clickSi.addEventListener('change', function () {
+    if (this.checked) {
+      divOculto.style.display = 'block';
+    }
+  });
+
+  clickNo.addEventListener('change', function () {
+    if (this.checked) {
+      divOculto.style.display = 'none';
+    }
+  });
+
+</script>
+
+<script>
+
+
+    document.querySelectorAll('.radio-si').forEach(function (radio) {
+      radio.addEventListener('change', function () {
+        var campoAsegurados = this.closest('tr').querySelector('.campo-asegurados');
+        if (this.checked) {
+          campoAsegurados.style.display = 'block';
+        }
+      });
+    });
+  
+    document.querySelectorAll('.radio-no').forEach(function (radio) {
+      radio.addEventListener('change', function () {
+        var campoAsegurados = this.closest('tr').querySelector('.campo-asegurados');
+        if (this.checked) {
+          campoAsegurados.style.display = 'none';
+        }
+      });
+    });
+  
+  
+  </script>
 
 
 </html>

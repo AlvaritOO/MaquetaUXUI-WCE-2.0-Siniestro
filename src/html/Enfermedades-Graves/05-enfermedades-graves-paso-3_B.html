@@ -129,7 +129,7 @@
         <section>
             <div class="container">
                 <div class="row progreso mt-0">
-                    <div class="progress" data-percentage="25">
+                    <div class="progress" data-percentage="65">
                         <span class="progress-left">
                             <span class="progress-bar"></span>
                         </span>
@@ -137,41 +137,112 @@
                             <span class="progress-bar"></span>
                         </span>
                         <div class="progress-value">
-                            <div>1/5<br /></div>
+                            <div>3/5<br /></div>
                         </div>
                     </div>
-                    <p class="title-seccion">Fecha y características del evento</p>
+                    <p class="title-seccion">Detalles de la declaración</p>
+                </div>
+                <div class="eventos">
+                    <div class="ms-0">
+                        <p><span class="fecha-contratacion"><b>Evento:</b> Daños por incendio</span></p>
+                    </div>
+                    <div class="ms-1">
+                        <p><span class="fecha-contratacion"><b>Vivienda:</b> Florida - Canelo 123 10B</span></p>
+                    </div>
                 </div>
             </div>
+
         </section>
         <!--fin wizard-->
 
         <div class="container">
             <div class="row">
-                <div>
+                <div class="col-sm-12 col-md-12 col-lg-12">
                     <h1 class="mt-3">
-                        Indícanos cuando iniciaste tu atención medica
+                        Completa el formulario de declaración de tu siniestro
                     </h1>
-                    <p class="col-sm-6 col-lg-6 titulo-secundario">
-                        Para atención hospitalaria debes indicarnos la fecha de ingreso, si es ambulatoria debes indicarnos la fecha de atención.
-                    </p>
+                    <h2 class="mb-4">
+                        No borrar lorem ipsum
+                    </h2>
                 </div>
                 <div
-                    class="mt-4 pb-3 featurette g-0 bg-white border rounded overflow-hidden flex-md-row mb-4 shadow-sm">
-                    <p class="lead mx-5 mt-4 pb-3">Selecciona la fecha</p>
-                    <div class="form-floating mt-3 col-sm-6 col-lg-3 mx-5 mb-4">
+                    class="col-sm-12 col-md-12 col-lg-12 featurette itau border overflow-hidden flex-md-row mb-5 mb-5 shadow-sm">
+                    <h2 class="">
+                        Seleccione la fecha en la que fuiste dado de alta
+                    </h2>
+
+                    <div class="form-floating col-lg-4 mt-3">
                         <input type="date" class="form-control" id="floatingInput">
                         <label for="floatingInput">Fecha</label>
                     </div>
 
+                    <h2 class="mt-4">
+                        Seleccione el motivo de la hospitalización
+                    </h2>
+
+                    <div class="col-lg-4 form-floating mt-3">
+                        <select class="form-select form-select-lg" aria-label=".form-select-lg example">
+                            <option selected>Selecciona</option>
+                            <option value="1">Accidente</option>
+                            <option value="2">Enfermedad</option>
+                            
+                        </select>
+                        <label for="floatingInput">Motivo</label>
+                    </div>
+
+                    <div>
+                        <h2 class="mt-4 pb-3">
+                            Selecciona el tipo de prestación(es)* que recibiste. <br>
+                            <span class="texto-pequeño">*Puedes seleccionar una o más opciones.</span> 
+                        </h2>
+    
+                        
+                    </div>
+
+                    
+
+                    <div class="form-floating mb-3">
+                              
+                        <div class="dropdown">
+                          <label class="form-label-nombres">Tipo de prestación</label>
+                          <button class="dropdown-toggle form-select select-name" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
+                            Selecciona
+                          </button>
+                          
+                          <ul class="dropdown-menu padding-select" aria-labelledby="dropdownMenuButton">
+                            <li class="check-name"><input type="checkbox" id="opcion1" class="dropdown-item-checkbox form-check-input d-inline"><label class="nombre-size" for="opcion1">Día cama</label></li>
+                            <li class="check-name"><input type="checkbox" id="opcion2" class="dropdown-item-checkbox form-check-input d-inline"><label class="nombre-size" for="opcion2">Día cama unidad de tratamientos <br> intensivos (UTI)</label></li>
+                            <li class="check-name"><input type="checkbox" id="opcion3" class="dropdown-item-checkbox form-check-input d-inline"><label class="nombre-size" for="opcion3">Día cama unidad de cuidados <br>
+                                intensivos (UTI)</label></li>
+                            
+                          </ul>
+                          
+                        </div>
+
+                      </div>
+
+                      <h2 class="mt-4">
+                        ¿Cuál fue tu diagnóstico medico?
+                    </h2>
+
+                    <div class="col-lg-4 form-floating mt-3">
+                        <select class="form-select form-select-lg" aria-label=".form-select-lg example">
+                            <option selected>Selecciona</option>
+                            <option value="1">Opción 1</option>
+                            <option value="2">Opción 2</option>
+                            <option value="2">Opción 3</option>
+                            <option value="2">Opción 4</option>
+                            
+                        </select>
+                        <label for="floatingInput">Diagnóstico</label>
+                    </div>
                 </div>
             </div>
         </div>
 
-        <div class="container text-end mt-4 mb-5 act-buttons pb-5">
+        <div class="container text-end mt-4 mb-5 act-buttons">
             <button type="button" class="btn btn-outline-secondary px-5">Volver</button>
-            <button type="button"
-                class="btn btn-primary px-5" disabled>Continuar</button>
+            <button type="button" class="btn btn-primary text-white px-5">Continuar</button>
         </div>
 
         </div>
@@ -200,7 +271,6 @@
     </section>
     <!--Fin Footer-->
 
-    
 
 </body>
 
