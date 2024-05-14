@@ -146,6 +146,23 @@
     </section>
     <!--NavBar fin-->
 
+    <!--consulta por:-->
+    <div class="user-working">
+      <div class="alert alert-info alert-dismissible fade show" role="alert">
+        <img src="../../../build/img/informacion-modal.svg" alt="" />
+        <b class="p-0">Estás declarando sobre el asegurado adicional</b><br />
+        <b class="ms-5 ps-3">Juan Pablo Torres Miranda </b><br />
+        <span class="ms-5 ps-3">RUT: 19.686.999-X</span>
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="alert"
+          aria-label="Close"
+        ></button>
+      </div>
+    </div>
+    <!--FIN -->
+
     <!--Contenido-->
     <main id="contenedor-mayor" class="flex-shrink-0 mt-4">
       <!--wizard-->
@@ -189,8 +206,8 @@
                 class="form-select form-select-lg"
                 aria-label=".form-select-lg example"
               >
-                <option selected>Vigentes</option>
-                <option value="1">Todas</option>
+                <option selected>Todas</option>
+                <option value="1">Vigentes</option>
                 <option value="2">No vigentes</option>
                 <option value="3">Declaración ingresada</option>
               </select>
@@ -198,73 +215,18 @@
             </div>
 
             <section
-              class="card-splide splide pt-4"
+              class="card-splide splide mt-4"
               aria-label="Splide Basic HTML Example"
             >
               <div class="splide__track">
-                <ul
-                  class="splide__list justify-content-center justify-card-mobile"
-                >
+                <ul class="splide__list" style="height: 660px">
                   <li class="splide__slide custom-card">
-                    <div
-                      class="card-seguros-asociados-2 active mx-4 padding-mobile-card"
-                    >
+                    <div class="card-seguros-asociados-2 active">
                       <div class="top2">
-                        <div class="taginfo4">
+                        <div class="taginfo1">
                           <div class="recomendado">Vigente</div>
                         </div>
-                        <h1 class="nombre-seguro-2">
-                          Seguro Hospitalización 1
-                        </h1>
-                      </div>
-                      <div class="description">
-                        <div class="content1">
-                          <div class="monto">
-                            <p class="text-cards-1">
-                              <b>Póliza:</b>
-                            </p>
-                            <p class="text-cards-1">123456</p>
-                          </div>
-                          <div class="monto">
-                            <p class="text-cards-1">
-                              <b>N° Seguro:</b>
-                            </p>
-                            <p class="text-cards-1">0001</p>
-                          </div>
-                          <div class="monto">
-                            <p class="text-cards-1">
-                              <b>Fecha de inicio de vigencia:</b>
-                            </p>
-                            <p class="text-cards-1">16/09/2023</p>
-                          </div>
-                          <div class="monto">
-                            <p class="text-cards-1">
-                              <b>Fecha de termino de vigencia:</b>
-                            </p>
-                            <p class="text-cards-1">16/10/2023</p>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="divisor-line"></div>
-                      <div class="bottom">
-                        <div class="monto mb-4 footer-monto-1">
-                          Seguro disponible para evaluar
-                        </div>
-                      </div>
-                    </div>
-                  </li>
-
-                  <li class="splide__slide custom-card">
-                    <div
-                      class="card-seguros-asociados-2 mx4 active padding-mobile-card"
-                    >
-                      <div class="top2">
-                        <div class="taginfo4">
-                          <div class="recomendado">Vigente</div>
-                        </div>
-                        <h1 class="nombre-seguro-2">
-                          Seguro Hospitalización 2
-                        </h1>
+                        <h1 class="nombre-seguro-2">Seguro Catastrófico 1</h1>
                       </div>
                       <div class="description">
                         <div class="content1">
@@ -296,8 +258,144 @@
                       </div>
                       <div class="divisor-line"></div>
                       <div class="bottom">
-                        <div class="monto mb-4 footer-monto-1">
+                        <div class="monto mb-5 footer-monto-1">
                           Seguro disponible para evaluar
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+
+                  <li class="splide__slide custom-card">
+                    <div class="card-seguros-asociados-2 active">
+                      <div class="top2">
+                        <div class="taginfo1">
+                          <div class="recomendado">Vigente</div>
+                        </div>
+                        <h1 class="nombre-seguro-2">Seguro Catastrófico 2</h1>
+                      </div>
+                      <div class="description">
+                        <div class="content1">
+                          <div class="monto">
+                            <p class="text-cards-1">
+                              <b>Póliza:</b>
+                            </p>
+                            <p class="text-cards-1">123456</p>
+                          </div>
+                          <div class="monto">
+                            <p class="text-cards-1">
+                              <b>N° Seguro:</b>
+                            </p>
+                            <p class="text-cards-1">0002</p>
+                          </div>
+                          <div class="monto">
+                            <p class="text-cards-1">
+                              <b>Fecha de inicio de vigencia:</b>
+                            </p>
+                            <p class="text-cards-1">16/09/2023</p>
+                          </div>
+                          <div class="monto">
+                            <p class="text-cards-1">
+                              <b>Fecha de termino de vigencia:</b>
+                            </p>
+                            <p class="text-cards-1">16/10/2023</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="divisor-line"></div>
+                      <div class="bottom">
+                        <div class="monto mb-5 footer-monto-1">
+                          Seguro disponible para evaluar
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+
+                  <li class="splide__slide custom-card">
+                    <div class="card-seguros-asociados-2 no-vigente">
+                      <div class="top3">
+                        <div class="taginfo3">
+                          <div class="recomendado">No Vigente</div>
+                        </div>
+                        <h1 class="nombre-seguro-2">Seguro Catastrófico 3</h1>
+                      </div>
+                      <div class="description">
+                        <div class="content1">
+                          <div class="monto">
+                            <p class="text-cards-1">
+                              <b>Póliza:</b>
+                            </p>
+                            <p class="text-cards-1">123456</p>
+                          </div>
+                          <div class="monto">
+                            <p class="text-cards-1">
+                              <b>N° Seguro:</b>
+                            </p>
+                            <p class="text-cards-1">0003</p>
+                          </div>
+                          <div class="monto">
+                            <p class="text-cards-1">
+                              <b>Fecha de inicio de vigencia:</b>
+                            </p>
+                            <p class="text-cards-1">16/09/2023</p>
+                          </div>
+                          <div class="monto">
+                            <p class="text-cards-1">
+                              <b>Fecha de termino de vigencia:</b>
+                            </p>
+                            <p class="text-cards-1">16/10/2023</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="divisor-line"></div>
+                      <div class="bottom">
+                        <div class="monto mb-5 footer-monto-2">
+                          El seguro no se encuentra vigente a la fecha de
+                          ocurrencia
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="splide__slide custom-card">
+                    <div class="card-seguros-asociados-2 declaracion-ingresada">
+                      <div class="top4">
+                        <div class="taginfo2">
+                          <div class="recomendado">Declaración ingresada</div>
+                        </div>
+                        <h1 class="nombre-seguro-2">Seguro Catastrófico 4</h1>
+                      </div>
+                      <div class="description">
+                        <div class="content1">
+                          <div class="monto">
+                            <p class="text-cards-1">
+                              <b>Póliza:</b>
+                            </p>
+                            <p class="text-cards-1">123456</p>
+                          </div>
+                          <div class="monto">
+                            <p class="text-cards-1">
+                              <b>N° Seguro:</b>
+                            </p>
+                            <p class="text-cards-1">0004</p>
+                          </div>
+                          <div class="monto">
+                            <p class="text-cards-1">
+                              <b>Fecha de inicio de vigencia:</b>
+                            </p>
+                            <p class="text-cards-1">16/09/2023</p>
+                          </div>
+                          <div class="monto">
+                            <p class="text-cards-1">
+                              <b>Fecha de termino de vigencia:</b>
+                            </p>
+                            <p class="text-cards-1">16/10/2023</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="divisor-line"></div>
+                      <div class="bottom">
+                        <div class="monto pb-2 mb-4 footer-monto-2">
+                          Ya existe una declaración ingresada con el número de
+                          siniestro XXXXX
                         </div>
                       </div>
                     </div>

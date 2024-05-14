@@ -166,8 +166,8 @@
                     </h2>
                 </div>
                 <div
-                    class="col-sm-12 col-md-12 col-lg-12 featurette itau border overflow-hidden flex-md-row mb-5 mb-5 shadow-sm">
-                    <h2 class="">
+                    class="col-sm-12 col-md-12 col-lg-12 featurette itau border overflow-hidden flex-md-row shadow-sm padding-form">
+                    <h2 class="pb-1">
                         Seleccione la fecha en la que fuiste dado de alta
                     </h2>
 
@@ -176,7 +176,7 @@
                         <label for="floatingInput">Fecha</label>
                     </div>
 
-                    <h2 class="mt-4">
+                    <h2 class="mt-4 pb-1">
                         Seleccione el motivo de la hospitalización
                     </h2>
 
@@ -199,20 +199,32 @@
                         
                     </div>
 
-                    <div class="form-floating mb-3">
-                              
+                    <div class="form-floating">
                         <div class="dropdown">
                           <label class="form-label-nombres">Tipo de prestación</label>
                           <button class="dropdown-toggle form-select select-name" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
                             Selecciona
                           </button>
                           
-                          <ul class="dropdown-menu padding-select" aria-labelledby="dropdownMenuButton">
-                            <li class="check-name"><input type="checkbox" id="opcion1" class="dropdown-item-checkbox form-check-input d-inline"><label class="nombre-size" for="opcion1">Día cama</label></li>
-                            <li class="check-name"><input type="checkbox" id="opcion2" class="dropdown-item-checkbox form-check-input d-inline"><label class="nombre-size" for="opcion2">Día cama unidad de tratamientos <br> intensivos (UTI)</label></li>
-                            <li class="check-name"><input type="checkbox" id="opcion3" class="dropdown-item-checkbox form-check-input d-inline"><label class="nombre-size" for="opcion3">Día cama unidad de cuidados <br>
-                                intensivos (UTI)</label></li>
-                            
+                          <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                            <li class="check-name mt-0">
+                                <input type="checkbox" id="opcion1" class="dropdown-item-checkbox form-check-input d-inline">
+                                <label class="nombre-size" for="opcion1">
+                                    Día cama
+                                </label>
+                            </li>
+                            <li class="check-name">
+                                <input type="checkbox" id="opcion2" class="dropdown-item-checkbox form-check-input d-inline">
+                                <label class="nombre-size" for="opcion2">
+                                    Día cama unidad de tratamientos<br>intensivos (UTI)
+                                </label>
+                            </li>
+                            <li class="check-name">
+                                <input type="checkbox" id="opcion3" class="dropdown-item-checkbox form-check-input d-inline">
+                                <label class="nombre-size" for="opcion3">
+                                    Día cama unidad de cuidados<br>intensivos (UCI)
+                                </label>
+                            </li>
                           </ul>
                           
                         </div>
