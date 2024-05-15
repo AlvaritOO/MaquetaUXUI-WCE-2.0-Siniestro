@@ -24,16 +24,16 @@ $titulo-cabecera: #231d19;
 $textos: #56504c;
 $placeholder: #89837f;
 $gray: #939598;
-$gray-2: #F9F6F5;
+$gray-2: #f9f6f5;
 $bordes-card: #efe9e5;
 $yellow: #f5c66d;
 $light-05: #fee0b2;
-$alert-warning:#F1AE2F;
-$alert-error: #B71C1C;
-$alert-ligth: #F6E1E1;
+$alert-warning: #f1ae2f;
+$alert-error: #b71c1c;
+$alert-ligth: #f6e1e1;
 $box: rgba(91, 81, 73, 0.2);
-$ligth-06:#CCCCCC;
-$ligth-07:#F3F0EF;
+$ligth-06: #cccccc;
+$ligth-07: #f3f0ef;
 $emitido: #008859;
 $titulo-card-light: #404040;
 
@@ -50,49 +50,47 @@ $titulo-card-light: #404040;
 
 //Fin Itau
 
-
 // CLA
 $azul: #003399;
 $azul-hover: #00287a;
 $light-03: #c2c9ea;
 $light-04: #e7eaf7;
 
-
 //FORUM
-$blue-dark:#00194C;
-$blue-medium:#2B3F79;
-$blue-light:#5B69A8;
-$main-dark:#006CAC;
-$main-medium:#009ADE;
-$main-medium10:#009ADE1A;
-$main-medium20: #009ADE33;
-$main-light:#61CCFF;
-$main-light10: #61CCFF1A;
-$main-light15: #61CCFF26;
-$mint-dark:#00AB82;
-$mint-medium:#00DEB2;
-$mint-light:#65FFE4;
-$orange-dark:#A40000;
-$orange-medium:#DE4300;
-$orange-light:#FF7637;
-$neutral-dark:#333333;
-$neutral-medium:#999999;
-$neutral-light:#CCCCCC;
-$neutral-light2:#F1F1F1;
-$white:#FFFFFF;
+$blue-dark: #00194c;
+$blue-medium: #2b3f79;
+$blue-light: #5b69a8;
+$main-dark: #006cac;
+$main-medium: #009ade;
+$main-medium10: #009ade1a;
+$main-medium20: #009ade33;
+$main-light: #61ccff;
+$main-light10: #61ccff1a;
+$main-light15: #61ccff26;
+$mint-dark: #00ab82;
+$mint-medium: #00deb2;
+$mint-light: #65ffe4;
+$orange-dark: #a40000;
+$orange-medium: #de4300;
+$orange-light: #ff7637;
+$neutral-dark: #333333;
+$neutral-medium: #999999;
+$neutral-light: #cccccc;
+$neutral-light2: #f1f1f1;
+$white: #ffffff;
 
-$warning-dark: #D8B500;
-$warning:#FFD600;
-$warning-hover:#FFFF8D;
-$warning-hover10: #FFFF8D1A;
+$warning-dark: #d8b500;
+$warning: #ffd600;
+$warning-hover: #ffff8d;
+$warning-hover10: #ffff8d1a;
 $warning-hover15: #ffd60026;
-$danger:#BA000D;
-$danger-hover:#F44336;
-$danger-hover10:#F443361A;
-$success:#005F00;
-$success-hover:#67BF45;
-$success-hover8:#67bf4514;
-$success-hover10:#67BF451A;
+$danger: #ba000d;
+$danger-hover: #f44336;
+$danger-hover10: #f443361a;
+$success: #005f00;
+$success-hover: #67bf45;
+$success-hover8: #67bf4514;
+$success-hover10: #67bf451a;
 
 @font-face {
   font-family: "ForumBold";
@@ -129,7 +127,7 @@ $info: #007ab7;
 $light: #ffffff;
 $dark: $azul-hover;
 $error: #ff0000; //luis
-$gray-light: #D9D3CF; //luis
+$gray-light: #d9d3cf; //luis
 
 //botones
 $btn-border-width: 2px;
@@ -171,14 +169,12 @@ $position-values: (
   50: 50%,
   70: 65%,
   75: 75%,
-  100: 100%,
+  100: 100%
 );
 
-
-.form-floating>label {
+.form-floating > label {
   padding: 0.75rem !important;
 }
-
 
 .row.block2 {
   height: 60px;
@@ -227,7 +223,7 @@ h5.titulo-archivo-adjunto::before {
 }
 
 .top3.tablaSiniestro {
-  gap: 0px
+  gap: 0px;
 }
 
 .card-body-table .monto {
@@ -264,7 +260,6 @@ ul.splide__list {
   margin: 7px !important;
 }
 
-
 .splide__pagination {
   bottom: 0.5em;
   left: 0;
@@ -280,7 +275,7 @@ ul.splide__list {
 }
 
 .splide__arrow--prev {
-  left: -2em !important;
+  left: -6em !important;
 }
 
 .splide__arrow--next {
