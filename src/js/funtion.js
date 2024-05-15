@@ -1,4 +1,4 @@
-if(document.getElementsByClassName("splide").length > 0){
+if (document.getElementsByClassName("splide").length > 0) {
   var splide = new Splide(".splide", {
     arrows: true,
     type: 'slide',
@@ -43,11 +43,11 @@ if(document.getElementsByClassName("splide").length > 0){
       },
     },
   });
-  
+
   splide.mount();
 }
 
-$(function() {
+$(function () {
   $('[data-toggle="tooltip"]').tooltip();
 });
 
@@ -55,7 +55,7 @@ $(function() {
 var myModal = document.getElementById('myModal');
 var myInput = document.getElementById('myInput');
 
-if(myModal != null){
+if (myModal != null) {
   myModal.addEventListener('shown.bs.modal', function () {
     myInput.focus()
   });
@@ -63,15 +63,15 @@ if(myModal != null){
 
 
 var archivos = document.querySelectorAll(".archivos-adjuntos section#archivos_cargados");
-if(archivos.length > 0) {
+if (archivos.length > 0) {
   archivos.forEach(element => {
     archivo = element.querySelectorAll(".container");
-    if(archivo.length > 1 ) {
-        archivo.forEach(elementArchivo => {
+    if (archivo.length > 1) {
+      archivo.forEach(elementArchivo => {
         elementArchivo.classList.add("col-lg-6");
         elementArchivo.classList.add("col-md-6");
       });
-    }else{
+    } else {
       console.log(archivo[0].classList.add("col-lg-12"));
     }
   });

@@ -423,7 +423,10 @@ input[type="date"] {
   position: relative;
 
   &::-webkit-calendar-picker-indicator {
-    display: none;
+    opacity: 0;
+    top: 0px;
+    width: 45px;
+    height: 45px;
   }
 
   &::before {
@@ -1464,6 +1467,20 @@ $modal-content-color: $textos;
 
 .accordion {
   margin-bottom: 8px;
+}
+
+.accordion-button:not(.collapsed) {
+  color: var(--bs-accordion-active-color);
+  background-color: var(--bs-accordion-active-bg);
+  box-shadow: inset 0 calc(-1 * var(--bs-accordion-border-width)) 0
+    var(--bs-accordion-border-color);
+
+  // Regla específica cuando se acompaña de .list-check
+  &.list-check {
+    background-color: white;
+    margin-bottom: 0px;
+    color: #000000;
+  }
 }
 
 //acordeon

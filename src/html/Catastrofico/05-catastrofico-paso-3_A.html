@@ -166,7 +166,7 @@
                     </h2>
                 </div>
                 <div
-                    class="col-sm-12 col-md-12 col-lg-12 featurette itau border overflow-hidden flex-md-row shadow-sm padding-form">
+                    class="col-sm-12 col-md-12 col-lg-12 featurette itau border overflow-hidden flex-md-row shadow-sm">
                     <h2 class="pb-3">
                         ¿Cual es el tipo de la atención medica?
                     </h2>
@@ -214,61 +214,68 @@
                         
                     </div>
 
-                    <div class="form-floating">
-                        <div class="dropdown">
-                          <label class="form-label-nombres">Gastos a reembolsar</label>
-                          <button class="dropdown-toggle form-select select-name" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
-                            Selecciona
-                          </button>
-                          
-                          <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                            <li class="check-name mt-0">
-                                <input type="checkbox" id="opcion1" class="dropdown-item-checkbox form-check-input d-inline">
-                                <label class="nombre-size" for="opcion1">
-                                    Días Cama Hospitalización
-                                </label>
-                            </li>
-                            <li class="check-name">
-                                <input type="checkbox" id="opcion2" class="dropdown-item-checkbox form-check-input d-inline">
-                                <label class="nombre-size" for="opcion2">
-                                    Servicios Hospitalarios
-                                </label>
-                            </li>
-                            <li class="check-name">
-                                <input type="checkbox" id="opcion3" class="dropdown-item-checkbox form-check-input d-inline">
-                                <label class="nombre-size" for="opcion3">
-                                    Honorarios Médicos Quirúrgicos
-                                </label>
-                            </li>
-                            <li class="check-name">
-                                <input type="checkbox" id="opcion3" class="dropdown-item-checkbox form-check-input d-inline">
-                                <label class="nombre-size" for="opcion3">
-                                    Prótesis Quirúrgica
-                                </label>
-                            </li>
-                            <li class="check-name">
-                                <input type="checkbox" id="opcion3" class="dropdown-item-checkbox form-check-input d-inline">
-                                <label class="nombre-size" for="opcion3">
-                                    Cirugía Dental por Accidente
-                                </label>
-                            </li>
-                            <li class="check-name">
-                                <input type="checkbox" id="opcion3" class="dropdown-item-checkbox form-check-input d-inline">
-                                <label class="nombre-size" for="opcion3">
-                                    Servicio Privado de Enfermería durante Hospitalización
-                                </label>
-                            </li>
-                            <li class="check-name">
-                                <input type="checkbox" id="opcion3" class="dropdown-item-checkbox form-check-input d-inline">
-                                <label class="nombre-size" for="opcion3">
-                                    Servicio de Ambulancia Terrestre
-                                </label>
-                            </li>
-                          </ul>
-                          
+                    <div class="accordion mb-4 col-12 col-lg-4" id="accordionFlushExample1">
+                        <div class="accordion-item mt-4 mb-4">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button accordion-button-alert collapsed list-check" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#flush-collapse1" aria-expanded="false" aria-controls="flush-collapse1">
+                                    <label class="form-label-nombres">Gastos a reembolsar</label>
+                                    <p class="me-5 pe-5 mb-0">Selecciona</p>
+                                </button>
+                            </h2>
+                            <div id="flush-collapse1" class="accordion-collapse collapse" aria-labelledby="flush-heading"
+                                data-bs-parent="#accordionFlushExample1">
+                                <div class="accordion-body">
+                                    <ul class="text-start list-unstyled">
+                                        <li class="check-name mt-0">
+                                                <input type="checkbox" id="opcion1" class="dropdown-item-checkbox form-check-input d-inline">
+                                                <label class="nombre-size" for="opcion1">
+                                                    Días Cama Hospitalización
+                                                </label>
+                                        </li>
+                                        <li class="check-name">
+                                            <input type="checkbox" id="opcion2" class="dropdown-item-checkbox form-check-input d-inline">
+                                            <label class="nombre-size" for="opcion2">
+                                                Servicios Hospitalarios
+                                            </label>
+                                        </li>
+                                        <li class="check-name">
+                                            <input type="checkbox" id="opcion3" class="dropdown-item-checkbox form-check-input d-inline">
+                                            <label class="nombre-size" for="opcion3">
+                                                Honorarios Médicos Quirúrgicos
+                                            </label>
+                                        </li>
+                                        <li class="check-name">
+                                            <input type="checkbox" id="opcion3" class="dropdown-item-checkbox form-check-input d-inline">
+                                            <label class="nombre-size" for="opcion3">
+                                                Prótesis Quirúrgica
+                                            </label>
+                                        </li>
+                                        <li class="check-name">
+                                            <input type="checkbox" id="opcion3" class="dropdown-item-checkbox form-check-input d-inline">
+                                            <label class="nombre-size" for="opcion3">
+                                                Cirugía Dental por Accidente
+                                            </label>
+                                        </li>
+                                        <li class="check-name row">
+                                            <div class="col-1">
+                                                <input type="checkbox" id="opcion3" class="dropdown-item-checkbox form-check-input d-inline">
+                                            </div>
+                                            <label class="nombre-size col-11 ps-2" for="opcion3">
+                                                Servicio Privado de Enfermería durante Hospitalización
+                                            </label>
+                                        </li>
+                                        <li class="check-name">
+                                            <input type="checkbox" id="opcion3" class="dropdown-item-checkbox form-check-input d-inline">
+                                            <label class="nombre-size" for="opcion3">
+                                                Servicio de Ambulancia Terrestre
+                                            </label>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
                         </div>
-
-                      </div>
+                    </div>
                 </div>
             </div>
         </div>
