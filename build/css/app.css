@@ -12449,6 +12449,9 @@ input[type=date] {
 }
 input[type=date]::-webkit-calendar-picker-indicator {
   opacity: 0;
+  top: 0px;
+  width: 45px;
+  height: 45px;
 }
 input[type=date]::before {
   content: "";
