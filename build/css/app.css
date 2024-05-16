@@ -12179,6 +12179,9 @@ textarea.form-control-lg {
   border-radius: 8px;
   padding: 3rem;
 }
+.featurette.itau.fix-featurette {
+  height: 655px;
+}
 
 section#navBar {
   background-color: #ffffff;

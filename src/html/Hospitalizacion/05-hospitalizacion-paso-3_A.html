@@ -166,7 +166,7 @@
                     </h2>
                 </div>
                 <div
-                    class="col-sm-12 col-md-12 col-lg-12 featurette itau border overflow-hidden flex-md-row shadow-sm">
+                    class="col-sm-12 col-md-12 col-lg-12 featurette fix-featurette itau border overflow-hidden flex-md-row shadow-sm">
                     <p class="pb-1">
                         Seleccione la fecha en la que fuiste dado de alta
                     </p>
@@ -199,62 +199,24 @@
                         
                     </div>
 
-                    <div class="accordion mb-4 col-12 col-lg-4 icon-width"
-                        id="accordionFlushExample1"
-                    >
-                        <div class="accordion-item mt-4 mb-4">
-                        <h2 class="accordion-header">
-                            <button
-                            class="accordion-button accordion-button-alert collapsed list-check"
-                            type="button"
-                            data-bs-toggle="collapse"
-                            data-bs-target="#flush-collapse1"
-                            aria-expanded="false"
-                            aria-controls="flush-collapse1"
-                            >
-                            <label class="form-label-nombres">Tipo de prestación</label>
-                            <p class="me-5 pe-5 mb-0">Selecciona</p>
-                            </button>
-                        </h2>
-                        <div
-                            id="flush-collapse1"
-                            class="accordion-collapse collapse"
-                            aria-labelledby="flush-heading"
-                            data-bs-parent="#accordionFlushExample1"
-                        >
-                            <div class="accordion-body">
-                            <ul class="text-start list-unstyled">
-                                <li class="check-name mt-0">
-                                <input
-                                    type="checkbox"
-                                    id="opcion1"
-                                    class="dropdown-item-checkbox form-check-input d-inline"
-                                />
-                                <label class="nombre-size" for="opcion1">
-                                    Día cama
-                                </label>
-                                </li>
-                                <li class="check-name row">
-                                    <div class="col-1">
-                                        <input type="checkbox" id="opcion3" class="dropdown-item-checkbox form-check-input d-inline">
-                                    </div>
-                                    <label class="nombre-size col-11 ps-2" for="opcion3">
-                                        Día cama unidad de tratamientos intensivos (UTI)
-                                    </label>
-                                </li>
-                                <li class="check-name row">
-                                    <div class="col-1">
-                                        <input type="checkbox" id="opcion3" class="dropdown-item-checkbox form-check-input d-inline">
-                                    </div>
-                                    <label class="nombre-size col-11 ps-2" for="opcion3">
-                                        Día cama unidad de cuidados 
-                                        intensivos (UCI)
-                                    </label>
-                                </li>
-                            </ul>
-                            </div>
+                    <div class="form-floating mb-3">
+                              
+                        <div class="dropdown">
+                          <label class="form-label-nombres">Tipo de prestación</label>
+                          <button class="dropdown-toggle form-select select-name" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
+                            Selecciona
+                          </button>
+                          
+                          <ul class="dropdown-menu padding-select" aria-labelledby="dropdownMenuButton">
+                            <li class="check-name"><input type="checkbox" id="opcion1" class="dropdown-item-checkbox form-check-input d-inline"><label class="nombre-size" for="opcion1">Día cama</label></li>
+                            <li class="check-name"><input type="checkbox" id="opcion2" class="dropdown-item-checkbox form-check-input d-inline"><label class="nombre-size" for="opcion2">Día cama unidad de tratamientos <br> intensivos (UTI)</label></li>
+                            <li class="check-name"><input type="checkbox" id="opcion3" class="dropdown-item-checkbox form-check-input d-inline"><label class="nombre-size" for="opcion3">Día cama unidad de cuidados <br>
+                                intensivos (UTI)</label></li>
+                            
+                          </ul>
+                          
                         </div>
-                        </div>
+
                     </div>
                 </div>
             </div>

@@ -141,6 +141,10 @@ $navbar-light-active-color: $naranja;
   background-color: $light;
   border-radius: 8px;
   padding: 3rem;
+
+  &.fix-featurette {
+    height: 655px;
+  }
 }
 
 section#navBar {
