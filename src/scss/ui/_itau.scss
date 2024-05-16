@@ -399,6 +399,11 @@ fieldset:disabled .btn {
 
 .card-seguros-declarar {
   max-width: 13rem;
+  border-radius: 8px;
+  border: 1px solid #dee2e6;
+  &:hover {
+    border: 1px solid $primary;
+  }
 }
 
 .card-body2 {
@@ -1467,6 +1472,9 @@ $modal-content-color: $textos;
 
 .accordion {
   margin-bottom: 8px;
+  &.icon-width {
+    --bs-accordion-btn-icon-width: 0.9rem;
+  }
 }
 
 .accordion-button:not(.collapsed) {
@@ -1480,6 +1488,8 @@ $modal-content-color: $textos;
     background-color: white;
     margin-bottom: 0px;
     color: #000000;
+    padding-top: 12px;
+    padding-bottom: 12px;
   }
 }
 

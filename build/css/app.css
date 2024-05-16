@@ -12424,6 +12424,11 @@ fieldset:disabled .btn {
 
 .card-seguros-declarar {
   max-width: 13rem;
+  border-radius: 8px;
+  border: 1px solid #dee2e6;
+}
+.card-seguros-declarar:hover {
+  border: 1px solid #ec7000;
 }
 
 .card-body2 {
@@ -13629,6 +13634,9 @@ section#footer {
 .accordion {
   margin-bottom: 8px;
 }
+.accordion.icon-width {
+  --bs-accordion-btn-icon-width: 0.9rem;
+}
 
 .accordion-button:not(.collapsed) {
   color: var(--bs-accordion-active-color);
@@ -13639,6 +13647,8 @@ section#footer {
   background-color: white;
   margin-bottom: 0px;
   color: #000000;
+  padding-top: 12px;
+  padding-bottom: 12px;
 }
 
 .act-buttons > button {
