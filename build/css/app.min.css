@@ -45,7 +45,7 @@
   --bs-teal: #20c997;
   --bs-cyan: #0dcaf0;
   --bs-black: #000;
-  --bs-white: #FFFFFF;
+  --bs-white: #ffffff;
   --bs-gray: #6c757d;
   --bs-gray-dark: #343a40;
   --bs-gray-100: #f8f9fa;
@@ -62,7 +62,7 @@
   --bs-success: #c2c9ea;
   --bs-info: #007ab7;
   --bs-warning: #ec7000;
-  --bs-danger: #BA000D;
+  --bs-danger: #ba000d;
   --bs-light: #ffffff;
   --bs-dark: #00287a;
   --bs-primary-rgb: 236, 112, 0;
@@ -108,7 +108,7 @@
   --bs-body-line-height: 1.5;
   --bs-body-color: #212529;
   --bs-body-color-rgb: 33, 37, 41;
-  --bs-body-bg: #FFFFFF;
+  --bs-body-bg: #ffffff;
   --bs-body-bg-rgb: 255, 255, 255;
   --bs-emphasis-color: #000;
   --bs-emphasis-color-rgb: 0, 0, 0;
@@ -149,8 +149,8 @@
   --bs-focus-ring-color: rgba(236, 112, 0, 0.25);
   --bs-form-valid-color: #c2c9ea;
   --bs-form-valid-border-color: #c2c9ea;
-  --bs-form-invalid-color: #BA000D;
-  --bs-form-invalid-border-color: #BA000D;
+  --bs-form-invalid-color: #ba000d;
+  --bs-form-invalid-border-color: #ba000d;
 }
 
 *,
