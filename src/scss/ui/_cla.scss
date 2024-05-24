@@ -2,7 +2,7 @@
 
 //imagenes
 .image-logo {
-  content: url(../img/itau/logo-itau.svg);
+  content: url(../img/cla/logo-cla.svg);
 }
 
 .image-logo-centrado {
@@ -10,15 +10,15 @@
 }
 
 .image-logo-centrado {
-  content: url(../img/itau/logo-bnp.svg);
+  content: url(../img/logo-bnp.svg);
 }
 
 .img_log-ejecutivo {
-  content: url(../img/itau/ic_log-ejecutivo.svg);
+  content: url(../img/cla/ic_log-ejecutivo.svg);
 }
 
 .img_cerrar_sesion {
-  content: url(../img/itau/Icono_cerrar_sesion.svg);
+  content: url(../img/cla/ic_log-out.svg);
 }
 
 .img-cesantia {
@@ -87,7 +87,7 @@
 }
 
 .img-logo-footer {
-  content: url(../img/itau/logo_itau_footer.svg);
+  content: url(../img/cla/logo-footer-cla.svg);
 }
 
 .img-cardif-footer {
@@ -106,26 +106,32 @@
   content: url(../img/itau/enfermedades-graves.svg);
 }
 // Colores
-$primary: $naranja;
-$secondary: $azul;
+$primary: #0076a9;
+$secondary: #0076a9;
 $success: $light-03;
 $info: #007ab7;
 $light: #ffffff;
 $dark: $azul-hover;
-$warning: #ec7000; //luis
-$error: #ff0000; //luis
-$gray-light: #d9d3cf; //luis
+$warning: #fbb040;
+$error: #dc3545;
+$gray-light: #ccc;
 
 // Importar Bootstrap
 @import "../../node_modules/bootstrap/scss/bootstrap.scss";
 
+//Fonts
+@font-face {
+  font-family: "CLABold";
+  src: url("../../src/fonts/CLA/Rawson-Bold.otf");
+}
+
 //NavBar
 
 //Nav
-$navbar-light-active-color: $naranja;
+$navbar-light-active-color: $primary;
 
 .color-primary {
-  color: $naranja;
+  color: $primary;
 }
 
 .color-white {
@@ -188,12 +194,12 @@ section#navBar {
 }
 
 .nav-itau a.nav-link.active {
-  border-bottom: 4px solid $naranja;
-  color: $naranja;
+  border-bottom: 4px solid $primary;
+  color: $primary;
 }
 
 .divisor {
-  border-right: 2px solid $naranja;
+  border-right: 2px solid $primary;
   height: 40px;
 }
 
@@ -289,6 +295,10 @@ li {
   }
 }
 
+.btn {
+  border-radius: 24px;
+}
+
 //boton disabled
 .btn:disabled,
 .btn.disabled,
@@ -301,7 +311,24 @@ fieldset:disabled .btn {
 }
 
 .btn-primary {
-  border: 2px solid $naranja-hover;
+  color: $white;
+  background: #0076a9;
+}
+
+.btn-primary:hover {
+  color: $white;
+  background: #00648f;
+}
+
+.btn-outline-secondary {
+  color: black;
+  border: 2px solid #0076a9;
+}
+
+.btn-outline-secondary:hover {
+  color: $white;
+  background: #00648f;
+  border: 2px solid #0076a9;
 }
 
 .btn-100 {
@@ -312,7 +339,7 @@ fieldset:disabled .btn {
   color: $azul;
   border-color: $light-04;
   background-color: $light-04;
-  border-radius: 8px;
+  border-radius: 24px;
   max-height: 50px;
 
   &:hover {
@@ -375,7 +402,7 @@ fieldset:disabled .btn {
   transition: all 0.3s ease-in;
   position: relative;
   box-shadow: 0px 1px 2px 0px $box;
-  border-color: $naranja;
+  border-color: $primary;
   margin-top: 0px;
   min-height: 256px;
   border: 2px solid $light;
@@ -577,11 +604,11 @@ input[type="search"]::-webkit-calendar-picker-indicator {
 }
 
 .card-seguros-asociados-2.active {
-  border: 2px solid $naranja;
+  border: 2px solid $primary;
 }
 
 .card-seguros-asociados-2.active .top2 {
-  background-color: $naranja;
+  background-color: $primary;
   color: $light;
 
   h1,
@@ -591,7 +618,7 @@ input[type="search"]::-webkit-calendar-picker-indicator {
 }
 
 .card-seguros-asociados-2.active .top2 {
-  background-color: $naranja;
+  background-color: $primary;
 }
 
 .taginfo2 {
@@ -650,7 +677,7 @@ button.accordion-button.accordion-fix::after {
 $borderWidth: 3px;
 $animationTime: 1.5s;
 $border-color-default: $gray-light;
-$border-color-fill: $naranja;
+$border-color-fill: $primary;
 $size: 40px;
 $howManySteps: 20;
 
@@ -748,7 +775,7 @@ body {
     align-items: center;
     justify-content: center;
     height: 80%;
-    color: $naranja;
+    color: $primary;
     //font-family: $work-sans;
     font-weight: 300;
 
@@ -905,7 +932,7 @@ body {
   cursor: pointer;
   border-radius: 8px;
   background-color: $light;
-  border: 2px solid $naranja;
+  border: 2px solid $primary;
   box-sizing: border-box;
   width: 272px;
   display: flex;
@@ -991,7 +1018,7 @@ body {
 
 .top1 {
   align-self: stretch;
-  background-color: $naranja;
+  background-color: $primary;
   border-top-right-radius: 3px;
   border-top-left-radius: 3px;
   overflow: hidden;
@@ -1214,7 +1241,7 @@ body {
 //Footer
 
 section#footer {
-  background-color: $naranja;
+  background-color: $primary;
 }
 
 .text-footer-1 {
@@ -1468,7 +1495,7 @@ $headings-color: $titulo-cabecera;
 $modal-content-color: $textos;
 
 .modal-header > .modal-title {
-  color: $naranja;
+  color: $primary;
 }
 
 .bg-modal-neutral {
@@ -1500,7 +1527,7 @@ $modal-content-color: $textos;
 
 //acordeon
 $accordion-border-color: $bordes-card;
-$accordion-icon-color: $naranja;
+$accordion-icon-color: $primary;
 
 .act-buttons > button {
   font-weight: 700 !important;
@@ -1511,7 +1538,7 @@ $accordion-icon-color: $naranja;
   border-radius: 12px;
 
   &:hover {
-    border: 1px solid $naranja;
+    border: 1px solid $primary;
   }
 }
 
@@ -1558,7 +1585,7 @@ $accordion-icon-color: $naranja;
 }
 
 .tabla_detalle .table_column {
-  background-color: $naranja;
+  background-color: $primary;
   color: $light;
   text-align: center;
 
@@ -1568,7 +1595,7 @@ $accordion-icon-color: $naranja;
 }
 
 .tabla_detalle {
-  border: 2px solid $naranja;
+  border: 2px solid $primary;
   border-radius: 16px;
 }
 
@@ -1591,7 +1618,7 @@ $accordion-icon-color: $naranja;
 
 .top3-custom {
   align-self: stretch;
-  background-color: $naranja;
+  background-color: $primary;
   border-top-right-radius: 3px;
   border-top-left-radius: 3px;
   overflow: hidden;
@@ -1608,7 +1635,7 @@ $accordion-icon-color: $naranja;
 }
 
 .top3.tabla_detalle.status {
-  background-color: $naranja;
+  background-color: $primary;
 }
 
 .top3-custom.tabla_detalle.status * {
@@ -1656,7 +1683,7 @@ $accordion-icon-color: $naranja;
 }
 
 .splide__pagination__page.is-active {
-  background: $naranja !important;
+  background: $primary !important;
   transform: scale(1.4);
   z-index: 1;
   width: 31px !important;
@@ -1693,7 +1720,7 @@ $accordion-icon-color: $naranja;
   }
 
   .tabla_detalle {
-    border: 2px solid $naranja;
+    border: 2px solid $primary;
     border-radius: 6px 6px 0px 0px;
   }
 
