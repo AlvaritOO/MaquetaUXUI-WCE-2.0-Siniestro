@@ -58,7 +58,7 @@
   --bs-gray-800: #343a40;
   --bs-gray-900: #212529;
   --bs-primary: #0076a9;
-  --bs-secondary: #ffb300;
+  --bs-secondary: #0076a9;
   --bs-success: #c2c9ea;
   --bs-info: #007ab7;
   --bs-warning: #fbb040;
@@ -66,7 +66,7 @@
   --bs-light: #ffffff;
   --bs-dark: #00287a;
   --bs-primary-rgb: 0, 118, 169;
-  --bs-secondary-rgb: 255, 179, 0;
+  --bs-secondary-rgb: 0, 118, 169;
   --bs-success-rgb: 194, 201, 234;
   --bs-info-rgb: 0, 122, 183;
   --bs-warning-rgb: 251, 176, 64;
@@ -74,7 +74,7 @@
   --bs-light-rgb: 255, 255, 255;
   --bs-dark-rgb: 0, 40, 122;
   --bs-primary-text-emphasis: #002f44;
-  --bs-secondary-text-emphasis: #664800;
+  --bs-secondary-text-emphasis: #002f44;
   --bs-success-text-emphasis: #4e505e;
   --bs-info-text-emphasis: #003149;
   --bs-warning-text-emphasis: #64461a;
@@ -82,7 +82,7 @@
   --bs-light-text-emphasis: #495057;
   --bs-dark-text-emphasis: #495057;
   --bs-primary-bg-subtle: #cce4ee;
-  --bs-secondary-bg-subtle: #fff0cc;
+  --bs-secondary-bg-subtle: #cce4ee;
   --bs-success-bg-subtle: #f3f4fb;
   --bs-info-bg-subtle: #cce4f1;
   --bs-warning-bg-subtle: #feefd9;
@@ -90,7 +90,7 @@
   --bs-light-bg-subtle: #fcfcfd;
   --bs-dark-bg-subtle: #ced4da;
   --bs-primary-border-subtle: #99c8dd;
-  --bs-secondary-border-subtle: #ffe199;
+  --bs-secondary-border-subtle: #99c8dd;
   --bs-success-border-subtle: #e7e9f7;
   --bs-info-border-subtle: #99cae2;
   --bs-warning-border-subtle: #fddfb3;
@@ -275,6 +275,42 @@
 /* rtl:begin:remove */
 
 /* rtl:end:remove */
+@font-face {
+  font-family: "CLABlackIt";
+  src: url("../../src/fonts/CLA/Rawson-BlackIt.otf");
+}
+@font-face {
+  font-family: "CLABold";
+  src: url("../../src/fonts/CLA/Rawson-Bold.otf");
+}
+@font-face {
+  font-family: "CLAExtraBlack";
+  src: url("../../src/fonts/CLA/Rawson-ExtraBlack.otf");
+}
+@font-face {
+  font-family: "CLAExtraBold";
+  src: url("../../src/fonts/CLA/Rawson-ExtraBold.otf");
+}
+@font-face {
+  font-family: "CLAExtraBoldIt";
+  src: url("../../src/fonts/CLA/Rawson-ExtraBoldIt.otf");
+}
+@font-face {
+  font-family: "CLALight";
+  src: url("../../src/fonts/CLA/Rawson-Light.otf");
+}
+@font-face {
+  font-family: "CLAMediumIt";
+  src: url("../../src/fonts/CLA/RawsonPro-MediumIt.otf");
+}
+@font-face {
+  font-family: "CLASemiBoldIt";
+  src: url("../../src/fonts/CLA/RawsonPro-SemiBoldIt.otf");
+}
+@font-face {
+  font-family: "CLARegular";
+  src: url("../../src/fonts/CLA/RawsonRegular.otf");
+}
 
 @keyframes loading-1 {
   0% {

@@ -22,47 +22,47 @@
 }
 
 .img-cesantia {
-  content: url(../img/itau/cesantia.svg);
+  content: url(../img/cla/Ilustration-cesantia.svg);
 }
 
 .img-proteccion {
-  content: url(../img/itau/proteccion.svg);
+  content: url(../img/cla/Ilustration-proteccion.svg);
 }
 
 .img-home {
-  content: url(../img/itau/home.svg);
+  content: url(../img/cla/Ilustration-hogar.svg);
 }
 
 .img-otras-coverturas {
-  content: url(../img/itau/otras-coverturas.svg);
+  content: url(../img/cla/Ilustration-otras_coverturas.svg);
 }
 
 .img-seguro-catastrofico {
-  content: url(../img/itau/seguro-catastrofico.svg);
+  content: url(../img/cla/Ilustration-seguro_catastrofico.svg);
 }
 
 .img-seguro-hospitalizacion {
-  content: url(../img/itau/hospitalizacion.svg);
+  content: url(../img/cla/Ilustration-seguro_hospitalizacion.svg);
 }
 
 .img-seguro-enfermedades-graves {
-  content: url(../img/itau/enfermedadesgraves.svg);
+  content: url(../img/cla/Ilustration-seguro_enfermedades-graves.svg);
 }
 
 .img-documento {
-  content: url(../img/itau/documento.svg);
+  content: url(../img/cla/documento.svg);
 }
 
 .img-consorcio {
-  content: url(../img/itau/consorcio.svg);
+  content: url(../img/cla/consorcio.svg);
 }
 
 .img-preguntas {
-  content: url(../img/itau/preguntas.svg);
+  content: url(../img/cla/preguntas.svg);
 }
 
 .img-alerta {
-  content: url(../img/itau/alerta.svg);
+  content: url(../img/cla/alerta.svg);
 }
 
 .img-info-blanco {
@@ -109,7 +109,7 @@
 $primary: #0076a9;
 $secondary: #0076a9;
 $success: $light-03;
-$info: #007ab7;
+$info: #326295;
 $light: #ffffff;
 $dark: $azul-hover;
 $warning: #fbb040;
@@ -121,8 +121,48 @@ $gray-light: #ccc;
 
 //Fonts
 @font-face {
+  font-family: "CLABlackIt";
+  src: url("../../src/fonts/CLA/Rawson-BlackIt.otf");
+}
+
+@font-face {
   font-family: "CLABold";
   src: url("../../src/fonts/CLA/Rawson-Bold.otf");
+}
+
+@font-face {
+  font-family: "CLAExtraBlack";
+  src: url("../../src/fonts/CLA/Rawson-ExtraBlack.otf");
+}
+
+@font-face {
+  font-family: "CLAExtraBold";
+  src: url("../../src/fonts/CLA/Rawson-ExtraBold.otf");
+}
+
+@font-face {
+  font-family: "CLAExtraBoldIt";
+  src: url("../../src/fonts/CLA/Rawson-ExtraBoldIt.otf");
+}
+
+@font-face {
+  font-family: "CLALight";
+  src: url("../../src/fonts/CLA/Rawson-Light.otf");
+}
+
+@font-face {
+  font-family: "CLAMediumIt";
+  src: url("../../src/fonts/CLA/RawsonPro-MediumIt.otf");
+}
+
+@font-face {
+  font-family: "CLASemiBoldIt";
+  src: url("../../src/fonts/CLA/RawsonPro-SemiBoldIt.otf");
+}
+
+@font-face {
+  font-family: "CLARegular";
+  src: url("../../src/fonts/CLA/RawsonRegular.otf");
 }
 
 //NavBar
@@ -220,7 +260,7 @@ section#contenedor-mayor {
 }
 
 body {
-  font-family: "ItauRegular", sans-serif;
+  font-family: "CLARegular", sans-serif;
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
   counter-reset: section;
@@ -260,7 +300,7 @@ span,
 p,
 ul,
 li {
-  font-family: "ItauRegular";
+  font-family: "CLARegular";
 }
 
 .img-doc {
@@ -408,10 +448,12 @@ fieldset:disabled .btn {
   border: 2px solid $light;
 
   &:hover {
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+      rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
     transition: all 0.3s ease-in;
-    transform: translateY(10px) scale();
-    z-index: 99;
-    border: 2px solid $primary;
+  }
+  h3:nth-child(2) {
+    font-weight: 400;
   }
 }
 
@@ -1209,13 +1251,10 @@ body {
 }
 
 .alert-info2 {
-  border-top: 4px solid $info;
-  background-color: #4ca2cd;
-}
-
-.alert-info2 {
-  border-top: 4px solid $info;
-  background-color: #4ca2cd;
+  border: 1px solid $info;
+  border-radius: 16px;
+  background-color: #def4ff;
+  color: #56504c;
 }
 
 .aviso-alerta {
