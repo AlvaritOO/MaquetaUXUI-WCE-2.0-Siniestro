@@ -201,24 +201,20 @@ ul.splide__list {
 }
 
 .img-info-blanco {
-  content: url(../img/itau/info-blanco.svg);
+  content: url(../img/cla/info-blue.svg);
 }
 
 .img-informacion {
-  content: url(../img/itau/informacion.svg);
+  content: url(../img/cla/informacion.svg);
 }
 
 .img-aviso-alerta {
-  content: url(../img/itau/aviso-alerta.svg);
+  content: url(../img/cla/aviso-alerta.svg);
 }
 
 .img-confirmacion-naranja {
-  content: url(../img/itau/confirmacion-naranja.svg);
+  content: url(../img/cla/confirmacion.svg);
   margin-bottom: 30px;
-}
-
-.img-informacion-modal {
-  content: url(../img/itau/informacion-modal.svg);
 }
 
 .img-logo-footer {
@@ -230,15 +226,15 @@ ul.splide__list {
 }
 
 .img-ojo {
-  content: url(../img/itau/ojo.svg);
+  content: url(../img/cla/ojo.svg);
 }
 
 .img-eliminar-carga {
-  content: url(../img/itau/_eliminar_cargaDeDocumentos.svg);
+  content: url(../img/cla/ic_eliminar-cargaDeDocumentos.svg);
 }
 
 .img-enfermedades-graves {
-  content: url(../img/itau/enfermedades-graves.svg);
+  content: url(../img/cla/Ilustration-seguro_enfermedades-graves.svg);
 }
 
 /*!
@@ -12651,10 +12647,10 @@ input[type=search]::-webkit-calendar-picker-indicator {
 }
 
 .backg-revision-siniestros-home {
-  background-image: url(../img/itau/Imagen-home.png);
-  background-position: center;
-  background-size: cover;
-  height: auto;
+  background-image: url(../img/cla/Imagen-home.svg);
+  background-position: right, bottom;
+  background-repeat: no-repeat;
+  background-size: contain;
   border-radius: 0px 8px 8px 0px;
 }
 
@@ -13077,10 +13073,10 @@ body {
 .card-de-productos {
   cursor: pointer;
   flex: 1;
-  background: #ffffff;
+  background: #def4ff;
   box-shadow: 0px 1px 2px rgba(91, 81, 73, 0.2);
   border-radius: 8px;
-  border: 1px solid #ccc;
+  border: 1px solid #def4ff;
   box-sizing: border-box;
   height: 132px;
   display: flex;
@@ -13184,14 +13180,14 @@ body {
 }
 
 .taginfo1 {
-  background-color: #bc5900;
+  background-color: #ffffff;
   flex-direction: row;
   border-radius: 20px;
-  border: 1px solid #bc5900;
+  border: 1px solid #999999;
   justify-content: center;
   padding: 8px;
   text-align: right;
-  color: #ffffff;
+  color: #3e4545;
 }
 
 .taginfo2 {
@@ -13201,7 +13197,7 @@ body {
   justify-content: center;
   padding: 7px 13px;
   text-align: right;
-  color: #231d19;
+  color: #3e4545;
 }
 
 .taginfo3 {
@@ -13258,7 +13254,7 @@ body {
 
 .top3 {
   align-self: stretch;
-  background-color: #f9f6f5;
+  background-color: #c9d0d3;
   border-top-right-radius: 3px;
   border-top-left-radius: 3px;
   overflow: hidden;
@@ -13273,7 +13269,7 @@ body {
 
 .top4 {
   align-self: stretch;
-  background-color: #ccc;
+  background-color: #c9d0d3;
   border-top-right-radius: 3px;
   border-top-left-radius: 3px;
   overflow: hidden;
@@ -13400,13 +13396,13 @@ body {
 }
 
 .alert-warning {
-  border-top: 4px solid #f1ae2f;
+  border: 1px solid #f1ae2f;
   background-color: #f5c66d;
 }
 
 .alert-danger {
-  border-top: 4px solid #b71c1c;
-  background-color: #f6e1e1;
+  border: 1px solid #b34a00;
+  background-color: #ffecde;
 }
 
 .alert-info {

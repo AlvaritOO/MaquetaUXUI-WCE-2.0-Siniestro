@@ -60,7 +60,7 @@
   --bs-primary: #0076a9;
   --bs-secondary: #0076a9;
   --bs-success: #c2c9ea;
-  --bs-info: #007ab7;
+  --bs-info: #326295;
   --bs-warning: #fbb040;
   --bs-danger: #ba000d;
   --bs-light: #ffffff;
@@ -68,7 +68,7 @@
   --bs-primary-rgb: 0, 118, 169;
   --bs-secondary-rgb: 0, 118, 169;
   --bs-success-rgb: 194, 201, 234;
-  --bs-info-rgb: 0, 122, 183;
+  --bs-info-rgb: 50, 98, 149;
   --bs-warning-rgb: 251, 176, 64;
   --bs-danger-rgb: 186, 0, 13;
   --bs-light-rgb: 255, 255, 255;
@@ -76,7 +76,7 @@
   --bs-primary-text-emphasis: #002f44;
   --bs-secondary-text-emphasis: #002f44;
   --bs-success-text-emphasis: #4e505e;
-  --bs-info-text-emphasis: #003149;
+  --bs-info-text-emphasis: #14273c;
   --bs-warning-text-emphasis: #64461a;
   --bs-danger-text-emphasis: #4a0005;
   --bs-light-text-emphasis: #495057;
@@ -84,7 +84,7 @@
   --bs-primary-bg-subtle: #cce4ee;
   --bs-secondary-bg-subtle: #cce4ee;
   --bs-success-bg-subtle: #f3f4fb;
-  --bs-info-bg-subtle: #cce4f1;
+  --bs-info-bg-subtle: #d6e0ea;
   --bs-warning-bg-subtle: #feefd9;
   --bs-danger-bg-subtle: #f1cccf;
   --bs-light-bg-subtle: #fcfcfd;
@@ -92,7 +92,7 @@
   --bs-primary-border-subtle: #99c8dd;
   --bs-secondary-border-subtle: #99c8dd;
   --bs-success-border-subtle: #e7e9f7;
-  --bs-info-border-subtle: #99cae2;
+  --bs-info-border-subtle: #adc0d5;
   --bs-warning-border-subtle: #fddfb3;
   --bs-danger-border-subtle: #e3999e;
   --bs-light-border-subtle: #e9ecef;

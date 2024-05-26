@@ -66,25 +66,25 @@
 }
 
 .img-info-blanco {
-  content: url(../img/itau/info-blanco.svg);
+  content: url(../img/cla/info-blue.svg);
 }
 
 .img-informacion {
-  content: url(../img/itau/informacion.svg);
+  content: url(../img/cla/informacion.svg);
 }
 
 .img-aviso-alerta {
-  content: url(../img/itau/aviso-alerta.svg);
+  content: url(../img/cla/aviso-alerta.svg);
 }
 
 .img-confirmacion-naranja {
-  content: url(../img/itau/confirmacion-naranja.svg);
+  content: url(../img/cla/confirmacion.svg);
   margin-bottom: 30px;
 }
 
-.img-informacion-modal {
-  content: url(../img/itau/informacion-modal.svg);
-}
+// .img-informacion-modal {
+//   content: url(../img/itau/informacion-modal.svg);
+// }
 
 .img-logo-footer {
   content: url(../img/cla/logo-footer-cla.svg);
@@ -95,16 +95,17 @@
 }
 
 .img-ojo {
-  content: url(../img/itau/ojo.svg);
+  content: url(../img/cla/ojo.svg);
 }
 
 .img-eliminar-carga {
-  content: url(../img/itau/_eliminar_cargaDeDocumentos.svg);
+  content: url(../img/cla/ic_eliminar-cargaDeDocumentos.svg);
 }
 
 .img-enfermedades-graves {
-  content: url(../img/itau/enfermedades-graves.svg);
+  content: url(../img/cla/Ilustration-seguro_enfermedades-graves.svg);
 }
+
 // Colores
 $primary: #0076a9;
 $secondary: #0076a9;
@@ -638,10 +639,10 @@ input[type="search"]::-webkit-calendar-picker-indicator {
 }
 
 .backg-revision-siniestros-home {
-  background-image: url(../img/itau/Imagen-home.png);
-  background-position: center;
-  background-size: cover;
-  height: auto;
+  background-image: url(../img/cla/Imagen-home.svg);
+  background-position: right, bottom;
+  background-repeat: no-repeat;
+  background-size: contain;
   border-radius: 0px 8px 8px 0px;
 }
 
@@ -905,10 +906,10 @@ body {
 .card-de-productos {
   cursor: pointer;
   flex: 1;
-  background: $light;
+  background: #def4ff;
   box-shadow: 0px 1px 2px $box;
   border-radius: 8px;
-  border: 1px solid $gray-light;
+  border: 1px solid #def4ff;
   box-sizing: border-box;
   height: 132px;
   display: flex;
@@ -1017,14 +1018,14 @@ body {
 }
 
 .taginfo1 {
-  background-color: $naranja-hover;
+  background-color: #ffffff;
   flex-direction: row;
   border-radius: 20px;
-  border: 1px solid $naranja-hover;
+  border: 1px solid #999999;
   justify-content: center;
   padding: 8px;
   text-align: right;
-  color: $light;
+  color: #3e4545;
 }
 
 .taginfo2 {
@@ -1034,7 +1035,7 @@ body {
   justify-content: center;
   padding: 7px 13px;
   text-align: right;
-  color: $titulo-cabecera;
+  color: #3e4545;
 }
 
 .taginfo3 {
@@ -1091,7 +1092,7 @@ body {
 
 .top3 {
   align-self: stretch;
-  background-color: $gray-2;
+  background-color: #c9d0d3;
   border-top-right-radius: 3px;
   border-top-left-radius: 3px;
   overflow: hidden;
@@ -1107,7 +1108,7 @@ body {
 
 .top4 {
   align-self: stretch;
-  background-color: $gray-light;
+  background-color: #c9d0d3;
   border-top-right-radius: 3px;
   border-top-left-radius: 3px;
   overflow: hidden;
@@ -1236,13 +1237,13 @@ body {
 //Alert
 
 .alert-warning {
-  border-top: 4px solid $alert-warning;
+  border: 1px solid $alert-warning;
   background-color: $yellow;
 }
 
 .alert-danger {
-  border-top: 4px solid $alert-error;
-  background-color: $alert-ligth;
+  border: 1px solid #b34a00;
+  background-color: #ffecde;
 }
 
 .alert-info {
