@@ -1246,8 +1246,10 @@ body {
 //Alert
 
 .alert-warning {
-  border: 1px solid $alert-warning;
-  background-color: $yellow;
+  // border: 1px solid $alert-warning;
+  // background-color: $yellow;
+  border: 1px solid #b34a00;
+  background-color: #ffecde;
 }
 
 .alert-danger {
