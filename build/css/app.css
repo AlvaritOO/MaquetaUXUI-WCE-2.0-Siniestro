@@ -138,6 +138,7 @@ ul.splide__list {
 
 .image-logo {
   content: url(../img/cla/logo-cla.svg);
+  height: 46px;
 }
 
 .image-logo-centrado {
@@ -223,6 +224,8 @@ ul.splide__list {
 
 .img-logo-footer {
   content: url(../img/cla/logo-footer-cla.svg);
+  width: 100px;
+  height: auto;
 }
 
 .img-cardif-footer {
