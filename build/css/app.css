@@ -217,6 +217,10 @@ ul.splide__list {
   margin-bottom: 30px;
 }
 
+.img-informacion-modal {
+  content: url(../img/cla/informacion-modal.svg);
+}
+
 .img-logo-footer {
   content: url(../img/cla/logo-footer-cla.svg);
 }
@@ -12326,11 +12330,11 @@ li {
 
 .header-detalle {
   padding: 12px;
-  background-color: #fee0b2;
+  background-color: white;
 }
 .header-detalle tr,
 .header-detalle th {
-  background-color: #fee0b2;
+  background-color: white;
 }
 
 .tabla-socio {
@@ -12508,20 +12512,25 @@ input[type=date] {
 }
 input[type=date]::-webkit-calendar-picker-indicator {
   opacity: 0;
+  position: absolute;
   top: 0px;
+  left: 0px;
   width: 45px;
   height: 45px;
 }
-input[type=date]::before {
+input[type=date]::after {
   content: "";
   position: absolute;
-  right: 10px;
-  top: 0px;
-  width: 45px;
-  height: 45px;
-  background-image: url("../img/itau/date.svg");
+  left: 10px; /* Cambiado de right a left */
+  top: 10px;
+  width: 25px;
+  height: 25px;
+  background-image: url("../img/cla/date.svg");
   background-repeat: no-repeat;
   background-size: contain;
+}
+input[type=date].form-control {
+  padding-left: 40px;
 }
 
 input[type=search]::-webkit-calendar-picker-indicator {
@@ -13761,11 +13770,11 @@ section#footer {
 
 .tabla_detalle .table_column {
   background-color: #0076a9;
-  color: #ffffff;
+  color: white;
   text-align: center;
 }
 .tabla_detalle .table_column h2, .tabla_detalle .table_column .h2 {
-  color: #ffffff;
+  color: white;
 }
 
 .tabla_detalle {
@@ -13774,19 +13783,19 @@ section#footer {
 }
 
 .tabla_detalle .table_column * {
-  color: #ffffff;
+  color: white;
 }
 
 .tabla_detalle table th {
-  background-color: #fee0b2;
+  background-color: white;
 }
 
 .tabla_detalle table td {
-  background-color: #fee0b2;
+  background-color: white;
 }
 
 .table.cons-estado th {
-  background-color: #ccc;
+  background-color: white;
   text-align: center;
 }
 
@@ -13835,7 +13844,7 @@ section#footer {
 }
 
 .fila-cuotas-mobile {
-  background-color: #fee0b2;
+  background-color: white;
 }
 
 .card-body-table .monto:nth-of-type(even) {

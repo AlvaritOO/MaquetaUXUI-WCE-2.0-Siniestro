@@ -82,9 +82,9 @@
   margin-bottom: 30px;
 }
 
-// .img-informacion-modal {
-//   content: url(../img/itau/informacion-modal.svg);
-// }
+.img-informacion-modal {
+  content: url(../img/cla/informacion-modal.svg);
+}
 
 .img-logo-footer {
   content: url(../img/cla/logo-footer-cla.svg);
@@ -310,11 +310,11 @@ li {
 
 .header-detalle {
   padding: 12px;
-  background-color: $light-05;
+  background-color: white;
 
   tr,
   th {
-    background-color: $light-05;
+    background-color: white;
   }
 }
 
@@ -499,21 +499,27 @@ input[type="date"] {
 
   &::-webkit-calendar-picker-indicator {
     opacity: 0;
+    position: absolute;
     top: 0px;
+    left: 0px;
     width: 45px;
     height: 45px;
   }
 
-  &::before {
+  &::after {
     content: "";
     position: absolute;
-    right: 10px;
-    top: 0px;
-    width: 45px;
-    height: 45px;
-    background-image: url("../img/itau/date.svg");
+    left: 10px; /* Cambiado de right a left */
+    top: 10px;
+    width: 25px;
+    height: 25px;
+    background-image: url("../img/cla/date.svg");
     background-repeat: no-repeat;
     background-size: contain;
+  }
+
+  &.form-control {
+    padding-left: 40px;
   }
 }
 
@@ -1626,11 +1632,11 @@ $accordion-icon-color: $primary;
 
 .tabla_detalle .table_column {
   background-color: $primary;
-  color: $light;
+  color: white;
   text-align: center;
 
   h2 {
-    color: $light;
+    color: white;
   }
 }
 
@@ -1640,19 +1646,19 @@ $accordion-icon-color: $primary;
 }
 
 .tabla_detalle .table_column * {
-  color: $light;
+  color: white;
 }
 
 .tabla_detalle table th {
-  background-color: $light-05;
+  background-color: white;
 }
 
 .tabla_detalle table td {
-  background-color: $light-05;
+  background-color: white;
 }
 
 .table.cons-estado th {
-  background-color: $gray-light;
+  background-color: white;
   text-align: center;
 }
 
@@ -1701,7 +1707,7 @@ $accordion-icon-color: $primary;
 }
 
 .fila-cuotas-mobile {
-  background-color: $light-05;
+  background-color: white;
 }
 
 .card-body-table .monto:nth-of-type(even) {
