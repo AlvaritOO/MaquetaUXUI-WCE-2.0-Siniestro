@@ -34,7 +34,7 @@
   content: url(../img/cla/Ilustration-hogar.svg);
 }
 
-.img-otras-coverturas {
+.img-otras-coberturas {
   content: url(../img/cla/Ilustration-otras_coverturas.svg);
 }
 
@@ -119,6 +119,7 @@ $dark: $azul-hover;
 $warning: #fbb040;
 $error: #dc3545;
 $gray-light: #ccc;
+$neutral: #f6f7f7;
 
 // Importar Bootstrap
 @import "../../node_modules/bootstrap/scss/bootstrap.scss";
@@ -189,7 +190,7 @@ $navbar-light-active-color: $primary;
 .featurette.itau {
   --bs-bg-opacity: 1;
   background-color: $light;
-  border-radius: 8px;
+  border-radius: 20px;
   padding: 3rem;
 }
 
@@ -1235,6 +1236,7 @@ body {
 }
 
 .fecha-contratacion {
+  display: none;
   background: $bordes-card;
   border: 1px solid $gray-light;
   border-radius: 28px;
@@ -1377,12 +1379,31 @@ section#footer {
   color: $textos;
 }
 
-.agrega-o-arrastra-container,
-.puedes-subir-hasta {
+.agrega-o-arrastra-container {
   align-self: stretch;
   position: relative;
   line-height: 22px;
-  color: $azul;
+  color: rgba(0, 118, 169, 1);
+
+  .puedes-subir-hasta {
+    font-size: 12px;
+    line-height: 19px;
+    font-weight: 400px;
+  }
+}
+
+.ic-agrega_documento {
+  content: url(../img/cla/agrega_documento.svg);
+  display: inline-block;
+  margin-right: 8px;
+  margin-top: -5px;
+}
+
+.agrega-documento {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
 }
 
 .puedes-subir-hasta {
@@ -1429,15 +1450,14 @@ section#footer {
 }
 
 .rescate-icon {
-  content: url(../img/itau/rescate.svg);
+  content: url(../img/cla/rescate.svg);
   position: relative;
-  width: 14px;
-  height: 14px;
+  width: 24px;
+  height: 24px;
 }
 
 .icono {
   border-radius: 100px;
-  background-color: $azul;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -1445,11 +1465,11 @@ section#footer {
   padding: 5px;
 }
 
-.confirmacin-icon {
+.confirmacion-icon {
   position: relative;
-  width: 10px;
-  height: 10px;
-  content: url(../img/itau/confirmacion.svg);
+  width: 20px;
+  height: 20px;
+  content: url(../img/cla/confirmacion-archivo.svg);
 }
 
 .peso-icono {
@@ -1875,4 +1895,15 @@ $accordion-icon-color: $primary;
 
 .padding-form {
   padding-bottom: 200px !important;
+}
+
+.lead {
+  font-size: 20px;
+  font-weight: 500px;
+  line-height: 24px;
+}
+
+.shadow-sm {
+  box-shadow: 0px 8px 40px 0px rgba(0, 0, 0, 0.16);
+  border-left: 16px solid rgba(214, 224, 234, 1);
 }

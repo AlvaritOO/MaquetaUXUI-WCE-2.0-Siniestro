@@ -169,7 +169,7 @@ ul.splide__list {
   content: url(../img/cla/Ilustration-hogar.svg);
 }
 
-.img-otras-coverturas {
+.img-otras-coberturas {
   content: url(../img/cla/Ilustration-otras_coverturas.svg);
 }
 
@@ -12215,7 +12215,7 @@ textarea.form-control-lg {
 .featurette.itau {
   --bs-bg-opacity: 1;
   background-color: #ffffff;
-  border-radius: 8px;
+  border-radius: 20px;
   padding: 3rem;
 }
 
@@ -12288,7 +12288,7 @@ body {
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
   counter-reset: section;
-  background-color: #faf7f5;
+  background-color: #f6f7f7;
 }
 
 .body-fondo {
@@ -12732,7 +12732,7 @@ button.accordion-button.accordion-fix::after {
 }
 
 body {
-  background-color: #faf7f5;
+  background-color: #f6f7f7;
 }
 
 .row.progreso {
@@ -13399,6 +13399,7 @@ body {
 }
 
 .fecha-contratacion {
+  display: none;
   background: #efe9e5;
   border: 1px solid #ccc;
   border-radius: 28px;
@@ -13533,12 +13534,30 @@ section#footer {
   color: #56504c;
 }
 
-.agrega-o-arrastra-container,
-.puedes-subir-hasta {
+.agrega-o-arrastra-container {
   align-self: stretch;
   position: relative;
   line-height: 22px;
-  color: #003399;
+  color: rgb(0, 118, 169);
+}
+.agrega-o-arrastra-container .puedes-subir-hasta {
+  font-size: 12px;
+  line-height: 19px;
+  font-weight: 400px;
+}
+
+.ic-agrega_documento {
+  content: url(../img/cla/agrega_documento.svg);
+  display: inline-block;
+  margin-right: 8px;
+  margin-top: -5px;
+}
+
+.agrega-documento {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
 }
 
 .puedes-subir-hasta {
@@ -13584,15 +13603,14 @@ section#footer {
 }
 
 .rescate-icon {
-  content: url(../img/itau/rescate.svg);
+  content: url(../img/cla/rescate.svg);
   position: relative;
-  width: 14px;
-  height: 14px;
+  width: 24px;
+  height: 24px;
 }
 
 .icono {
   border-radius: 100px;
-  background-color: #003399;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -13600,11 +13618,11 @@ section#footer {
   padding: 5px;
 }
 
-.confirmacin-icon {
+.confirmacion-icon {
   position: relative;
-  width: 10px;
-  height: 10px;
-  content: url(../img/itau/confirmacion.svg);
+  width: 20px;
+  height: 20px;
+  content: url(../img/cla/confirmacion-archivo.svg);
 }
 
 .peso-icono {
@@ -13696,7 +13714,7 @@ section#footer {
 }
 
 .bg-modal-neutral {
-  background-color: #faf7f5;
+  background-color: #f6f7f7;
 }
 
 .accordion {
@@ -13991,4 +14009,15 @@ section#footer {
 }
 .padding-form {
   padding-bottom: 200px !important;
+}
+
+.lead {
+  font-size: 20px;
+  font-weight: 500px;
+  line-height: 24px;
+}
+
+.shadow-sm {
+  box-shadow: 0px 8px 40px 0px rgba(0, 0, 0, 0.16);
+  border-left: 16px solid rgb(214, 224, 234);
 }
