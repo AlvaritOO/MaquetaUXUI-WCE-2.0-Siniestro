@@ -458,17 +458,11 @@ fieldset:disabled .btn {
   border-radius: 8px;
   transition: all 0.3s ease-in;
   position: relative;
-  box-shadow: 0px 1px 2px 0px $box;
+  box-shadow: 0px 0px 16px 0px rgba(0, 0, 0, 0.08);
   border-color: $primary;
   margin-top: 0px;
   min-height: 256px;
   border: 2px solid $light;
-
-  &:hover {
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
-      rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
-    transition: all 0.3s ease-in;
-  }
   h3:nth-child(2) {
     font-weight: 400;
   }
@@ -514,6 +508,7 @@ input[type="date"] {
   position: relative;
   border: 1px solid #0076a9;
   border-radius: 8px;
+  height: 48px;
 
   &::-webkit-calendar-picker-indicator {
     opacity: 0;
@@ -528,7 +523,7 @@ input[type="date"] {
     content: "";
     position: absolute;
     left: 10px; /* Cambiado de right a left */
-    top: 5px;
+    top: 10px;
     width: 25px;
     height: 25px;
     background-image: url("../img/cla/date.svg");
@@ -537,7 +532,7 @@ input[type="date"] {
   }
 
   &.form-control {
-    padding-left: 40px;
+    padding-left: 45px;
     padding-top: 8px;
   }
 }
@@ -841,17 +836,17 @@ body {
     border-radius: 50%;
     font-size: 13px;
     text-align: center;
-    line-height: 20px;
+    line-height: 19px;
     align-items: center;
     justify-content: center;
-    height: 80%;
+    height: 90%;
     color: $primary;
     //font-family: $work-sans;
-    font-weight: 300;
+    font-weight: 700;
 
     div {
       margin-top: 7px;
-      margin-left: -2px;
+      margin-left: 0px;
     }
 
     span {
@@ -935,7 +930,7 @@ body {
   flex: 1;
   background: #def4ff;
   box-shadow: 0px 1px 2px $box;
-  border-radius: 8px;
+  border-radius: 20px;
   border: 1px solid #def4ff;
   box-sizing: border-box;
   height: 132px;
@@ -1299,8 +1294,6 @@ body {
 
 .mensaje-de-informacion {
   line-height: 21px;
-  padding-top: 20px;
-  padding-bottom: 20px;
   margin-top: 2px;
 }
 
@@ -1385,6 +1378,7 @@ section#footer {
   gap: 25px;
   text-align: center;
   color: $titulo-cabecera;
+  max-width: 400px;
 }
 
 .agrega-color {
@@ -1568,11 +1562,7 @@ section#footer {
 }
 
 .archivos {
-  max-width: 380px;
-  padding-left: 0px;
   padding-right: 0px;
-  margin: 0px;
-
   .text-start:not(.color-error) {
     color: $textos;
   }
@@ -1580,6 +1570,10 @@ section#footer {
   .peso-icono {
     color: $textos;
   }
+}
+
+.file-attach-options {
+  padding-right: 0px;
 }
 
 //tipografias
@@ -1928,8 +1922,8 @@ $accordion-icon-color: $primary;
 }
 
 .shadow-sm {
-  box-shadow: 0px 8px 40px 0px rgba(0, 0, 0, 0.16);
-  border-left: 16px solid rgba(214, 224, 234, 1);
+  box-shadow: 0px 8px 40px 0px rgba(0, 0, 0, 0.16) !important;
+  border-left: 22px solid rgba(214, 224, 234, 1);
 }
 
 .txt-file-attach {
@@ -1985,11 +1979,16 @@ input[type="email"],
 input[type="password"],
 input[type="search"],
 input[type="tel"],
-input[type="checkbox"],
 input[type="url"],
 select,
 select.form-select,
 select.form-select-lg {
+  border: 1px solid #0076a9;
+  border-radius: 8px;
+  height: 48px;
+}
+
+input[type="checkbox"] {
   border: 1px solid #0076a9;
   border-radius: 8px;
 }
@@ -2006,6 +2005,7 @@ select.form-select:focus,
 select.form-select-lg:focus {
   border-color: #005580;
   box-shadow: 0 0 5px rgba(0, 118, 169, 0.5);
+  height: 48px;
 }
 
 label {
