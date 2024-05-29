@@ -244,6 +244,11 @@ ul.splide__list {
   content: url(../img/cla/Ilustration-seguro_enfermedades-graves.svg);
 }
 
+.ic-cerrar {
+  content: url(../img/cla/cerrar.svg);
+  margin-top: 5px;
+}
+
 /*!
  * Bootstrap  v5.3.2 (https://getbootstrap.com/)
  * Copyright 2011-2023 The Bootstrap Authors
@@ -12358,6 +12363,13 @@ li {
 
 .btn {
   border-radius: 24px;
+  padding: 12px 24px 12px 24px;
+  gap: 8px;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 24px;
+  align-items: center;
+  height: 48px;
 }
 
 .btn:disabled,
@@ -13532,6 +13544,7 @@ section#footer {
 
 .o-arrastra-tus {
   color: #56504c;
+  padding-top: 15px;
 }
 
 .agrega-o-arrastra-container {
@@ -13623,6 +13636,8 @@ section#footer {
   width: 20px;
   height: 20px;
   content: url(../img/cla/confirmacion-archivo.svg);
+  top: 5px;
+  margin-right: 2px;
 }
 
 .peso-icono {
@@ -13630,6 +13645,8 @@ section#footer {
   flex-direction: row;
   align-items: baseline;
   justify-content: flex-start;
+  font-weight: 650;
+  color: rgb(0, 0, 0);
 }
 
 .nombre-detalle {
@@ -14020,4 +14037,36 @@ section#footer {
 .shadow-sm {
   box-shadow: 0px 8px 40px 0px rgba(0, 0, 0, 0.16);
   border-left: 16px solid rgb(214, 224, 234);
+}
+
+.txt-file-attach {
+  margin-top: 5px;
+}
+.txt-file-attach span {
+  padding: 4px 8px 4px 8px;
+  border-radius: 100px;
+  background: rgb(222, 255, 245);
+  border: 1px solid rgb(0, 110, 98);
+}
+.txt-file-attach.color-error span {
+  color: #000;
+  padding: 4px;
+  border-radius: 100px;
+  background: rgb(255, 225, 222);
+  border: 1px solid rgb(178, 30, 39);
+}
+
+.title-cargar-documentos {
+  font-weight: 650;
+  font-size: 24px;
+  line-height: 32px;
+  color: #326295;
+  text-align: start;
+  padding: auto;
+}
+
+.description-cargar-documentos {
+  font-weight: 500px;
+  font-size: 18px;
+  text-align: start;
 }

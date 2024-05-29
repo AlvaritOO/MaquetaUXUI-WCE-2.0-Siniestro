@@ -109,6 +109,11 @@
   content: url(../img/cla/Ilustration-seguro_enfermedades-graves.svg);
 }
 
+.ic-cerrar {
+  content: url(../img/cla/cerrar.svg);
+  margin-top: 5px;
+}
+
 // Colores
 $primary: #0076a9;
 $secondary: #0076a9;
@@ -342,6 +347,13 @@ li {
 
 .btn {
   border-radius: 24px;
+  padding: 12px 24px 12px 24px;
+  gap: 8px;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 24px;
+  align-items: center;
+  height: 48px;
 }
 
 //boton disabled
@@ -1377,6 +1389,7 @@ section#footer {
 
 .o-arrastra-tus {
   color: $textos;
+  padding-top: 15px;
 }
 
 .agrega-o-arrastra-container {
@@ -1470,6 +1483,8 @@ section#footer {
   width: 20px;
   height: 20px;
   content: url(../img/cla/confirmacion-archivo.svg);
+  top: 5px;
+  margin-right: 2px;
 }
 
 .peso-icono {
@@ -1477,6 +1492,8 @@ section#footer {
   flex-direction: row;
   align-items: baseline;
   justify-content: flex-start;
+  font-weight: 650;
+  color: rgba(0, 0, 0, 1);
 }
 
 .nombre-detalle {
@@ -1559,7 +1576,7 @@ section#footer {
 }
 
 //tipografias
-$headings-font-family: "ItauDisplay";
+$headings-font-family: "CLARegular";
 $headings-color: $titulo-cabecera;
 
 //modal
@@ -1906,4 +1923,38 @@ $accordion-icon-color: $primary;
 .shadow-sm {
   box-shadow: 0px 8px 40px 0px rgba(0, 0, 0, 0.16);
   border-left: 16px solid rgba(214, 224, 234, 1);
+}
+
+.txt-file-attach {
+  margin-top: 5px;
+  span {
+    padding: 4px 8px 4px 8px;
+    border-radius: 100px;
+    background: rgba(222, 255, 245, 1);
+    border: 1px solid rgba(0, 110, 98, 1);
+  }
+  &.color-error {
+    span {
+      color: #000;
+      padding: 4px;
+      border-radius: 100px;
+      background: rgba(255, 225, 222, 1);
+      border: 1px solid rgba(178, 30, 39, 1);
+    }
+  }
+}
+
+.title-cargar-documentos {
+  font-weight: 650;
+  font-size: 24px;
+  line-height: 32px;
+  color: #326295;
+  text-align: start;
+  padding: auto;
+}
+
+.description-cargar-documentos {
+  font-weight: 500px;
+  font-size: 18px;
+  text-align: start;
 }
