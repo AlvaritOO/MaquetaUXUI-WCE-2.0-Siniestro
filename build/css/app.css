@@ -12217,10 +12217,14 @@ textarea.form-control-lg {
   color: #dc3545;
 }
 
+.featurette {
+  border-radius: 16px !important;
+}
+
 .featurette.itau {
   --bs-bg-opacity: 1;
   background-color: #ffffff;
-  border-radius: 20px;
+  border-radius: 16px !important;
   padding: 3rem;
 }
 
@@ -13764,7 +13768,7 @@ section#footer {
 
 .row.container-cobertura {
   border: 1px solid #cccccc;
-  border-radius: 12px;
+  border-radius: 16px;
 }
 .row.container-cobertura:hover {
   border: 1px solid #0076a9;
@@ -13949,7 +13953,7 @@ section#footer {
   .featurette.itau {
     --bs-bg-opacity: 1;
     background-color: rgb(255, 255, 255);
-    border-radius: 8px;
+    border-radius: 16px !important;
     padding: 1rem;
   }
   table.tabla-custom {

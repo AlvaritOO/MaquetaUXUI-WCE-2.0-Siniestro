@@ -192,10 +192,14 @@ $navbar-light-active-color: $primary;
   color: $error;
 }
 
+.featurette {
+  border-radius: 16px !important;
+}
+
 .featurette.itau {
   --bs-bg-opacity: 1;
   background-color: $light;
-  border-radius: 20px;
+  border-radius: 16px !important;
   padding: 3rem;
 }
 
@@ -1624,7 +1628,7 @@ $accordion-icon-color: $primary;
 
 .row.container-cobertura {
   border: 1px solid $ligth-06;
-  border-radius: 12px;
+  border-radius: 16px;
 
   &:hover {
     border: 1px solid $primary;
@@ -1816,7 +1820,7 @@ $accordion-icon-color: $primary;
   .featurette.itau {
     --bs-bg-opacity: 1;
     background-color: rgb(255, 255, 255);
-    border-radius: 8px;
+    border-radius: 16px !important;
     padding: 1rem;
   }
 
