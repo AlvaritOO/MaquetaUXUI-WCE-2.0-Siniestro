@@ -1,1207 +1,1610 @@
 <!DOCTYPE html>
 <html lang="en" class="h-100">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Itau</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Caja Los Andes</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-        href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,600;1,700&display=swap"
-        rel="stylesheet">
-    <link rel="stylesheet" href="../../../build/css/app.css">
-    <link rel="stylesheet" href="../../../build/css/splide.min.css" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
-</head>
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,600;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../../../../build/css/app.css" />
+    <link rel="stylesheet" href="../../../../build/css/splide.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css"
+    />
+  </head>
 
-<body class="d-flex flex-column h-100">
+  <body class="d-flex flex-column h-100">
     <!--NavBar-->
     <section id="navBar">
-        <div class="container d-none d-sm-none d-md-none d-lg-block">
-            <header class="d-flex flex-wrap justify-content-end justify-content-md-between pt-3 header-bg">
+      <div class="container d-none d-sm-none d-md-none d-lg-block">
+        <header
+          class="d-flex flex-wrap justify-content-end justify-content-md-between pt-3 header-bg"
+        >
+          <div>
+            <a
+              href="/"
+              class="d-flex align-items-center col-md-3 mb-2 mb-md-0 text-w text-decoration-none"
+            >
+              <img alt="Logo" class="image-logo pe-4" />
+              <img class="image-logo-centrado" alt="BNP" />
+            </a>
+          </div>
 
-                <div>
-                    <a href="/" class="d-flex align-items-center col-md-3 mb-2 mb-md-0 text-w text-decoration-none">
-                        <img alt="Logo" class="image-logo pe-4">
-                        <img class="image-logo-centrado" alt="BNP">
-                    </a>
-                </div>
+          <div class="d-flex flex-wrap justify-content-end">
+            <div>
+              <a
+                class="nav-link dropdown-toggle log-ejecutivo"
+                href="#"
+                id="navbarDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                <img class="img_log-ejecutivo" />
+                Hola, Leslie
+                <i class="bi bi-chevron-down"></i>
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li>
+                  <hr class="dropdown-divider" />
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                </li>
+              </ul>
+            </div>
 
-                <div class="d-flex flex-wrap justify-content-end">
+            <div class="divisor ms-3"></div>
 
-                    <div>
-                        <a class="nav-link dropdown-toggle log-ejecutivo" href="#" id="navbarDropdown" role="button"
-                            data-bs-toggle="dropdown" aria-expanded="false">
-                            <img class="img_log-ejecutivo">
-                            Hola, Leslie
-                            <i class="bi bi-chevron-down"></i>
+            <div class="mt-1 ms-3">
+              <a class="text-decoration-none text-black" href="#" role="button">
+                <img class="img_cerrar_sesion" alt="" />
+                Cerrar sesión</a
+              >
+            </div>
+          </div>
 
-                        </a>
-                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <li><a class="dropdown-item" href="#">Action</a></li>
-                            <li><a class="dropdown-item" href="#">Another action</a></li>
-                            <li>
-                                <hr class="dropdown-divider">
-                            </li>
-                            <li><a class="dropdown-item" href="#">Something else here</a></li>
-                        </ul>
+          <nav
+            class="navbar navbar-expand-lg nav-itau pb-0 d-none d-lg-block d-sm-none"
+          >
+            <div class="container-fluid justify-content-around">
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#"
+                    >Inicio</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-white" href="#">Contratar Seguros</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-white" href="#"
+                    >Ver Seguros Contratados</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-white" href="#"
+                    >Denunciar un Siniestro</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </nav>
+        </header>
+      </div>
+      <div class="d-lg-none d-sm-block">
+        <nav class="navbar navbar-expand-lg bg-light">
+          <div class="container">
+            <div class="navbar-brand" href="#">
+              <a href=""><img alt="Logo" class="image-logo me-2" /></a>
+              <a href=""><img class="image-logo-centrado" alt="BNP" /></a>
+            </div>
 
-                    </div>
-
-                    <div class="divisor ms-3"></div>
-
-                    <div class="mt-1 ms-3">
-                        <a class="text-decoration-none text-black" href="#" role="button">
-                            <img class="img_cerrar_sesion" alt="">
-                            Cerrar sesión</a>
-                    </div>
-                </div>
-
-                <nav class="navbar navbar-expand-lg nav-itau pb-0 d-none d-lg-block d-sm-none">
-                    <div class="container-fluid justify-content-around">
-
-                        <ul class="navbar-nav">
-                            <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="#">Inicio</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link text-white" href="#">Contratar Seguros</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link text-white" href="#">Ver Seguros Contratados</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link text-white" href="#">Denunciar un Siniestro</a>
-                            </li>
-
-                        </ul>
-
-                    </div>
-                </nav>
-
-            </header>
-
-        </div>
-        <div class="d-lg-none d-sm-block">
-            <nav class="navbar navbar-expand-lg bg-light">
-                <div class="container">
-                    <div class="navbar-brand" href="#">
-                        <a href=""><img alt="Logo" class="image-logo me-2"></a>
-                        <a href=""><img class="image-logo-centrado" alt="BNP"></a>
-                    </div>
-
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                        aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse ms-3" id="navbarSupportedContent">
-                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                            <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="#">Inicio</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Contratar seguros</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Ver seguros contratados</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Denunciar un siniestro</a>
-                            </li>
-                        </ul>
-
-                    </div>
-                </div>
-            </nav>
-        </div>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div
+              class="collapse navbar-collapse ms-3"
+              id="navbarSupportedContent"
+            >
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#"
+                    >Inicio</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Contratar seguros</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Ver seguros contratados</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Denunciar un siniestro</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </div>
     </section>
     <!--NavBar fin-->
 
-
     <!--Contenido-->
     <main id="contenedor-mayor" class="flex-shrink-0 mt-4">
+      <!--Contenido principal-->
+      <section class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <h1 class="mt-3">Detalle de siniestro</h1>
+          </div>
 
-        <!--Contenido principal-->
-        <section class="container">
+          <!--detalle siniestro dsktp-->
+          <div class="container">
+            <section
+              class="d-none d-sm-block tabla_detalle p-0 mb-4"
+              aria-label="tabla estados"
+            >
+              <table class="table" style="margin-bottom: 0px">
+                <tbody>
+                  <tr>
+                    <th
+                      class="table_column pt-4"
+                      rowspan="3"
+                      style="
+                        border-radius: 8px 0px 0px 8px;
+                        border-bottom-width: 0px;
+                      "
+                    >
+                      <h6 class="px-1 mb-0" style="border-radius: 15px">
+                        Cobertura
+                      </h6>
+                      <h4 class="px-1">Cesantía</h4>
+                      <h6 class="px-1 pt-1 mb-0 subtitle">No. Siniestro</h6>
+                      <h6 class="px-1 pt-1 subtitle">3531077</h6>
+                    </th>
+                  </tr>
+                  <tr class="align-middle">
+                    <th scope="col">Cuotas a evaluar</th>
+                    <th scope="col">Fecha Ocurrencia</th>
+                    <th scope="col">Fecha declaración</th>
+                    <th scope="col">Fecha cambio estado</th>
+                    <th scope="col">Estado</th>
+                    <th scope="col">Póliza</th>
+                    <th
+                      scope="col"
+                      style="border-radius: 0px 16px 0px 0px"
+                    ></th>
+                  </tr>
 
-            <div class="row">
+                  <tr class="align-middle">
+                    <td>3</td>
+                    <td>31-07-2023</td>
+                    <td>22-08-2023</td>
+                    <td>22-09-2023</td>
+                    <td><span class="custom-chip emitido">Emitido</span></td>
+                    <td>120117388</td>
+                    <td
+                      class="link"
+                      style="
+                        border-radius: 0px 0px 15px 0px;
+                        border-bottom-color: #fff0;
+                      "
+                    ></td>
+                  </tr>
+                </tbody>
+              </table>
+            </section>
 
-                <div class="col-md-12">
-                    <h1 class="mt-3">
-                        Detalle de siniestro
-                    </h1>
+            <!--detalle siniestro mobile-->
+            <section
+              class="d-block d-sm-none px-5 mb-4"
+              aria-label="responsive tabla estados"
+            >
+              <div class="card-seguros-asociados-custom" style="height: auto">
+                <div class="top3-custom tabla_detalle status">
+                  <h6 class="mb-0 pb-0">Cobertura</h6>
+                  <h4>Cesantía</h4>
+                  <div class="cobertura">
+                    <p class="text-cards-1 text-center">No. Siniestro</p>
+                    <p class="text-cards-1 text-center">
+                      <b>3531077</b>
+                    </p>
+                  </div>
                 </div>
-
-                <!--detalle siniestro dsktp-->
-                <div class="container">
-                    <section class="d-none d-sm-block tabla_detalle p-0 mb-4" aria-label="tabla estados">
-
-                        <table class="table" style="margin-bottom: 0px;">
-                            <tbody>
-                                <tr>
-                                    <th class="table_column pt-4" rowspan="3"
-                                        style="border-radius: 8px 0px 0px 8px;border-bottom-width: 0px;">
-                                        <h6 class="px-1 mb-0" style="border-radius: 15px;">Cobertura</h6>
-                                        <h4 class="px-1">Cesantía</h4>
-                                        <h6 class="px-1 pt-1 mb-0 subtitle">No. Siniestro</h6>
-                                        <h6 class="px-1 pt-1 subtitle">3531077</h6>
-                                    </th>
-                                </tr>
-                                <tr class="align-middle">
-                                    <th scope="col">Cuotas a evaluar</th>
-                                    <th scope="col">Fecha Ocurrencia</th>
-                                    <th scope="col">Fecha declaración</th>
-                                    <th scope="col">Fecha cambio estado</th>
-                                    <th scope="col">Estado</th>
-                                    <th scope="col">Póliza</th>
-                                    <th scope="col" style="border-radius: 0px 16px 0px 0px;"></th>
-                                </tr>
-
-                                <tr class="align-middle">
-                                    <td>3</td>
-                                    <td>31-07-2023</td>
-                                    <td>22-08-2023</td>
-                                    <td>22-09-2023</td>
-                                    <td><span class="custom-chip emitido">Emitido</span>
-                                    </td>
-                                    <td>120117388</td>
-                                    <td class="link"
-                                        style="border-radius: 0px 0px 15px 0px;border-bottom-color: #fff0;"></td>
-                                </tr>
-                            </tbody>
-                        </table>
-
-                    </section>
-
-
-                    <!--detalle siniestro mobile-->
-                    <section class="d-block d-sm-none px-5 mb-4" aria-label="responsive tabla estados">
-                        <div class="card-seguros-asociados-custom" style="height: auto;">
-                            <div class="top3-custom tabla_detalle status">
-                                <h6 class="mb-0 pb-0">Cobertura</h6>
-                                <h4>Cesantía</h4>
-                                <div class="cobertura">
-                                    <p class="text-cards-1 text-center">No. Siniestro</p>
-                                    <p class="text-cards-1 text-center">
-                                        <b>3531077</b>
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="content1 card-body-table">
-                                <div class="monto">
-                                    <p class="text-cards-1">
-                                        <b>Cuotas a evaluar:</b>
-                                    </p>
-                                    <p class="text-cards-1">3</p>
-                                </div>
-                                <div class="monto">
-                                    <p class="text-cards-1">
-                                        <b>Fecha Ocurrencia:</b>
-                                    </p>
-                                    <p class="text-cards-1">31-07-2023</p>
-                                </div>
-                                <div class="monto">
-                                    <p class="text-cards-1">
-                                        <b>Fecha declaración:</b>
-                                    </p>
-                                    <p class="text-cards-1">22-08-2023</p>
-                                </div>
-                                <div class="monto">
-                                    <p class="text-cards-1">
-                                        <b>Fecha cambio estado:</b>
-                                    </p>
-                                    <p class="text-cards-1">22-09-2023</p>
-                                </div>
-                                <div class="monto">
-                                    <div class="row">
-                                        <div class="col-sm-6 col-md-6 col-lg-6">
-                                            <b class="text-cards-1">Estado:</b>
-                                        </div>
-                                        <div class="col-sm-6 col-md-6 col-lg-6 text-end">
-                                            <span class="custom-chip emitido">Emitido</span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="monto">
-                                    <p class="text-cards-1">
-                                        <b>Póliza:</b>
-                                    </p>
-                                    <p class="text-cards-1">120117388</p>
-                                </div>
-                            </div>
-                            <div class="divisor-line"></div>
-                            <div class="bottom">
-                            </div>
-                        </div>
-                    </section>
+                <div class="content1 card-body-table">
+                  <div class="monto">
+                    <p class="text-cards-1">
+                      <b>Cuotas a evaluar:</b>
+                    </p>
+                    <p class="text-cards-1">3</p>
+                  </div>
+                  <div class="monto">
+                    <p class="text-cards-1">
+                      <b>Fecha Ocurrencia:</b>
+                    </p>
+                    <p class="text-cards-1">31-07-2023</p>
+                  </div>
+                  <div class="monto">
+                    <p class="text-cards-1">
+                      <b>Fecha declaración:</b>
+                    </p>
+                    <p class="text-cards-1">22-08-2023</p>
+                  </div>
+                  <div class="monto">
+                    <p class="text-cards-1">
+                      <b>Fecha cambio estado:</b>
+                    </p>
+                    <p class="text-cards-1">22-09-2023</p>
+                  </div>
+                  <div class="monto">
+                    <div class="row">
+                      <div class="col-sm-6 col-md-6 col-lg-6">
+                        <b class="text-cards-1">Estado:</b>
+                      </div>
+                      <div class="col-sm-6 col-md-6 col-lg-6 text-end">
+                        <span class="custom-chip emitido">Emitido</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="monto">
+                    <p class="text-cards-1">
+                      <b>Póliza:</b>
+                    </p>
+                    <p class="text-cards-1">120117388</p>
+                  </div>
                 </div>
-
-                <div class="col-md-12">
-                    <div
-                        class="row g-0 bg-white border rounded overflow-hidden mb-4 shadow-sm p-3 row align-items-center">
-
-
-                        <div class="col-auto py-auto align-middle">
-                            <img class="img-documento" alt="">
-                        </div>
-                        <div class="col align-middle">
-                            <span class="ms-2 py-auto d-grid gap-2">Faltan documentos pendientes por cargar</span>
-                        </div>
-                        <div class="col-lg-auto col-12 d-grid gap-2">
-                            <a href="#" class="btn btn-outline-secondary my-3 me-3 fw-bold" data-bs-toggle="offcanvas"
-                                data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">Adjuntar documentos</a>
-                        </div>
-
-                    </div>
-                </div>
-
-
-                <div class="container mt-4">
-
-                    <div class="d-block d-sm-none">
-                        <div class="fila-cuotas-mobile row p-3 ">
-                            <div class="col small  d-block d-sm-none">N° <br>Cuota</div>
-                            <div class="col small  d-block d-sm-none">F.Solicitud</div>
-                            <div class="col small  d-block d-sm-none">Estado cuota</div>
-                            <div class="col small  d-block d-sm-none">Cuotas</div>
-                            <div class="col small  d-block d-sm-none"></div>
-                        </div>
-                    </div>
-
-                    <table class="tabla-custom table mb-0 table-borderless px-4">
-                        <thead class="tabla-socio header-detalle">
-                            <tr>
-                                <th class="col-1">N° Cuota</th>
-                                <th class="col-1">Fecha de solicitud</th>
-                                <th class="col-2 text-center">Fecha de <br>evaluación</th>
-                                <th class="col-1">Fecha de pago</th>
-                                <th class="col-1 text-center">Monto pagado</th>
-                                <th class="col-2 text-center">Estado de la cuota</th>
-                                <th class="col-3">Cuotas</th>
-                            </tr>
-                        </thead>
-
-                    </table>
-
-                    <!--cabecera tabla mobile-->
-
-
-
-                    <div class="accordion" id="accordionExample">
-                        <div class="accordion-item rounded-0">
-                            <h2 class="accordion-header" id="headingTwo">
-
-                                <button class="accordion-button collapsed socio" type="button" data-bs-toggle="collapse"
-                                    data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                                    <div class="container">
-                                        <div class="row">
-                                            <div class="col-1">1</div>
-                                            <div class="col">16/10/2023</div>
-                                            <div class="col d-none d-sm-block">16/10/2023</div>
-                                            <div class="col d-none d-sm-block">16/10/2023</div>
-                                            <div class="col d-none d-sm-block">$264.532</div>
-                                            <div class="col"><span class="custom-chip emitido">Emitido</span></div>
-                                            <div class="col">1/3</div>
-                                            <div class="col d-none d-sm-block d-md-none d-lg-block"><a
-                                                    onclick="myFunction()" class="toggle-text" href="#">Ver detalle</a>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                </button>
-                            </h2>
-                            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
-                                data-bs-parent="#accordionExample">
-                                <div class="accordion-body p-0">
-
-                                    <table class="tabla-custom table  mb-0 ">
-                                        <thead>
-                                            <tr class="tabla-socio itau">
-                                                <th class="col">Evaluación</th>
-                                                <th class="col">Fecha de recepción</th>
-                                                <th class="col">Fecha de dictamen</th>
-                                                <th class="col">Fecha de pago</th>
-                                                <th class="col">Monto pagado</th>
-                                                <th class="col">Estado evaluación</th>
-                                                <th class="col">Cuota</th>
-                                                <th class="col">Respuesta</th>
-                                            </tr>
-                                        </thead>
-
-                                        <tbody class="table-sin-bordes tabla-socio" style="height: 56px;">
-                                            <tr>
-                                                <th scope="row" data-titulo="evaluacion">5083394</th>
-                                                <td data-titulo="fecha de recepción">16/10/2023</td>
-                                                <td data-titulo="fecha de evaluación">16/10/2023</td>
-                                                <td data-titulo="fecha de pago">16/10/2023</td>
-                                                <td data-titulo="Monto pagado">$264.532</td>
-                                                <td data-titulo="Estado evaluación"><span
-                                                        class="custom-chip emitido">Emitido</span></td>
-                                                <td data-titulo="Cuota">1/3</td>
-                                                <td data-titulo="Respuesta"><a data-bs-toggle="modal"
-                                                        data-bs-target="#exampleModal">
-                                                        <img style="width: 25px;" class="img-documento"
-                                                            data-bs-toggle="tooltip" data-bs-placement="top"
-                                                            title="Ver informe de liquidación">
-                                                    </a>
-                                                </td>
-                                            </tr>
-
-                                            <tr>
-                                                <th scope="row" data-titulo="evaluacion">5083394</th>
-                                                <td data-titulo="fecha de recepción">16/10/2023</td>
-                                                <td data-titulo="fecha de evaluación">16/10/2023</td>
-                                                <td data-titulo="fecha de pago">16/10/2023</td>
-                                                <td data-titulo="Monto pagado">$264.532</td>
-                                                <td data-titulo="Estado evaluación"><span
-                                                        class="custom-chip emitido">Emitido</span></td>
-                                                <td data-titulo="Cuota">2/3</td>
-                                                <td data-titulo="Respuesta"><a data-bs-toggle="modal"
-                                                        data-bs-target="#exampleModal">
-                                                        <img style="width: 25px;" class="img-documento"
-                                                            data-bs-toggle="tooltip" data-bs-placement="top"
-                                                            title="Ver informe de liquidación">
-                                                    </a>
-                                                </td>
-                                            </tr>
-
-                                            <tr>
-                                                <th scope="row" data-titulo="evaluacion">5083394</th>
-                                                <td data-titulo="fecha de recepción">16/10/2023</td>
-                                                <td data-titulo="fecha de evaluación">16/10/2023</td>
-                                                <td data-titulo="fecha de pago">16/10/2023</td>
-                                                <td data-titulo="Monto pagado">$264.532</td>
-                                                <td data-titulo="Estado evaluación"><span
-                                                        class="custom-chip emitido">Emitido</span></td>
-                                                <td data-titulo="Cuota">3/3</td>
-                                                <td data-titulo="Respuesta"><a data-bs-toggle="modal"
-                                                        data-bs-target="#exampleModal">
-                                                        <img style="width: 25px;" class="img-documento"
-                                                            data-bs-toggle="tooltip" data-bs-placement="top"
-                                                            title="Ver informe de liquidación">
-                                                    </a>
-                                                </td>
-                                            </tr>
-
-                                        </tbody>
-
-                                    </table>
-
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
-
-                    <div class="accordion" id="accordionExample2">
-                        <div class="accordion-item rounded-0">
-                            <h2 class="accordion-header" id="heading2">
-
-                                <button class="accordion-button collapsed socio" type="button" data-bs-toggle="collapse"
-                                    data-bs-target="#collapse2" aria-expanded="false" aria-controls="collapse2">
-                                    <div class="container">
-                                        <div class="row">
-                                            <div class="col-1">2</div>
-                                            <div class="col">16/10/2023</div>
-                                            <div class="col d-none d-sm-block">16/10/2023</div>
-                                            <div class="col d-none d-sm-block">16/10/2023</div>
-                                            <div class="col d-none d-sm-block">$264.532</div>
-                                            <div class="col"><span class="custom-chip pendiente">Pendiente</span></div>
-                                            <div class="col">2/3</div>
-                                            <div class="col d-none d-sm-block d-md-none d-lg-block"><a
-                                                    onclick="myFunction()" class="toggle-text" href="#">Ver detalle</a>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                </button>
-                            </h2>
-                            <div id="collapse2" class="accordion-collapse collapse" aria-labelledby="heading2"
-                                data-bs-parent="#accordionExample2">
-                                <div class="accordion-body p-0">
-
-                                    <table class="tabla-custom table mb-0">
-                                        <thead>
-                                            <tr class="tabla-socio itau">
-                                                <th class="col ">Evaluación</th>
-                                                <th class="col">Fecha de recepción</th>
-                                                <th class="col">Fecha de dictamen</th>
-                                                <th class="col">Fecha de pago</th>
-                                                <th class="col">Monto pagado</th>
-                                                <th class="col">Estado evaluación</th>
-                                                <th class="col">Cuota</th>
-                                                <th class="col">Respuesta</th>
-                                            </tr>
-                                        </thead>
-
-
-                                        <tbody class="table-sin-bordes tabla-socio" style="height: 56px;">
-                                            <tr>
-                                                <th scope="row">5083394</th>
-                                                <td>16/10/2023</td>
-                                                <td>16/10/2023</td>
-                                                <td>16/10/2023</td>
-                                                <td>$264.532</td>
-                                                <td><span class="custom-chip emitido">Emitido</span></td>
-                                                <td>1/3</td>
-                                                <td><a data-bs-toggle="modal" data-bs-target="#exampleModal">
-                                                        <img style="width: 25px;" class="img-documento"
-                                                            data-bs-toggle="tooltip" data-bs-placement="top"
-                                                            title="Ver informe de liquidación">
-                                                    </a></td>
-                                            </tr>
-
-
-                                            <tr>
-                                                <th scope="row">5083394</th>
-                                                <td>16/10/2023</td>
-                                                <td>16/10/2023</td>
-                                                <td>16/10/2023</td>
-                                                <td>$264.532</td>
-                                                <td><span class="custom-chip emitido">Emitido</span></td>
-                                                <td>2/3</td>
-                                                <td><a data-bs-toggle="modal" data-bs-target="#exampleModal">
-                                                        <img style="width: 25px;" class="img-documento"
-                                                            data-bs-toggle="tooltip" data-bs-placement="top"
-                                                            title="Ver informe de liquidación">
-                                                    </a></td>
-                                            </tr>
-
-
-                                            <tr>
-                                                <th scope="row">5083394</th>
-                                                <td>16/10/2023</td>
-                                                <td>16/10/2023</td>
-                                                <td>16/10/2023</td>
-                                                <td>$264.532</td>
-                                                <td><span class="custom-chip emitido">Emitido</span></td>
-                                                <td>3/3</td>
-                                                <td><a data-bs-toggle="modal" data-bs-target="#exampleModal">
-                                                        <img style="width: 25px;" class="img-documento"
-                                                            data-bs-toggle="tooltip" data-bs-placement="top"
-                                                            title="Ver informe de liquidación">
-                                                    </a></td>
-                                            </tr>
-
-                                        </tbody>
-
-                                    </table>
-
-
-
-
-
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
-
-
-                    <div class="accordion" id="accordionExample3">
-                        <div class="accordion-item rounded-0">
-                            <h2 class="accordion-header" id="heading3">
-
-                                <button class="accordion-button collapsed socio" type="button" data-bs-toggle="collapse"
-                                    data-bs-target="#collapse3" aria-expanded="false" aria-controls="collapse3">
-                                    <div class="container">
-                                        <div class="row">
-                                            <div class="col-1">3</div>
-                                            <div class="col">16/10/2023</div>
-                                            <div class="col d-none d-sm-block">16/10/2023</div>
-                                            <div class="col d-none d-sm-block">16/10/2023</div>
-                                            <div class="col d-none d-sm-block">$264.532</div>
-                                            <div class="col"><span class="custom-chip rechazado">Rechazado</span></div>
-                                            <div class="col">3/3</div>
-                                            <div class="col d-none d-sm-block d-md-none d-lg-block"><a
-                                                    onclick="myFunction()" class="toggle-text" href="#">Ver detalle</a>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                </button>
-                            </h2>
-                            <div id="collapse3" class="accordion-collapse collapse" aria-labelledby="heading3"
-                                data-bs-parent="#accordionExample3">
-                                <div class="accordion-body p-0">
-
-                                    <table class="tabla-custom table mb-0">
-                                        <thead>
-                                            <tr class="tabla-socio itau">
-                                                <th class="col ">Evaluación</th>
-                                                <th class="col">Fecha de recepción</th>
-                                                <th class="col">Fecha de dictamen</th>
-                                                <th class="col">Fecha de pago</th>
-                                                <th class="col">Monto pagado</th>
-                                                <th class="col">Estado evaluación</th>
-                                                <th class="col">Cuota</th>
-                                                <th class="col">Respuesta</th>
-                                            </tr>
-                                        </thead>
-
-                                        <tbody class="table-sin-bordes tabla-socio" style="height: 56px;">
-                                            <tr>
-                                                <th scope="row">5083394</th>
-                                                <td>16/10/2023</td>
-                                                <td>16/10/2023</td>
-                                                <td>16/10/2023</td>
-                                                <td>$264.532</td>
-                                                <td><span class="custom-chip emitido">Emitido</span></td>
-                                                <td>1/3</td>
-                                                <td><a data-bs-toggle="modal" data-bs-target="#exampleModal">
-                                                        <img style="width: 25px;" class="img-documento"
-                                                            data-bs-toggle="tooltip" data-bs-placement="top"
-                                                            title="Ver informe de liquidación">
-                                                    </a></td>
-                                            </tr>
-
-                                            <tr>
-                                                <th scope="row">5083394</th>
-                                                <td>16/10/2023</td>
-                                                <td>16/10/2023</td>
-                                                <td>16/10/2023</td>
-                                                <td>$264.532</td>
-                                                <td><span class="custom-chip emitido">Emitido</span></td>
-                                                <td>2/3</td>
-                                                <td><a data-bs-toggle="modal" data-bs-target="#exampleModal">
-                                                        <img style="width: 25px;" class="img-documento"
-                                                            data-bs-toggle="tooltip" data-bs-placement="top"
-                                                            title="Ver informe de liquidación">
-                                                    </a></td>
-                                            </tr>
-
-                                            <tr>
-                                                <th scope="row">5083394</th>
-                                                <td>16/10/2023</td>
-                                                <td>16/10/2023</td>
-                                                <td>16/10/2023</td>
-                                                <td>$264.532</td>
-                                                <td><span class="custom-chip emitido">Emitido</span></td>
-                                                <td>3/3</td>
-                                                <td><a data-bs-toggle="modal" data-bs-target="#exampleModal">
-                                                        <img style="width: 25px;" class="img-documento"
-                                                            data-bs-toggle="tooltip" data-bs-placement="top"
-                                                            title="Ver informe de liquidación">
-                                                    </a></td>
-                                            </tr>
-
-                                        </tbody>
-
-                                    </table>
-
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
-
-                </div>
-
-                <!--ejemplo sin cuotas asignadas borrar comentario al integrar-->
-                <div class="container mt-4">
-
-                    <div class="d-block d-sm-none">
-                        <div class="fila-cuotas-mobile row p-3 ">
-                            <div class="col small  d-block d-sm-none">N° <br>Cuota</div>
-                            <div class="col small  d-block d-sm-none">F.Solicitud</div>
-                            <div class="col small  d-block d-sm-none">Estado cuota</div>
-                            <div class="col small  d-block d-sm-none">Cuotas</div>
-                            <div class="col small  d-block d-sm-none"></div>
-                        </div>
-                    </div>
-
-                    <table class="tabla-custom table mb-0 table-borderless px-4">
-                        <thead class="tabla-socio header-detalle">
-                            <tr>
-                                <th class="col-1">N° Cuota
-                                </th>
-                                <th class="col-1">Fecha de solicitud</th>
-                                <th class="col-2 text-center">Fecha de <br>evaluación</th>
-                                <th class="col-1">Fecha de pago</th>
-                                <th class="col-1 text-center">Monto pagado</th>
-                                <th class="col-2 text-center">Estado de la cuota</th>
-                                <th class="col-3">Cuotas</th>
-                            </tr>
-                        </thead>
-                    </table>
-
-                    <div class="accordion" id="accordionExample4">
-                        <div class="accordion-item rounded-0">
-                            <h2 class="accordion-header" id="heading4">
-
-                                <button class="accordion-button collapsed socio" type="button" data-bs-toggle="collapse"
-                                    data-bs-target="#collapse4" aria-expanded="false" aria-controls="collapse4">
-                                    <div class="container">
-                                        <div class="row">
-                                            <div class="col-1">1</div>
-                                            <div class="col">16/10/2023</div>
-                                            <div class="col d-none d-sm-block">16/10/2023</div>
-                                            <div class="col d-none d-sm-block">16/10/2023</div>
-                                            <div class="col d-none d-sm-block">$264.532</div>
-                                            <div class="col"><span class="custom-chip emitido">Emitido</span></div>
-                                            <div class="col">1/3</div>
-                                            <div class="col d-none d-sm-block d-md-none d-lg-block"><a
-                                                    onclick="myFunction()" class="toggle-text" href="#">Ver detalle</a>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                </button>
-                            </h2>
-                            <div id="collapse4" class="accordion-collapse collapse" aria-labelledby="heading4"
-                                data-bs-parent="#accordionExample4">
-                                <div class="accordion-body p-0">
-
-                                    <table class="tabla-custom table mb-0">
-                                        <thead>
-                                            <tr class="tabla-socio itau">
-                                                <th class="col ">Evaluación</th>
-                                                <th class="col">Fecha de recepción</th>
-                                                <th class="col">Fecha de dictamen</th>
-                                                <th class="col">Fecha de pago</th>
-                                                <th class="col">Monto pagado</th>
-                                                <th class="col">Estado evaluación</th>
-                                                <th class="col">Cuota</th>
-                                                <th class="col">Respuesta</th>
-                                            </tr>
-                                        </thead>
-
-
-                                        <tbody class="table-sin-bordes tabla-socio" style="height: 56px;">
-                                            <tr>
-                                                <th scope="row">5083394</th>
-                                                <td>16/10/2023</td>
-                                                <td>16/10/2023</td>
-                                                <td>16/10/2023</td>
-                                                <td>$264.532</td>
-                                                <td>Emitido</td>
-                                                <td>1/3</td>
-                                                <td><a data-bs-toggle="modal" data-bs-target="#exampleModal">
-                                                        <img style="width: 25px;" class="img-documento"
-                                                            data-bs-toggle="tooltip" data-bs-placement="top"
-                                                            title="Ver informe de liquidación">
-                                                    </a></td>
-                                            </tr>
-
-                                            <tr>
-                                                <th scope="row">5083394</th>
-                                                <td>16/10/2023</td>
-                                                <td>16/10/2023</td>
-                                                <td>16/10/2023</td>
-                                                <td>$264.532</td>
-                                                <td>Emitido</td>
-                                                <td>2/3</td>
-                                                <td><a data-bs-toggle="modal" data-bs-target="#exampleModal">
-                                                        <img style="width: 25px;" class="img-documento"
-                                                            data-bs-toggle="tooltip" data-bs-placement="top"
-                                                            title="Ver informe de liquidación">
-                                                    </a></td>
-                                            </tr>
-
-                                            <tr>
-                                                <th scope="row">5083394</th>
-                                                <td>16/10/2023</td>
-                                                <td>16/10/2023</td>
-                                                <td>16/10/2023</td>
-                                                <td>$264.532</td>
-                                                <td>Emitido</td>
-                                                <td>3/3</td>
-                                                <td><a data-bs-toggle="modal" data-bs-target="#exampleModal">
-                                                        <img style="width: 25px;" class="img-documento"
-                                                            data-bs-toggle="tooltip" data-bs-placement="top"
-                                                            title="Ver informe de liquidación">
-                                                    </a></td>
-                                            </tr>
-
-                                        </tbody>
-
-                                    </table>
-
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
-
-                    <div class="accordion" id="accordionExample5">
-                        <div class="accordion-item rounded-0">
-                            <h2 class="accordion-header" id="heading5">
-
-                                <button class="accordion-button collapsed socio no-info" type="button"
-                                    data-bs-toggle="collapse" data-bs-target="#collapse5" aria-expanded="false"
-                                    aria-controls="collapse5" disabled>
-                                    <div class="container">
-                                        <div class="row">
-                                            <div class="col-1">2</div>
-                                            <div class="col">No hay información</div>
-                                            <div class="col d-none d-sm-block">No hay información</div>
-                                            <div class="col d-none d-sm-block">No hay información</div>
-                                            <div class="col d-none d-sm-block">No hay información</div>
-                                            <div class="col"><span class="custom-chip pendiente">Pendiente</span></div>
-                                            <div class="col">2/3</div>
-                                            <div class="col d-none d-sm-block d-md-none d-lg-block"><a
-                                                    class="toggle-text" href="#" disabled>Ver detalle</a> </div>
-                                        </div>
-                                    </div>
-
-                                </button>
-                            </h2>
-                            <div id="collapse5" class="accordion-collapse collapse" aria-labelledby="heading5"
-                                data-bs-parent="#accordionExample5">
-                                <div class="accordion-body p-0">
-
-                                    <table class="tabla-custom table mb-0">
-                                        <thead>
-                                            <tr class="tabla-socio itau">
-                                                <th class="col ">Evaluación</th>
-                                                <th class="col">Fecha de recepción</th>
-                                                <th class="col">Fecha de dictamen</th>
-                                                <th class="col">Fecha de pago</th>
-                                                <th class="col">Monto pagado</th>
-                                                <th class="col">Estado evaluación</th>
-                                                <th class="col">Cuota</th>
-                                                <th class="col">Respuesta</th>
-                                            </tr>
-                                        </thead>
-
-
-                                        <tbody class="table-sin-bordes tabla-socio" style="height: 56px;">
-                                            <tr>
-                                                <th scope="row">5083394</th>
-                                                <td>16/10/2023</td>
-                                                <td>16/10/2023</td>
-                                                <td>16/10/2023</td>
-                                                <td>$264.532</td>
-                                                <td>Emitido</td>
-                                                <td>1/3</td>
-                                                <td><a href="" data-bs-toggle="tooltip" data-bs-placement="top"
-                                                        title="Ver informe de liquidación"><img style="width: 25px;"
-                                                            class="img-documento"></a></td>
-                                            </tr>
-
-                                            <tr>
-                                                <th scope="row">5083394</th>
-                                                <td>16/10/2023</td>
-                                                <td>16/10/2023</td>
-                                                <td>16/10/2023</td>
-                                                <td>$264.532</td>
-                                                <td>Emitido</td>
-                                                <td>2/3</td>
-                                                <td><a href="" data-bs-toggle="tooltip" data-bs-placement="top"
-                                                        title="Ver informe de liquidación"><img style="width: 25px;"
-                                                            class="img-documento"></a></td>
-                                            </tr>
-
-                                            <tr>
-                                                <th scope="row">5083394</th>
-                                                <td>16/10/2023</td>
-                                                <td>16/10/2023</td>
-                                                <td>16/10/2023</td>
-                                                <td>$264.532</td>
-                                                <td>Emitido</td>
-                                                <td>3/3</td>
-                                                <td><a href="" data-bs-toggle="tooltip" data-bs-placement="top"
-                                                        title="Ver informe de liquidación"><img style="width: 25px;"
-                                                            class="img-documento"></a></td>
-                                            </tr>
-
-                                        </tbody>
-
-                                    </table>
-
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
-
-                    <div class="accordion" id="accordionExample6">
-                        <div class="accordion-item rounded-0">
-                            <h2 class="accordion-header" id="heading6">
-
-                                <button class="accordion-button collapsed socio no-info" type="button"
-                                    data-bs-toggle="collapse" data-bs-target="#collapse6" aria-expanded="false"
-                                    aria-controls="collapse6" disabled>
-                                    <div class="container">
-                                        <div class="row">
-                                            <div class="col-1">3</div>
-                                            <div class="col">No hay información</div>
-                                            <div class="col d-none d-sm-block">No hay información</div>
-                                            <div class="col d-none d-sm-block">No hay información</div>
-                                            <div class="col d-none d-sm-block">No hay información</div>
-                                            <div class="col"><span class="custom-chip pendiente">Pendiente</span></div>
-                                            <div class="col">3/3</div>
-                                            <div class="col d-none d-sm-block d-md-none d-lg-block"><a
-                                                    onclick="myFunction()" class="toggle-text" href="#">Ver detalle</a>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                </button>
-                            </h2>
-                            <div id="collapse6" class="accordion-collapse collapse" aria-labelledby="heading6"
-                                data-bs-parent="#accordionExample6">
-                                <div class="accordion-body p-0">
-
-                                    <table class="tabla-custom table mb-0">
-                                        <thead>
-                                            <tr class="tabla-socio itau">
-                                                <th scope="col ">Evaluación</th>
-                                                <th scope="col">Fecha de recepción</th>
-                                                <th scope="col">Fecha de dictamen</th>
-                                                <th scope="col">Fecha de pago</th>
-                                                <th scope="col">Monto pagado</th>
-                                                <th scope="col">Estado evaluación</th>
-                                                <th scope="col">Cuota</th>
-                                                <th scope="col">Respuesta</th>
-                                            </tr>
-                                        </thead>
-
-
-                                        <tbody class="table-sin-bordes tabla-socio" style="height: 56px;">
-                                            <tr>
-                                                <th scope="row">5083394</th>
-                                                <td>16/10/2023</td>
-                                                <td>16/10/2023</td>
-                                                <td>16/10/2023</td>
-                                                <td>$264.532</td>
-                                                <td>Emitido</td>
-                                                <td>1/3</td>
-                                                <td><a href="" data-bs-toggle="tooltip" data-bs-placement="top"
-                                                        title="Ver informe de liquidación"><img style="width: 25px;"
-                                                            class="img-documento"></a></td>
-                                            </tr>
-
-
-                                            <tr>
-                                                <th scope="row">5083394</th>
-                                                <td>16/10/2023</td>
-                                                <td>16/10/2023</td>
-                                                <td>16/10/2023</td>
-                                                <td>$264.532</td>
-                                                <td>Emitido</td>
-                                                <td>2/3</td>
-                                                <td><a href="" data-bs-toggle="tooltip" data-bs-placement="top"
-                                                        title="Ver informe de liquidación"><img style="width: 25px;"
-                                                            class="img-documento"></a></td>
-                                            </tr>
-
-
-                                            <tr>
-                                                <th scope="row">5083394</th>
-                                                <td>16/10/2023</td>
-                                                <td>16/10/2023</td>
-                                                <td>16/10/2023</td>
-                                                <td>$264.532</td>
-                                                <td>Emitido</td>
-                                                <td>3/3</td>
-                                                <td><a href="" data-bs-toggle="tooltip" data-bs-placement="top"
-                                                        title="Ver informe de liquidación"><img style="width: 25px;"
-                                                            class="img-documento"></a></td>
-                                            </tr>
-
-                                        </tbody>
-
-                                    </table>
-
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
-
-                </div>
-
-                <div class="col-md-12">
-                    <div
-                        class="row g-0 bg-white border rounded overflow-hidden mb-4 shadow-sm p-3 row align-items-center">
-
-                        <div class="col-auto py-auto align-middle">
-                            <img class="img-consorcio" alt="">
-                        </div>
-                        <div class="col align-middle">
-                            <span class="ms-2 py-auto d-grid gap-2">Solicita aquí una evaluación de cuota
-                                adicional</span>
-                        </div>
-                        <div class="col-lg-auto col-12 d-grid gap-2">
-                            <a href="#" class="btn btn-outline-secondary my-3 me-3 fw-bold" data-bs-toggle="offcanvas"
-                                data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">Solicitar</a>
-                        </div>
-
-                    </div>
-                </div>
-
-                <div class="container text-end mt-4 mb-5 act-buttons">
-                    <button type="button" class="btn btn-outline-secondary px-5">Volver</button>
-                </div>
+                <div class="divisor-line"></div>
+                <div class="bottom"></div>
+              </div>
+            </section>
+          </div>
+
+          <div class="col-md-12">
+            <div
+              class="row g-0 bg-white border rounded overflow-hidden mb-4 shadow-sm p-3 row align-items-center"
+            >
+              <div class="col-auto py-auto align-middle">
+                <img class="img-documento" alt="" />
+              </div>
+              <div class="col align-middle">
+                <span class="ms-2 py-auto d-grid gap-2"
+                  >Faltan documentos pendientes por cargar</span
+                >
+              </div>
+              <div class="col-lg-auto col-12 d-grid gap-2">
+                <a
+                  href="#"
+                  class="btn btn-outline-secondary my-3 me-3 fw-bold"
+                  data-bs-toggle="offcanvas"
+                  data-bs-target="#offcanvasRight"
+                  aria-controls="offcanvasRight"
+                  >Adjuntar documentos</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <div class="container mt-4">
+            <div class="d-block d-sm-none">
+              <div class="fila-cuotas-mobile row p-3">
+                <div class="col small d-block d-sm-none">N° <br />Cuota</div>
+                <div class="col small d-block d-sm-none">F.Solicitud</div>
+                <div class="col small d-block d-sm-none">Estado cuota</div>
+                <div class="col small d-block d-sm-none">Cuotas</div>
+                <div class="col small d-block d-sm-none"></div>
+              </div>
             </div>
 
-        </section>
-        <!--Fin Contenido principal-->
+            <table class="tabla-custom table mb-0 table-borderless px-4">
+              <thead class="tabla-socio header-detalle">
+                <tr>
+                  <th class="col-1">N° Cuota</th>
+                  <th class="col-1">Fecha de solicitud</th>
+                  <th class="col-2 text-center">Fecha de <br />evaluación</th>
+                  <th class="col-1">Fecha de pago</th>
+                  <th class="col-1 text-center">Monto pagado</th>
+                  <th class="col-2 text-center">Estado de la cuota</th>
+                  <th class="col-3">Cuotas</th>
+                </tr>
+              </thead>
+            </table>
 
+            <!--cabecera tabla mobile-->
+
+            <div class="accordion" id="accordionExample">
+              <div class="accordion-item rounded-0">
+                <h2 class="accordion-header" id="headingTwo">
+                  <button
+                    class="accordion-button collapsed socio"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseTwo"
+                    aria-expanded="false"
+                    aria-controls="collapseTwo"
+                  >
+                    <div class="container">
+                      <div class="row">
+                        <div class="col-1">1</div>
+                        <div class="col">16/10/2023</div>
+                        <div class="col d-none d-sm-block">16/10/2023</div>
+                        <div class="col d-none d-sm-block">16/10/2023</div>
+                        <div class="col d-none d-sm-block">$264.532</div>
+                        <div class="col">
+                          <span class="custom-chip emitido">Emitido</span>
+                        </div>
+                        <div class="col">1/3</div>
+                        <div class="col d-none d-sm-block d-md-none d-lg-block">
+                          <a onclick="myFunction()" class="toggle-text" href="#"
+                            >Ver detalle</a
+                          >
+                        </div>
+                      </div>
+                    </div>
+                  </button>
+                </h2>
+                <div
+                  id="collapseTwo"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="headingTwo"
+                  data-bs-parent="#accordionExample"
+                >
+                  <div class="accordion-body p-0">
+                    <table class="tabla-custom table mb-0">
+                      <thead>
+                        <tr class="tabla-socio itau">
+                          <th class="col">Evaluación</th>
+                          <th class="col">Fecha de recepción</th>
+                          <th class="col">Fecha de dictamen</th>
+                          <th class="col">Fecha de pago</th>
+                          <th class="col">Monto pagado</th>
+                          <th class="col">Estado evaluación</th>
+                          <th class="col">Cuota</th>
+                          <th class="col">Respuesta</th>
+                        </tr>
+                      </thead>
+
+                      <tbody
+                        class="table-sin-bordes tabla-socio"
+                        style="height: 56px"
+                      >
+                        <tr>
+                          <th scope="row" data-titulo="evaluacion">5083394</th>
+                          <td data-titulo="fecha de recepción">16/10/2023</td>
+                          <td data-titulo="fecha de evaluación">16/10/2023</td>
+                          <td data-titulo="fecha de pago">16/10/2023</td>
+                          <td data-titulo="Monto pagado">$264.532</td>
+                          <td data-titulo="Estado evaluación">
+                            <span class="custom-chip emitido">Emitido</span>
+                          </td>
+                          <td data-titulo="Cuota">1/3</td>
+                          <td data-titulo="Respuesta">
+                            <a
+                              data-bs-toggle="modal"
+                              data-bs-target="#exampleModal"
+                            >
+                              <img
+                                style="width: 25px"
+                                class="img-documento"
+                                data-bs-toggle="tooltip"
+                                data-bs-placement="top"
+                                title="Ver informe de liquidación"
+                              />
+                            </a>
+                          </td>
+                        </tr>
+
+                        <tr>
+                          <th scope="row" data-titulo="evaluacion">5083394</th>
+                          <td data-titulo="fecha de recepción">16/10/2023</td>
+                          <td data-titulo="fecha de evaluación">16/10/2023</td>
+                          <td data-titulo="fecha de pago">16/10/2023</td>
+                          <td data-titulo="Monto pagado">$264.532</td>
+                          <td data-titulo="Estado evaluación">
+                            <span class="custom-chip emitido">Emitido</span>
+                          </td>
+                          <td data-titulo="Cuota">2/3</td>
+                          <td data-titulo="Respuesta">
+                            <a
+                              data-bs-toggle="modal"
+                              data-bs-target="#exampleModal"
+                            >
+                              <img
+                                style="width: 25px"
+                                class="img-documento"
+                                data-bs-toggle="tooltip"
+                                data-bs-placement="top"
+                                title="Ver informe de liquidación"
+                              />
+                            </a>
+                          </td>
+                        </tr>
+
+                        <tr>
+                          <th scope="row" data-titulo="evaluacion">5083394</th>
+                          <td data-titulo="fecha de recepción">16/10/2023</td>
+                          <td data-titulo="fecha de evaluación">16/10/2023</td>
+                          <td data-titulo="fecha de pago">16/10/2023</td>
+                          <td data-titulo="Monto pagado">$264.532</td>
+                          <td data-titulo="Estado evaluación">
+                            <span class="custom-chip emitido">Emitido</span>
+                          </td>
+                          <td data-titulo="Cuota">3/3</td>
+                          <td data-titulo="Respuesta">
+                            <a
+                              data-bs-toggle="modal"
+                              data-bs-target="#exampleModal"
+                            >
+                              <img
+                                style="width: 25px"
+                                class="img-documento"
+                                data-bs-toggle="tooltip"
+                                data-bs-placement="top"
+                                title="Ver informe de liquidación"
+                              />
+                            </a>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion" id="accordionExample2">
+              <div class="accordion-item rounded-0">
+                <h2 class="accordion-header" id="heading2">
+                  <button
+                    class="accordion-button collapsed socio"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapse2"
+                    aria-expanded="false"
+                    aria-controls="collapse2"
+                  >
+                    <div class="container">
+                      <div class="row">
+                        <div class="col-1">2</div>
+                        <div class="col">16/10/2023</div>
+                        <div class="col d-none d-sm-block">16/10/2023</div>
+                        <div class="col d-none d-sm-block">16/10/2023</div>
+                        <div class="col d-none d-sm-block">$264.532</div>
+                        <div class="col">
+                          <span class="custom-chip pendiente">Pendiente</span>
+                        </div>
+                        <div class="col">2/3</div>
+                        <div class="col d-none d-sm-block d-md-none d-lg-block">
+                          <a onclick="myFunction()" class="toggle-text" href="#"
+                            >Ver detalle</a
+                          >
+                        </div>
+                      </div>
+                    </div>
+                  </button>
+                </h2>
+                <div
+                  id="collapse2"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="heading2"
+                  data-bs-parent="#accordionExample2"
+                >
+                  <div class="accordion-body p-0">
+                    <table class="tabla-custom table mb-0">
+                      <thead>
+                        <tr class="tabla-socio itau">
+                          <th class="col">Evaluación</th>
+                          <th class="col">Fecha de recepción</th>
+                          <th class="col">Fecha de dictamen</th>
+                          <th class="col">Fecha de pago</th>
+                          <th class="col">Monto pagado</th>
+                          <th class="col">Estado evaluación</th>
+                          <th class="col">Cuota</th>
+                          <th class="col">Respuesta</th>
+                        </tr>
+                      </thead>
+
+                      <tbody
+                        class="table-sin-bordes tabla-socio"
+                        style="height: 56px"
+                      >
+                        <tr>
+                          <th scope="row">5083394</th>
+                          <td>16/10/2023</td>
+                          <td>16/10/2023</td>
+                          <td>16/10/2023</td>
+                          <td>$264.532</td>
+                          <td>
+                            <span class="custom-chip emitido">Emitido</span>
+                          </td>
+                          <td>1/3</td>
+                          <td>
+                            <a
+                              data-bs-toggle="modal"
+                              data-bs-target="#exampleModal"
+                            >
+                              <img
+                                style="width: 25px"
+                                class="img-documento"
+                                data-bs-toggle="tooltip"
+                                data-bs-placement="top"
+                                title="Ver informe de liquidación"
+                              />
+                            </a>
+                          </td>
+                        </tr>
+
+                        <tr>
+                          <th scope="row">5083394</th>
+                          <td>16/10/2023</td>
+                          <td>16/10/2023</td>
+                          <td>16/10/2023</td>
+                          <td>$264.532</td>
+                          <td>
+                            <span class="custom-chip emitido">Emitido</span>
+                          </td>
+                          <td>2/3</td>
+                          <td>
+                            <a
+                              data-bs-toggle="modal"
+                              data-bs-target="#exampleModal"
+                            >
+                              <img
+                                style="width: 25px"
+                                class="img-documento"
+                                data-bs-toggle="tooltip"
+                                data-bs-placement="top"
+                                title="Ver informe de liquidación"
+                              />
+                            </a>
+                          </td>
+                        </tr>
+
+                        <tr>
+                          <th scope="row">5083394</th>
+                          <td>16/10/2023</td>
+                          <td>16/10/2023</td>
+                          <td>16/10/2023</td>
+                          <td>$264.532</td>
+                          <td>
+                            <span class="custom-chip emitido">Emitido</span>
+                          </td>
+                          <td>3/3</td>
+                          <td>
+                            <a
+                              data-bs-toggle="modal"
+                              data-bs-target="#exampleModal"
+                            >
+                              <img
+                                style="width: 25px"
+                                class="img-documento"
+                                data-bs-toggle="tooltip"
+                                data-bs-placement="top"
+                                title="Ver informe de liquidación"
+                              />
+                            </a>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion" id="accordionExample3">
+              <div class="accordion-item rounded-0">
+                <h2 class="accordion-header" id="heading3">
+                  <button
+                    class="accordion-button collapsed socio"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapse3"
+                    aria-expanded="false"
+                    aria-controls="collapse3"
+                  >
+                    <div class="container">
+                      <div class="row">
+                        <div class="col-1">3</div>
+                        <div class="col">16/10/2023</div>
+                        <div class="col d-none d-sm-block">16/10/2023</div>
+                        <div class="col d-none d-sm-block">16/10/2023</div>
+                        <div class="col d-none d-sm-block">$264.532</div>
+                        <div class="col">
+                          <span class="custom-chip rechazado">Rechazado</span>
+                        </div>
+                        <div class="col">3/3</div>
+                        <div class="col d-none d-sm-block d-md-none d-lg-block">
+                          <a onclick="myFunction()" class="toggle-text" href="#"
+                            >Ver detalle</a
+                          >
+                        </div>
+                      </div>
+                    </div>
+                  </button>
+                </h2>
+                <div
+                  id="collapse3"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="heading3"
+                  data-bs-parent="#accordionExample3"
+                >
+                  <div class="accordion-body p-0">
+                    <table class="tabla-custom table mb-0">
+                      <thead>
+                        <tr class="tabla-socio itau">
+                          <th class="col">Evaluación</th>
+                          <th class="col">Fecha de recepción</th>
+                          <th class="col">Fecha de dictamen</th>
+                          <th class="col">Fecha de pago</th>
+                          <th class="col">Monto pagado</th>
+                          <th class="col">Estado evaluación</th>
+                          <th class="col">Cuota</th>
+                          <th class="col">Respuesta</th>
+                        </tr>
+                      </thead>
+
+                      <tbody
+                        class="table-sin-bordes tabla-socio"
+                        style="height: 56px"
+                      >
+                        <tr>
+                          <th scope="row">5083394</th>
+                          <td>16/10/2023</td>
+                          <td>16/10/2023</td>
+                          <td>16/10/2023</td>
+                          <td>$264.532</td>
+                          <td>
+                            <span class="custom-chip emitido">Emitido</span>
+                          </td>
+                          <td>1/3</td>
+                          <td>
+                            <a
+                              data-bs-toggle="modal"
+                              data-bs-target="#exampleModal"
+                            >
+                              <img
+                                style="width: 25px"
+                                class="img-documento"
+                                data-bs-toggle="tooltip"
+                                data-bs-placement="top"
+                                title="Ver informe de liquidación"
+                              />
+                            </a>
+                          </td>
+                        </tr>
+
+                        <tr>
+                          <th scope="row">5083394</th>
+                          <td>16/10/2023</td>
+                          <td>16/10/2023</td>
+                          <td>16/10/2023</td>
+                          <td>$264.532</td>
+                          <td>
+                            <span class="custom-chip emitido">Emitido</span>
+                          </td>
+                          <td>2/3</td>
+                          <td>
+                            <a
+                              data-bs-toggle="modal"
+                              data-bs-target="#exampleModal"
+                            >
+                              <img
+                                style="width: 25px"
+                                class="img-documento"
+                                data-bs-toggle="tooltip"
+                                data-bs-placement="top"
+                                title="Ver informe de liquidación"
+                              />
+                            </a>
+                          </td>
+                        </tr>
+
+                        <tr>
+                          <th scope="row">5083394</th>
+                          <td>16/10/2023</td>
+                          <td>16/10/2023</td>
+                          <td>16/10/2023</td>
+                          <td>$264.532</td>
+                          <td>
+                            <span class="custom-chip emitido">Emitido</span>
+                          </td>
+                          <td>3/3</td>
+                          <td>
+                            <a
+                              data-bs-toggle="modal"
+                              data-bs-target="#exampleModal"
+                            >
+                              <img
+                                style="width: 25px"
+                                class="img-documento"
+                                data-bs-toggle="tooltip"
+                                data-bs-placement="top"
+                                title="Ver informe de liquidación"
+                              />
+                            </a>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!--ejemplo sin cuotas asignadas borrar comentario al integrar-->
+          <div class="container mt-4">
+            <div class="d-block d-sm-none">
+              <div class="fila-cuotas-mobile row p-3">
+                <div class="col small d-block d-sm-none">N° <br />Cuota</div>
+                <div class="col small d-block d-sm-none">F.Solicitud</div>
+                <div class="col small d-block d-sm-none">Estado cuota</div>
+                <div class="col small d-block d-sm-none">Cuotas</div>
+                <div class="col small d-block d-sm-none"></div>
+              </div>
+            </div>
+
+            <table class="tabla-custom table mb-0 table-borderless px-4">
+              <thead class="tabla-socio header-detalle">
+                <tr>
+                  <th class="col-1">N° Cuota</th>
+                  <th class="col-1">Fecha de solicitud</th>
+                  <th class="col-2 text-center">Fecha de <br />evaluación</th>
+                  <th class="col-1">Fecha de pago</th>
+                  <th class="col-1 text-center">Monto pagado</th>
+                  <th class="col-2 text-center">Estado de la cuota</th>
+                  <th class="col-3">Cuotas</th>
+                </tr>
+              </thead>
+            </table>
+
+            <div class="accordion" id="accordionExample4">
+              <div class="accordion-item rounded-0">
+                <h2 class="accordion-header" id="heading4">
+                  <button
+                    class="accordion-button collapsed socio"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapse4"
+                    aria-expanded="false"
+                    aria-controls="collapse4"
+                  >
+                    <div class="container">
+                      <div class="row">
+                        <div class="col-1">1</div>
+                        <div class="col">16/10/2023</div>
+                        <div class="col d-none d-sm-block">16/10/2023</div>
+                        <div class="col d-none d-sm-block">16/10/2023</div>
+                        <div class="col d-none d-sm-block">$264.532</div>
+                        <div class="col">
+                          <span class="custom-chip emitido">Emitido</span>
+                        </div>
+                        <div class="col">1/3</div>
+                        <div class="col d-none d-sm-block d-md-none d-lg-block">
+                          <a onclick="myFunction()" class="toggle-text" href="#"
+                            >Ver detalle</a
+                          >
+                        </div>
+                      </div>
+                    </div>
+                  </button>
+                </h2>
+                <div
+                  id="collapse4"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="heading4"
+                  data-bs-parent="#accordionExample4"
+                >
+                  <div class="accordion-body p-0">
+                    <table class="tabla-custom table mb-0">
+                      <thead>
+                        <tr class="tabla-socio itau">
+                          <th class="col">Evaluación</th>
+                          <th class="col">Fecha de recepción</th>
+                          <th class="col">Fecha de dictamen</th>
+                          <th class="col">Fecha de pago</th>
+                          <th class="col">Monto pagado</th>
+                          <th class="col">Estado evaluación</th>
+                          <th class="col">Cuota</th>
+                          <th class="col">Respuesta</th>
+                        </tr>
+                      </thead>
+
+                      <tbody
+                        class="table-sin-bordes tabla-socio"
+                        style="height: 56px"
+                      >
+                        <tr>
+                          <th scope="row">5083394</th>
+                          <td>16/10/2023</td>
+                          <td>16/10/2023</td>
+                          <td>16/10/2023</td>
+                          <td>$264.532</td>
+                          <td>Emitido</td>
+                          <td>1/3</td>
+                          <td>
+                            <a
+                              data-bs-toggle="modal"
+                              data-bs-target="#exampleModal"
+                            >
+                              <img
+                                style="width: 25px"
+                                class="img-documento"
+                                data-bs-toggle="tooltip"
+                                data-bs-placement="top"
+                                title="Ver informe de liquidación"
+                              />
+                            </a>
+                          </td>
+                        </tr>
+
+                        <tr>
+                          <th scope="row">5083394</th>
+                          <td>16/10/2023</td>
+                          <td>16/10/2023</td>
+                          <td>16/10/2023</td>
+                          <td>$264.532</td>
+                          <td>Emitido</td>
+                          <td>2/3</td>
+                          <td>
+                            <a
+                              data-bs-toggle="modal"
+                              data-bs-target="#exampleModal"
+                            >
+                              <img
+                                style="width: 25px"
+                                class="img-documento"
+                                data-bs-toggle="tooltip"
+                                data-bs-placement="top"
+                                title="Ver informe de liquidación"
+                              />
+                            </a>
+                          </td>
+                        </tr>
+
+                        <tr>
+                          <th scope="row">5083394</th>
+                          <td>16/10/2023</td>
+                          <td>16/10/2023</td>
+                          <td>16/10/2023</td>
+                          <td>$264.532</td>
+                          <td>Emitido</td>
+                          <td>3/3</td>
+                          <td>
+                            <a
+                              data-bs-toggle="modal"
+                              data-bs-target="#exampleModal"
+                            >
+                              <img
+                                style="width: 25px"
+                                class="img-documento"
+                                data-bs-toggle="tooltip"
+                                data-bs-placement="top"
+                                title="Ver informe de liquidación"
+                              />
+                            </a>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion" id="accordionExample5">
+              <div class="accordion-item rounded-0">
+                <h2 class="accordion-header" id="heading5">
+                  <button
+                    class="accordion-button collapsed socio no-info"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapse5"
+                    aria-expanded="false"
+                    aria-controls="collapse5"
+                    disabled
+                  >
+                    <div class="container">
+                      <div class="row">
+                        <div class="col-1">2</div>
+                        <div class="col">No hay información</div>
+                        <div class="col d-none d-sm-block">
+                          No hay información
+                        </div>
+                        <div class="col d-none d-sm-block">
+                          No hay información
+                        </div>
+                        <div class="col d-none d-sm-block">
+                          No hay información
+                        </div>
+                        <div class="col">
+                          <span class="custom-chip pendiente">Pendiente</span>
+                        </div>
+                        <div class="col">2/3</div>
+                        <div class="col d-none d-sm-block d-md-none d-lg-block">
+                          <a class="toggle-text" href="#" disabled
+                            >Ver detalle</a
+                          >
+                        </div>
+                      </div>
+                    </div>
+                  </button>
+                </h2>
+                <div
+                  id="collapse5"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="heading5"
+                  data-bs-parent="#accordionExample5"
+                >
+                  <div class="accordion-body p-0">
+                    <table class="tabla-custom table mb-0">
+                      <thead>
+                        <tr class="tabla-socio itau">
+                          <th class="col">Evaluación</th>
+                          <th class="col">Fecha de recepción</th>
+                          <th class="col">Fecha de dictamen</th>
+                          <th class="col">Fecha de pago</th>
+                          <th class="col">Monto pagado</th>
+                          <th class="col">Estado evaluación</th>
+                          <th class="col">Cuota</th>
+                          <th class="col">Respuesta</th>
+                        </tr>
+                      </thead>
+
+                      <tbody
+                        class="table-sin-bordes tabla-socio"
+                        style="height: 56px"
+                      >
+                        <tr>
+                          <th scope="row">5083394</th>
+                          <td>16/10/2023</td>
+                          <td>16/10/2023</td>
+                          <td>16/10/2023</td>
+                          <td>$264.532</td>
+                          <td>Emitido</td>
+                          <td>1/3</td>
+                          <td>
+                            <a
+                              href=""
+                              data-bs-toggle="tooltip"
+                              data-bs-placement="top"
+                              title="Ver informe de liquidación"
+                              ><img style="width: 25px" class="img-documento"
+                            /></a>
+                          </td>
+                        </tr>
+
+                        <tr>
+                          <th scope="row">5083394</th>
+                          <td>16/10/2023</td>
+                          <td>16/10/2023</td>
+                          <td>16/10/2023</td>
+                          <td>$264.532</td>
+                          <td>Emitido</td>
+                          <td>2/3</td>
+                          <td>
+                            <a
+                              href=""
+                              data-bs-toggle="tooltip"
+                              data-bs-placement="top"
+                              title="Ver informe de liquidación"
+                              ><img style="width: 25px" class="img-documento"
+                            /></a>
+                          </td>
+                        </tr>
+
+                        <tr>
+                          <th scope="row">5083394</th>
+                          <td>16/10/2023</td>
+                          <td>16/10/2023</td>
+                          <td>16/10/2023</td>
+                          <td>$264.532</td>
+                          <td>Emitido</td>
+                          <td>3/3</td>
+                          <td>
+                            <a
+                              href=""
+                              data-bs-toggle="tooltip"
+                              data-bs-placement="top"
+                              title="Ver informe de liquidación"
+                              ><img style="width: 25px" class="img-documento"
+                            /></a>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion" id="accordionExample6">
+              <div class="accordion-item rounded-0">
+                <h2 class="accordion-header" id="heading6">
+                  <button
+                    class="accordion-button collapsed socio no-info"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapse6"
+                    aria-expanded="false"
+                    aria-controls="collapse6"
+                    disabled
+                  >
+                    <div class="container">
+                      <div class="row">
+                        <div class="col-1">3</div>
+                        <div class="col">No hay información</div>
+                        <div class="col d-none d-sm-block">
+                          No hay información
+                        </div>
+                        <div class="col d-none d-sm-block">
+                          No hay información
+                        </div>
+                        <div class="col d-none d-sm-block">
+                          No hay información
+                        </div>
+                        <div class="col">
+                          <span class="custom-chip pendiente">Pendiente</span>
+                        </div>
+                        <div class="col">3/3</div>
+                        <div class="col d-none d-sm-block d-md-none d-lg-block">
+                          <a onclick="myFunction()" class="toggle-text" href="#"
+                            >Ver detalle</a
+                          >
+                        </div>
+                      </div>
+                    </div>
+                  </button>
+                </h2>
+                <div
+                  id="collapse6"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="heading6"
+                  data-bs-parent="#accordionExample6"
+                >
+                  <div class="accordion-body p-0">
+                    <table class="tabla-custom table mb-0">
+                      <thead>
+                        <tr class="tabla-socio itau">
+                          <th scope="col ">Evaluación</th>
+                          <th scope="col">Fecha de recepción</th>
+                          <th scope="col">Fecha de dictamen</th>
+                          <th scope="col">Fecha de pago</th>
+                          <th scope="col">Monto pagado</th>
+                          <th scope="col">Estado evaluación</th>
+                          <th scope="col">Cuota</th>
+                          <th scope="col">Respuesta</th>
+                        </tr>
+                      </thead>
+
+                      <tbody
+                        class="table-sin-bordes tabla-socio"
+                        style="height: 56px"
+                      >
+                        <tr>
+                          <th scope="row">5083394</th>
+                          <td>16/10/2023</td>
+                          <td>16/10/2023</td>
+                          <td>16/10/2023</td>
+                          <td>$264.532</td>
+                          <td>Emitido</td>
+                          <td>1/3</td>
+                          <td>
+                            <a
+                              href=""
+                              data-bs-toggle="tooltip"
+                              data-bs-placement="top"
+                              title="Ver informe de liquidación"
+                              ><img style="width: 25px" class="img-documento"
+                            /></a>
+                          </td>
+                        </tr>
+
+                        <tr>
+                          <th scope="row">5083394</th>
+                          <td>16/10/2023</td>
+                          <td>16/10/2023</td>
+                          <td>16/10/2023</td>
+                          <td>$264.532</td>
+                          <td>Emitido</td>
+                          <td>2/3</td>
+                          <td>
+                            <a
+                              href=""
+                              data-bs-toggle="tooltip"
+                              data-bs-placement="top"
+                              title="Ver informe de liquidación"
+                              ><img style="width: 25px" class="img-documento"
+                            /></a>
+                          </td>
+                        </tr>
+
+                        <tr>
+                          <th scope="row">5083394</th>
+                          <td>16/10/2023</td>
+                          <td>16/10/2023</td>
+                          <td>16/10/2023</td>
+                          <td>$264.532</td>
+                          <td>Emitido</td>
+                          <td>3/3</td>
+                          <td>
+                            <a
+                              href=""
+                              data-bs-toggle="tooltip"
+                              data-bs-placement="top"
+                              title="Ver informe de liquidación"
+                              ><img style="width: 25px" class="img-documento"
+                            /></a>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-12">
+            <div
+              class="row g-0 bg-white border rounded overflow-hidden mb-4 shadow-sm p-3 row align-items-center"
+            >
+              <div class="col-auto py-auto align-middle">
+                <img class="img-consorcio" alt="" />
+              </div>
+              <div class="col align-middle">
+                <span class="ms-2 py-auto d-grid gap-2"
+                  >Solicita aquí una evaluación de cuota adicional</span
+                >
+              </div>
+              <div class="col-lg-auto col-12 d-grid gap-2">
+                <a
+                  href="#"
+                  class="btn btn-outline-secondary my-3 me-3 fw-bold"
+                  data-bs-toggle="offcanvas"
+                  data-bs-target="#offcanvasRight"
+                  aria-controls="offcanvasRight"
+                  >Solicitar</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <div class="container text-end mt-4 mb-5 act-buttons">
+            <button type="button" class="btn btn-outline-secondary">
+              Volver
+            </button>
+          </div>
+        </div>
+      </section>
+      <!--Fin Contenido principal-->
     </main>
     <!--Contenido fin-->
 
     <!--Footer-->
     <section id="footer" class="footer mt-auto">
-        <div class="container">
-            <footer class="d-flex flex-wrap align-items-center py-3">
-                <div class="img-footer col-lg-3 col-12 offset-lg-0 text-muted">
-                    <a href="#"><img class="img-logo-footer logo-footer offset-md-3 offset-lg-2 me-3 offset-2" /></a>
-                    <a href="#"><img class="col-lg-5 col-5 col-md-4 img-cardif-footer logo-footer" /></a>
-                </div>
-                <div
-                    class="text-footer-1 col-lg-9 col-12 justify-content-end text-sm-center text-center text-lg-start mt-4 mt-lg-0">
-                    <p class="mb-0 mt-3">Infórmese sobre la garantía estatal de los depósitos en su banco o en
-                        www.cmfchile.cl</p>
-                    <p>© 2022 Banco Itaú. Todos los derechos reservados. Av. Presidente Riesco 5537, Las Condes.
-                        Santiago de Chile.
-                    </p>
-                </div>
-            </footer>
-        </div>
+      <div class="container">
+        <footer class="d-flex flex-wrap align-items-center py-3">
+          <div class="img-footer col-lg-3 col-12 offset-lg-0 text-muted">
+            <a href="#"
+              ><img
+                class="img-logo-footer logo-footer offset-md-3 offset-lg-2 me-3 offset-2"
+            /></a>
+            <a href="#"
+              ><img
+                class="col-lg-5 col-5 col-md-4 img-cardif-footer logo-footer"
+            /></a>
+          </div>
+          <div
+            class="text-footer-1 col-lg-9 col-12 justify-content-end text-sm-center text-center text-lg-start mt-4 mt-lg-0"
+          >
+            <p class="mb-0 mt-3">
+              Infórmese sobre la garantía estatal de los depósitos en su banco o
+              en www.cmfchile.cl
+            </p>
+            <p>
+              © 2022 Banco Itaú. Todos los derechos reservados. Av. Presidente
+              Riesco 5537, Las Condes. Santiago de Chile.
+            </p>
+          </div>
+        </footer>
+      </div>
     </section>
     <!--Fin Footer-->
+  </body>
 
-</body>
-
-
-<!-- Modal -->
-<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <!-- Modal -->
+  <div
+    class="modal fade"
+    id="exampleModal"
+    tabindex="-1"
+    aria-labelledby="exampleModalLabel"
+    aria-hidden="true"
+  >
     <div class="modal-dialog">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLabel">Dictamen</h5>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body">
-                ...
-            </div>
-            <div class="modal-footer">
-                <section class="container text-end act-buttons">
-                    <button type="button" data-bs-dismiss="modal" class="btn btn-outline-secondary px-5">Cerrar</button>
-                </section>
-            </div>
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Dictamen</h5>
+          <button
+            type="button"
+            class="btn-close"
+            data-bs-dismiss="modal"
+            aria-label="Close"
+          ></button>
         </div>
+        <div class="modal-body">...</div>
+        <div class="modal-footer">
+          <section class="container text-end act-buttons">
+            <button
+              type="button"
+              data-bs-dismiss="modal"
+              class="btn btn-outline-secondary"
+            >
+              Cerrar
+            </button>
+          </section>
+        </div>
+      </div>
     </div>
-</div>
+  </div>
 
-
-<!-- Modal adjuntos -->
-<div class="modal fade" id="xampleModal-attach" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true"
-    data-bs-backdrop="static" data-bs-keyboard="false">
+  <!-- Modal adjuntos -->
+  <div
+    class="modal fade"
+    id="xampleModal-attach"
+    tabindex="-1"
+    aria-labelledby="exampleModalLabel"
+    aria-hidden="true"
+    data-bs-backdrop="static"
+    data-bs-keyboard="false"
+  >
     <div class="modal-dialog">
-        <div class="modal-content">
-
-            <div class="modal-body text-center">
-                <div class="d-flex flex-column justify-content-center row">
-                    <div class="col">
-                        <img class="img-aviso-alerta" alt="" style="width: 60px;">
-                    </div>
-                    <h1>Puedes continuar sin cargar todos tus documentos</h1>
-                    <p class="description">Quedará en estado pendiente hasta que los envíes. Puedes enviarlos más
-                        tarde ingresando en la sección “Consultar el estado de mi caso”</p>
-                </div>
+      <div class="modal-content">
+        <div class="modal-body text-center">
+          <div class="d-flex flex-column justify-content-center row">
+            <div class="col">
+              <img class="img-aviso-alerta" alt="" style="width: 60px" />
             </div>
-            <div class="modal-footer">
-                <section class="container text-center act-buttons">
-                    <button type="button" data-bs-dismiss="modal"
-                        class="btn btn-outline-secondary px-5">Cancelar</button>
-                    <button type="button" class="btn btn-primary text-white px-5"
-                        data-bs-dismiss="modal">Continuar</button>
-                </section>
-            </div>
+            <h1>Puedes continuar sin cargar todos tus documentos</h1>
+            <p class="description">
+              Quedará en estado pendiente hasta que los envíes. Puedes enviarlos
+              más tarde ingresando en la sección “Consultar el estado de mi
+              caso”
+            </p>
+          </div>
         </div>
+        <div class="modal-footer">
+          <section class="container text-center act-buttons">
+            <button
+              type="button"
+              data-bs-dismiss="modal"
+              class="btn btn-outline-secondary"
+            >
+              Cancelar
+            </button>
+            <button
+              type="button"
+              class="btn btn-primary text-white"
+              data-bs-dismiss="modal"
+            >
+              Continuar
+            </button>
+          </section>
+        </div>
+      </div>
     </div>
-</div>
+  </div>
 
-<div class="modal fade" id="exampleModal-attach" tabindex="-1" aria-labelledby="exampleModal-attach" aria-hidden="true">
+  <div
+    class="modal fade"
+    id="exampleModal-attach"
+    tabindex="-1"
+    aria-labelledby="exampleModal-attach"
+    aria-hidden="true"
+  >
     <div class="modal-dialog">
-        <div class="modal-content">
-            <div class="modal-body text-center">
-                <div class="col">
-                    <img class="img-aviso-alerta" alt="" style="width: 60px;">
-                </div>
-                <h1>Puedes continuar sin cargar todos tus documentos</h1>
-                <p class="text-center">Los archivos adjuntos no cumplen con el formato, vuelve a cargarlos en un formato
-                    compatible y/o el peso de los archivos adjuntos no debe superar los 8MB.</p>
-            </div>
-            <div class="modal-footer">
-                <section class="container text-center act-buttons">
-                    <button type="button" data-bs-dismiss="modal"
-                        class="btn btn-outline-secondary px-5">Cancelar</button>
-                    <button type="button" class="btn btn-primary text-white px-5"
-                        data-bs-dismiss="modal">Continuar</button>
-                </section>
-            </div>
+      <div class="modal-content">
+        <div class="modal-body text-center">
+          <div class="col">
+            <img class="img-aviso-alerta" alt="" style="width: 60px" />
+          </div>
+          <h1>Puedes continuar sin cargar todos tus documentos</h1>
+          <p class="text-center">
+            Los archivos adjuntos no cumplen con el formato, vuelve a cargarlos
+            en un formato compatible y/o el peso de los archivos adjuntos no
+            debe superar los 8MB.
+          </p>
         </div>
-    </div>
-</div>
-
-
-<!--toast (alerta) que se cargaron documentos-->
-
-<div class="position-fixed end-0 p-3" style="z-index: 11">
-    <div id="liveToast" class="toast align-items-center text-bg-secondary border-0" role="alert" aria-live="assertive"
-        aria-atomic="true">
-        <div class="d-flex">
-            <div class="toast-body color-white">
-                <span class="me-2">3</span>Documentos cargados correctamente.
-            </div>
-            <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast"
-                aria-label="Close"></button>
+        <div class="modal-footer">
+          <section class="container text-center act-buttons">
+            <button
+              type="button"
+              data-bs-dismiss="modal"
+              class="btn btn-outline-secondary"
+            >
+              Cancelar
+            </button>
+            <button
+              type="button"
+              class="btn btn-primary text-white"
+              data-bs-dismiss="modal"
+            >
+              Continuar
+            </button>
+          </section>
         </div>
+      </div>
     </div>
-</div>
+  </div>
 
+  <!--toast (alerta) que se cargaron documentos-->
 
+  <div class="position-fixed end-0 p-3" style="z-index: 11">
+    <div
+      id="liveToast"
+      class="toast align-items-center text-bg-secondary border-0"
+      role="alert"
+      aria-live="assertive"
+      aria-atomic="true"
+    >
+      <div class="d-flex">
+        <div class="toast-body color-white">
+          <span class="me-2">3</span>Documentos cargados correctamente.
+        </div>
+        <button
+          type="button"
+          class="btn-close btn-close-white me-2 m-auto"
+          data-bs-dismiss="toast"
+          aria-label="Close"
+        ></button>
+      </div>
+    </div>
+  </div>
 
-<!-- off canvas-->
-<div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel"
-    aria-modal="true" role="dialog">
+  <!-- off canvas-->
+  <div
+    class="offcanvas offcanvas-end"
+    tabindex="-1"
+    id="offcanvasRight"
+    aria-labelledby="offcanvasRightLabel"
+    aria-modal="true"
+    role="dialog"
+  >
     <div class="offcanvas-header mb-2">
-        <h4 id="offcanvasRightLabel">Carga de documentos</h4>
-        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      <h4 id="offcanvasRightLabel">Carga de documentos</h4>
+      <button
+        type="button"
+        class="btn-close text-reset"
+        data-bs-dismiss="offcanvas"
+        aria-label="Close"
+      ></button>
     </div>
     <div class="offcanvas-body">
-
-        <div class="row  alert alert-warning fade show mt-2 mb-4" role="alert">
-            <div class="aviso-alerta">
-                <div class="col">
-                    <div class="col">
-                        <img class="img-alerta">
-                    </div>
-                </div>
+      <div class="row alert alert-warning fade show mt-2 mb-4" role="alert">
+        <div class="aviso-alerta">
+          <div class="col">
+            <div class="col">
+              <img class="img-alerta" />
             </div>
-            <div class="col texto">
-                <b class="mensaje-de-informacion">Recuerda:</b>
-                <div class="mensaje-de-informacion-2">
-                    <span>Si no se adjuntan los documentos, el siniestro quedará pendiente.</span>
-                </div>
-            </div>
-            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+          </div>
         </div>
+        <div class="col texto">
+          <b class="mensaje-de-informacion">Recuerda:</b>
+          <div class="mensaje-de-informacion-2">
+            <span
+              >Si no se adjuntan los documentos, el siniestro quedará
+              pendiente.</span
+            >
+          </div>
+        </div>
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="alert"
+          aria-label="Close"
+        ></button>
+      </div>
 
-        <section class="archivos-adjuntos mt-4">
-            <h3 class="titulo-archivo-adjunto">Lorem ipsum
-                <img class="img-informacion" class="ms-1" alt="" type="button" data-bs-toggle="tooltip"
-                    data-bs-placement="right"
-                    aria-label="Este documento se obtiene en Carabineros de Chile. Para ser presentado ante la compañía de seguros, la constancia debe contener un relato breve de los hecho, la fecha y hora en que ocurrió el accidente."
-                    data-bs-original-title="Este documento se obtiene en Carabineros de Chile. Para ser presentado Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus a mauris viverra, placerat ligula sed, rutrum nisl. Suspendisse sit amet pretium felis">
-            </h3>
-            <div class="exito1">
-                <div class="file-upload-modulo">
-                    <div class="adjuntar">
-                        <div class="icono">
-                            <img class="rescate-icon" alt="" src="../../../build/img/rescate.svg">
-                        </div>
-                        <div class="agrega-o-arrastra-container">
-                            <label for="files" style="cursor: pointer;">Agrega</label>
-                            <input id="files" type="file" style="display: none;">
-                            <span class="o-arrastra-tus">o arrastra tus documentos</span>
-                        </div>
-                        <div class="puedes-subir-hasta">
-                            Tamaño máximo de 8 MB en formato PDF, JPG o PNG
-                        </div>
-                    </div>
-                </div>
-
-                <div class="container">
-                    <div class="row">
-                        <div class="col-10 txt-file-attach text-start">
-                            <span>nombre archivo 1.jpg</span>
-                        </div>
-                        <div class="col-1 file-attach-options">
-                            <a href=""><img class="float-start" src="../../../build/img/ojo.svg"
-                                    data-bs-toggle="tooltip" data-bs-placement="top" title="Ver adjunto"></a>
-                        </div>
-                        <div class="col-1 file-attach-options">
-                            <a href=""><img class="float-start" src="../../../build/img/_eliminar_cargaDeDocumentos.svg"
-                                    data-bs-toggle="tooltip" data-bs-placement="top" title="Eliminar"></a>
-                        </div>
-
-                        <div class="peso-icono">
-                            <div class="mb small me-2">5MB</div>
-                            <img class="confirmacin-icon" src="../../../build/img/confirmacin.svg">
-                        </div>
-                    </div>
-                </div>
-
-                <div class="container">
-                    <div class="row">
-                        <div class="col-10 txt-file-attach text-start">
-                            <span>nombre archivo 2.pdf</span>
-                        </div>
-                        <div class="col-1 file-attach-options">
-                            <a href=""><img class="float-start" src="../../../build/img/ojo.svg"
-                                    data-bs-toggle="tooltip" data-bs-placement="top" title="Ver adjunto"></a>
-                        </div>
-                        <div class="col-1 file-attach-options">
-                            <a href=""><img class="float-start" src="../../../build/img/_eliminar_cargaDeDocumentos.svg"
-                                    data-bs-toggle="tooltip" data-bs-placement="top" title="Eliminar"></a>
-                        </div>
-
-                        <div class="peso-icono">
-                            <div class="mb small me-2">5MB</div>
-                            <img class="confirmacin-icon" src="../../../build/img/confirmacin.svg">
-                        </div>
-                    </div>
-                </div>
+      <section class="archivos-adjuntos mt-4">
+        <h3 class="titulo-archivo-adjunto">
+          Lorem ipsum
+          <img
+            class="img-informacion"
+            class="ms-1"
+            alt=""
+            type="button"
+            data-bs-toggle="tooltip"
+            data-bs-placement="right"
+            aria-label="Este documento se obtiene en Carabineros de Chile. Para ser presentado ante la compañía de seguros, la constancia debe contener un relato breve de los hecho, la fecha y hora en que ocurrió el accidente."
+            data-bs-original-title="Este documento se obtiene en Carabineros de Chile. Para ser presentado Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus a mauris viverra, placerat ligula sed, rutrum nisl. Suspendisse sit amet pretium felis"
+          />
+        </h3>
+        <div class="exito1">
+          <div class="file-upload-modulo">
+            <div class="adjuntar">
+              <div class="icono">
+                <img
+                  class="rescate-icon"
+                  alt=""
+                  src="../../../build/img/rescate.svg"
+                />
+              </div>
+              <div class="agrega-o-arrastra-container">
+                <label for="files" style="cursor: pointer">Agrega</label>
+                <input id="files" type="file" style="display: none" />
+                <span class="o-arrastra-tus">o arrastra tus documentos</span>
+              </div>
+              <div class="puedes-subir-hasta">
+                Tamaño máximo de 8 MB en formato PDF, JPG o PNG
+              </div>
             </div>
+          </div>
 
-        </section>
-        <section class="archivos-adjuntos mt-4">
-            <h3 class="titulo-archivo-adjunto">Lorem ipsum
-                <img class="img-informacion" class="ms-1" alt="" type="button" data-bs-toggle="tooltip"
-                    data-bs-placement="right"
-                    aria-label="Este documento se obtiene en Carabineros de Chile. Para ser presentado ante la compañía de seguros, la constancia debe contener un relato breve de los hecho, la fecha y hora en que ocurrió el accidente."
-                    data-bs-original-title="Este documento se obtiene en Carabineros de Chile. Para ser presentado Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus a mauris viverra, placerat ligula sed, rutrum nisl. Suspendisse sit amet pretium felis">
-            </h3>
+          <div class="container">
+            <div class="row">
+              <div class="col-10 txt-file-attach text-start">
+                <span>nombre archivo 1.jpg</span>
+              </div>
+              <div class="col-1 file-attach-options">
+                <a href=""
+                  ><img
+                    class="float-start"
+                    src="../../../build/img/ojo.svg"
+                    data-bs-toggle="tooltip"
+                    data-bs-placement="top"
+                    title="Ver adjunto"
+                /></a>
+              </div>
+              <div class="col-1 file-attach-options">
+                <a href=""
+                  ><img
+                    class="float-start"
+                    src="../../../build/img/_eliminar_cargaDeDocumentos.svg"
+                    data-bs-toggle="tooltip"
+                    data-bs-placement="top"
+                    title="Eliminar"
+                /></a>
+              </div>
 
-            <div class="exito1">
-                <div class="file-upload-modulo">
-                    <div class="adjuntar">
-                        <div class="icono">
-                            <img class="rescate-icon" alt="" src="../../../build/img/rescate.svg">
-                        </div>
-                        <div class="agrega-o-arrastra-container">
-                            <label for="files" style="cursor: pointer;">Agrega</label>
-                            <input id="files" type="file" style="display: none;">
-                            <span class="o-arrastra-tus">o arrastra tus documentos</span>
-                        </div>
-                        <div class="puedes-subir-hasta">
-                            Tamaño máximo de 8 MB en formato PDF, JPG o PNG
-                        </div>
-                    </div>
-                </div>
-
-                <div class="container">
-                    <div class="row">
-                        <div class="col-10 txt-file-attach text-start">
-                            <span>nombre archivo 3.pdf</span>
-                        </div>
-                        <div class="col-1 file-attach-options">
-                            <a href=""><img class="float-start" src="../../../build/img/ojo.svg"
-                                    data-bs-toggle="tooltip" data-bs-placement="top" title="Ver adjunto"></a>
-                        </div>
-                        <div class="col-1 file-attach-options">
-                            <a href=""><img class="float-start" src="../../../build/img/_eliminar_cargaDeDocumentos.svg"
-                                    data-bs-toggle="tooltip" data-bs-placement="top" title="Eliminar"></a>
-                        </div>
-
-                        <div class="peso-icono">
-                            <div class="mb small">5MB</div>
-                            <img class="confirmacin-icon ms-2" src="../../../build/img/confirmacin.svg">
-                        </div>
-                    </div>
-                </div>
+              <div class="peso-icono">
+                <div class="mb small me-2">5MB</div>
+                <img
+                  class="confirmacin-icon"
+                  src="../../../build/img/confirmacin.svg"
+                />
+              </div>
             </div>
-        </section>
+          </div>
 
-        <!--<div class="row  alert alert-danger fade show mt-2 mb-4" role="alert">
+          <div class="container">
+            <div class="row">
+              <div class="col-10 txt-file-attach text-start">
+                <span>nombre archivo 2.pdf</span>
+              </div>
+              <div class="col-1 file-attach-options">
+                <a href=""
+                  ><img
+                    class="float-start"
+                    src="../../../build/img/ojo.svg"
+                    data-bs-toggle="tooltip"
+                    data-bs-placement="top"
+                    title="Ver adjunto"
+                /></a>
+              </div>
+              <div class="col-1 file-attach-options">
+                <a href=""
+                  ><img
+                    class="float-start"
+                    src="../../../build/img/_eliminar_cargaDeDocumentos.svg"
+                    data-bs-toggle="tooltip"
+                    data-bs-placement="top"
+                    title="Eliminar"
+                /></a>
+              </div>
+
+              <div class="peso-icono">
+                <div class="mb small me-2">5MB</div>
+                <img
+                  class="confirmacin-icon"
+                  src="../../../build/img/confirmacin.svg"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="archivos-adjuntos mt-4">
+        <h3 class="titulo-archivo-adjunto">
+          Lorem ipsum
+          <img
+            class="img-informacion"
+            class="ms-1"
+            alt=""
+            type="button"
+            data-bs-toggle="tooltip"
+            data-bs-placement="right"
+            aria-label="Este documento se obtiene en Carabineros de Chile. Para ser presentado ante la compañía de seguros, la constancia debe contener un relato breve de los hecho, la fecha y hora en que ocurrió el accidente."
+            data-bs-original-title="Este documento se obtiene en Carabineros de Chile. Para ser presentado Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus a mauris viverra, placerat ligula sed, rutrum nisl. Suspendisse sit amet pretium felis"
+          />
+        </h3>
+
+        <div class="exito1">
+          <div class="file-upload-modulo">
+            <div class="adjuntar">
+              <div class="icono">
+                <img
+                  class="rescate-icon"
+                  alt=""
+                  src="../../../build/img/rescate.svg"
+                />
+              </div>
+              <div class="agrega-o-arrastra-container">
+                <label for="files" style="cursor: pointer">Agrega</label>
+                <input id="files" type="file" style="display: none" />
+                <span class="o-arrastra-tus">o arrastra tus documentos</span>
+              </div>
+              <div class="puedes-subir-hasta">
+                Tamaño máximo de 8 MB en formato PDF, JPG o PNG
+              </div>
+            </div>
+          </div>
+
+          <div class="container">
+            <div class="row">
+              <div class="col-10 txt-file-attach text-start">
+                <span>nombre archivo 3.pdf</span>
+              </div>
+              <div class="col-1 file-attach-options">
+                <a href=""
+                  ><img
+                    class="float-start"
+                    src="../../../build/img/ojo.svg"
+                    data-bs-toggle="tooltip"
+                    data-bs-placement="top"
+                    title="Ver adjunto"
+                /></a>
+              </div>
+              <div class="col-1 file-attach-options">
+                <a href=""
+                  ><img
+                    class="float-start"
+                    src="../../../build/img/_eliminar_cargaDeDocumentos.svg"
+                    data-bs-toggle="tooltip"
+                    data-bs-placement="top"
+                    title="Eliminar"
+                /></a>
+              </div>
+
+              <div class="peso-icono">
+                <div class="mb small">5MB</div>
+                <img
+                  class="confirmacin-icon ms-2"
+                  src="../../../build/img/confirmacin.svg"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--<div class="row  alert alert-danger fade show mt-2 mb-4" role="alert">
             <div class="aviso-alerta">
                 <div class="col">
                     <div class="col">
@@ -1237,77 +1640,91 @@
     </div>
 
     <div class="container btns-offcanvas py-4">
-        <div class="col">
-            <div class="row">
-                <div class="col d-grid gap-2">
-                    <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="offcanvas"
-                        aria-label="Close" data-bs-toggle="modal" data-bs-target="#xampleModal-attach">Cancelar</button>
-                </div>
-                <div class="col d-grid gap-2">
-                    <button type="button" class="btn btn-primary text-white" id="liveToastBtn"
-                        data-bs-dismiss="offcanvas" aria-label="Close" data-bs-toggle="modal"
-                        data-bs-target="#exampleModal-attach">Guardar</button>
-                </div>
-            </div>
+      <div class="col">
+        <div class="row">
+          <div class="col d-grid gap-2">
+            <button
+              type="button"
+              class="btn btn-outline-secondary"
+              data-bs-dismiss="offcanvas"
+              aria-label="Close"
+              data-bs-toggle="modal"
+              data-bs-target="#xampleModal-attach"
+            >
+              Cancelar
+            </button>
+          </div>
+          <div class="col d-grid gap-2">
+            <button
+              type="button"
+              class="btn btn-primary text-white"
+              id="liveToastBtn"
+              data-bs-dismiss="offcanvas"
+              aria-label="Close"
+              data-bs-toggle="modal"
+              data-bs-target="#exampleModal-attach"
+            >
+              Guardar
+            </button>
+          </div>
         </div>
+      </div>
     </div>
+  </div>
 
-</div>
-
-<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+  <script
+    src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
     integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
-    crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+    crossorigin="anonymous"
+  ></script>
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
-    crossorigin="anonymous"></script>
-<script src="https://code.jquery.com/jquery-3.6.0.min.js"
-    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-<script src="../../js/funtion.js"></script>
+    crossorigin="anonymous"
+  ></script>
+  <script
+    src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+    crossorigin="anonymous"
+  ></script>
+  <script src="../../../js/funtion.js"></script>
 
-
-
-<!--script carga de documentos solo con texto -->
-<script>
+  <!--script carga de documentos solo con texto -->
+  <script>
     $("#files").change(function () {
-        filename = this.files[0].name
+      filename = this.files[0].name;
     });
-</script>
+  </script>
 
-
-<!--cambia texto al hacer click en acordeones -->
-<script>
+  <!--cambia texto al hacer click en acordeones -->
+  <script>
     $(".toggle-text").click(function () {
-        $(this).text(function (i, v) {
-            return v === 'Ocultar detalle' ? 'Ver detalle' : 'Ocultar detalle'
-        })
+      $(this).text(function (i, v) {
+        return v === "Ocultar detalle" ? "Ver detalle" : "Ocultar detalle";
+      });
     });
-</script>
+  </script>
 
-
-<!--activa tooltips -->
-<script>
-    var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+  <!--activa tooltips -->
+  <script>
+    var tooltipTriggerList = [].slice.call(
+      document.querySelectorAll('[data-bs-toggle="tooltip"]')
+    );
     var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
-        return new bootstrap.Tooltip(tooltipTriggerEl)
+      return new bootstrap.Tooltip(tooltipTriggerEl);
     });
-</script>
+  </script>
 
-
-<!--muestra toast (alerta) que se cargaron documentos-->
-<script>
-    var toastTrigger = document.getElementById('liveToastBtn')
-    var toastLiveExample = document.getElementById('liveToast')
+  <!--muestra toast (alerta) que se cargaron documentos-->
+  <script>
+    var toastTrigger = document.getElementById("liveToastBtn");
+    var toastLiveExample = document.getElementById("liveToast");
     if (toastTrigger) {
-        toastTrigger.addEventListener('click', function () {
-            var toast = new bootstrap.Toast(toastLiveExample)
+      toastTrigger.addEventListener("click", function () {
+        var toast = new bootstrap.Toast(toastLiveExample);
 
-            toast.show()
-        })
+        toast.show();
+      });
     }
-
-</script>
-
-
-
-
+  </script>
 </html>

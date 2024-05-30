@@ -2,7 +2,8 @@
 
 //imagenes
 .image-logo {
-  content: url(../img/itau/logo-itau.svg);
+  content: url(../img/cla/logo-cla.svg);
+  height: 46px;
 }
 
 .image-logo-centrado {
@@ -10,84 +11,86 @@
 }
 
 .image-logo-centrado {
-  content: url(../img/itau/logo-bnp.svg);
+  content: url(../img/logo-bnp.svg);
 }
 
 .img_log-ejecutivo {
-  content: url(../img/itau/ic_log-ejecutivo.svg);
+  content: url(../img/cla/ic_log-ejecutivo.svg);
 }
 
 .img_cerrar_sesion {
-  content: url(../img/itau/Icono_cerrar_sesion.svg);
+  content: url(../img/cla/ic_log-out.svg);
 }
 
 .img-cesantia {
-  content: url(../img/itau/cesantia.svg);
+  content: url(../img/cla/Ilustration-cesantia.svg);
 }
 
 .img-proteccion {
-  content: url(../img/itau/proteccion.svg);
+  content: url(../img/cla/Ilustration-proteccion.svg);
 }
 
 .img-home {
-  content: url(../img/itau/home.svg);
+  content: url(../img/cla/Ilustration-hogar.svg);
 }
 
-.img-otras-coverturas {
-  content: url(../img/itau/otras-coverturas.svg);
+.img-otras-coberturas {
+  content: url(../img/cla/Ilustration-otras_coverturas.svg);
 }
 
 .img-seguro-catastrofico {
-  content: url(../img/itau/seguro-catastrofico.svg);
+  content: url(../img/cla/Ilustration-seguro_catastrofico.svg);
 }
 
 .img-seguro-hospitalizacion {
-  content: url(../img/itau/hospitalizacion.svg);
+  content: url(../img/cla/Ilustration-seguro_hospitalizacion.svg);
 }
 
 .img-seguro-enfermedades-graves {
-  content: url(../img/itau/enfermedadesgraves.svg);
+  content: url(../img/cla/Ilustration-seguro_enfermedades-graves.svg);
 }
 
 .img-documento {
-  content: url(../img/itau/documento.svg);
+  content: url(../img/cla/documento.svg);
 }
 
 .img-consorcio {
-  content: url(../img/itau/consorcio.svg);
+  content: url(../img/cla/consorcio.svg);
 }
 
 .img-preguntas {
-  content: url(../img/itau/preguntas.svg);
+  content: url(../img/cla/preguntas.svg);
 }
 
 .img-alerta {
-  content: url(../img/itau/alerta.svg);
+  content: url(../img/cla/alerta.svg);
 }
 
 .img-info-blanco {
-  content: url(../img/itau/info-blanco.svg);
+  content: url(../img/cla/info-blue.svg);
 }
 
 .img-informacion {
-  content: url(../img/itau/informacion.svg);
+  content: url(../img/cla/informacion.svg);
 }
 
 .img-aviso-alerta {
-  content: url(../img/itau/aviso-alerta.svg);
+  content: url(../img/cla/aviso-alerta.svg);
 }
 
 .img-confirmacion-naranja {
-  content: url(../img/itau/confirmacion-naranja.svg);
+  content: url(../img/cla/confirmacion.svg);
   margin-bottom: 30px;
 }
 
 .img-informacion-modal {
-  content: url(../img/itau/informacion-modal.svg);
+  content: url(../img/cla/informacion-modal.svg);
 }
 
 .img-logo-footer {
-  content: url(../img/itau/logo_itau_footer.svg);
+  content: url(../img/cla/logo-footer-cla.svg);
+  width: 100px;
+  height: auto;
 }
 
 .img-cardif-footer {
@@ -95,37 +98,90 @@
 }
 
 .img-ojo {
-  content: url(../img/itau/ojo.svg);
+  content: url(../img/cla/ojo.svg);
 }
 
 .img-eliminar-carga {
-  content: url(../img/itau/_eliminar_cargaDeDocumentos.svg);
+  content: url(../img/cla/ic_eliminar-cargaDeDocumentos.svg);
 }
 
 .img-enfermedades-graves {
-  content: url(../img/itau/enfermedades-graves.svg);
+  content: url(../img/cla/Ilustration-seguro_enfermedades-graves.svg);
 }
+
+.ic-cerrar {
+  content: url(../img/cla/cerrar.svg);
+  margin-top: 5px;
+}
+
 // Colores
-$primary: $naranja;
-$secondary: $azul;
+$primary: #0076a9;
+$secondary: #0076a9;
 $success: $light-03;
-$info: #007ab7;
+$info: #326295;
 $light: #ffffff;
 $dark: $azul-hover;
-$warning: #ec7000; //luis
-$error: #ff0000; //luis
-$gray-light: #d9d3cf; //luis
+$warning: #fbb040;
+$error: #dc3545;
+$gray-light: #ccc;
+$neutral: #f6f7f7;
 
 // Importar Bootstrap
 @import "../../node_modules/bootstrap/scss/bootstrap.scss";
 
+//Fonts
+@font-face {
+  font-family: "CLABlackIt";
+  src: url("../../src/fonts/CLA/Rawson-BlackIt.otf");
+}
+
+@font-face {
+  font-family: "CLABold";
+  src: url("../../src/fonts/CLA/Rawson-Bold.otf");
+}
+
+@font-face {
+  font-family: "CLAExtraBlack";
+  src: url("../../src/fonts/CLA/Rawson-ExtraBlack.otf");
+}
+
+@font-face {
+  font-family: "CLAExtraBold";
+  src: url("../../src/fonts/CLA/Rawson-ExtraBold.otf");
+}
+
+@font-face {
+  font-family: "CLAExtraBoldIt";
+  src: url("../../src/fonts/CLA/Rawson-ExtraBoldIt.otf");
+}
+
+@font-face {
+  font-family: "CLALight";
+  src: url("../../src/fonts/CLA/Rawson-Light.otf");
+}
+
+@font-face {
+  font-family: "CLAMediumIt";
+  src: url("../../src/fonts/CLA/RawsonPro-MediumIt.otf");
+}
+
+@font-face {
+  font-family: "CLASemiBoldIt";
+  src: url("../../src/fonts/CLA/RawsonPro-SemiBoldIt.otf");
+}
+
+@font-face {
+  font-family: "CLARegular";
+  src: url("../../src/fonts/CLA/RawsonRegular.otf");
+}
+
 //NavBar
 
 //Nav
-$navbar-light-active-color: $naranja;
+$navbar-light-active-color: $primary;
 
 .color-primary {
-  color: $naranja;
+  color: $primary;
 }
 
 .color-white {
@@ -136,10 +192,14 @@ $navbar-light-active-color: $naranja;
   color: $error;
 }
 
+.featurette {
+  border-radius: 16px !important;
+}
+
 .featurette.itau {
   --bs-bg-opacity: 1;
   background-color: $light;
-  border-radius: 8px;
+  border-radius: 16px !important;
   padding: 3rem;
 }
 
@@ -188,12 +248,12 @@ section#navBar {
 }
 
 .nav-itau a.nav-link.active {
-  border-bottom: 4px solid $naranja;
-  color: $naranja;
+  border-bottom: 4px solid $primary;
+  color: $primary;
 }
 
 .divisor {
-  border-right: 2px solid $naranja;
+  border-right: 2px solid $primary;
   height: 40px;
 }
 
@@ -214,7 +274,7 @@ section#contenedor-mayor {
 }
 
 body {
-  font-family: "ItauRegular", sans-serif;
+  font-family: "CLARegular", sans-serif;
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
   counter-reset: section;
@@ -235,8 +295,8 @@ h1 {
 }
 
 h2 {
-  font-size: 22px;
-  color: $textos;
+  font-size: 24px;
+  color: #000000;
 }
 
 .titulo-secundario {
@@ -254,7 +314,7 @@ span,
 p,
 ul,
 li {
-  font-family: "ItauRegular";
+  font-family: "CLARegular";
 }
 
 .img-doc {
@@ -263,11 +323,11 @@ li {
 
 .header-detalle {
   padding: 12px;
-  background-color: $light-05;
+  background-color: white;
 
   tr,
   th {
-    background-color: $light-05;
+    background-color: white;
   }
 }
 
@@ -289,19 +349,47 @@ li {
   }
 }
 
+.btn {
+  border-radius: 24px;
+  padding: 12px 24px 12px 24px;
+  gap: 8px;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 24px;
+  align-items: center;
+  height: 48px;
+}
+
 //boton disabled
 .btn:disabled,
 .btn.disabled,
 fieldset:disabled .btn {
-  color: $textos !important;
+  color: #ffffff !important;
   pointer-events: none;
-  background-color: $gray-light !important;
-  border-color: $gray-light !important;
+  background-color: #c9d0d3 !important;
+  border-color: #c9d0d3 !important;
   opacity: var(--bs-btn-disabled-opacity);
 }
 
 .btn-primary {
-  border: 2px solid $naranja-hover;
+  color: $white;
+  background: #0076a9;
+}
+
+.btn-primary:hover {
+  color: $white;
+  background: #00648f;
+}
+
+.btn-outline-secondary {
+  color: black;
+  border: 2px solid #0076a9;
+}
+
+.btn-outline-secondary:hover {
+  color: $white;
+  background: #00648f;
+  border: 2px solid #0076a9;
 }
 
 .btn-100 {
@@ -312,7 +400,7 @@ fieldset:disabled .btn {
   color: $azul;
   border-color: $light-04;
   background-color: $light-04;
-  border-radius: 8px;
+  border-radius: 24px;
   max-height: 50px;
 
   &:hover {
@@ -343,8 +431,8 @@ fieldset:disabled .btn {
 }
 
 .dropdown-item-checkbox:checked {
-  background-color: #ec7000;
-  border-color: #ec7000;
+  background-color: $primary;
+  border-color: $primary;
 }
 
 .form-label-nombres {
@@ -374,17 +462,13 @@ fieldset:disabled .btn {
   border-radius: 8px;
   transition: all 0.3s ease-in;
   position: relative;
-  box-shadow: 0px 1px 2px 0px $box;
-  border-color: $naranja;
+  box-shadow: 0px 0px 16px 0px rgba(0, 0, 0, 0.08);
+  border-color: $primary;
   margin-top: 0px;
   min-height: 256px;
   border: 2px solid $light;
-
-  &:hover {
-    transition: all 0.3s ease-in;
-    transform: translateY(10px) scale();
-    z-index: 99;
-    border: 2px solid $primary;
+  h3:nth-child(2) {
+    font-weight: 400;
   }
 }
 
@@ -426,24 +510,34 @@ fieldset:disabled .btn {
 
 input[type="date"] {
   position: relative;
+  border: 1px solid #0076a9;
+  border-radius: 8px;
+  height: 48px;
 
   &::-webkit-calendar-picker-indicator {
     opacity: 0;
+    position: absolute;
     top: 0px;
+    left: 0px;
     width: 45px;
     height: 45px;
   }
 
-  &::before {
+  &::after {
     content: "";
     position: absolute;
-    right: 10px;
-    top: 0px;
-    width: 45px;
-    height: 45px;
-    background-image: url("../img/itau/date.svg");
+    left: 10px; /* Cambiado de right a left */
+    top: 10px;
+    width: 25px;
+    height: 25px;
+    background-image: url("../img/cla/date.svg");
     background-repeat: no-repeat;
     background-size: contain;
+  }
+
+  &.form-control {
+    padding-left: 45px;
+    padding-top: 8px;
   }
 }
 
@@ -451,6 +545,8 @@ input[type="search"]::-webkit-calendar-picker-indicator {
   width: 25px;
   height: 50px;
   margin-bottom: 15px;
+  border: 1px solid #0076a9;
+  border-radius: 8px;
 }
 
 .label-icono::before {
@@ -569,19 +665,19 @@ input[type="search"]::-webkit-calendar-picker-indicator {
 }
 
 .backg-revision-siniestros-home {
-  background-image: url(../img/itau/Imagen-home.png);
-  background-position: center;
-  background-size: cover;
-  height: auto;
+  background-image: url(../img/cla/Imagen-home.svg);
+  background-position: right, bottom;
+  background-repeat: no-repeat;
+  background-size: contain;
   border-radius: 0px 8px 8px 0px;
 }
 
 .card-seguros-asociados-2.active {
-  border: 2px solid $naranja;
+  border: 2px solid $primary;
 }
 
 .card-seguros-asociados-2.active .top2 {
-  background-color: $naranja;
+  background-color: $primary;
   color: $light;
 
   h1,
@@ -591,7 +687,7 @@ input[type="search"]::-webkit-calendar-picker-indicator {
 }
 
 .card-seguros-asociados-2.active .top2 {
-  background-color: $naranja;
+  background-color: $primary;
 }
 
 .taginfo2 {
@@ -650,7 +746,7 @@ button.accordion-button.accordion-fix::after {
 $borderWidth: 3px;
 $animationTime: 1.5s;
 $border-color-default: $gray-light;
-$border-color-fill: $naranja;
+$border-color-fill: $primary;
 $size: 40px;
 $howManySteps: 20;
 
@@ -744,17 +840,17 @@ body {
     border-radius: 50%;
     font-size: 13px;
     text-align: center;
-    line-height: 20px;
+    line-height: 19px;
     align-items: center;
     justify-content: center;
-    height: 80%;
-    color: $naranja;
+    height: 90%;
+    color: $primary;
     //font-family: $work-sans;
-    font-weight: 300;
+    font-weight: 700;
 
     div {
       margin-top: 7px;
-      margin-left: -2px;
+      margin-left: 0px;
     }
 
     span {
@@ -836,10 +932,10 @@ body {
 .card-de-productos {
   cursor: pointer;
   flex: 1;
-  background: $light;
+  background: #def4ff;
   box-shadow: 0px 1px 2px $box;
-  border-radius: 8px;
-  border: 1px solid $gray-light;
+  border-radius: 20px;
+  border: 1px solid #def4ff;
   box-sizing: border-box;
   height: 132px;
   display: flex;
@@ -905,7 +1001,7 @@ body {
   cursor: pointer;
   border-radius: 8px;
   background-color: $light;
-  border: 2px solid $naranja;
+  border: 2px solid $primary;
   box-sizing: border-box;
   width: 272px;
   display: flex;
@@ -948,14 +1044,14 @@ body {
 }
 
 .taginfo1 {
-  background-color: $naranja-hover;
+  background-color: #ffffff;
   flex-direction: row;
   border-radius: 20px;
-  border: 1px solid $naranja-hover;
+  border: 1px solid #999999;
   justify-content: center;
   padding: 8px;
   text-align: right;
-  color: $light;
+  color: #3e4545;
 }
 
 .taginfo2 {
@@ -965,7 +1061,7 @@ body {
   justify-content: center;
   padding: 7px 13px;
   text-align: right;
-  color: $titulo-cabecera;
+  color: #3e4545;
 }
 
 .taginfo3 {
@@ -991,7 +1087,7 @@ body {
 
 .top1 {
   align-self: stretch;
-  background-color: $naranja;
+  background-color: $primary;
   border-top-right-radius: 3px;
   border-top-left-radius: 3px;
   overflow: hidden;
@@ -1022,7 +1118,7 @@ body {
 
 .top3 {
   align-self: stretch;
-  background-color: $gray-2;
+  background-color: #c9d0d3;
   border-top-right-radius: 3px;
   border-top-left-radius: 3px;
   overflow: hidden;
@@ -1038,7 +1134,7 @@ body {
 
 .top4 {
   align-self: stretch;
-  background-color: $gray-light;
+  background-color: #c9d0d3;
   border-top-right-radius: 3px;
   border-top-left-radius: 3px;
   overflow: hidden;
@@ -1156,6 +1252,7 @@ body {
 }
 
 .fecha-contratacion {
+  display: none;
   background: $bordes-card;
   border: 1px solid $gray-light;
   border-radius: 28px;
@@ -1167,13 +1264,15 @@ body {
 //Alert
 
 .alert-warning {
-  border-top: 4px solid $alert-warning;
-  background-color: $yellow;
+  // border: 1px solid $alert-warning;
+  // background-color: $yellow;
+  border: 1px solid #b34a00;
+  background-color: #ffecde;
 }
 
 .alert-danger {
-  border-top: 4px solid $alert-error;
-  background-color: $alert-ligth;
+  border: 1px solid #b34a00;
+  background-color: #ffecde;
 }
 
 .alert-info {
@@ -1182,13 +1281,10 @@ body {
 }
 
 .alert-info2 {
-  border-top: 4px solid $info;
-  background-color: #4ca2cd;
-}
-
-.alert-info2 {
-  border-top: 4px solid $info;
-  background-color: #4ca2cd;
+  border: 1px solid $info;
+  border-radius: 16px;
+  background-color: #def4ff;
+  color: #56504c;
 }
 
 .aviso-alerta {
@@ -1201,8 +1297,8 @@ body {
 }
 
 .mensaje-de-informacion {
-  position: relative;
   line-height: 21px;
+  margin-top: 2px;
 }
 
 .mensaje-de-informacion-2 {
@@ -1214,7 +1310,7 @@ body {
 //Footer
 
 section#footer {
-  background-color: $naranja;
+  background-color: $primary;
 }
 
 .text-footer-1 {
@@ -1286,6 +1382,7 @@ section#footer {
   gap: 25px;
   text-align: center;
   color: $titulo-cabecera;
+  max-width: 400px;
 }
 
 .agrega-color {
@@ -1297,14 +1394,34 @@ section#footer {
 
 .o-arrastra-tus {
   color: $textos;
+  padding-top: 15px;
 }
 
-.agrega-o-arrastra-container,
-.puedes-subir-hasta {
+.agrega-o-arrastra-container {
   align-self: stretch;
   position: relative;
   line-height: 22px;
-  color: $azul;
+  color: rgba(0, 118, 169, 1);
+
+  .puedes-subir-hasta {
+    font-size: 12px;
+    line-height: 19px;
+    font-weight: 400px;
+  }
+}
+
+.ic-agrega_documento {
+  content: url(../img/cla/agrega_documento.svg);
+  display: inline-block;
+  margin-right: 8px;
+  margin-top: -5px;
+}
+
+.agrega-documento {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
 }
 
 .puedes-subir-hasta {
@@ -1351,15 +1468,14 @@ section#footer {
 }
 
 .rescate-icon {
-  content: url(../img/itau/rescate.svg);
+  content: url(../img/cla/rescate.svg);
   position: relative;
-  width: 14px;
-  height: 14px;
+  width: 24px;
+  height: 24px;
 }
 
 .icono {
   border-radius: 100px;
-  background-color: $azul;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -1367,11 +1483,13 @@ section#footer {
   padding: 5px;
 }
 
-.confirmacin-icon {
+.confirmacion-icon {
   position: relative;
-  width: 10px;
-  height: 10px;
-  content: url(../img/itau/confirmacion.svg);
+  width: 20px;
+  height: 20px;
+  content: url(../img/cla/confirmacion-archivo.svg);
+  top: 5px;
+  margin-right: 2px;
 }
 
 .peso-icono {
@@ -1379,6 +1497,8 @@ section#footer {
   flex-direction: row;
   align-items: baseline;
   justify-content: flex-start;
+  font-weight: 650;
+  color: rgba(0, 0, 0, 1);
 }
 
 .nombre-detalle {
@@ -1446,11 +1566,7 @@ section#footer {
 }
 
 .archivos {
-  max-width: 380px;
-  padding-left: 0px;
   padding-right: 0px;
-  margin: 0px;
-
   .text-start:not(.color-error) {
     color: $textos;
   }
@@ -1460,15 +1576,19 @@ section#footer {
   }
 }
 
+.file-attach-options {
+  padding-right: 0px;
+}
+
 //tipografias
-$headings-font-family: "ItauDisplay";
+$headings-font-family: "CLARegular";
 $headings-color: $titulo-cabecera;
 
 //modal
 $modal-content-color: $textos;
 
 .modal-header > .modal-title {
-  color: $naranja;
+  color: $primary;
 }
 
 .bg-modal-neutral {
@@ -1500,7 +1620,7 @@ $modal-content-color: $textos;
 
 //acordeon
 $accordion-border-color: $bordes-card;
-$accordion-icon-color: $naranja;
+$accordion-icon-color: $primary;
 
 .act-buttons > button {
   font-weight: 700 !important;
@@ -1508,10 +1628,10 @@ $accordion-icon-color: $naranja;
 
 .row.container-cobertura {
   border: 1px solid $ligth-06;
-  border-radius: 12px;
+  border-radius: 16px;
 
   &:hover {
-    border: 1px solid $naranja;
+    border: 1px solid $primary;
   }
 }
 
@@ -1558,40 +1678,40 @@ $accordion-icon-color: $naranja;
 }
 
 .tabla_detalle .table_column {
-  background-color: $naranja;
-  color: $light;
+  background-color: $primary;
+  color: white;
   text-align: center;
 
   h2 {
-    color: $light;
+    color: white;
   }
 }
 
 .tabla_detalle {
-  border: 2px solid $naranja;
+  border: 2px solid $primary;
   border-radius: 16px;
 }
 
 .tabla_detalle .table_column * {
-  color: $light;
+  color: white;
 }
 
 .tabla_detalle table th {
-  background-color: $light-05;
+  background-color: white;
 }
 
 .tabla_detalle table td {
-  background-color: $light-05;
+  background-color: white;
 }
 
 .table.cons-estado th {
-  background-color: $gray-light;
+  background-color: white;
   text-align: center;
 }
 
 .top3-custom {
   align-self: stretch;
-  background-color: $naranja;
+  background-color: $primary;
   border-top-right-radius: 3px;
   border-top-left-radius: 3px;
   overflow: hidden;
@@ -1608,7 +1728,7 @@ $accordion-icon-color: $naranja;
 }
 
 .top3.tabla_detalle.status {
-  background-color: $naranja;
+  background-color: $primary;
 }
 
 .top3-custom.tabla_detalle.status * {
@@ -1634,7 +1754,7 @@ $accordion-icon-color: $naranja;
 }
 
 .fila-cuotas-mobile {
-  background-color: $light-05;
+  background-color: white;
 }
 
 .card-body-table .monto:nth-of-type(even) {
@@ -1656,7 +1776,7 @@ $accordion-icon-color: $naranja;
 }
 
 .splide__pagination__page.is-active {
-  background: $naranja !important;
+  background: $primary !important;
   transform: scale(1.4);
   z-index: 1;
   width: 31px !important;
@@ -1693,14 +1813,14 @@ $accordion-icon-color: $naranja;
   }
 
   .tabla_detalle {
-    border: 2px solid $naranja;
+    border: 2px solid $primary;
     border-radius: 6px 6px 0px 0px;
   }
 
   .featurette.itau {
     --bs-bg-opacity: 1;
     background-color: rgb(255, 255, 255);
-    border-radius: 8px;
+    border-radius: 16px !important;
     padding: 1rem;
   }
 
@@ -1797,4 +1917,107 @@ $accordion-icon-color: $naranja;
 
 .padding-form {
   padding-bottom: 200px !important;
+}
+
+.lead {
+  font-size: 20px;
+  font-weight: 500px;
+  line-height: 24px;
+}
+
+.shadow-sm {
+  box-shadow: 0px 8px 40px 0px rgba(0, 0, 0, 0.16) !important;
+  border-left: 22px solid rgba(214, 224, 234, 1);
+}
+
+.txt-file-attach {
+  margin-top: 5px;
+  span {
+    padding: 4px 8px 4px 8px;
+    border-radius: 100px;
+    background: rgba(222, 255, 245, 1);
+    border: 1px solid rgba(0, 110, 98, 1);
+  }
+  &.color-error {
+    span {
+      color: #000;
+      padding: 4px;
+      border-radius: 100px;
+      background: rgba(255, 225, 222, 1);
+      border: 1px solid rgba(178, 30, 39, 1);
+    }
+  }
+}
+
+.title-cargar-documentos {
+  font-weight: 650;
+  font-size: 24px;
+  line-height: 32px;
+  color: #326295;
+  text-align: start;
+  padding: auto;
+}
+
+.description-cargar-documentos {
+  font-weight: 500px;
+  font-size: 18px;
+  text-align: start;
+}
+
+input.form-check-input {
+  width: 20px;
+  height: 20px;
+  margin-top: auto;
+  margin-bottom: auto;
+  vertical-align: middle;
+}
+
+.form-check-label {
+  margin-left: 8px;
+  vertical-align: middle;
+}
+
+input[type="text"],
+input[type="number"],
+input[type="email"],
+input[type="password"],
+input[type="search"],
+input[type="tel"],
+input[type="url"],
+select,
+select.form-select,
+select.form-select-lg {
+  border: 1px solid #0076a9;
+  border-radius: 8px;
+  height: 48px;
+}
+
+input[type="checkbox"] {
+  border: 1px solid #0076a9;
+  border-radius: 8px;
+}
+
+input[type="text"]:focus,
+input[type="number"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus,
+input[type="search"]:focus,
+input[type="tel"]:focus,
+input[type="url"]:focus,
+select:focus,
+select.form-select:focus,
+select.form-select-lg:focus {
+  border-color: #005580;
+  box-shadow: 0 0 5px rgba(0, 118, 169, 0.5);
+  height: 48px;
+}
+
+label {
+  font-weight: 500 !important;
+}
+
+.subtext-form {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
 }
