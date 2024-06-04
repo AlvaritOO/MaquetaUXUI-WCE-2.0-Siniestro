@@ -12373,7 +12373,7 @@ li {
   font-size: 18px;
   line-height: 24px;
   align-items: center;
-  height: 48px;
+  min-height: 48px;
 }
 
 .btn:disabled,
