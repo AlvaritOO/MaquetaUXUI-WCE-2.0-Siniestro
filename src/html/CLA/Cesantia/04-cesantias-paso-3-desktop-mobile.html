@@ -219,7 +219,7 @@
 
         <div class="container text-end mt-4 mb-5 act-buttons">
             <button type="button" class="btn btn-outline-secondary">Volver</button>
-            <button type="button" class="btn btn-primary text-white">Continuar</button>
+            <button data-bs-toggle="modal" data-bs-target="#exampleModal1" type="button" class="btn btn-primary text-white">Continuar</button>
         </div>
 
         </div>
@@ -248,6 +248,75 @@
     </section>
     <!--Fin Footer-->
 
+    <!--Modal 1-->
+    <div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true"
+        data-bs-backdrop="static" data-bs-keyboard="false">
+        <div class="modal-dialog modal-xl">
+            <div class="modal-content">
+                <div class="modal-body text-center">
+                    <div class="d-flex flex-column justify-content-center row">
+                        <div class="text-center mb-4">
+                            <div class="img-info-3 mx-auto" alt=""></div>
+                            <p class="modal_text-important">
+                                Importante:
+                            </p>
+                        </div>
+                        <p class="modal_text-subtext text-start">
+                            Queremos ayudarte para que tu siniestro se liquide más rápido y fácil.<br> Para esto, ¿Nos autorizas a buscar tu información de empleabilidad en AFC? Pediremos los siguientes datos:
+                        </p>
+                        <div class="modal_text-description text-start">
+                            <ol class="style-lower-roman ms-5">
+                                <li>Fecha de inicio de la relación laboral con tu último empleador.</li>
+                                <li>Fecha de ocurrencia del desempleo.</li>
+                                <li>Causal de despido invocada para el término de la relación laboral.</li>
+                                <li>Rut de tu último empleador.</li>
+                                <li>Continuidad de tu estado de cesantía durante la evaluación de tu siniestro.</li>
+                            </ol>
+                            <ul>
+                                <li class="mb-3">Autorización de entrega de información: Autorizo a la Sociedad Administradora de Fondos de Cesantía de Chile II S.A. (“AFC Chile”) a entregar mi información de naturaleza laboral, indicada anteriormente, a BNP Paribas Cardif Seguros Generales S.A. (“BNP Paribas Cardif”) con el fin único de liquidar siniestros de desempleo que hayan sido denunciados por mí ante BNP Paribas Cardif y que se encuentren asociados a alguna de las pólizas de desempleo emitidas por dicha compañía, en las que tengo la calidad de asegurado/a.</li>
+                                <li class="mb-3">Comunicación de datos a terceros: Únicamente para el propósito indicado, autorizo a BNP Paribas Cardif para que pueda comunicar mis datos e información laboral a terceros colaboradores que participen dentro del proceso de liquidación de los siniestros de desempleo que me pudiesen afectar como, por ejemplo, corredores de seguros y liquidadores de seguros.</li>
+                                <li class="mb-3">Revocación de la autorización: Declaro conocer que puedo revocar la presente autorización ante BNP Paribas Cardif en cualquier momento y de manera gratuita, comunicándome al 800 362 100 o enviando un correo a siniestros@cardif.cl, con el asunto “Revocación Autorización AFC”, indicando nombre completo y Rut.</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <section class="container text-end act-buttons">
+                        <button type="button" class="btn btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#exampleModal2">No autorizo</button>
+                        <button type="button" class="btn btn-primary text-white" data-bs-dismiss="modal">Sí, autorizo</button>
+                    </section>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Fin Modal 1-->
+
+    <!--Modal 2-->
+    <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true"
+        data-bs-backdrop="static" data-bs-keyboard="false">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-body text-center">
+                    <div class="d-flex flex-column justify-content-center row">
+                        <div class="text-center mb-4">
+                            <div class="img-info-3 mx-auto" alt=""></div>
+                            <p class="modal_text-important">
+                                Importante:
+                            </p>
+                        </div>
+                        <div class="modal_text-description text-start">
+                            <p>
+                                Al no autorizar a la AFC a entregar su información laboral a BNP PARIBAS CARDIF SEGUROS GENERALES S.A, <b>el asegurado asume la responsabilidad de conseguir y entregar en los plazos correspondientes</b>, el finiquito firmado y legalizado ante notario, así como también otro documento que la compañía estime necesario  para acreditar tu situación laboral.
+                            </p>
+                        </div>
+                    </div>
+                    <section class="container text-end act-buttons">
+                        <button type="button" class="btn btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#exampleModal1">Volver</button>
+                        <button type="button" class="btn btn-primary text-white" data-bs-dismiss="modal">Continuar</button>
+                    </section>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Fin Modal 1-->
 
 </body>
 

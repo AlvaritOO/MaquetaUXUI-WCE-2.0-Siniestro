@@ -74,6 +74,10 @@
   content: url(../img/cla/informacion.svg);
 }
 
+.img-info-3 {
+  content: url(../img/cla/ic_info-modal.svg);
+}
+
 .img-aviso-alerta {
   content: url(../img/cla/aviso-alerta.svg);
 }
@@ -2020,4 +2024,26 @@ label {
   font-size: 14px;
   font-weight: 400;
   line-height: 20px;
+}
+
+.modal_text-important {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 36px;
+}
+
+.modal_text-subtext {
+  font-weight: 650;
+  font-size: 20px;
+  line-height: 22px;
+}
+
+.modal_text-description {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+}
+
+.style-lower-roman {
+  list-style-type: lower-roman;
 }
