@@ -118,10 +118,18 @@
   margin-top: 5px;
 }
 
+.ic-search {
+  content: url(../img/cla/search.svg);
+}
+
+.ic-success {
+  content: url(../img/cla/success.svg);
+}
+
 // Colores
 $primary: #0076a9;
 $secondary: #0076a9;
-$success: $light-03;
+$success: #006e62;
 $info: #326295;
 $light: #ffffff;
 $dark: $azul-hover;
@@ -265,6 +273,11 @@ section#navBar {
   border: 1px solid $bordes-card;
   width: 90%;
 }
+
+.divisor-line-black {
+  border: 1.51px solid #3e4545;
+  width: 90%;
+}
 //NavBar
 
 //Tooltips
@@ -360,8 +373,10 @@ li {
   font-weight: 500;
   font-size: 18px;
   line-height: 24px;
+  justify-content: center;
   align-items: center;
   min-height: 48px;
+  min-width: 100px;
 }
 
 //boton disabled
@@ -401,15 +416,17 @@ fieldset:disabled .btn {
 }
 
 .button-search {
-  color: $azul;
-  border-color: $light-04;
-  background-color: $light-04;
+  color: #3e4545;
+  border: 2px solid #3e4545;
+  background-color: #f9be00;
   border-radius: 24px;
-  max-height: 50px;
-
+  max-height: 48px;
   &:hover {
-    background-color: $azul-light;
-    border-color: $azul-light;
+    color: #3e4545;
+    border: 2px solid #3e4545;
+    background-color: #f9be00;
+    border-radius: 24px;
+    max-height: 48px;
   }
 }
 
@@ -744,6 +761,10 @@ button.accordion-button.accordion-fix::after {
   color: $gray-light !important;
 }
 
+.custom-chip {
+  background-color: white;
+}
+
 //WIZARD
 
 //styling
@@ -1018,7 +1039,7 @@ body {
 
 .card-seguros-asociados-2 {
   cursor: pointer;
-  border-radius: 8px;
+  border-radius: 16px;
   background-color: $light;
   border: 2px solid $gray-light;
   box-sizing: border-box;
@@ -1030,6 +1051,17 @@ body {
   position: relative;
   padding-right: 0px !important;
   padding-left: 0px !important;
+
+  &:hover {
+    border: 2px solid $primary;
+    .top3 {
+      background-color: $primary;
+      color: white;
+      p {
+        color: white;
+      }
+    }
+  }
 }
 
 .card-seguros-asociados-3 {
@@ -1123,8 +1155,8 @@ body {
 .top3 {
   align-self: stretch;
   background-color: #c9d0d3;
-  border-top-right-radius: 3px;
-  border-top-left-radius: 3px;
+  border-top-right-radius: 12px;
+  border-top-left-radius: 12px;
   overflow: hidden;
   display: flex;
   flex-direction: column;
@@ -1272,16 +1304,19 @@ body {
   // background-color: $yellow;
   border: 1px solid #b34a00;
   background-color: #ffecde;
+  border-radius: 16px;
 }
 
 .alert-danger {
   border: 1px solid #b34a00;
   background-color: #ffecde;
+  border-radius: 16px;
 }
 
 .alert-info {
   border-left: 6px solid #007ab7;
   background-color: #deeef6;
+  border-radius: 16px;
 }
 
 .alert-info2 {
@@ -1289,6 +1324,29 @@ body {
   border-radius: 16px;
   background-color: #def4ff;
   color: #56504c;
+}
+
+.alert-info3 {
+  border: 1px solid #326295;
+  border-radius: 16px;
+  background-color: #def4ff;
+  box-shadow: 0px 8px 40px 0px rgba(0, 0, 0, 0.08);
+  color: #3e4545;
+
+  @media (min-width: 1024px) {
+    min-width: 560px;
+  }
+}
+
+.alert-success {
+  background-color: #defff5;
+  border: 1px solid #006e62;
+  border-radius: 16px;
+  box-shadow: 0px 8px 40px 0px rgba(0, 0, 0, 0.08);
+  padding-right: 16px;
+  @media (min-width: 1024px) {
+    min-width: 560px;
+  }
 }
 
 .aviso-alerta {
@@ -1632,16 +1690,23 @@ $accordion-icon-color: $primary;
 
 .row.container-cobertura {
   border: 1px solid $ligth-06;
-  border-radius: 16px;
+  border-radius: 18px;
 
   &:hover {
     border: 1px solid $primary;
+  }
+  &:hover .box-cobertura {
+    background-color: #0076a9;
+    color: #ffffff;
+  }
+  &:hover .box-coberturas-row-top {
+    border-bottom: 1px solid #0076a9;
   }
 }
 
 .box-cobertura {
   background-color: $gray-light;
-  border-radius: 12px 0px 0px 12px;
+  border-radius: 16px 0px 0px 16px;
 }
 
 .row.box-coberturas-row-top {
@@ -1660,6 +1725,10 @@ $accordion-icon-color: $primary;
   border-radius: 10px;
   background-color: $error;
   border: 1px solid $error;
+}
+
+.box-coberturas-row-top.last {
+  border-radius: 0px 16px 0px 0px;
 }
 
 .box-coberturas-row-down {
@@ -1818,7 +1887,7 @@ $accordion-icon-color: $primary;
 
   .tabla_detalle {
     border: 2px solid $primary;
-    border-radius: 6px 6px 0px 0px;
+    border-radius: 3px 3px 0px 0px;
   }
 
   .featurette.itau {
@@ -2046,4 +2115,19 @@ label {
 
 .style-lower-roman {
   list-style-type: lower-roman;
+}
+
+.input-group-text {
+  border-color: #0076a9 !important;
+  background-color: white !important;
+}
+
+.noUnderline {
+  text-decoration: none;
+}
+
+.table-primary {
+  background-color: #008ec4;
+  border-bottom: 1px #0076a9;
+  color: white;
 }
