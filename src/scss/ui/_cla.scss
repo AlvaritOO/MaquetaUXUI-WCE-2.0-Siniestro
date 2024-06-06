@@ -126,6 +126,10 @@
   content: url(../img/cla/success.svg);
 }
 
+.ic-cross-red {
+  content: url(../img/cla/cross-red.svg);
+}
+
 // Colores
 $primary: #0076a9;
 $secondary: #0076a9;
@@ -1297,9 +1301,15 @@ body {
 }
 
 .alert-danger {
-  border: 1px solid #b34a00;
-  background-color: #ffecde;
+  border: 1px solid #b21e27;
+  background-color: #ffe1de;
   border-radius: 16px;
+  .mensaje-de-informacion {
+    color: #56504c;
+  }
+  .mensaje-de-informacion-2 {
+    color: #3e4545;
+  }
 }
 
 .alert-info {
