@@ -13219,16 +13219,6 @@ body {
   padding-right: 0px !important;
   padding-left: 0px !important;
 }
-.card-seguros-asociados-2:hover {
-  border: 2px solid #0076a9;
-}
-.card-seguros-asociados-2:hover .top3 {
-  background-color: #0076a9;
-  color: white;
-}
-.card-seguros-asociados-2:hover .top3 p {
-  color: white;
-}
 
 .card-seguros-asociados-3 {
   cursor: pointer;
@@ -13305,8 +13295,8 @@ body {
 .top2 {
   align-self: stretch;
   background-color: #ccc;
-  border-top-right-radius: 3px;
-  border-top-left-radius: 3px;
+  border-top-right-radius: 12px;
+  border-top-left-radius: 12px;
   overflow: hidden;
   display: flex;
   flex-direction: column;
@@ -13336,8 +13326,8 @@ body {
 .top4 {
   align-self: stretch;
   background-color: #c9d0d3;
-  border-top-right-radius: 3px;
-  border-top-left-radius: 3px;
+  border-top-right-radius: 12px;
+  border-top-left-radius: 12px;
   overflow: hidden;
   display: flex;
   flex-direction: column;

@@ -1051,17 +1051,6 @@ body {
   position: relative;
   padding-right: 0px !important;
   padding-left: 0px !important;
-
-  &:hover {
-    border: 2px solid $primary;
-    .top3 {
-      background-color: $primary;
-      color: white;
-      p {
-        color: white;
-      }
-    }
-  }
 }
 
 .card-seguros-asociados-3 {
@@ -1139,8 +1128,8 @@ body {
 .top2 {
   align-self: stretch;
   background-color: $gray-light;
-  border-top-right-radius: 3px;
-  border-top-left-radius: 3px;
+  border-top-right-radius: 12px;
+  border-top-left-radius: 12px;
   overflow: hidden;
   display: flex;
   flex-direction: column;
@@ -1171,8 +1160,8 @@ body {
 .top4 {
   align-self: stretch;
   background-color: #c9d0d3;
-  border-top-right-radius: 3px;
-  border-top-left-radius: 3px;
+  border-top-right-radius: 12px;
+  border-top-left-radius: 12px;
   overflow: hidden;
   display: flex;
   flex-direction: column;
