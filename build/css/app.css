@@ -12331,7 +12331,9 @@ body {
 
 h1, .h1 {
   font-family: "CLARegular", sans-serif;
-  font-size: 28px;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 38.4px;
 }
 
 h2, .h2 {
