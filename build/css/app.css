@@ -138,15 +138,18 @@ ul.splide__list {
 
 .image-logo {
   content: url(../img/cla/logo-cla.svg);
-  height: 46px;
+}
+
+.image-logo-mobile {
+  content: url(../img/cla/logo-cla-mobile.svg);
 }
 
 .image-logo-centrado {
   content: url(../img/logo-bnp.svg);
 }
 
-.image-logo-centrado {
-  content: url(../img/logo-bnp.svg);
+.image-logo-centrado-mobile {
+  content: url(../img/cla/logo-bnp-mobile.svg);
 }
 
 .img_log-ejecutivo {
@@ -14250,4 +14253,16 @@ label {
   background-color: #008ec4;
   border-bottom: 1px #0076a9;
   color: white;
+}
+
+@media (max-width: 421px) {
+  .navbar-brand {
+    max-width: 228px;
+    max-height: 36px;
+  }
+  .image-logo,
+  .image-logo-centrado {
+    width: 30px; /* Ajusta este tamaño según tus necesidades para móvil */
+    height: auto; /* Mantener la proporción */
+  }
 }
