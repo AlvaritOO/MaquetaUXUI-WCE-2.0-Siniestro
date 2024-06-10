@@ -14260,9 +14260,4 @@ label {
     max-width: 228px;
     max-height: 36px;
   }
-  .image-logo,
-  .image-logo-centrado {
-    width: 30px; /* Ajusta este tamaño según tus necesidades para móvil */
-    height: auto; /* Mantener la proporción */
-  }
 }
