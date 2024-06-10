@@ -3,15 +3,18 @@
 //imagenes
 .image-logo {
   content: url(../img/cla/logo-cla.svg);
-  height: 46px;
+}
+
+.image-logo-mobile {
+  content: url(../img/cla/logo-cla-mobile.svg);
 }
 
 .image-logo-centrado {
   content: url(../img/logo-bnp.svg);
 }
 
-.image-logo-centrado {
-  content: url(../img/logo-bnp.svg);
+.image-logo-centrado-mobile {
+  content: url(../img/cla/logo-bnp-mobile.svg);
 }
 
 .img_log-ejecutivo {
@@ -74,6 +77,10 @@
   content: url(../img/cla/informacion.svg);
 }
 
+.img-info-3 {
+  content: url(../img/cla/ic_info-modal.svg);
+}
+
 .img-aviso-alerta {
   content: url(../img/cla/aviso-alerta.svg);
 }
@@ -114,10 +121,22 @@
   margin-top: 5px;
 }
 
+.ic-search {
+  content: url(../img/cla/search.svg);
+}
+
+.ic-success {
+  content: url(../img/cla/success.svg);
+}
+
+.ic-cross-red {
+  content: url(../img/cla/cross-red.svg);
+}
+
 // Colores
 $primary: #0076a9;
 $secondary: #0076a9;
-$success: $light-03;
+$success: #006e62;
 $info: #326295;
 $light: #ffffff;
 $dark: $azul-hover;
@@ -261,6 +280,11 @@ section#navBar {
   border: 1px solid $bordes-card;
   width: 90%;
 }
+
+.divisor-line-black {
+  border: 1.51px solid #3e4545;
+  width: 90%;
+}
 //NavBar
 
 //Tooltips
@@ -290,8 +314,10 @@ body {
 }
 
 h1 {
-  font-family: "ItauDisplay", sans-serif;
-  font-size: 28px;
+  font-family: "CLARegular", sans-serif;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 38.4px;
 }
 
 h2 {
@@ -356,8 +382,10 @@ li {
   font-weight: 500;
   font-size: 18px;
   line-height: 24px;
+  justify-content: center;
   align-items: center;
-  height: 48px;
+  min-height: 48px;
+  min-width: 100px;
 }
 
 //boton disabled
@@ -397,15 +425,17 @@ fieldset:disabled .btn {
 }
 
 .button-search {
-  color: $azul;
-  border-color: $light-04;
-  background-color: $light-04;
+  color: #3e4545;
+  border: 2px solid #3e4545;
+  background-color: #f9be00;
   border-radius: 24px;
-  max-height: 50px;
-
+  max-height: 48px;
   &:hover {
-    background-color: $azul-light;
-    border-color: $azul-light;
+    color: #3e4545;
+    border: 2px solid #3e4545;
+    background-color: #f9be00;
+    border-radius: 24px;
+    max-height: 48px;
   }
 }
 
@@ -740,6 +770,10 @@ button.accordion-button.accordion-fix::after {
   color: $gray-light !important;
 }
 
+.custom-chip {
+  background-color: white;
+}
+
 //WIZARD
 
 //styling
@@ -1014,7 +1048,7 @@ body {
 
 .card-seguros-asociados-2 {
   cursor: pointer;
-  border-radius: 8px;
+  border-radius: 16px;
   background-color: $light;
   border: 2px solid $gray-light;
   box-sizing: border-box;
@@ -1103,8 +1137,8 @@ body {
 .top2 {
   align-self: stretch;
   background-color: $gray-light;
-  border-top-right-radius: 3px;
-  border-top-left-radius: 3px;
+  border-top-right-radius: 12px;
+  border-top-left-radius: 12px;
   overflow: hidden;
   display: flex;
   flex-direction: column;
@@ -1119,8 +1153,8 @@ body {
 .top3 {
   align-self: stretch;
   background-color: #c9d0d3;
-  border-top-right-radius: 3px;
-  border-top-left-radius: 3px;
+  border-top-right-radius: 12px;
+  border-top-left-radius: 12px;
   overflow: hidden;
   display: flex;
   flex-direction: column;
@@ -1135,8 +1169,8 @@ body {
 .top4 {
   align-self: stretch;
   background-color: #c9d0d3;
-  border-top-right-radius: 3px;
-  border-top-left-radius: 3px;
+  border-top-right-radius: 12px;
+  border-top-left-radius: 12px;
   overflow: hidden;
   display: flex;
   flex-direction: column;
@@ -1268,16 +1302,25 @@ body {
   // background-color: $yellow;
   border: 1px solid #b34a00;
   background-color: #ffecde;
+  border-radius: 16px;
 }
 
 .alert-danger {
-  border: 1px solid #b34a00;
-  background-color: #ffecde;
+  border: 1px solid #b21e27;
+  background-color: #ffe1de;
+  border-radius: 16px;
+  .mensaje-de-informacion {
+    color: #56504c;
+  }
+  .mensaje-de-informacion-2 {
+    color: #3e4545;
+  }
 }
 
 .alert-info {
   border-left: 6px solid #007ab7;
   background-color: #deeef6;
+  border-radius: 16px;
 }
 
 .alert-info2 {
@@ -1285,6 +1328,29 @@ body {
   border-radius: 16px;
   background-color: #def4ff;
   color: #56504c;
+}
+
+.alert-info3 {
+  border: 1px solid #326295;
+  border-radius: 16px;
+  background-color: #def4ff;
+  box-shadow: 0px 8px 40px 0px rgba(0, 0, 0, 0.08);
+  color: #3e4545;
+
+  @media (min-width: 1024px) {
+    min-width: 560px;
+  }
+}
+
+.alert-success {
+  background-color: #defff5;
+  border: 1px solid #006e62;
+  border-radius: 16px;
+  box-shadow: 0px 8px 40px 0px rgba(0, 0, 0, 0.08);
+  padding-right: 16px;
+  @media (min-width: 1024px) {
+    min-width: 560px;
+  }
 }
 
 .aviso-alerta {
@@ -1628,16 +1694,23 @@ $accordion-icon-color: $primary;
 
 .row.container-cobertura {
   border: 1px solid $ligth-06;
-  border-radius: 16px;
+  border-radius: 18px;
 
   &:hover {
     border: 1px solid $primary;
+  }
+  &:hover .box-cobertura {
+    background-color: #0076a9;
+    color: #ffffff;
+  }
+  &:hover .box-coberturas-row-top {
+    border-bottom: 1px solid #0076a9;
   }
 }
 
 .box-cobertura {
   background-color: $gray-light;
-  border-radius: 12px 0px 0px 12px;
+  border-radius: 16px 0px 0px 16px;
 }
 
 .row.box-coberturas-row-top {
@@ -1656,6 +1729,10 @@ $accordion-icon-color: $primary;
   border-radius: 10px;
   background-color: $error;
   border: 1px solid $error;
+}
+
+.box-coberturas-row-top.last {
+  border-radius: 0px 16px 0px 0px;
 }
 
 .box-coberturas-row-down {
@@ -1814,7 +1891,7 @@ $accordion-icon-color: $primary;
 
   .tabla_detalle {
     border: 2px solid $primary;
-    border-radius: 6px 6px 0px 0px;
+    border-radius: 3px 3px 0px 0px;
   }
 
   .featurette.itau {
@@ -2020,4 +2097,48 @@ label {
   font-size: 14px;
   font-weight: 400;
   line-height: 20px;
+}
+
+.modal_text-important {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 36px;
+}
+
+.modal_text-subtext {
+  font-weight: 650;
+  font-size: 20px;
+  line-height: 22px;
+}
+
+.modal_text-description {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+}
+
+.style-lower-roman {
+  list-style-type: lower-roman;
+}
+
+.input-group-text {
+  border-color: #0076a9 !important;
+  background-color: white !important;
+}
+
+.noUnderline {
+  text-decoration: none;
+}
+
+.table-primary {
+  background-color: #008ec4;
+  border-bottom: 1px #0076a9;
+  color: white;
+}
+
+@media (max-width: 421px) {
+  .navbar-brand {
+    max-width: 228px;
+    max-height: 36px;
+  }
 }

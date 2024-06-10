@@ -104,8 +104,8 @@
         <nav class="navbar navbar-expand-lg bg-light">
           <div class="container">
             <div class="navbar-brand" href="#">
-              <a href=""><img alt="Logo" class="image-logo me-2" /></a>
-              <a href=""><img class="image-logo-centrado" alt="BNP" /></a>
+              <a href=""><img alt="Logo" class="image-logo-mobile me-2" /></a>
+              <a href=""><img class="image-logo-centrado-mobile" alt="BNP" /></a>
             </div>
 
             <button
@@ -146,6 +146,27 @@
     </section>
     <!--NavBar fin-->
 
+    <!--trabajando con:-->
+    <div class="user-working">
+      <div class="alert alert-info3 alert-dismissible fade show row" role="alert">
+        <div class="col-1 ps-0">
+          <img class="img-info-blanco" alt="" />
+        </div>
+        <div class="col">
+          <span class="ps-3">Estás consultando por:</span><br />
+          <span class="ps-3 fw-bold">Alejandro Rodríguez Prado</span><br />
+          <span class="ps-3">18.364.245-7
+        </div>
+        <button
+          type="button"
+          class="btn-close col-1"
+          data-bs-dismiss="alert"
+          aria-label="Close"
+        ></button>
+      </div>
+    </div>
+    <!--FIN trabajando con:-->
+
     <!--Contenido-->
     <main id="contenedor-mayor" class="flex-shrink-0 mt-4">
       <div class="container">
@@ -156,73 +177,70 @@
             </div>
           </div>
           <div
-            class="pb-3 featurette g-0 bg-white border rounded overflow-hidden flex-md-row mb-4 shadow-sm"
+            class="p-4 featurette g-0 bg-white border overflow-hidden flex-md-row mb-4 shadow-sm"
           >
-            <div class="mt-3 mx-4">
+            <div>
               <h2 class="fw-bold">Filtrar busqueda</h2>
 
-              <!--form v2-->
+              <!--form v3-->
               <div class="row mt-5">
                 <div
-                  class="col-sm-12 col-md-12 col-lg-4 col-xl form-floating mb-2"
+                  class="col-sm-12 col-md-12 col-lg-2 col-xl mb-2"
                 >
-                  <form class="form-floating">
+                  <form>
+                    <label for="floatingInputValue">Fecha de declaración</label>
                     <input
                       type="date"
                       class="form-control"
                       id="floatingInputValue"
                     />
-                    <label for="floatingInputValue">Fecha de declaración</label>
                   </form>
                 </div>
-                <!--<div class="col-sm-12 col-md-12 col-lg-4 col-xl-2 mb-2">
-                                <select class="form-select" aria-label="example">
-                                    <option selected class="small">Ordenado por fecha</option>
-                                    <option value="1">Placeholder</option>
-                                </select>
-                            </div>-->
-                <div class="col-sm-12 col-md-12 col-lg-4 col-xl mb-2">
-                  <select class="form-select" aria-label="example">
-                    <option selected>Estado del siniestro</option>
+                <div class="col-sm-12 col-md-12 col-lg-2 col-xl mb-2">
+                  <label for="select1">Ordenar por fecha</label>
+                  <select id="select1" class="form-select" aria-label="example">
+                    <option selected>Fecha</option>
                     <option value="1">Placeholder</option>
                   </select>
                 </div>
-                <div class="col-sm-12 col-md-12 col-lg-4 col-xl mb-2">
-                  <select class="form-select" aria-label="example">
-                    <option selected>Tipo de cobertura</option>
-                    <option value="1">Placeholder</option>
+                <div class="col-sm-12 col-md-12 col-lg-2 col-xl mb-2">
+                  <label for="select2">Estado del siniestro</label>
+                  <select id="select2" class="form-select" aria-label="example">
+                    <option selected>Placeholder</option>
+                    <option value="1">Placeholder2</option>
                   </select>
                 </div>
-                <div class="col-sm-12 col-md-12 col-lg-4 col-xl mb-2">
-                  <div class="form-floating">
-                    <input
-                      type="text"
-                      class="form-control"
-                      id="floatingPassword"
-                      placeholder="Password"
-                    />
-                    <label for="floatingPassword"
-                      >Filtrar por número de siniestro</label
-                    >
+                <div class="col-sm-12 col-md-12 col-lg-2 col-xl mb-2">
+                  <label for="select2">Tipo de cobertura</label>
+                  <select id="select2" class="form-select" aria-label="example">
+                    <option selected>Placeholder</option>
+                    <option value="1">Placeholder2</option>
+                  </select>
+                </div>
+                <div class="col-sm-12 col-md-12 col-lg-2 col-xl mb-2">
+                  <label for="">Filtrar por número de siniestro</label>
+                  <div class="input-group">
+                    <span class="input-group-text"><i class="ic-search"></i></span>
+                    <input type="text" class="form-control border-start-0">
                   </div>
                 </div>
                 <div
-                  class="d-gridcol-sm-12 col-md-12 col-lg-4 col-xl-1 d-grid gap-2"
+                  class="d-grid col-sm-12 col-md-12 col-lg-2 col-xl-1 d-grid mt-4"
                 >
-                  <button type="button" class="btn button-search">
+                  <button type="button" class="btn button-search" data-bs-toggle="modal" data-bs-target="#exampleModal1" >
                     Filtrar
                   </button>
                 </div>
               </div>
 
               <div class="row mt-3">
-                <h6 class="text-aling">
+                <p class="fw-bold">
                   Utiliza los filtros de búsqueda para obtener resultados
-                </h6>
+                </p>
               </div>
 
               <div
-                class="row col-sm-12 col-lg-6 alert alert-warning fade show mt-4 mx-1 mb-4"
+                class="row align-items-center col-sm-12 col-lg-12 alert alert-warning fade show mt-4 mx-1 mb-4"
                 role="alert"
               >
                 <div class="aviso-alerta">
@@ -243,6 +261,7 @@
                     </span>
                   </div>
                 </div>
+                <button type="button" class="btn-close col col-lg-1 ms-auto" data-bs-dismiss="alert" aria-label="Close"></button>
               </div>
 
               <h6 class="fw-bold mt-4">Resultados (3)</h6>
@@ -254,9 +273,9 @@
                     class="box-cobertura container-cobertura col-12 col-lg-auto col-sm-12 col-xl col py-2"
                   >
                     <h6 class="px-1 mb-0">Cobertura</h6>
-                    <h5 class="px-1">Cesantía</h5>
+                    <h5 class="px-1 fw-bold">Cesantía</h5>
                     <h6 class="px-1 pt-1 mb-0 subtitle">No. Siniestro</h6>
-                    <h6 class="px-1 pt-1 subtitle">3531077</h6>
+                    <h6 class="px-1 pt-1 subtitle fw-bold">3531077</h6>
                   </div>
                   <div class="col-12 col-sm-6 col-lg col-xl">
                     <div class="row align-items-center box-coberturas-row-top">
@@ -307,9 +326,8 @@
                       class="row align-items-center box-coberturas-row-top last"
                     ></div>
                     <div class="row box-coberturas-row-down">
-                      <a href=""
-                        >Ver detalle <i class="bi bi-chevron-right"></i
-                      ></a>
+                      <a href="" class="noUnderline fw-bold"
+                        >Ver detalle</a>
                     </div>
                   </div>
                 </div>
@@ -321,9 +339,9 @@
                     class="box-cobertura container-cobertura col-12 col-lg-auto col-sm-12 col-xl col py-2"
                   >
                     <h6 class="px-1 mb-0">Cobertura</h6>
-                    <h5 class="px-1">Cesantía</h5>
+                    <h5 class="px-1 fw-bold">Cesantía</h5>
                     <h6 class="px-1 pt-1 mb-0 subtitle">No. Siniestro</h6>
-                    <h6 class="px-1 pt-1 subtitle">3531077</h6>
+                    <h6 class="px-1 pt-1 subtitle fw-bold">3531077</h6>
                   </div>
                   <div class="col-12 col-sm-6 col-lg col-xl">
                     <div class="row align-items-center box-coberturas-row-top">
@@ -374,9 +392,8 @@
                       class="row align-items-center box-coberturas-row-top last"
                     ></div>
                     <div class="row box-coberturas-row-down">
-                      <a href=""
-                        >Ver detalle <i class="bi bi-chevron-right"></i
-                      ></a>
+                      <a href="" class="noUnderline fw-bold"
+                        >Ver detalle</a>
                     </div>
                   </div>
                 </div>
@@ -388,9 +405,9 @@
                     class="box-cobertura container-cobertura col-12 col-lg-auto col-sm-12 col-xl col py-2"
                   >
                     <h6 class="px-1 mb-0">Cobertura</h6>
-                    <h5 class="px-1">Cesantía</h5>
+                    <h5 class="px-1 fw-bold">Cesantía</h5>
                     <h6 class="px-1 pt-1 mb-0 subtitle">No. Siniestro</h6>
-                    <h6 class="px-1 pt-1 subtitle">3531077</h6>
+                    <h6 class="px-1 pt-1 subtitle fw-bold">3531077</h6>
                   </div>
                   <div class="col-12 col-sm-6 col-lg col-xl">
                     <div class="row align-items-center box-coberturas-row-top">
@@ -443,9 +460,8 @@
                       class="row align-items-center box-coberturas-row-top last"
                     ></div>
                     <div class="row box-coberturas-row-down">
-                      <a href=""
-                        >Ver detalle <i class="bi bi-chevron-right"></i
-                      ></a>
+                      <a href="" class="noUnderline fw-bold"
+                        >Ver detalle</a>
                     </div>
                   </div>
                 </div>
@@ -463,7 +479,7 @@
                       <div class="card-seguros-asociados-2">
                         <div class="top3 tablaSiniestro status">
                           <h6 class="mb-0 pb-0">Cobertura</h6>
-                          <h4>Cesantía</h4>
+                          <h4 class="fw-bold">Cesantía</h4>
                           <div class="cobertura">
                             <p class="text-cards-1 text-center">
                               No. Siniestro
@@ -494,19 +510,23 @@
                           </div>
                           <div class="monto">
                             <p class="text-cards-1">
+                              <b>Fecha Fin:</b>
+                            </p>
+                            <p class="text-cards-1">22-08-2023</p>
+                          </div>
+                          <div class="monto">
+                            <p class="text-cards-1">
                               <b>Fecha cambio estado:</b>
                             </p>
                             <p class="text-cards-1">22-09-2023</p>
                           </div>
                           <div class="monto">
                             <div class="row">
-                              <div class="text-cards-1 col-6">
-                                <span class="col-1 float-start fw-bold"
-                                  >Estado:</span
-                                >
+                              <div class="col-6 col-md-6 col-lg-6">
+                                <b class="text-cards-1">Estado:</b>
                               </div>
-                              <div class="text-cards-1 col-6">
-                                <span class="custom-chip emitido float-start"
+                              <div class="col-6 col-md-6 col-lg-6">
+                                <span class="custom-chip emitido"
                                   >Emitido</span
                                 >
                               </div>
@@ -519,11 +539,10 @@
                             <p class="text-cards-1">120117388</p>
                           </div>
                         </div>
-                        <div class="divisor-line"></div>
+                        <div class="divisor-line-black my-2"></div>
                         <div class="bottom">
-                          <div class="monto mb-5">
-                            <a class="link-info" href="#">Ver detalle cuotas</a>
-                            <i class="bi bi-chevron-right"></i>
+                          <div class="monto my-2">
+                            <a class="link-info noUnderline fw-bold" href="#">Ver detalle</a>
                           </div>
                         </div>
                       </div>
@@ -532,7 +551,7 @@
                       <div class="card-seguros-asociados-2">
                         <div class="top3 tablaSiniestro status">
                           <h6>Cobertura</h6>
-                          <h4>Cesantías</h4>
+                          <h4 class="fw-bold">Cesantía</h4>
                           <div class="cobertura">
                             <p class="text-cards-1 text-center">
                               No. Siniestro
@@ -563,16 +582,22 @@
                           </div>
                           <div class="monto">
                             <p class="text-cards-1">
+                              <b>Fecha Fin:</b>
+                            </p>
+                            <p class="text-cards-1">22-08-2023</p>
+                          </div>
+                          <div class="monto">
+                            <p class="text-cards-1">
                               <b>Fecha cambio estado:</b>
                             </p>
                             <p class="text-cards-1">22-09-2023</p>
                           </div>
                           <div class="monto">
                             <div class="row">
-                              <div class="col-sm-6 col-md-6 col-lg-6">
+                              <div class="col-6 col-md-6 col-lg-6">
                                 <b class="text-cards-1">Estado:</b>
                               </div>
-                              <div class="col-sm-6 col-md-6 col-lg-6 text-end">
+                              <div class="col-6 col-md-6 col-lg-6 text-end">
                                 <span class="custom-chip pendiente"
                                   >Pendiente</span
                                 >
@@ -586,11 +611,10 @@
                             <p class="text-cards-1">120117388</p>
                           </div>
                         </div>
-                        <div class="divisor-line"></div>
+                        <div class="divisor-line-black my-2"></div>
                         <div class="bottom">
-                          <div class="monto mb-5">
-                            <a class="link-info" href="#">Ver detalle cuotas</a>
-                            <i class="bi bi-chevron-right"></i>
+                          <div class="monto my-2">
+                            <a class="link-info noUnderline fw-bold" href="#">Ver detalle</a>
                           </div>
                         </div>
                       </div>
@@ -602,7 +626,7 @@
                       >
                         <div class="top3 tablaSiniestro status">
                           <h6>Cobertura</h6>
-                          <h4>Cesantías</h4>
+                          <h4 class="fw-bold">Cesantía</h4>
                           <div class="cobertura">
                             <p class="text-cards-1 text-center">
                               No. Siniestro
@@ -633,16 +657,22 @@
                           </div>
                           <div class="monto">
                             <p class="text-cards-1">
+                              <b>Fecha Fin:</b>
+                            </p>
+                            <p class="text-cards-1">22-08-2023</p>
+                          </div>
+                          <div class="monto">
+                            <p class="text-cards-1">
                               <b>Fecha cambio estado:</b>
                             </p>
                             <p class="text-cards-1">22-09-2023</p>
                           </div>
                           <div class="monto">
                             <div class="row">
-                              <div class="col-sm-6 col-md-6 col-lg-6">
+                              <div class="col-6 col-md-6 col-lg-6">
                                 <b class="text-cards-1">Estado:</b>
                               </div>
-                              <div class="col-sm-6 col-md-6 col-lg-6 text-end">
+                              <div class="col-6 col-md-6 col-lg-6">
                                 <span class="custom-chip emitido rechazado"
                                   >Rechazado</span
                                 >
@@ -656,11 +686,10 @@
                             <p class="text-cards-1">120117388</p>
                           </div>
                         </div>
-                        <div class="divisor-line"></div>
+                        <div class="divisor-line-black my-2"></div>
                         <div class="bottom">
-                          <div class="monto mb-5">
-                            <a class="link-info" href="#">Ver detalle cuotas</a>
-                            <i class="bi bi-chevron-right"></i>
+                          <div class="monto my-2">
+                            <a class="link-info noUnderline fw-bold" href="#">Ver detalle</a>
                           </div>
                         </div>
                       </div>
@@ -758,15 +787,41 @@
               Infórmese sobre la garantía estatal de los depósitos en su banco o
               en www.cmfchile.cl
             </p>
-            <p>
-              © 2022 Banco Itaú. Todos los derechos reservados. Av. Presidente
-              Riesco 5537, Las Condes. Santiago de Chile.
-            </p>
+            <p>© 2023 Caja los Andes. Todos los derechos reservados.</p>
           </div>
         </footer>
       </div>
     </section>
     <!--Fin Footer-->
+
+    <!--Modal 1-->
+    <div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true"
+        data-bs-backdrop="static" data-bs-keyboard="false">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-body text-center">
+                    <div class="d-flex flex-column justify-content-center row">
+                        <p class="title-cargar-documentos">
+                            Dejarás de gestionar para:
+                        </p>
+                        <p class="description-cargar-documentos">
+                            <b>Alejandro Rodriguez Prado</b><br>
+                            18.364.245-7
+                        </p>
+                        <p class="description-cargar-documentos">
+                          ¿Estás Seguro?
+                        </p>
+                    </div>
+                    <section class="container text-end act-buttons">
+                      <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">No</button>
+                      <button type="button" class="btn btn-primary text-white" data-bs-dismiss="modal">Si</button>
+                    </section>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!--Fin Modal-->
   </body>
 
   <script

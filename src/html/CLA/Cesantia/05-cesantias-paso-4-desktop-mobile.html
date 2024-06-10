@@ -87,8 +87,8 @@
             <nav class="navbar navbar-expand-lg bg-light">
                 <div class="container">
                     <div class="navbar-brand" href="#">
-                        <a href=""><img alt="Logo" class="image-logo me-2"></a>
-                        <a href=""><img class="image-logo-centrado" alt="BNP"></a>
+                        <a href=""><img alt="Logo" class="image-logo-mobile me-2"></a>
+                        <a href=""><img class="image-logo-centrado-mobile" alt="BNP"></a>
                     </div>
 
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -189,6 +189,22 @@
                                     </div>
                                 </div>
                             </div>
+                            <div class="row  alert alert-danger fade show mt-2 mb-4 text-start" role="alert">
+                                <div class="aviso-alerta">
+                                    <div class="col">
+                                        <div class="col">
+                                            <img class="ic-cross-red">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col texto">
+                                    <b class="mensaje-de-informacion">Atención</b>
+                                    <div class="mensaje-de-informacion-2">
+                                        <span>Archivo adjunto excede el límite de peso permitido.</span>
+                                    </div>
+                                </div>
+                                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                            </div>
                             <section id="archivos_cargados" class="container row archivos">
                                 <div class="container col-lg-12">
                                     <div class="row">
@@ -208,21 +224,17 @@
                                                     data-bs-toggle="tooltip" data-bs-placement="top"
                                                     title="Eliminar"></a>
                                         </div>
-                                        <div class="col-11 txt-file-attach text-start px-0">
+                                        <div class="col-11 txt-file-attach text-start color-error ps-0">
                                             <div class="peso-icono ps-0">
-                                                <img class="confirmacion-icon">
-                                                <div class="mb small me-2">5MB</div>
+                                                <i class="bi bi-exclamation-triangle-fill color-error me-1"></i>
+                                                <div class="mb small me-2">10MB</div>
                                                 <span>lipsum.jpg</span>
                                             </div>
                                         </div>
-                                        <div class="col-1 file-attach-options d-flex justify-content-end pe-0">
-                                            <a href=""><img class="float-start img-ojo"
+                                        <div class="col-1 file-attach-options d-flex justify-content-end">
+                                            <a href=""><img class="ic-cerrar"
                                                     data-bs-toggle="tooltip" data-bs-placement="top"
                                                     title="Ver adjunto"></a>
-                                            <a href="" data-bs-toggle="modal" data-bs-target="#staticBackdrop"><img
-                                                    class="float-start img-eliminar-carga"
-                                                    data-bs-toggle="tooltip" data-bs-placement="top"
-                                                    title="Eliminar"></a>
                                         </div>
 
                                     </div>
@@ -255,14 +267,30 @@
                                     </div>
                                 </div>
                             </div>
+                            <div class="row  alert alert-danger fade show mt-2 mb-4 text-start" role="alert">
+                                <div class="aviso-alerta">
+                                    <div class="col">
+                                        <div class="col">
+                                            <img class="ic-cross-red">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col texto">
+                                    <b class="mensaje-de-informacion">Atención</b>
+                                    <div class="mensaje-de-informacion-2">
+                                        <span>Los archivos adjuntos no cumplen con el formato requerido. Por favor, cárgalos nuevamente en formato PDF, JPG o PNG.</span>
+                                    </div>
+                                </div>
+                                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                            </div>
                             <section id="archivos_cargados" class="container row archivos">
                                 <div class="container col-12">
                                     <div class="row">
-                                        <div class="col-11 txt-file-attach text-start color-error">
+                                        <div class="col-11 txt-file-attach text-start color-error ps-0">
                                             <div class="peso-icono ps-0">
-                                                <i class="bi bi-exclamation-triangle-fill color-error"></i>
-                                                <div class="mb small me-2 color-error">10MB</div>
-                                                <span>lipsum.jpg</span>
+                                                <i class="bi bi-exclamation-triangle-fill color-error me-1"></i>
+                                                <div class="mb small me-2 fw-bold">Error</div>
+                                                <span>lipsum.doc</span>
                                             </div>
                                         </div>
                                         <div class="col-1 file-attach-options d-flex justify-content-end">
@@ -304,8 +332,8 @@
                     class="text-footer-1 col-lg-9 col-12 justify-content-end text-sm-center text-center text-lg-start mt-4 mt-lg-0">
                     <p class="mb-0 mt-3">Infórmese sobre la garantía estatal de los depósitos en su banco o en
                         www.cmfchile.cl</p>
-                    <p>© 2022 Banco Itaú. Todos los derechos reservados. Av. Presidente Riesco 5537, Las Condes.
-                        Santiago de Chile.
+                    <p>
+                        © 2023 Caja los Andes. Todos los derechos reservados.
                     </p>
                 </div>
             </footer>
