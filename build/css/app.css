@@ -12395,7 +12395,7 @@ li {
   border-radius: 24px;
   padding: 12px 24px 12px 24px;
   gap: 8px;
-  font-weight: 500;
+  font-weight: 500 !important;
   font-size: 18px;
   line-height: 24px;
   justify-content: center;
@@ -13131,8 +13131,8 @@ body {
   align-self: stretch;
   position: relative;
   display: inline-block;
-  height: 26px;
   flex-shrink: 0;
+  font-size: 1.55em;
 }
 
 .card-de-productos {
@@ -13832,10 +13832,6 @@ section#footer {
   padding-bottom: 12px;
 }
 
-.act-buttons > button {
-  font-weight: 700 !important;
-}
-
 .row.container-cobertura {
   border: 1px solid #cccccc;
   border-radius: 18px;
@@ -14282,4 +14278,8 @@ p.txt-load {
   width: 100%;
   color: #020202;
   font-family: sans-serif;
+}
+
+.splide__arrow {
+  background: 0 !important;
 }

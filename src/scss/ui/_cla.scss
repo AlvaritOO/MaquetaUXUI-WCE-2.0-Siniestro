@@ -379,7 +379,7 @@ li {
   border-radius: 24px;
   padding: 12px 24px 12px 24px;
   gap: 8px;
-  font-weight: 500;
+  font-weight: 500 !important;
   font-size: 18px;
   line-height: 24px;
   justify-content: center;
@@ -959,8 +959,8 @@ body {
   align-self: stretch;
   position: relative;
   display: inline-block;
-  height: 26px;
   flex-shrink: 0;
+  font-size: 1.55em;
 }
 
 .card-de-productos {
@@ -1688,10 +1688,6 @@ $modal-content-color: $textos;
 $accordion-border-color: $bordes-card;
 $accordion-icon-color: $primary;
 
-.act-buttons > button {
-  font-weight: 700 !important;
-}
-
 .row.container-cobertura {
   border: 1px solid $ligth-06;
   border-radius: 18px;
@@ -2169,3 +2165,7 @@ p.txt-load {
 }
 
 //
+
+.splide__arrow {
+  background: 0 !important;
+}
