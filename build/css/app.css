@@ -13247,32 +13247,31 @@ body {
 .taginfo1 {
   background-color: #ffffff;
   flex-direction: row;
-  border-radius: 20px;
-  border: 1px solid #999999;
+  border-radius: 26px;
   justify-content: center;
-  padding: 8px;
-  text-align: right;
+  padding: 6px 14px 4px;
   color: #3e4545;
+  line-height: 16px;
 }
 
 .taginfo2 {
   background-color: #ffffff;
   flex-direction: row;
-  border-radius: 20px;
+  border-radius: 26px;
   justify-content: center;
-  padding: 7px 13px;
+  padding: 6px 14px 4px;
   text-align: right;
   color: #3e4545;
+  line-height: 16px;
 }
 
 .taginfo3 {
   background-color: #ffffff;
   flex-direction: row;
-  border-radius: 20px;
-  border: 1px solid #ccc;
+  border-radius: 26px;
   justify-content: center;
-  padding: 8px;
-  text-align: right;
+  padding: 6px 14px 4px;
+  line-height: 16px;
 }
 
 .taginfo4 {
@@ -13498,11 +13497,6 @@ body {
   background-color: #def4ff;
   box-shadow: 0px 8px 40px 0px rgba(0, 0, 0, 0.08);
   color: #3e4545;
-}
-@media (min-width: 1024px) {
-  .alert-info3 {
-    min-width: 560px;
-  }
 }
 
 .alert-success {
