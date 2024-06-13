@@ -12395,7 +12395,7 @@ li {
   border-radius: 24px;
   padding: 12px 24px 12px 24px;
   gap: 8px;
-  font-weight: 500;
+  font-weight: 500 !important;
   font-size: 18px;
   line-height: 24px;
   justify-content: center;
@@ -13131,8 +13131,8 @@ body {
   align-self: stretch;
   position: relative;
   display: inline-block;
-  height: 26px;
   flex-shrink: 0;
+  font-size: 1.55em;
 }
 
 .card-de-productos {
@@ -13247,32 +13247,31 @@ body {
 .taginfo1 {
   background-color: #ffffff;
   flex-direction: row;
-  border-radius: 20px;
-  border: 1px solid #999999;
+  border-radius: 26px;
   justify-content: center;
-  padding: 8px;
-  text-align: right;
+  padding: 6px 14px 4px;
   color: #3e4545;
+  line-height: 16px;
 }
 
 .taginfo2 {
   background-color: #ffffff;
   flex-direction: row;
-  border-radius: 20px;
+  border-radius: 26px;
   justify-content: center;
-  padding: 7px 13px;
+  padding: 6px 14px 4px;
   text-align: right;
   color: #3e4545;
+  line-height: 16px;
 }
 
 .taginfo3 {
   background-color: #ffffff;
   flex-direction: row;
-  border-radius: 20px;
-  border: 1px solid #ccc;
+  border-radius: 26px;
   justify-content: center;
-  padding: 8px;
-  text-align: right;
+  padding: 6px 14px 4px;
+  line-height: 16px;
 }
 
 .taginfo4 {
@@ -13499,11 +13498,6 @@ body {
   box-shadow: 0px 8px 40px 0px rgba(0, 0, 0, 0.08);
   color: #3e4545;
 }
-@media (min-width: 1024px) {
-  .alert-info3 {
-    min-width: 560px;
-  }
-}
 
 .alert-success {
   background-color: #defff5;
@@ -13511,11 +13505,6 @@ body {
   border-radius: 16px;
   box-shadow: 0px 8px 40px 0px rgba(0, 0, 0, 0.08);
   padding-right: 16px;
-}
-@media (min-width: 1024px) {
-  .alert-success {
-    min-width: 560px;
-  }
 }
 
 .aviso-alerta {
@@ -13830,10 +13819,6 @@ section#footer {
   color: #000000;
   padding-top: 12px;
   padding-bottom: 12px;
-}
-
-.act-buttons > button {
-  font-weight: 700 !important;
 }
 
 .row.container-cobertura {
@@ -14260,4 +14245,30 @@ label {
     max-width: 228px;
     max-height: 36px;
   }
+}
+#animation_container {
+  position: absolute;
+  margin: auto;
+  left: auto;
+  right: auto;
+  top: 0;
+  bottom: 0;
+  width: 100% !important;
+  background-color: rgba(0, 0, 0, 0.785);
+  height: 100% !important;
+  z-index: 999; /* This will make the canvas appear on top */
+}
+
+p.txt-load {
+  text-align: center;
+  position: sticky;
+  top: 61%;
+  left: 48%;
+  width: 100%;
+  color: #020202;
+  font-family: sans-serif;
+}
+
+.splide__arrow {
+  background: 0 !important;
 }

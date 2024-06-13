@@ -148,7 +148,7 @@
 
     <!--trabajando con:-->
     <div class="user-working">
-      <div class="alert alert-info3 alert-dismissible fade show row" role="alert">
+      <div class="alert alert-info3 alert-dismissible fade show row" role="alert" id="myToast">
         <div class="col-1 ps-0">
           <img class="img-info-blanco" alt="" />
         </div>
@@ -158,6 +158,7 @@
           <span class="ps-3">18.364.245-7
         </div>
         <button
+          id="closeAndOpenModalBtn"
           type="button"
           class="btn-close col-1"
           data-bs-dismiss="alert"
@@ -227,7 +228,7 @@
                 <div
                   class="d-grid col-sm-12 col-md-12 col-lg-2 col-xl-1 d-grid mt-4"
                 >
-                  <button type="button" class="btn button-search" data-bs-toggle="modal" data-bs-target="#exampleModal1" >
+                  <button type="button" class="btn button-search">
                     Filtrar
                   </button>
                 </div>
@@ -813,7 +814,7 @@
                         </p>
                     </div>
                     <section class="container text-end act-buttons">
-                      <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">No</button>
+                      <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal" id="acceptBtn">No</button>
                       <button type="button" class="btn btn-primary text-white" data-bs-dismiss="modal">Si</button>
                     </section>
                 </div>
@@ -836,4 +837,24 @@
   ></script>
   <script src="../../../js/splide.min.js"></script>
   <script src="../../../js/card-splider.js"></script>
+  <script>
+  document.getElementById('closeAndOpenModalBtn').addEventListener('click', function() {
+    setTimeout(function() {
+      const myModal = new bootstrap.Modal(document.getElementById('exampleModal1'));
+      myModal.show();
+    }, 300);
+  });
+
+  document.getElementById('acceptBtn').addEventListener('click', function() {
+    const myModal = bootstrap.Modal.getInstance(document.getElementById('exampleModal1'));
+    myModal.hide();
+
+    setTimeout(function() {
+      const alertElement = document.getElementById('myAlert');
+      alertElement.classList.add('show');
+      alertElement.classList.remove('fade');
+    }, 300);
+  });
+</script>
+
 </html>
