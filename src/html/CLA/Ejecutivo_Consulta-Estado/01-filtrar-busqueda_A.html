@@ -1,0 +1,860 @@
+<!DOCTYPE html>
+<html lang="en" class="h-100">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Caja Los Andes</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,600;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../../../../build/css/app.css" />
+    <link rel="stylesheet" href="../../../../build/css/splide.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css"
+    />
+  </head>
+
+  <body class="d-flex flex-column h-100">
+    <!--NavBar-->
+    <section id="navBar">
+      <div class="container d-none d-sm-none d-md-none d-lg-block">
+        <header
+          class="d-flex flex-wrap justify-content-end justify-content-md-between pt-3 header-bg"
+        >
+          <div>
+            <a
+              href="/"
+              class="d-flex align-items-center col-md-3 mb-2 mb-md-0 text-w text-decoration-none"
+            >
+              <img alt="Logo" class="image-logo pe-4" />
+              <img class="image-logo-centrado" alt="BNP" />
+            </a>
+          </div>
+
+          <div class="d-flex flex-wrap justify-content-end">
+            <div>
+              <a
+                class="nav-link dropdown-toggle log-ejecutivo"
+                href="#"
+                id="navbarDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                <img class="img_log-ejecutivo" />
+                Hola, Leslie
+                <i class="bi bi-chevron-down"></i>
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li>
+                  <hr class="dropdown-divider" />
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                </li>
+              </ul>
+            </div>
+
+            <div class="divisor ms-3"></div>
+
+            <div class="mt-1 ms-3">
+              <a class="text-decoration-none text-black" href="#" role="button">
+                <img class="img_cerrar_sesion" alt="" />
+                Cerrar sesión</a
+              >
+            </div>
+          </div>
+
+          <nav
+            class="navbar navbar-expand-lg nav-itau pb-0 d-none d-lg-block d-sm-none"
+          >
+            <div class="container-fluid justify-content-around">
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#"
+                    >Inicio</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-white" href="#">Contratar Seguros</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-white" href="#"
+                    >Ver Seguros Contratados</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-white" href="#"
+                    >Denunciar un Siniestro</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </nav>
+        </header>
+      </div>
+      <div class="d-lg-none d-sm-block">
+        <nav class="navbar navbar-expand-lg bg-light">
+          <div class="container">
+            <div class="navbar-brand" href="#">
+              <a href=""><img alt="Logo" class="image-logo-mobile me-2" /></a>
+              <a href=""><img class="image-logo-centrado-mobile" alt="BNP" /></a>
+            </div>
+
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div
+              class="collapse navbar-collapse ms-3"
+              id="navbarSupportedContent"
+            >
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#"
+                    >Inicio</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Contratar seguros</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Ver seguros contratados</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Denunciar un siniestro</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </section>
+    <!--NavBar fin-->
+
+    <!--trabajando con:-->
+    <div class="user-working">
+      <div class="alert alert-info3 alert-dismissible fade show row" role="alert" id="myToast">
+        <div class="col-1 ps-0">
+          <img class="img-info-blanco" alt="" />
+        </div>
+        <div class="col">
+          <span class="ps-3">Estás consultando por:</span><br />
+          <span class="ps-3 fw-bold">Alejandro Rodríguez Prado</span><br />
+          <span class="ps-3">18.364.245-7
+        </div>
+        <button
+          id="closeAndOpenModalBtn"
+          type="button"
+          class="btn-close col-1"
+          data-bs-dismiss="alert"
+          aria-label="Close"
+        ></button>
+      </div>
+    </div>
+    <!--FIN trabajando con:-->
+
+    <!--Contenido-->
+    <main id="contenedor-mayor" class="flex-shrink-0 mt-4">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-11 col-md-11 col-lg-11">
+            <div class="col-sm-11 col-md-11 col-lg-11">
+              <h1 class="mt-3 mb-4">Consulta estado de siniestro</h1>
+            </div>
+          </div>
+          <div
+            class="p-4 featurette g-0 bg-white border overflow-hidden flex-md-row mb-4 shadow-sm"
+          >
+            <div>
+              <h2 class="fw-bold">Filtrar busqueda</h2>
+
+              <!--form v3-->
+              <div class="row mt-5">
+                <div
+                  class="col-sm-12 col-md-12 col-lg-2 col-xl mb-2"
+                >
+                  <form>
+                    <label for="floatingInputValue">Fecha de declaración</label>
+                    <input
+                      type="date"
+                      class="form-control"
+                      id="floatingInputValue"
+                    />
+                  </form>
+                </div>
+                <div class="col-sm-12 col-md-12 col-lg-2 col-xl mb-2">
+                  <label for="select1">Ordenar por fecha</label>
+                  <select id="select1" class="form-select" aria-label="example">
+                    <option selected>Fecha</option>
+                    <option value="1">Placeholder</option>
+                  </select>
+                </div>
+                <div class="col-sm-12 col-md-12 col-lg-2 col-xl mb-2">
+                  <label for="select2">Estado del siniestro</label>
+                  <select id="select2" class="form-select" aria-label="example">
+                    <option selected>Placeholder</option>
+                    <option value="1">Placeholder2</option>
+                  </select>
+                </div>
+                <div class="col-sm-12 col-md-12 col-lg-2 col-xl mb-2">
+                  <label for="select2">Tipo de cobertura</label>
+                  <select id="select2" class="form-select" aria-label="example">
+                    <option selected>Placeholder</option>
+                    <option value="1">Placeholder2</option>
+                  </select>
+                </div>
+                <div class="col-sm-12 col-md-12 col-lg-2 col-xl mb-2">
+                  <label for="">Filtrar por número de siniestro</label>
+                  <div class="input-group">
+                    <span class="input-group-text"><i class="ic-search"></i></span>
+                    <input type="text" class="form-control border-start-0">
+                  </div>
+                </div>
+                <div
+                  class="d-grid col-sm-12 col-md-12 col-lg-2 col-xl-1 d-grid mt-4"
+                >
+                  <button type="button" class="btn button-search">
+                    Filtrar
+                  </button>
+                </div>
+              </div>
+
+              <div class="row mt-3">
+                <p class="fw-bold">
+                  Utiliza los filtros de búsqueda para obtener resultados
+                </p>
+              </div>
+
+              <div
+                class="row align-items-center col-sm-12 col-lg-12 alert alert-warning fade show mt-4 mx-1 mb-4"
+                role="alert"
+              >
+                <div class="aviso-alerta">
+                  <div class="col">
+                    <div class="col">
+                      <img class="img-alerta" />
+                    </div>
+                  </div>
+                </div>
+                <div class="col-10 texto">
+                  <b class="mensaje-de-informacion"
+                    >Lo sentimos, no encontramos resultados con los filtros
+                    aplicados.</b
+                  >
+                  <div class="mensaje-de-informacion-2">
+                    <span
+                      >Por favor, ajuste su búsqueda e intente nuevamente.
+                    </span>
+                  </div>
+                </div>
+                <button type="button" class="btn-close col col-lg-1 ms-auto" data-bs-dismiss="alert" aria-label="Close"></button>
+              </div>
+
+              <h6 class="fw-bold mt-4">Resultados (3)</h6>
+
+              <!--coberturas dsktp-->
+              <div class="p-2 d-none d-lg-block">
+                <div class="row container-cobertura px-0">
+                  <div
+                    class="box-cobertura container-cobertura col-12 col-lg-auto col-sm-12 col-xl col py-2"
+                  >
+                    <h6 class="px-1 mb-0">Cobertura</h6>
+                    <h5 class="px-1 fw-bold">Cesantía</h5>
+                    <h6 class="px-1 pt-1 mb-0 subtitle">No. Siniestro</h6>
+                    <h6 class="px-1 pt-1 subtitle fw-bold">3531077</h6>
+                  </div>
+                  <div class="col-12 col-sm-6 col-lg col-xl">
+                    <div class="row align-items-center box-coberturas-row-top">
+                      Cuotas a evaluar
+                    </div>
+                    <div class="row box-coberturas-row-down">3</div>
+                  </div>
+
+                  <div class="col-12 col-sm-6 col-lg col-xl">
+                    <div class="row align-items-center box-coberturas-row-top">
+                      Fecha Ocurrencia
+                    </div>
+                    <div class="row box-coberturas-row-down">31-07-2023</div>
+                  </div>
+
+                  <div class="col-12 col-sm-6 col-lg col-xl">
+                    <div class="row align-items-center box-coberturas-row-top">
+                      Fecha declaración
+                    </div>
+                    <div class="row box-coberturas-row-down">22-08-2023</div>
+                  </div>
+
+                  <div class="col-12 col-sm-6 col-lg-2 col-xl-auto">
+                    <div class="row align-items-center box-coberturas-row-top">
+                      Fecha cambio estado
+                    </div>
+                    <div class="row box-coberturas-row-down">22-08-2023</div>
+                  </div>
+
+                  <div class="col-12 col-sm-6 col-lg-auto col-xl">
+                    <div class="row align-items-center box-coberturas-row-top">
+                      Estado
+                    </div>
+                    <div class="row box-coberturas-row-down">
+                      <span class="custom-chip emitido">Emitido</span>
+                    </div>
+                  </div>
+
+                  <div class="col-12 col-sm-6 col-lg-1 col-xl">
+                    <div class="row align-items-center box-coberturas-row-top">
+                      Poliza
+                    </div>
+                    <div class="row box-coberturas-row-down">2123456899</div>
+                  </div>
+
+                  <div class="col-12 col-sm-6 col-md-auto col-lg-auto col-xl">
+                    <div
+                      class="row align-items-center box-coberturas-row-top last"
+                    ></div>
+                    <div class="row box-coberturas-row-down">
+                      <a href="" class="noUnderline fw-bold"
+                        >Ver detalle</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="p-2 d-none d-lg-block">
+                <div class="row container-cobertura px-0">
+                  <div
+                    class="box-cobertura container-cobertura col-12 col-lg-auto col-sm-12 col-xl col py-2"
+                  >
+                    <h6 class="px-1 mb-0">Cobertura</h6>
+                    <h5 class="px-1 fw-bold">Cesantía</h5>
+                    <h6 class="px-1 pt-1 mb-0 subtitle">No. Siniestro</h6>
+                    <h6 class="px-1 pt-1 subtitle fw-bold">3531077</h6>
+                  </div>
+                  <div class="col-12 col-sm-6 col-lg col-xl">
+                    <div class="row align-items-center box-coberturas-row-top">
+                      Cuotas a evaluar
+                    </div>
+                    <div class="row box-coberturas-row-down">3</div>
+                  </div>
+
+                  <div class="col-12 col-sm-6 col-lg col-xl">
+                    <div class="row align-items-center box-coberturas-row-top">
+                      Fecha Ocurrencia
+                    </div>
+                    <div class="row box-coberturas-row-down">31-07-2023</div>
+                  </div>
+
+                  <div class="col-12 col-sm-6 col-lg col-xl">
+                    <div class="row align-items-center box-coberturas-row-top">
+                      Fecha declaración
+                    </div>
+                    <div class="row box-coberturas-row-down">22-08-2023</div>
+                  </div>
+
+                  <div class="col-12 col-sm-6 col-lg-2 col-xl-auto">
+                    <div class="row align-items-center box-coberturas-row-top">
+                      Fecha cambio estado
+                    </div>
+                    <div class="row box-coberturas-row-down">22-08-2023</div>
+                  </div>
+
+                  <div class="col-12 col-sm-6 col-lg-auto col-xl">
+                    <div class="row align-items-center box-coberturas-row-top">
+                      Estado
+                    </div>
+                    <div class="row box-coberturas-row-down">
+                      <span class="custom-chip pendiente">Pendiente</span>
+                    </div>
+                  </div>
+
+                  <div class="col-12 col-sm-6 col-lg-1 col-xl">
+                    <div class="row align-items-center box-coberturas-row-top">
+                      Poliza
+                    </div>
+                    <div class="row box-coberturas-row-down">2123456899</div>
+                  </div>
+
+                  <div class="col-12 col-sm-6 col-md-auto col-lg-auto col-xl">
+                    <div
+                      class="row align-items-center box-coberturas-row-top last"
+                    ></div>
+                    <div class="row box-coberturas-row-down">
+                      <a href="" class="noUnderline fw-bold"
+                        >Ver detalle</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="p-2 d-none d-lg-block">
+                <div class="row container-cobertura px-0">
+                  <div
+                    class="box-cobertura container-cobertura col-12 col-lg-auto col-sm-12 col-xl col py-2"
+                  >
+                    <h6 class="px-1 mb-0">Cobertura</h6>
+                    <h5 class="px-1 fw-bold">Cesantía</h5>
+                    <h6 class="px-1 pt-1 mb-0 subtitle">No. Siniestro</h6>
+                    <h6 class="px-1 pt-1 subtitle fw-bold">3531077</h6>
+                  </div>
+                  <div class="col-12 col-sm-6 col-lg col-xl">
+                    <div class="row align-items-center box-coberturas-row-top">
+                      Cuotas a evaluar
+                    </div>
+                    <div class="row box-coberturas-row-down">3</div>
+                  </div>
+
+                  <div class="col-12 col-sm-6 col-lg col-xl">
+                    <div class="row align-items-center box-coberturas-row-top">
+                      Fecha Ocurrencia
+                    </div>
+                    <div class="row box-coberturas-row-down">31-07-2023</div>
+                  </div>
+
+                  <div class="col-12 col-sm-6 col-lg col-xl">
+                    <div class="row align-items-center box-coberturas-row-top">
+                      Fecha declaración
+                    </div>
+                    <div class="row box-coberturas-row-down">22-08-2023</div>
+                  </div>
+
+                  <div class="col-12 col-sm-6 col-lg-2 col-xl-auto">
+                    <div class="row align-items-center box-coberturas-row-top">
+                      Fecha cambio estado
+                    </div>
+                    <div class="row box-coberturas-row-down">22-08-2023</div>
+                  </div>
+
+                  <div class="col-12 col-sm-6 col-lg-auto col-xl">
+                    <div class="row align-items-center box-coberturas-row-top">
+                      Estado
+                    </div>
+                    <div class="row box-coberturas-row-down">
+                      <span class="custom-chip rechazado">Rechazado</span>
+                    </div>
+                  </div>
+
+                  <div class="col-12 col-sm-6 col-lg-1 col-xl">
+                    <div class="row align-items-center box-coberturas-row-top">
+                      Poliza
+                    </div>
+                    <div class="row align-items-center box-coberturas-row-down">
+                      2123456899
+                    </div>
+                  </div>
+
+                  <div class="col-12 col-sm-6 col-md-auto col-lg-auto col-xl">
+                    <div
+                      class="row align-items-center box-coberturas-row-top last"
+                    ></div>
+                    <div class="row box-coberturas-row-down">
+                      <a href="" class="noUnderline fw-bold"
+                        >Ver detalle</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!--coberturas movile - splide-->
+
+              <section
+                id="splidesiniestro"
+                class="splide d-block d-lg-none d-md-block px-0 pb-4"
+              >
+                <div class="splide__track">
+                  <ul class="splide__list">
+                    <li class="splide__slide">
+                      <div class="card-seguros-asociados-2">
+                        <div class="top3 tablaSiniestro status">
+                          <h6 class="mb-0 pb-0">Cobertura</h6>
+                          <h4 class="fw-bold">Cesantía</h4>
+                          <div class="cobertura">
+                            <p class="text-cards-1 text-center">
+                              No. Siniestro
+                            </p>
+                            <p class="text-cards-1 text-center">
+                              <b>3531077</b>
+                            </p>
+                          </div>
+                        </div>
+                        <div class="content1 card-body-table">
+                          <div class="monto">
+                            <p class="text-cards-1">
+                              <b>Cuotas a evaluar:</b>
+                            </p>
+                            <p class="text-cards-1">3</p>
+                          </div>
+                          <div class="monto">
+                            <p class="text-cards-1">
+                              <b>Fecha Ocurrencia:</b>
+                            </p>
+                            <p class="text-cards-1">31-07-2023</p>
+                          </div>
+                          <div class="monto">
+                            <p class="text-cards-1">
+                              <b>Fecha declaración:</b>
+                            </p>
+                            <p class="text-cards-1">22-08-2023</p>
+                          </div>
+                          <div class="monto">
+                            <p class="text-cards-1">
+                              <b>Fecha Fin:</b>
+                            </p>
+                            <p class="text-cards-1">22-08-2023</p>
+                          </div>
+                          <div class="monto">
+                            <p class="text-cards-1">
+                              <b>Fecha cambio estado:</b>
+                            </p>
+                            <p class="text-cards-1">22-09-2023</p>
+                          </div>
+                          <div class="monto">
+                            <div class="row">
+                              <div class="col-6 col-md-6 col-lg-6">
+                                <b class="text-cards-1">Estado:</b>
+                              </div>
+                              <div class="col-6 col-md-6 col-lg-6">
+                                <span class="custom-chip emitido"
+                                  >Emitido</span
+                                >
+                              </div>
+                            </div>
+                          </div>
+                          <div class="monto">
+                            <p class="text-cards-1">
+                              <b>Póliza:</b>
+                            </p>
+                            <p class="text-cards-1">120117388</p>
+                          </div>
+                        </div>
+                        <div class="divisor-line-black my-2"></div>
+                        <div class="bottom">
+                          <div class="monto my-2">
+                            <a class="link-info noUnderline fw-bold" href="#">Ver detalle</a>
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="splide__slide">
+                      <div class="card-seguros-asociados-2">
+                        <div class="top3 tablaSiniestro status">
+                          <h6>Cobertura</h6>
+                          <h4 class="fw-bold">Cesantía</h4>
+                          <div class="cobertura">
+                            <p class="text-cards-1 text-center">
+                              No. Siniestro
+                            </p>
+                            <p class="text-cards-1 text-center">
+                              <b>3531077</b>
+                            </p>
+                          </div>
+                        </div>
+                        <div class="content1 card-body-table">
+                          <div class="monto">
+                            <p class="text-cards-1">
+                              <b>Cuotas a evaluar:</b>
+                            </p>
+                            <p class="text-cards-1">3</p>
+                          </div>
+                          <div class="monto">
+                            <p class="text-cards-1">
+                              <b>Fecha Ocurrencia:</b>
+                            </p>
+                            <p class="text-cards-1">31-07-2023</p>
+                          </div>
+                          <div class="monto">
+                            <p class="text-cards-1">
+                              <b>Fecha declaración:</b>
+                            </p>
+                            <p class="text-cards-1">22-08-2023</p>
+                          </div>
+                          <div class="monto">
+                            <p class="text-cards-1">
+                              <b>Fecha Fin:</b>
+                            </p>
+                            <p class="text-cards-1">22-08-2023</p>
+                          </div>
+                          <div class="monto">
+                            <p class="text-cards-1">
+                              <b>Fecha cambio estado:</b>
+                            </p>
+                            <p class="text-cards-1">22-09-2023</p>
+                          </div>
+                          <div class="monto">
+                            <div class="row">
+                              <div class="col-6 col-md-6 col-lg-6">
+                                <b class="text-cards-1">Estado:</b>
+                              </div>
+                              <div class="col-6 col-md-6 col-lg-6 text-end">
+                                <span class="custom-chip pendiente"
+                                  >Pendiente</span
+                                >
+                              </div>
+                            </div>
+                          </div>
+                          <div class="monto">
+                            <p class="text-cards-1">
+                              <b>Póliza:</b>
+                            </p>
+                            <p class="text-cards-1">120117388</p>
+                          </div>
+                        </div>
+                        <div class="divisor-line-black my-2"></div>
+                        <div class="bottom">
+                          <div class="monto my-2">
+                            <a class="link-info noUnderline fw-bold" href="#">Ver detalle</a>
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="splide__slide">
+                      <div
+                        class="card-seguros-asociados-2"
+                        style="height: auto"
+                      >
+                        <div class="top3 tablaSiniestro status">
+                          <h6>Cobertura</h6>
+                          <h4 class="fw-bold">Cesantía</h4>
+                          <div class="cobertura">
+                            <p class="text-cards-1 text-center">
+                              No. Siniestro
+                            </p>
+                            <p class="text-cards-1 text-center">
+                              <b>3531077</b>
+                            </p>
+                          </div>
+                        </div>
+                        <div class="content1 card-body-table">
+                          <div class="monto">
+                            <p class="text-cards-1">
+                              <b>Cuotas a evaluar:</b>
+                            </p>
+                            <p class="text-cards-1">3</p>
+                          </div>
+                          <div class="monto">
+                            <p class="text-cards-1">
+                              <b>Fecha Ocurrencia:</b>
+                            </p>
+                            <p class="text-cards-1">31-07-2023</p>
+                          </div>
+                          <div class="monto">
+                            <p class="text-cards-1">
+                              <b>Fecha declaración:</b>
+                            </p>
+                            <p class="text-cards-1">22-08-2023</p>
+                          </div>
+                          <div class="monto">
+                            <p class="text-cards-1">
+                              <b>Fecha Fin:</b>
+                            </p>
+                            <p class="text-cards-1">22-08-2023</p>
+                          </div>
+                          <div class="monto">
+                            <p class="text-cards-1">
+                              <b>Fecha cambio estado:</b>
+                            </p>
+                            <p class="text-cards-1">22-09-2023</p>
+                          </div>
+                          <div class="monto">
+                            <div class="row">
+                              <div class="col-6 col-md-6 col-lg-6">
+                                <b class="text-cards-1">Estado:</b>
+                              </div>
+                              <div class="col-6 col-md-6 col-lg-6">
+                                <span class="custom-chip emitido rechazado"
+                                  >Rechazado</span
+                                >
+                              </div>
+                            </div>
+                          </div>
+                          <div class="monto">
+                            <p class="text-cards-1">
+                              <b>Póliza:</b>
+                            </p>
+                            <p class="text-cards-1">120117388</p>
+                          </div>
+                        </div>
+                        <div class="divisor-line-black my-2"></div>
+                        <div class="bottom">
+                          <div class="monto my-2">
+                            <a class="link-info noUnderline fw-bold" href="#">Ver detalle</a>
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </section>
+
+              <!--fin splide-->
+            </div>
+          </div>
+        </div>
+
+        <!-- Paginador -->
+        <div class="row mt-4 mb-5">
+          <div
+            class="d-none d-sm-block px-0 col-sm-11 col-md-11 col-lg-6"
+            aria-label="Page navigation"
+          >
+            <ul class="pagination align-items-end">
+              <div>
+                <select
+                  class="form-select py-2 me-2"
+                  style="width: auto; display: inline"
+                  aria-label="Seleccionar cantidad de filas"
+                >
+                  <option selected>Mostrar 5</option>
+                  <option>Mostrar 10</option>
+                  <option>Mostrar 20</option>
+                </select>
+              </div>
+              <li class="page-item ms-1">
+                <a
+                  class="page-link p-2 border-0 text-black"
+                  href="#"
+                  aria-label="Previous"
+                >
+                  <span aria-hidden="true"
+                    ><i class="bi bi-chevron-left"></i
+                  ></span>
+                </a>
+              </li>
+              <li class="page-item col-1">
+                <input
+                  type="text"
+                  class="form-control text-center px-2"
+                  value="1"
+                  disabled
+                />
+              </li>
+              <li class="page-item py-2 text-center">
+                <span class="px-2">de 3</span>
+              </li>
+              <li class="page-item">
+                <a
+                  class="page-link p-2 border-0 text-black"
+                  href="#"
+                  aria-label="Next"
+                >
+                  <span aria-hidden="true"
+                    ><i class="bi bi-chevron-right"></i
+                  ></span>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-sm-11 col-md-11 col-lg-6 text-end act-buttons">
+            <button type="button" class="btn btn-outline-secondary">
+              Volver
+            </button>
+          </div>
+        </div>
+      </div>
+    </main>
+    <!--Contenido fin-->
+
+    <!--Footer-->
+    <section id="footer" class="footer mt-auto">
+      <div class="container">
+        <footer class="d-flex flex-wrap align-items-center py-3">
+          <div class="img-footer col-lg-3 col-12 offset-lg-0 text-muted">
+            <a href="#"
+              ><img
+                class="img-logo-footer logo-footer offset-md-3 offset-lg-2 me-3 offset-2"
+            /></a>
+            <a href="#"
+              ><img
+                class="col-lg-5 col-5 col-md-4 img-cardif-footer logo-footer"
+            /></a>
+          </div>
+          <div
+            class="text-footer-1 col-lg-9 col-12 justify-content-end text-sm-center text-center text-lg-start mt-4 mt-lg-0"
+          >
+            <p class="mb-0 mt-3">
+              Infórmese sobre la garantía estatal de los depósitos en su banco o
+              en www.cmfchile.cl
+            </p>
+            <p>© 2023 Caja los Andes. Todos los derechos reservados.</p>
+          </div>
+        </footer>
+      </div>
+    </section>
+    <!--Fin Footer-->
+
+    <!--Modal 1-->
+    <div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true"
+        data-bs-backdrop="static" data-bs-keyboard="false">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-body text-center">
+                    <div class="d-flex flex-column justify-content-center row">
+                        <p class="title-cargar-documentos">
+                            Dejarás de gestionar para:
+                        </p>
+                        <p class="description-cargar-documentos">
+                            <b>Alejandro Rodriguez Prado</b><br>
+                            18.364.245-7
+                        </p>
+                        <p class="description-cargar-documentos">
+                          ¿Estás Seguro?
+                        </p>
+                    </div>
+                    <section class="container text-end act-buttons">
+                      <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal" id="acceptBtn">No</button>
+                      <button type="button" class="btn btn-primary text-white" data-bs-dismiss="modal">Si</button>
+                    </section>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!--Fin Modal-->
+  </body>
+
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+    crossorigin="anonymous"
+  ></script>
+  <script
+    src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+    crossorigin="anonymous"
+  ></script>
+  <script src="../../../js/splide.min.js"></script>
+  <script src="../../../js/card-splider.js"></script>
+  <script>
+  document.getElementById('closeAndOpenModalBtn').addEventListener('click', function() {
+    setTimeout(function() {
+      const myModal = new bootstrap.Modal(document.getElementById('exampleModal1'));
+      myModal.show();
+    }, 300);
+  });
+
+  document.getElementById('acceptBtn').addEventListener('click', function() {
+    const myModal = bootstrap.Modal.getInstance(document.getElementById('exampleModal1'));
+    myModal.hide();
+
+    setTimeout(function() {
+      const alertElement = document.getElementById('myAlert');
+      alertElement.classList.add('show');
+      alertElement.classList.remove('fade');
+    }, 300);
+  });
+</script>
+
+</html>
