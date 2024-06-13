@@ -13506,11 +13506,6 @@ body {
   box-shadow: 0px 8px 40px 0px rgba(0, 0, 0, 0.08);
   padding-right: 16px;
 }
-@media (min-width: 1024px) {
-  .alert-success {
-    min-width: 560px;
-  }
-}
 
 .aviso-alerta {
   width: 32px;
