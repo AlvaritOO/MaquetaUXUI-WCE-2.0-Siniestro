@@ -2148,10 +2148,11 @@ label {
 
 p.txt-load {
   text-align: center;
-  position: sticky;
+  position: relative;
   top: 61%;
-  left: 48%;
   width: 100%;
+  margin-left: auto;
+  margin-right: auto;
   color: #020202;
   font-family: sans-serif;
 }
